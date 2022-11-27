@@ -1,0 +1,1253 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
+<head profile="http://gmpg.org/xfn/11">
+<link rel="stylesheet" href="./static_files/style.css" type="text/css" media="screen, projection">
+<link rel="stylesheet" href="./static_files/layout.css" type="text/css" media="screen, projection">
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>AutoIt教程：9. 问题、方案与实现</title>
+<meta name="robots" content="noodp, noydir" />
+<meta name="description" content="第7节里提到过的问题，实际上在《把时间当作朋友》一书中出现过，作为反驳“成功学谬误”的例子： 除了“以偏概全”、“单向成立”之外，“成功学”书籍里甚至不乏赤裸裸的、厚颜无耻逻辑混乱。最令我印象深刻的赤裸裸地逻辑混乱的“成功学”例子是关于“态度改变一切”的一个例子。我知道，也相信“有些时候，仅仅态度上的改变就真的可以带来不同的结果”。然而，我认为用以下的逻辑让我接受，或者让任何人接受，都不仅是不可能的，甚至是不道德的。 如果将字母 A 到 Z 分别编上 1 到 26 的分数，(A=1,B=2…,Z=26) ，那么： 你的知识(KNOWLEDGE)得到 96 分(11+14+15+23+12+5+4+7+5=96) 你的努力(HARDWORK)也只得到 98 分(8+1+18+4+23+15+18+11=98) 你的态度(ATTITUDE)才是左右你生命的全部，因为1+20+20+9+20+21+4+5=100 拜托，有点基础逻辑好不好呢？事实上，用这种方法计算，结果等于100的单词多的去了： alienation (疏远) apoplectic (中风患者) boycott (联合抵制) cacophony (杂音、刺耳的音调) chimpanzee (黑猩猩) connivance (纵容) coyness (羞怯) flurry (慌张) frisson (颤抖) impotence (阳痿)" />
+<link rel="stylesheet" href="/web/20130817203610cs_/http://wordpress.lixiaolai.com/wp-content/themes/thesis_182/style.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="/web/20130817203610cs_/http://wordpress.lixiaolai.com/wp-content/themes/thesis_182/custom/layout.css" type="text/css" media="screen, projection" />
+<!--[if lte IE 8]><link rel="stylesheet" href="/web/20130817203610/http://wordpress.lixiaolai.com/wp-content/themes/thesis_182/lib/css/ie.css" type="text/css" media="screen, projection" /><![endif]-->
+<link rel="stylesheet" href="/web/20130817203610cs_/http://wordpress.lixiaolai.com/wp-content/themes/thesis_182/custom/custom.css" type="text/css" media="screen, projection" />
+<link rel="canonical" href="http://wordpress.lixiaolai.com/archives/9264.html" />
+<link rel="alternate" type="application/rss+xml" title="Reborn RSS Feed" href="http://wordpress.lixiaolai.com/feed" />
+<link rel="pingback" href="http://wordpress.lixiaolai.com/xmlrpc.php" />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://wordpress.lixiaolai.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://wordpress.lixiaolai.com/wp-includes/wlwmanifest.xml" />
+<link rel="shortcut icon" type="image/ico" href="/web/20130817203610im_/http://www.lixiaolai.com/wp-content/themes/thesis_182/lib/images/favicon.ico">
+<link type="image/png" rel="apple-touch-icon" href="http:///www.lixiaolai.com/wp-content/themes/thesis_182/lib/images/r.png" />
+<link rel="alternate" type="application/rss+xml" title="Reborn &raquo; AutoIt教程：9. 问题、方案与实现 Comments Feed" href="http://wordpress.lixiaolai.com/archives/9264.html/feed" />
+<link rel='stylesheet' id='Shadows Into Light-css'  href='/web/20130817203610cs_/http://fonts.googleapis.com/css?family=Shadows+Into+Light&amp;ver=3.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='Shadows Into Light Two-css'  href='/web/20130817203610cs_/http://fonts.googleapis.com/css?family=Shadows+Into+Light+Two&amp;ver=3.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='ttsp-all-css'  href='/web/20130817203610cs_/http://wordpress.lixiaolai.com/wp-content/plugins/thethe-sliding-panels/style/css/ttsp.all.css?ver=3.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-syntax-css-css'  href='/web/20130817203610cs_/http://wordpress.lixiaolai.com/wp-content/plugins/wp-syntax/wp-syntax.css?ver=3.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='jquery-ui-style-ui-lightness-css'  href='/web/20130817203610cs_/http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/ui-lightness/jquery-ui.css?ver=3.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='thethe-haccordion-css'  href='/web/20130817203610cs_/http://wordpress.lixiaolai.com/wp-content/plugins/thethe-tabs-and-accordions/style/thethe-haccordion.css?ver=3.4.2' type='text/css' media='all' />
+<script type='text/javascript' src='/web/20130817203610js_/http://code.jquery.com/jquery-latest.min.js?ver=latest'></script>
+<script type='text/javascript' src='/web/20130817203610js_/http://wordpress.lixiaolai.com/wp-content/plugins/thethe-marquee/style/js/jquery.easing.1.3.js?ver=3.4.2'></script>
+<script type='text/javascript' src='/web/20130817203610js_/http://wordpress.lixiaolai.com/wp-content/plugins/thethe-marquee/style/js/jquery.marquee.js?ver=3.4.2'></script>
+<script type='text/javascript' src='/web/20130817203610js_/http://wordpress.lixiaolai.com/wp-includes/js/comment-reply.js?ver=3.4.2'></script>
+<script type='text/javascript' src='/web/20130817203610js_/http://wordpress.lixiaolai.com/wp-content/plugins/jquery-accordion-slideshow/js/jquery.min.js?ver=3.4.2'></script>
+<script type='text/javascript' src='/web/20130817203610js_/http://wordpress.lixiaolai.com/wp-content/plugins/jquery-accordion-slideshow/js/jquery.zaccordion.min.js?ver=3.4.2'></script>
+<script type='text/javascript' src='/web/20130817203610js_/http://wordpress.lixiaolai.com/wp-content/plugins/jquery-accordion-slideshow/js/jquery.easing.1.3.js?ver=3.4.2'></script>
+<script type='text/javascript' src='/web/20130817203610js_/http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js?ver=3.4.2'></script>
+<script type='text/javascript' src='/web/20130817203610js_/http://wordpress.lixiaolai.com/wp-content/plugins/thethe-sliding-panels/style/js/jquery.cookie.min.js?ver=3.4.2'></script>
+<script type='text/javascript' src='/web/20130817203610js_/http://wordpress.lixiaolai.com/wp-content/plugins/thethe-sliding-panels/style/js/jquery.ttsp.js?ver=3.4.2'></script>
+<script type='text/javascript' src='/web/20130817203610js_/http://wordpress.lixiaolai.com/wp-content/plugins/thethe-tabs-and-accordions/style/js/thethe.toggle.js?ver=3.4.2'></script>
+<script type='text/javascript' src='/web/20130817203610js_/http://wordpress.lixiaolai.com/wp-content/plugins/thethe-tabs-and-accordions/style/js/thethe.haccordion.js?ver=3.4.2'></script>
+<style type="text/css">
+	.addw2p {
+		list-style-type: none;
+		list-style-image: none;
+	}
+</style>
+<script type="text/javascript" src="/web/20130817203610js_/http://wordpress.lixiaolai.com/wp-content/plugins/audio-player/assets/audio-player.js?ver=2.0.4.1"></script>
+<script type="text/javascript">AudioPlayer.setup("/web/20130817203610/http://wordpress.lixiaolai.com/wp-content/plugins/audio-player/assets/player.swf?ver=2.0.4.1", {width:"290",animation:"yes",encode:"yes",initialvolume:"60",remaining:"no",noinfo:"no",buffer:"5",checkpolicy:"no",rtl:"no",bg:"f8f8f8",text:"666666",leftbg:"eeeeee",lefticon:"666666",volslider:"666666",voltrack:"FFFFFF",rightbg:"cccccc",rightbghover:"999999",righticon:"666666",righticonhover:"ffffff",track:"FFFFFF",loader:"9FFFB8",border:"666666",tracker:"DDDDDD",skip:"666666",pagebg:"FFFFFF",transparentpagebg:"yes"});</script>
+<style type='text/css'>
+#widget-collapscat-3-top span.collapsing.categories {
+        border:0;
+        padding:0; 
+        margin:0; 
+        cursor:pointer;
+} 
+
+#widget-collapscat-3-top li.widget_collapscat h2 span.sym {float:right;padding:0 .5em}
+#widget-collapscat-3-top li.collapsing.categories.self a {font-weight:bold}
+#widget-collapscat-3-top:before {content:'';} 
+#widget-collapscat-3-top  li.collapsing.categories:before {content:'';} 
+#widget-collapscat-3-top  li.collapsing.categories {list-style-type:none}
+#widget-collapscat-3-top  li.collapsing.categories{
+       padding:0 0 0 1em;
+       text-indent:-1em;
+}
+#widget-collapscat-3-top li.collapsing.categories.item:before {content: '\00BB \00A0' !important;} 
+#widget-collapscat-3-top li.collapsing.categories .sym {
+   cursor:pointer;
+   font-size:1.1em;
+   font-family:Arial, Helvetica;
+    padding-right:5px;}</style>
+<!-- TheThe Marquee v.1.0.0 Custom CSS begin //-->
+<style type="text/css" media="screen">
+div.marquee {}
+div.marquee div.mul {}
+
+</style>
+<!-- TheThe Marquee Custom CSS end //-->
+<script type='text/javascript'>
+jQuery(document).ready(function($) {
+});
+</script>		<style type="text/css">
+						ol.footnotes li {list-style-type:decimal;}
+						ol.footnotes{font-size:13px; color:#666666;}		</style>
+				<script type="text/javascript" charset="utf-8">
+			var href = "/web/20130817203610/http://wordpress.lixiaolai.com";
+			// solves the issue where app mode does not set the correct UA String.
+			if ( window.navigator.standalone ) {
+				href += "?onswipe_redirect=yes";
+				location.href = href;
+			};
+			try{
+			// make reader urls work backwards.
+				href += "?p=" + location.hash.match(/\#!\/entry\/.+,(\d+)$/)[1];
+				location.href = href;
+			}catch(e){}		
+		</script>
+		
+	<!-- Clean Archives Reloaded v3.2.0 | /web/20130817203610/http://www.viper007bond.com/wordpress-plugins/clean-archives-reloaded/ -->
+	<style type="text/css">.car-collapse .car-yearmonth { cursor: s-resize; } </style>
+	<script type="text/javascript">
+		/* <![CDATA[ */
+			jQuery(document).ready(function() {
+				jQuery('.car-collapse').find('.car-monthlisting').hide();
+				jQuery('.car-collapse').find('.car-monthlisting:first').show();
+				jQuery('.car-collapse').find('.car-yearmonth').click(function() {
+					jQuery(this).next('ul').slideToggle('fast');
+				});
+				jQuery('.car-collapse').find('.car-toggler').click(function() {
+					if ( 'Expand All' == jQuery(this).text() ) {
+						jQuery(this).parent('.car-container').find('.car-monthlisting').show();
+						jQuery(this).text('Collapse All');
+					}
+					else {
+						jQuery(this).parent('.car-container').find('.car-monthlisting').hide();
+						jQuery(this).text('Expand All');
+					}
+					return false;
+				});
+			});
+		/* ]]> */
+	</script>
+
+</head>
+<body class="custom">
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script> if (window.archive_analytics) { window.archive_analytics.values['server_name']="wwwb-app3.us.archive.org";}; </script>
+
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">
+var __wm = (function(){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://wordpress.lixiaolai.com/archives/9264.html";
+
+var firstYear = 1996;
+var imgWidth = 475,imgHeight = 27;
+var yearImgWidth = 25,monthImgWidth = 2;
+var displayDay = "17";
+var displayMonth = "Aug";
+var displayYear = "2013";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function getElementX2(obj) {
+  var $e=jQuery(obj);
+  return (typeof $e=="undefined"||typeof $e.offset=="undefined")?
+    getElementX(obj):Math.round($e.offset().left);
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX2(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})();
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0"></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://wordpress.lixiaolai.com/archives/9264.html" style="width:400px;" onfocus="this.focus();this.select();"><input type="hidden" name="type" value="replay"><input type="hidden" name="date" value="20130817203610"><input type="submit" value="Go"><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    <a href="/web/20130512113454/http://wordpress.lixiaolai.com/archives/9264.html" title="12 May 2013">MAY</a>
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 20:36:10 Aug 17, 2013">AUG</td>
+		<td class="f" nowrap="nowrap">
+		
+		    <a href="/web/20131011220049/http://wordpress.lixiaolai.com/archives/9264.html" title="11 Oct 2013"><strong>OCT</a>
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20130512113454/http://wordpress.lixiaolai.com/archives/9264.html" title="11:34:54 May 12, 2013"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 20:36:10 Aug 17, 2013">17</td>
+	       <td class="f" nowrap="nowrap">
+               
+		   <a href="/web/20131011220049/http://wordpress.lixiaolai.com/archives/9264.html" title="22:00:49 Oct 11, 2013"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0"/></a>
+	       
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   2012
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 20:36:10 Aug 17, 2013">2013</td>
+	       <td class="f" nowrap="nowrap">
+               
+                   2014
+               
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20130817203610*/http://wordpress.lixiaolai.com/archives/9264.html" title="See a list of every capture for this URL">6 captures</a>
+           <div class="r" title="Timespan for captures of this URL">3 Dec 12 - 4 Jul 14</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="475"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=475_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000000000000_2003:-1:000000000000_2004:-1:000000000000_2005:-1:000000000000_2006:-1:000000000000_2007:-1:000000000000_2008:-1:000000000000_2009:-1:000000000000_2010:-1:000000000000_2011:-1:000000000000_2012:-1:000000000001_2013:7:001010010100_2014:-1:000000100000">
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+<div id="container">
+<div id="page">
+	<div id="header_box">
+		<div id="header">
+		<p id="logo"><a href="/web/20130817203610/http://wordpress.lixiaolai.com/">Reborn</a></p>
+	</div>
+	<div id="header_box_right">
+		<form action="/web/20130817203610/http://www.google.com/cse" id="cse-search-box">
+	    <input type="hidden" name="cx" value="017195234153172777936:zntod-n-hbc">
+	    <input type="hidden" name="ie" value="UTF-8">
+			<input type="text" onblur="if (this.value == '') {this.value = 'To search, type and hit enter';}" onfocus="if (this.value == 'To search, type and hit enter') {this.value = '';}" id="s" name="q" value="To search, type and hit enter" class="text_input">
+		</form>
+				<a href="/web/20130817203610/https://twitter.com/xiaolai"><img src="/web/20130817203610im_/http://wordpress.lixiaolai.com/wp-content/themes/thesis_182/custom/images/twitter.png" alt="@xiaolai" /></a>
+						<a href="mailto:lixiaolai@gmail.com"><img src="/web/20130817203610im_/http://wordpress.lixiaolai.com/wp-content/themes/thesis_182/custom/images/gmail.png" alt="lixiaolai@gmail.com" /></a>
+		<a href="/web/20130817203610/http://wordpress.lixiaolai.com/feed"><img src="/web/20130817203610im_/http://wordpress.lixiaolai.com/wp-content/themes/thesis_182/custom/images/rss.png" alt="RSS" /></a>
+	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="menu-navbar-container"><ul id="menu-navbar" class="menu"><li id="menu-item-12082" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12082"><a href="/web/20130817203610/http://www.lixiaolai.com/">Home</a></li>
+<li id="menu-item-10859" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10859"><a href="/web/20130817203610/http://wordpress.lixiaolai.com/archives">Archives</a></li>
+<li id="menu-item-10860" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10860"><a href="/web/20130817203610/http://wordpress.lixiaolai.com/downloads">Downloads</a></li>
+<li id="menu-item-12081" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12081"><a href="/web/20130817203610/http://www.eduise.com/">eduise.com</a></li>
+<li id="menu-item-12080" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12080"><a href="/web/20130817203610/http://www.eduise.com/client/evaluation">免费留学申请选校评估</a></li>
+<li id="menu-item-12240" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12240"><a title="linode" href="/web/20130817203610/http://www.lixiaolai.com/linode-vps">linode</a></li>
+</ul></div>
+	<div id="content_box">
+		<div id="content" class="hfeed">
+
+			<div class="post-9264 post type-post status-publish format-standard hentry category-auto-it post_box top" id="post-9264">
+				<div class="headline_area">
+					<h1 class="entry-title">AutoIt教程：9. 问题、方案与实现</h1>
+					<p class="headline_meta">by <span class="author vcard fn">xiaolai</span> on <abbr class="published" title="2010-05-03">2010/05/03</abbr> &middot; <span><a href="/web/20130817203610/http://wordpress.lixiaolai.com/archives/9264.html#comments" rel="nofollow"><span class="dsq-postid" rel="9264 http://www.lixiaolai.com/?p=9264">19 comments</span></a></span></p>
+					<p class="headline_meta">in <span><a href="/web/20130817203610/http://wordpress.lixiaolai.com/archives/category/computer-related/auto-it" title="View all posts in Auto-It" rel="category tag">Auto-It</a></span></p>
+				</div>
+				<div class="format_text entry-content">
+<p>第7节里提到过的问题，实际上在《把时间当作朋友》一书中出现过，<a href="/web/20130817203610/http://wordpress.lixiaolai.com/archives/442.html" target="_blank">作为反驳“成功学谬误”的例子</a>：</p>
+<blockquote><p>除了“以偏概全”、“单向成立”之外，“成功学”书籍里甚至不乏赤裸裸的、厚颜无耻逻辑混乱。最令我印象深刻的赤裸裸地逻辑混乱的“成功学”例子是关于“态度改变一切”的一个例子。我知道，也相信“有些时候，仅仅态度上的改变就真的可以带来不同的结果”。然而，我认为用以下的逻辑让我接受，或者让任何人接受，都不仅是不可能的，甚至是不道德的。</p>
+<blockquote><p>如果将字母 A 到 Z 分别编上 1 到 26 的分数，(A=1,B=2…,Z=26) ，那么：</p>
+<ul>
+<li>你的知识(KNOWLEDGE)得到 96 分(11+14+15+23+12+5+4+7+5=96)</li>
+<li>你的努力(HARDWORK)也只得到 98 分(8+1+18+4+23+15+18+11=98)</li>
+<li>你的态度(ATTITUDE)才是左右你生命的全部，因为1+20+20+9+20+21+4+5=100</li>
+</ul>
+</blockquote>
+<p>拜托，有点基础逻辑好不好呢？事实上，用这种方法计算，结果等于100的单词多的去了：</p>
+<blockquote><p>alienation (疏远)<br />
+apoplectic (中风患者)<br />
+boycott (联合抵制)<br />
+cacophony (杂音、刺耳的音调)<br />
+chimpanzee (黑猩猩)<br />
+connivance (纵容)<br />
+coyness (羞怯)<br />
+flurry (慌张)<br />
+frisson (颤抖)<br />
+impotence (阳痿)<br />
+inflation (通货膨胀)<br />
+pussy (小猫&lt;俚&gt;女阴/阴户)<br />
+socialism (社会主义)<br />
+status (身份、地位)<br />
+stress (压力)<br />
+surcharge (超载, 追加罚款, 额外费)<br />
+syndicate (财团)<br />
+tuppence (微不足道的东西)<br />
+turkey (火鸡，无用的东西)<br />
+Wednesday (星期三)<br />
+wholesale (批发)</p></blockquote>
+<p>以上罗列的只是我在BNC英文词汇表中找到的一千多个中的一小部分名词而已。对了，形容词useless如果按照这种算法，结果也等于100。补记：刚刚写完，顺手在GOOGLE上搜索了一下 “KNOWLEDGE 11+14+15+23+12+5+4+7+5=96″。得到的结果特别值得回味：前150项几乎都来自中文网站。搜索结果的第16页才开始陆续有一些英文网站提到这个莫名其妙的算法，在GOOGLE搜索结果的第151项 看到这么一篇：指出 bullshit = 103，于是接着说，“So, it stands to reason that hard work and knowledge will get you close, attitude will get you there, but bullshit will put you over the top.” 还有更逗的，作者又接着指出另外一个词：<strong>asskissing=127</strong> ！</p></blockquote>
+<p>当时我就想，要是有很多莫名其妙的词按这种算法加起来也等于100呢？我猜肯定有的！只不过，用手工计算是（几乎）不可能的事情。还好，我有工具<sup>[<a href="#footnote_0_9264" id="identifier_0_9264" class="footnote-link footnote-identifier-link" title="当时我用的是Python，现在是在讲解AutoIt，所以当然得用AutoIt重写一遍。">1</a>]</sup> 和技能，所以，就可以去验证，而后“精彩而又直接地”驳斥这种荒谬的说法。</p>
+<p>有些时候我们非常依赖工具和技能。在心存狐疑之时，拥有工具掌握技能的人，可以去验证；而没有工具没有技能的人，只能“心有余力不足”。事实上，大多数“力不足”的人“心并无余”，他们甚至不会“心存狐疑”，而是直接“被震惊”、“被惊喜”，“被打动”……直接被这种说法带到坑里去了……</p>
+<p>问题是：“有哪些词按这种算法也等于100？”──而解决方案倒也简单：</p>
+<ul>
+<li>找一个词表（如有必要，就把它转换为文本文件，便于程序阅读）</li>
+<li>逐一计算</li>
+<li>把那些按这种算法计算等于100的词挑出来</li>
+</ul>
+<p>刚开始的时候，其实没必要一定要先去找个词表，我只新建了名称为一个“wordlist.txt”的文件，其中只有以下几行内容：</p>
+<blockquote><p>Hardwork<br />
+Attitude<br />
+Knowledge<br />
+Success<br />
+Anything</p></blockquote>
+<p>而后我们就可以写这样的代码处理这个文本文件中的每一行：</p>
+
+<div class="wp_syntax"><table><tr><td class="code"><pre class="autoit" style="font-family:monospace;"><span style="font-weight: bold; color: #AA0000;">$file</span> <span style="color: #FF0000; font-weight: bold;">=</span> <span style="color: #000080; font-style: italic; font-weight: bold;">FileOpen</span><span style="color: #FF0000; font-weight: bold;">&#40;</span><span style="font-weight: bold; color: #9977BB;">&quot;wordlist.txt&quot;</span><span style="color: #FF0000; font-weight: bold;">,</span> <span style="color: #AC00A9; font-style: italic; font-weight: bold;">0</span><span style="color: #FF0000; font-weight: bold;">&#41;</span>
+<span style="color: #0000FF; font-weight: bold;">While</span> <span style="color: #AC00A9; font-style: italic; font-weight: bold;">1</span>
+	<span style="font-weight: bold; color: #AA0000;">$line</span> <span style="color: #FF0000; font-weight: bold;">=</span> <span style="color: #000080; font-style: italic; font-weight: bold;">FileReadLine</span><span style="color: #FF0000; font-weight: bold;">&#40;</span><span style="font-weight: bold; color: #AA0000;">$file</span><span style="color: #FF0000; font-weight: bold;">&#41;</span>
+	<span style="color: #0000FF; font-weight: bold;">If</span> <span style="color: #800000; font-weight: bold;"><span style="font-weight: bold; color: #AA0000;">@error</span></span> <span style="color: #FF0000; font-weight: bold;">=</span> <span style="color: #FF0000; font-weight: bold;">-</span><span style="color: #AC00A9; font-style: italic; font-weight: bold;">1</span> <span style="color: #0000FF; font-weight: bold;">Then</span> <span style="color: #0000FF; font-weight: bold;">ExitLoop</span>
+	<span style="font-style: italic; color: #009933;">; test if sum of character values in this word equals to 100, if so, print it to the output...</span>
+<span style="color: #0000FF; font-weight: bold;">WEnd</span>
+<span style="color: #000080; font-style: italic; font-weight: bold;">FileClose</span><span style="color: #FF0000; font-weight: bold;">&#40;</span><span style="font-weight: bold; color: #AA0000;">$file</span><span style="color: #FF0000; font-weight: bold;">&#41;</span></pre></td></tr></table></div>
+
+<p>注意，在AutoIt代码中，分号“;”后面的内容是“注释”，是给代码阅读者看的，AutoIt在执行代码的时候，忽略一切“;”和它后面的内容。注释的写法有若干种，请参阅帮助文档。</p>
+<p>现在的问题是，如何才能计算出一个单词按这种算法等于多少呢？我到AutoIt的帮助文件里翻了翻与字符串（String）相关的函数，看看有没有能够用得上的……当然有，我找到了个<strong>StringSplit()</strong>。它会把一个字符串按照指定的“分隔符”拆分成若干段，而后把这些拆分后的片段按顺序保存在一个数组之中返回……如果分隔符是<strong>空字符</strong>（即，<strong>&#8220;&#8221;</strong>)，那么它就把一个字符串拆分成一个字母一个片段……就是它了！</p>
+<p>大致看了一下帮助文档，而后写了个代码片段测试这个函数：</p>
+
+<div class="wp_syntax"><table><tr><td class="code"><pre class="autoit" style="font-family:monospace;"><span style="color: #F000FF; font-style: italic;">#Include</span>
+<span style="color: #0080FF; font-style: italic; font-weight: bold;">_ArrayDisplay</span><span style="color: #FF0000; font-weight: bold;">&#40;</span><span style="color: #000080; font-style: italic; font-weight: bold;">StringSplit</span><span style="color: #FF0000; font-weight: bold;">&#40;</span><span style="font-weight: bold; color: #9977BB;">&quot;Success&quot;</span><span style="color: #FF0000; font-weight: bold;">,</span> <span style="font-weight: bold; color: #9977BB;">&quot;&quot;</span><span style="color: #FF0000; font-weight: bold;">&#41;</span><span style="color: #FF0000; font-weight: bold;">&#41;</span></pre></td></tr></table></div>
+
+<p>结果竟然出错了……仔细看了看出错提示，才发现<strong>_ArrayDisplay()</strong>这个函数第一个参数标明了是<strong>ByRef</strong>的，即，只接受变量作为参数，不接受表达式或函数调用。所以，改了改测试代码：</p>
+
+<div class="wp_syntax"><table><tr><td class="code"><pre class="autoit" style="font-family:monospace;"><span style="color: #F000FF; font-style: italic;">#Include</span>
+<span style="font-weight: bold; color: #AA0000;">$a</span> <span style="color: #FF0000; font-weight: bold;">=</span> <span style="color: #000080; font-style: italic; font-weight: bold;">StringSplit</span><span style="color: #FF0000; font-weight: bold;">&#40;</span><span style="font-weight: bold; color: #9977BB;">&quot;Success&quot;</span><span style="color: #FF0000; font-weight: bold;">,</span> <span style="font-weight: bold; color: #9977BB;">&quot;&quot;</span><span style="color: #FF0000; font-weight: bold;">&#41;</span>
+<span style="color: #0080FF; font-style: italic; font-weight: bold;">_ArrayDisplay</span><span style="color: #FF0000; font-weight: bold;">&#40;</span><span style="font-weight: bold; color: #AA0000;">$a</span><span style="color: #FF0000; font-weight: bold;">&#41;</span></pre></td></tr></table></div>
+
+<p>运行结果如下：</p>
+<p><img class="aligncenter size-full wp-image-9265" title="ch09-01" src="/web/20130817203610im_/http://wordpress.lixiaolai.com/wp-content/uploads/2010/05/ch09-01.png" alt="" width="250" height="214" /></p>
+<p>看懂了，原来StringSplit()返回的是一个这样的数组：$a[0]之中保存的是“分割后片段的个数”（即，Success这个字符串总计7个字母），而后的元素则为每一个字母……</p>
+<p>现在的问题是，如何让a=1，b=2&#8230; c=26呢？</p>
+<p>在AutoIt帮助文件的Variables and Conversion章节中，找到一个函数<strong>Asc()</strong>。这个函数返回一个字符对应的ASCII代码。例如：</p>
+<blockquote><p>Asc(&#8220;0&#8243;) == 48, Asc(&#8220;9&#8243;) == 57, Asc(&#8220;A&#8221;) == 65, Asc(&#8220;Z&#8221;) == 90, Asc(&#8220;a&#8221;) == 97, Asc(&#8220;z&#8221;) == 122</p></blockquote>
+<p>所以，Asc(&#8220;a&#8221;) == 97 、 Asc(&#8220;b&#8221;) == 98 &#8230; 于是，只要用这个函数的返回值再减去96就可以得到1、2、&#8230;26这些数值了。不过，还有个问题，大小写字母的值不一样，Asc(&#8220;A&#8221;) == 65，而Asc(&#8220;a&#8221;) == 97……再去看看跟String相关的函数，找到一个<strong>StringLower()</strong>──我们可以先用它把一个词中的字符全部转换为小写，而后再进行计算……</p>
+<p>现在我们可以写出（或起码能够完全理解）以下的代码了：</p>
+
+<div class="wp_syntax"><table><tr><td class="code"><pre class="autoit" style="font-family:monospace;"><span style="font-weight: bold; color: #AA0000;">$file</span> <span style="color: #FF0000; font-weight: bold;">=</span> <span style="color: #000080; font-style: italic; font-weight: bold;">FileOpen</span><span style="color: #FF0000; font-weight: bold;">&#40;</span><span style="font-weight: bold; color: #9977BB;">&quot;wordlist.txt&quot;</span><span style="color: #FF0000; font-weight: bold;">,</span> <span style="color: #AC00A9; font-style: italic; font-weight: bold;">0</span><span style="color: #FF0000; font-weight: bold;">&#41;</span>
+<span style="color: #0000FF; font-weight: bold;">While</span> <span style="color: #AC00A9; font-style: italic; font-weight: bold;">1</span>
+	<span style="font-weight: bold; color: #AA0000;">$line</span> <span style="color: #FF0000; font-weight: bold;">=</span> <span style="color: #000080; font-style: italic; font-weight: bold;">FileReadLine</span><span style="color: #FF0000; font-weight: bold;">&#40;</span><span style="font-weight: bold; color: #AA0000;">$file</span><span style="color: #FF0000; font-weight: bold;">&#41;</span>
+	<span style="color: #0000FF; font-weight: bold;">If</span> <span style="color: #800000; font-weight: bold;"><span style="font-weight: bold; color: #AA0000;">@error</span></span> <span style="color: #FF0000; font-weight: bold;">=</span> <span style="color: #FF0000; font-weight: bold;">-</span><span style="color: #AC00A9; font-style: italic; font-weight: bold;">1</span> <span style="color: #0000FF; font-weight: bold;">Then</span> <span style="color: #0000FF; font-weight: bold;">ExitLoop</span>
+	<span style="font-style: italic; color: #009933;">; test if sum of character values in this word equals to 100, if so, print it to the output...</span>
+	<span style="font-weight: bold; color: #AA0000;">$wordLowerCase</span> <span style="color: #FF0000; font-weight: bold;">=</span> <span style="color: #000080; font-style: italic; font-weight: bold;">StringLower</span><span style="color: #FF0000; font-weight: bold;">&#40;</span><span style="font-weight: bold; color: #AA0000;">$line</span><span style="color: #FF0000; font-weight: bold;">&#41;</span>
+	<span style="font-weight: bold; color: #AA0000;">$Characters</span> <span style="color: #FF0000; font-weight: bold;">=</span> <span style="color: #000080; font-style: italic; font-weight: bold;">StringSplit</span><span style="color: #FF0000; font-weight: bold;">&#40;</span><span style="font-weight: bold; color: #AA0000;">$wordLowerCase</span><span style="color: #FF0000; font-weight: bold;">,</span> <span style="font-weight: bold; color: #9977BB;">&quot;&quot;</span><span style="color: #FF0000; font-weight: bold;">&#41;</span>
+	<span style="font-weight: bold; color: #AA0000;">$sum</span> <span style="color: #FF0000; font-weight: bold;">=</span> <span style="color: #AC00A9; font-style: italic; font-weight: bold;">0</span>
+	<span style="color: #0000FF; font-weight: bold;">For</span> <span style="font-weight: bold; color: #AA0000;">$i</span> <span style="color: #FF0000; font-weight: bold;">=</span> <span style="color: #AC00A9; font-style: italic; font-weight: bold;">1</span> <span style="color: #0000FF; font-weight: bold;">To</span> <span style="font-weight: bold; color: #AA0000;">$characters</span><span style="color: #FF0000; font-weight: bold;">&#91;</span><span style="color: #AC00A9; font-style: italic; font-weight: bold;">0</span><span style="color: #FF0000; font-weight: bold;">&#93;</span>
+		<span style="font-weight: bold; color: #AA0000;">$sum</span> <span style="color: #FF0000; font-weight: bold;">=</span> <span style="font-weight: bold; color: #AA0000;">$sum</span> <span style="color: #FF0000; font-weight: bold;">+</span> <span style="color: #000080; font-style: italic; font-weight: bold;">Asc</span><span style="color: #FF0000; font-weight: bold;">&#40;</span><span style="font-weight: bold; color: #AA0000;">$characters</span><span style="color: #FF0000; font-weight: bold;">&#91;</span><span style="font-weight: bold; color: #AA0000;">$i</span><span style="color: #FF0000; font-weight: bold;">&#93;</span><span style="color: #FF0000; font-weight: bold;">&#41;</span> <span style="color: #FF0000; font-weight: bold;">-</span> <span style="color: #AC00A9; font-style: italic; font-weight: bold;">96</span>
+	<span style="color: #0000FF; font-weight: bold;">Next</span>
+	<span style="color: #000080; font-style: italic; font-weight: bold;">MsgBox</span><span style="color: #FF0000; font-weight: bold;">&#40;</span><span style="color: #AC00A9; font-style: italic; font-weight: bold;">0</span><span style="color: #FF0000; font-weight: bold;">,</span> <span style="font-weight: bold; color: #AA0000;">$line</span><span style="color: #FF0000; font-weight: bold;">,</span> <span style="font-weight: bold; color: #AA0000;">$sum</span><span style="color: #FF0000; font-weight: bold;">&#41;</span>
+<span style="color: #0000FF; font-weight: bold;">WEnd</span></pre></td></tr></table></div>
+
+<p><img class="aligncenter size-full wp-image-9270" title="ch09-02" src="/web/20130817203610im_/http://wordpress.lixiaolai.com/wp-content/uploads/2010/05/ch09-02.png" alt="" width="104" height="100" /></p>
+<p>仔细看看，就会发现“计算总和”的过程是可以被独立出来的，那还不如把它写成一个函数，将来可以随意调用呢：</p>
+
+<div class="wp_syntax"><table><tr><td class="code"><pre class="autoit" style="font-family:monospace;"><span style="font-weight: bold; color: #AA0000;">$file</span> <span style="color: #FF0000; font-weight: bold;">=</span> <span style="color: #000080; font-style: italic; font-weight: bold;">FileOpen</span><span style="color: #FF0000; font-weight: bold;">&#40;</span><span style="font-weight: bold; color: #9977BB;">&quot;wordlist.txt&quot;</span><span style="color: #FF0000; font-weight: bold;">,</span> <span style="color: #AC00A9; font-style: italic; font-weight: bold;">0</span><span style="color: #FF0000; font-weight: bold;">&#41;</span>
+<span style="color: #0000FF; font-weight: bold;">While</span> <span style="color: #AC00A9; font-style: italic; font-weight: bold;">1</span>
+	<span style="font-weight: bold; color: #AA0000;">$line</span> <span style="color: #FF0000; font-weight: bold;">=</span> <span style="color: #000080; font-style: italic; font-weight: bold;">FileReadLine</span><span style="color: #FF0000; font-weight: bold;">&#40;</span><span style="font-weight: bold; color: #AA0000;">$file</span><span style="color: #FF0000; font-weight: bold;">&#41;</span>
+	<span style="color: #0000FF; font-weight: bold;">If</span> <span style="color: #800000; font-weight: bold;"><span style="font-weight: bold; color: #AA0000;">@error</span></span> <span style="color: #FF0000; font-weight: bold;">=</span> <span style="color: #FF0000; font-weight: bold;">-</span><span style="color: #AC00A9; font-style: italic; font-weight: bold;">1</span> <span style="color: #0000FF; font-weight: bold;">Then</span> <span style="color: #0000FF; font-weight: bold;">ExitLoop</span>
+	<span style="font-style: italic; color: #009933;">; test if sum of character values in this word equals to 100, if so, print it to the output...</span>
+	<span style="font-weight: bold; color: #AA0000;">$sum</span> <span style="color: #FF0000; font-weight: bold;">=</span> AddUpCharactersInWordAsNumber<span style="color: #FF0000; font-weight: bold;">&#40;</span><span style="font-weight: bold; color: #AA0000;">$line</span><span style="color: #FF0000; font-weight: bold;">&#41;</span>
+	<span style="color: #000080; font-style: italic; font-weight: bold;">MsgBox</span><span style="color: #FF0000; font-weight: bold;">&#40;</span><span style="color: #AC00A9; font-style: italic; font-weight: bold;">0</span><span style="color: #FF0000; font-weight: bold;">,</span> <span style="font-weight: bold; color: #AA0000;">$line</span><span style="color: #FF0000; font-weight: bold;">,</span> <span style="font-weight: bold; color: #AA0000;">$sum</span><span style="color: #FF0000; font-weight: bold;">&#41;</span>
+<span style="color: #0000FF; font-weight: bold;">WEnd</span>
+&nbsp;
+<span style="color: #0000FF; font-weight: bold;">Func</span> AddUpCharactersInWordAsNumber<span style="color: #FF0000; font-weight: bold;">&#40;</span><span style="font-weight: bold; color: #AA0000;">$word</span><span style="color: #FF0000; font-weight: bold;">&#41;</span>
+	<span style="font-weight: bold; color: #AA0000;">$wordLowerCase</span> <span style="color: #FF0000; font-weight: bold;">=</span> <span style="color: #000080; font-style: italic; font-weight: bold;">StringLower</span><span style="color: #FF0000; font-weight: bold;">&#40;</span><span style="font-weight: bold; color: #AA0000;">$word</span><span style="color: #FF0000; font-weight: bold;">&#41;</span>
+	<span style="font-weight: bold; color: #AA0000;">$Characters</span> <span style="color: #FF0000; font-weight: bold;">=</span> <span style="color: #000080; font-style: italic; font-weight: bold;">StringSplit</span><span style="color: #FF0000; font-weight: bold;">&#40;</span><span style="font-weight: bold; color: #AA0000;">$wordLowerCase</span><span style="color: #FF0000; font-weight: bold;">,</span> <span style="font-weight: bold; color: #9977BB;">&quot;&quot;</span><span style="color: #FF0000; font-weight: bold;">&#41;</span>
+	<span style="font-weight: bold; color: #AA0000;">$count</span> <span style="color: #FF0000; font-weight: bold;">=</span> <span style="color: #AC00A9; font-style: italic; font-weight: bold;">0</span>
+	<span style="color: #0000FF; font-weight: bold;">For</span> <span style="font-weight: bold; color: #AA0000;">$i</span> <span style="color: #FF0000; font-weight: bold;">=</span> <span style="color: #AC00A9; font-style: italic; font-weight: bold;">1</span> <span style="color: #0000FF; font-weight: bold;">To</span> <span style="font-weight: bold; color: #AA0000;">$Characters</span><span style="color: #FF0000; font-weight: bold;">&#91;</span><span style="color: #AC00A9; font-style: italic; font-weight: bold;">0</span><span style="color: #FF0000; font-weight: bold;">&#93;</span>
+		<span style="font-weight: bold; color: #AA0000;">$count</span> <span style="color: #FF0000; font-weight: bold;">=</span> <span style="font-weight: bold; color: #AA0000;">$count</span> <span style="color: #FF0000; font-weight: bold;">+</span> <span style="color: #000080; font-style: italic; font-weight: bold;">Asc</span><span style="color: #FF0000; font-weight: bold;">&#40;</span><span style="font-weight: bold; color: #AA0000;">$Characters</span><span style="color: #FF0000; font-weight: bold;">&#91;</span><span style="font-weight: bold; color: #AA0000;">$i</span><span style="color: #FF0000; font-weight: bold;">&#93;</span><span style="color: #FF0000; font-weight: bold;">&#41;</span> <span style="color: #FF0000; font-weight: bold;">-</span> <span style="color: #AC00A9; font-style: italic; font-weight: bold;">96</span>
+	<span style="color: #0000FF; font-weight: bold;">Next</span>
+	<span style="color: #0000FF; font-weight: bold;">Return</span> <span style="font-weight: bold; color: #AA0000;">$count</span>
+<span style="color: #0000FF; font-weight: bold;">EndFunc</span></pre></td></tr></table></div>
+
+<p>如此这般之后，我们可以去找一个很全的英文词汇表去测试了。我到网上Google了一下“<a href="/web/20130817203610/http://is.gd/bRBEg" target="_blank">BNC Frequency Word List</a>”，很快在kilgarriff.co.uk这个网站上找到一个词汇表，“<a href="/web/20130817203610/http://www.kilgarriff.co.uk/BNClists/lemma.al" target="_blank">lemma.al</a>”。网站上有这个词表的格式说明：</p>
+<blockquote><p>The format for the list is:</p>
+<pre>        sort-order, frequency, word, word-class</pre>
+<p>and a sample from the top of the alphabetically-ordered list is:</p>
+<pre>	5 2186369 a det
+	2107 4249 abandon v
+	5204 1110 abbey n
+	966 10468 ability n
+	321 30454 able a</pre>
+</blockquote>
+<p>这个比较好办，就用我们刚刚用过的StringSplit()函数，用一个空格（&#8221; &#8220;）作为分隔符，就能把每一行中的“word”提取出来，然后在调用我们刚写过的AddUpCharactersInWordAsNumber()函数就可以算出数值……</p>
+<p>然后，程序就变成了这个样子：</p>
+
+<div class="wp_syntax"><table><tr><td class="code"><pre class="autoit" style="font-family:monospace;"><span style="color: #000080; font-style: italic; font-weight: bold;">InetGet</span><span style="color: #FF0000; font-weight: bold;">&#40;</span><span style="font-weight: bold; color: #9977BB;">&quot;http://www.kilgarriff.co.uk/BNClists/lemma.al&quot;</span><span style="color: #FF0000; font-weight: bold;">,</span> <span style="font-weight: bold; color: #9977BB;">&quot;lemma.al&quot;</span><span style="color: #FF0000; font-weight: bold;">,</span> <span style="color: #AC00A9; font-style: italic; font-weight: bold;">0</span><span style="color: #FF0000; font-weight: bold;">&#41;</span>
+&nbsp;
+<span style="font-weight: bold; color: #AA0000;">$file</span> <span style="color: #FF0000; font-weight: bold;">=</span> <span style="color: #000080; font-style: italic; font-weight: bold;">FileOpen</span><span style="color: #FF0000; font-weight: bold;">&#40;</span><span style="font-weight: bold; color: #9977BB;">&quot;lemma.al&quot;</span><span style="color: #FF0000; font-weight: bold;">,</span> <span style="color: #AC00A9; font-style: italic; font-weight: bold;">0</span><span style="color: #FF0000; font-weight: bold;">&#41;</span>
+<span style="color: #0000FF; font-weight: bold;">While</span> <span style="color: #AC00A9; font-style: italic; font-weight: bold;">1</span>
+	<span style="font-weight: bold; color: #AA0000;">$line</span> <span style="color: #FF0000; font-weight: bold;">=</span> <span style="color: #000080; font-style: italic; font-weight: bold;">FileReadLine</span><span style="color: #FF0000; font-weight: bold;">&#40;</span><span style="font-weight: bold; color: #AA0000;">$file</span><span style="color: #FF0000; font-weight: bold;">&#41;</span>
+	<span style="color: #0000FF; font-weight: bold;">If</span> <span style="color: #800000; font-weight: bold;"><span style="font-weight: bold; color: #AA0000;">@error</span></span> <span style="color: #FF0000; font-weight: bold;">=</span> <span style="color: #FF0000; font-weight: bold;">-</span><span style="color: #AC00A9; font-style: italic; font-weight: bold;">1</span> <span style="color: #0000FF; font-weight: bold;">Then</span> <span style="color: #0000FF; font-weight: bold;">ExitLoop</span>
+	<span style="font-weight: bold; color: #AA0000;">$lineElements</span> <span style="color: #FF0000; font-weight: bold;">=</span> <span style="color: #000080; font-style: italic; font-weight: bold;">StringSplit</span><span style="color: #FF0000; font-weight: bold;">&#40;</span><span style="font-weight: bold; color: #AA0000;">$line</span><span style="color: #FF0000; font-weight: bold;">,</span> <span style="font-weight: bold; color: #9977BB;">&quot; &quot;</span><span style="color: #FF0000; font-weight: bold;">&#41;</span>
+	<span style="color: #0000FF; font-weight: bold;">If</span> AddUpCharactersInWordAsNumber<span style="color: #FF0000; font-weight: bold;">&#40;</span><span style="font-weight: bold; color: #AA0000;">$lineElements</span><span style="color: #FF0000; font-weight: bold;">&#91;</span><span style="color: #AC00A9; font-style: italic; font-weight: bold;">3</span><span style="color: #FF0000; font-weight: bold;">&#93;</span><span style="color: #FF0000; font-weight: bold;">&#41;</span> <span style="color: #FF0000; font-weight: bold;">==</span> <span style="color: #AC00A9; font-style: italic; font-weight: bold;">100</span> <span style="color: #0000FF; font-weight: bold;">Then</span>
+		<span style="color: #000080; font-style: italic; font-weight: bold;">ConsoleWrite</span><span style="color: #FF0000; font-weight: bold;">&#40;</span><span style="font-weight: bold; color: #AA0000;">$lineElements</span><span style="color: #FF0000; font-weight: bold;">&#91;</span><span style="color: #AC00A9; font-style: italic; font-weight: bold;">3</span><span style="color: #FF0000; font-weight: bold;">&#93;</span> <span style="color: #FF0000; font-weight: bold;">&amp;</span> <span style="color: #800000; font-weight: bold;"><span style="font-weight: bold; color: #AA0000;">@CRLF</span></span><span style="color: #FF0000; font-weight: bold;">&#41;</span>
+	<span style="color: #0000FF; font-weight: bold;">EndIf</span>
+<span style="color: #0000FF; font-weight: bold;">WEnd</span>
+<span style="color: #000080; font-style: italic; font-weight: bold;">FileClose</span><span style="color: #FF0000; font-weight: bold;">&#40;</span><span style="font-weight: bold; color: #AA0000;">$file</span><span style="color: #FF0000; font-weight: bold;">&#41;</span>
+&nbsp;
+<span style="color: #000080; font-style: italic; font-weight: bold;">MsgBox</span><span style="color: #FF0000; font-weight: bold;">&#40;</span><span style="color: #AC00A9; font-style: italic; font-weight: bold;">0</span><span style="color: #FF0000; font-weight: bold;">,</span> <span style="font-weight: bold; color: #9977BB;">&quot;&quot;</span><span style="color: #FF0000; font-weight: bold;">,</span> <span style="font-weight: bold; color: #9977BB;">&quot;Finished!&quot;</span><span style="color: #FF0000; font-weight: bold;">&#41;</span>
+&nbsp;
+<span style="color: #0000FF; font-weight: bold;">Func</span> AddUpCharactersInWordAsNumber<span style="color: #FF0000; font-weight: bold;">&#40;</span><span style="font-weight: bold; color: #AA0000;">$word</span><span style="color: #FF0000; font-weight: bold;">&#41;</span>
+	<span style="font-weight: bold; color: #AA0000;">$wordLowerCase</span> <span style="color: #FF0000; font-weight: bold;">=</span> <span style="color: #000080; font-style: italic; font-weight: bold;">StringLower</span><span style="color: #FF0000; font-weight: bold;">&#40;</span><span style="font-weight: bold; color: #AA0000;">$word</span><span style="color: #FF0000; font-weight: bold;">&#41;</span>
+	<span style="font-weight: bold; color: #AA0000;">$Characters</span> <span style="color: #FF0000; font-weight: bold;">=</span> <span style="color: #000080; font-style: italic; font-weight: bold;">StringSplit</span><span style="color: #FF0000; font-weight: bold;">&#40;</span><span style="font-weight: bold; color: #AA0000;">$wordLowerCase</span><span style="color: #FF0000; font-weight: bold;">,</span> <span style="font-weight: bold; color: #9977BB;">&quot;&quot;</span><span style="color: #FF0000; font-weight: bold;">&#41;</span>
+	<span style="font-weight: bold; color: #AA0000;">$count</span> <span style="color: #FF0000; font-weight: bold;">=</span> <span style="color: #AC00A9; font-style: italic; font-weight: bold;">0</span>
+	<span style="color: #0000FF; font-weight: bold;">For</span> <span style="font-weight: bold; color: #AA0000;">$i</span> <span style="color: #FF0000; font-weight: bold;">=</span> <span style="color: #AC00A9; font-style: italic; font-weight: bold;">1</span> <span style="color: #0000FF; font-weight: bold;">To</span> <span style="font-weight: bold; color: #AA0000;">$Characters</span><span style="color: #FF0000; font-weight: bold;">&#91;</span><span style="color: #AC00A9; font-style: italic; font-weight: bold;">0</span><span style="color: #FF0000; font-weight: bold;">&#93;</span>
+		<span style="font-weight: bold; color: #AA0000;">$count</span> <span style="color: #FF0000; font-weight: bold;">=</span> <span style="font-weight: bold; color: #AA0000;">$count</span> <span style="color: #FF0000; font-weight: bold;">+</span> <span style="color: #000080; font-style: italic; font-weight: bold;">Asc</span><span style="color: #FF0000; font-weight: bold;">&#40;</span><span style="font-weight: bold; color: #AA0000;">$Characters</span><span style="color: #FF0000; font-weight: bold;">&#91;</span><span style="font-weight: bold; color: #AA0000;">$i</span><span style="color: #FF0000; font-weight: bold;">&#93;</span><span style="color: #FF0000; font-weight: bold;">&#41;</span> <span style="color: #FF0000; font-weight: bold;">-</span> <span style="color: #AC00A9; font-style: italic; font-weight: bold;">96</span>
+	<span style="color: #0000FF; font-weight: bold;">Next</span>
+	<span style="color: #0000FF; font-weight: bold;">Return</span> <span style="font-weight: bold; color: #AA0000;">$count</span>
+<span style="color: #0000FF; font-weight: bold;">EndFunc</span></pre></td></tr></table></div>
+
+<p>如果你想把结果都写到一个文本文件之中，可以把第9行的</p>
+
+<div class="wp_syntax"><table><tr><td class="code"><pre class="autoit" style="font-family:monospace;"><span style="color: #000080; font-style: italic; font-weight: bold;">ConsoleWrite</span><span style="color: #FF0000; font-weight: bold;">&#40;</span><span style="font-weight: bold; color: #AA0000;">$lineElements</span><span style="color: #FF0000; font-weight: bold;">&#91;</span><span style="color: #AC00A9; font-style: italic; font-weight: bold;">3</span><span style="color: #FF0000; font-weight: bold;">&#93;</span> <span style="color: #FF0000; font-weight: bold;">&amp;</span> <span style="color: #800000; font-weight: bold;"><span style="font-weight: bold; color: #AA0000;">@CRLF</span></span><span style="color: #FF0000; font-weight: bold;">&#41;</span></pre></td></tr></table></div>
+
+<p>改成</p>
+
+<div class="wp_syntax"><table><tr><td class="code"><pre class="autoit" style="font-family:monospace;"><span style="color: #000080; font-style: italic; font-weight: bold;">FileWriteLine</span><span style="color: #FF0000; font-weight: bold;">&#40;</span><span style="font-weight: bold; color: #9977BB;">&quot;result.txt&quot;</span><span style="color: #FF0000; font-weight: bold;">,</span> <span style="font-weight: bold; color: #AA0000;">$lineElements</span><span style="color: #FF0000; font-weight: bold;">&#91;</span><span style="color: #AC00A9; font-style: italic; font-weight: bold;">3</span><span style="color: #FF0000; font-weight: bold;">&#93;</span><span style="color: #FF0000; font-weight: bold;">&#41;</span></pre></td></tr></table></div>
+
+<p>而<strong>FileWriteLine()</strong>这个函数的用法，当然要参见帮助文档。</p>
+<blockquote><p><strong>作业</strong>：</p>
+<ul>
+<li>把程序里的StringLower()函数换成StringUpper()，并修改其它相应的部分，使其得出正常结果。</li>
+<li>这里有个更长的词表：http://www.kilgarriff.co.uk/BNClists/all.al.gz，下载后解压缩，看看这个词表中有哪些词按这种算法等于100？</li>
+<li>这里还有一个词表：http://www.bckelk.ukfsn.org/words/wlist.zip,下载后解压缩，看看这个词表中有哪些词按这种算法等于100？</li>
+<li>回顾一下之前的所有文章，确保每一行代码都读得懂……</li>
+</ul>
+</blockquote>
+<hr />
+<p><span>Footnotes:</span></p><ol class="footnotes"><li id="footnote_0_9264" class="footnote">当时我用的是<em>Python</em>，现在是在讲解<strong>AutoIt</strong>，所以当然得用AutoIt重写一遍。 [<a href="#identifier_0_9264" class="footnote-link footnote-back-link">&#8617;</a>]</li></ol>				</div>
+			</div>
+
+
+<div id="disqus_thread">
+                    <div id="dsq-content">
+
+
+            <ul id="dsq-comments">
+                    <li class="comment even thread-even depth-1" id="dsq-comment-24108">
+        <div id="dsq-comment-header-24108" class="dsq-comment-header">
+            <cite id="dsq-cite-24108">
+                <span id="dsq-author-user-24108">smy20011</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-24108" class="dsq-comment-body">
+            <div id="dsq-comment-message-24108" class="dsq-comment-message"><p>BEGIN {<br />
+	for (i=0;i&lt;255;++i) a[sprintf(&quot;%c&quot;,i)]=i<br />
+}</p>
+<p>{<br />
+	$3 = tolower($3)<br />
+	c = 0<br />
+	for (i = 1; i &lt;= length($3) ; ++i) c+=a[substr($3,i,1)] &#8211; a[&quot;a&quot;] + 1<br />
+	if (c == 100) print $3<br />
+}<br />
+Awk代码,见效了</p>
+</div>
+        </div>
+    </li>
+
+    <ul class='children'>
+    <li class="comment odd alt depth-2" id="dsq-comment-24109">
+        <div id="dsq-comment-header-24109" class="dsq-comment-header">
+            <cite id="dsq-cite-24109">
+                <span id="dsq-author-user-24109">smy20011</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-24109" class="dsq-comment-body">
+            <div id="dsq-comment-message-24109" class="dsq-comment-message"><p>TAT,应该是见笑了..输入法</p>
+</div>
+        </div>
+    </li>
+
+    <ul class='children'>
+    <li class="comment even depth-3" id="dsq-comment-24112">
+        <div id="dsq-comment-header-24112" class="dsq-comment-header">
+            <cite id="dsq-cite-24112">
+http://www.evernote.com/pub/lwzz/javascript                <span id="dsq-author-user-24112">lwzz</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-24112" class="dsq-comment-body">
+            <div id="dsq-comment-message-24112" class="dsq-comment-message"><p>这段代码让我想起了貌似是和菜头说的笑话，“这段代码1年前只有我和上帝能看懂，现在只有上帝能看懂。”<br />
+笑来的变量名起得通俗易懂。变量名不怕起长了，就怕乱起看起来特痛苦。</p>
+</div>
+        </div>
+    </li>
+
+    <ul class='children'>
+    <li class="comment odd alt depth-4" id="dsq-comment-24113">
+        <div id="dsq-comment-header-24113" class="dsq-comment-header">
+            <cite id="dsq-cite-24113">
+                <span id="dsq-author-user-24113">smy20011</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-24113" class="dsq-comment-body">
+            <div id="dsq-comment-message-24113" class="dsq-comment-message"><p>嘛,我只写过OI的程序..so,悲剧</p>
+</div>
+        </div>
+    </li>
+
+    <ul class='children'>
+    <li class="comment even depth-5" id="dsq-comment-24115">
+        <div id="dsq-comment-header-24115" class="dsq-comment-header">
+            <cite id="dsq-cite-24115">
+http://www.evernote.com/pub/lwzz/javascript                <span id="dsq-author-user-24115">lwzz</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-24115" class="dsq-comment-body">
+            <div id="dsq-comment-message-24115" class="dsq-comment-message"><p>oi是什么？话说$3这种命名方式让我想起汇编里的地址“立即数”。最常见的就是入栈 subl $4 %esp<br />
+不过我是学越南语的文科生，不懂的……</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+    <li class="comment odd alt depth-2" id="dsq-comment-24143">
+        <div id="dsq-comment-header-24143" class="dsq-comment-header">
+            <cite id="dsq-cite-24143">
+                <span id="dsq-author-user-24143">smy20011</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-24143" class="dsq-comment-body">
+            <div id="dsq-comment-message-24143" class="dsq-comment-message"><p>OI是指计算机奥林匹克竞赛,经常是大约100行左右的程序,因此没有什么变量命名的限制。至于$3这个变量名,是指文件按行读入,以空格分界的第三个域。awk中自动做Split 详细的见http://www.linux.gov.cn/shell/awk.htm</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+</ul>
+</li>
+    <li class="comment even thread-odd thread-alt depth-1" id="dsq-comment-24111">
+        <div id="dsq-comment-header-24111" class="dsq-comment-header">
+            <cite id="dsq-cite-24111">
+http://www.evernote.com/pub/lwzz/javascript                <span id="dsq-author-user-24111">lwzz</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-24111" class="dsq-comment-body">
+            <div id="dsq-comment-message-24111" class="dsq-comment-message"><p>我说我猜了一个早上都看不懂那个 =100是代表什么类型的单词呢.原来有典故。</p>
+<p>不过一次性读取效率应该更高些，I/O的操作是挺贵的。比如说用python的时候喜欢用readerlines代替readerline逐次读取，然后再遍历readerlines集合。输出的时候也是如此，喜欢组成个hashtable然后一次性输出。<br />
+看了下帮助好像autoit没有类似的函数库？</p>
+<p>话说回来，脚本开发真的能提高很多开发效率。</p>
+</div>
+        </div>
+    </li>
+
+    <ul class='children'>
+    <li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="dsq-comment-24116">
+        <div id="dsq-comment-header-24116" class="dsq-comment-header">
+            <cite id="dsq-cite-24116">
+                <span id="dsq-author-user-24116">李笑来</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-24116" class="dsq-comment-body">
+            <div id="dsq-comment-message-24116" class="dsq-comment-message"><p>UDF里有个_FileReadToArray()</p>
+</div>
+        </div>
+    </li>
+
+    <ul class='children'>
+    <li class="comment byuser comment-author-admin bypostauthor even depth-3" id="dsq-comment-24117">
+        <div id="dsq-comment-header-24117" class="dsq-comment-header">
+            <cite id="dsq-cite-24117">
+                <span id="dsq-author-user-24117">李笑来</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-24117" class="dsq-comment-body">
+            <div id="dsq-comment-message-24117" class="dsq-comment-message"><p>另，我认识个高手，叫韩磊……韩总大学的时候好像也是文科生学越南语的……</p>
+</div>
+        </div>
+    </li>
+
+    <ul class='children'>
+    <li class="comment odd alt depth-4" id="dsq-comment-24127">
+        <div id="dsq-comment-header-24127" class="dsq-comment-header">
+            <cite id="dsq-cite-24127">
+http://www.evernote.com/pub/lwzz/javascript                <span id="dsq-author-user-24127">lwzz</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-24127" class="dsq-comment-body">
+            <div id="dsq-comment-message-24127" class="dsq-comment-message"><p>恩，几年前在某篇孟岩和韩磊谈面向对象的文章就已知道有此高手。<br />
+我也foxpro入门的，毕业后干了一年多越南语翻译。后来辞职在家边学英语边学编程。开始学了些c#皮毛，接着很认真的研究了javascript一段时间，近来倒着回去夯实基础，由C语言作为媒介，离散数学，数据结构，x0x86汇编。现在再看其他语言已经有了不同理解，csapp真的是一本很好的教材。<br />
+外语和编程有很多的共通点。</p>
+</div>
+        </div>
+    </li>
+
+    <ul class='children'>
+    <li class="comment even depth-5" id="dsq-comment-24129">
+        <div id="dsq-comment-header-24129" class="dsq-comment-header">
+            <cite id="dsq-cite-24129">
+                <span id="dsq-author-user-24129">AthensBird</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-24129" class="dsq-comment-body">
+            <div id="dsq-comment-message-24129" class="dsq-comment-message"><p>外语是文科，大学期间的外语专业应该不上数学课了吧，编程可是理工科的东西，你怎么应付的过来呢？</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment odd alt depth-5" id="dsq-comment-24130">
+        <div id="dsq-comment-header-24130" class="dsq-comment-header">
+            <cite id="dsq-cite-24130">
+                <span id="dsq-author-user-24130">AthensBird</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-24130" class="dsq-comment-body">
+            <div id="dsq-comment-message-24130" class="dsq-comment-message"><p>我也是文科专业毕业的，可是对编程有兴趣，发现有人走过这条路，不禁发问，但愿能从你那里得到稍许经验。</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+    <li class="comment even thread-even depth-1" id="dsq-comment-24123">
+        <div id="dsq-comment-header-24123" class="dsq-comment-header">
+            <cite id="dsq-cite-24123">
+                <span id="dsq-author-user-24123">风吹无声</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-24123" class="dsq-comment-body">
+            <div id="dsq-comment-message-24123" class="dsq-comment-message"><p>笑来老师是怎么查字典的?我怀疑我会成为您说的一辈子不会查字典的人。我一般读完文章，记下不认识的，再一个个查，带入文中匹配词意，然后在小本子记下词义，有经典例句的话再记下，没事讼读。我还把词分成三类，第一类是考试词汇，第二类是我觉得词义很反常的词汇，第三类是平时少见词汇。</p>
+</div>
+        </div>
+    </li>
+
+    <ul class='children'>
+    <li class="comment odd alt depth-2" id="dsq-comment-24124">
+        <div id="dsq-comment-header-24124" class="dsq-comment-header">
+            <cite id="dsq-cite-24124">
+                <span id="dsq-author-user-24124">李笑来</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-24124" class="dsq-comment-body">
+            <div id="dsq-comment-message-24124" class="dsq-comment-message"><p>你这样已经是很仔细的了，加油！</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+</ul>
+</li>
+    <li class="comment even thread-odd thread-alt depth-1" id="dsq-comment-24137">
+        <div id="dsq-comment-header-24137" class="dsq-comment-header">
+            <cite id="dsq-cite-24137">
+                <span id="dsq-author-user-24137">googya</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-24137" class="dsq-comment-body">
+            <div id="dsq-comment-message-24137" class="dsq-comment-message"><p>偶像，绝对的偶像！笑来！</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment odd alt thread-even depth-1" id="dsq-comment-24155">
+        <div id="dsq-comment-header-24155" class="dsq-comment-header">
+            <cite id="dsq-cite-24155">
+http://blog.yuanotes.com                <span id="dsq-author-user-24155">brooklyn</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-24155" class="dsq-comment-body">
+            <div id="dsq-comment-message-24155" class="dsq-comment-message"><p>我一般都用python的，不过看了老师这个，感觉AutoIt也很强大的啊。</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment even thread-odd thread-alt depth-1" id="dsq-comment-29276">
+        <div id="dsq-comment-header-29276" class="dsq-comment-header">
+            <cite id="dsq-cite-29276">
+                <span id="dsq-author-user-29276">AF</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-29276" class="dsq-comment-body">
+            <div id="dsq-comment-message-29276" class="dsq-comment-message"><p>If AddUpCharactersInWordAsNumber($lineElements[3]) == 100<br />
+这个地方为什么传过去的参数是$lineElements[3])，而不是$lineElements[1]呢？？</p>
+</div>
+        </div>
+    </li>
+
+    <ul class='children'>
+    <li class="comment odd alt depth-2" id="dsq-comment-44863">
+        <div id="dsq-comment-header-44863" class="dsq-comment-header">
+            <cite id="dsq-cite-44863">
+                <span id="dsq-author-user-44863">funyi</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-44863" class="dsq-comment-body">
+            <div id="dsq-comment-message-44863" class="dsq-comment-message"><p>看的时候也疑惑了一下，仔细看看，恍然。原来李老师程序中使用 Stringspilt时候 分隔参照是“ ”（空格） 即使用空格分隔网上得到的“单词词频表”。所以第三个分隔出来的元素就是单词。</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+</ul>
+</li>
+    <li class="comment even thread-even depth-1" id="dsq-comment-35000">
+        <div id="dsq-comment-header-35000" class="dsq-comment-header">
+            <cite id="dsq-cite-35000">
+http://www.zackspornlinks.com                <span id="dsq-author-user-35000">free erotic movies</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-35000" class="dsq-comment-body">
+            <div id="dsq-comment-message-35000" class="dsq-comment-message"><p>oxjn drvaz <a href="/web/20130817203610/http://www.zackspornlinks.com/" rel="nofollow">lobstertube</a> awjexu u vx c egi       </p>
+<p>jcqu axbvj [URL=http://www.zackspornlinks.com &#8211; porno[/URL &#8211;  nysjes p pr b wei</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+            </ul>
+
+
+        </div>
+
+    </div>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+    var disqus_url = '/web/20130817203610/http://wordpress.lixiaolai.com/archives/9264.html';
+    var disqus_identifier = '9264 /web/20130817203610/http://www.lixiaolai.com/?p=9264';
+    var disqus_container_id = 'disqus_thread';
+    var disqus_domain = 'disqus.com';
+    var disqus_shortname = 'lixiaolai';
+    var disqus_title = "AutoIt教程：9. 问题、方案与实现";
+        var disqus_config = function () {
+        var config = this; // Access to the config object
+
+        /*
+           All currently supported events:
+            * preData — fires just before we request for initial data
+            * preInit - fires after we get initial data but before we load any dependencies
+            * onInit  - fires when all dependencies are resolved but before dtpl template is rendered
+            * afterRender - fires when template is rendered but before we show it
+            * onReady - everything is done
+         */
+
+        config.callbacks.preData.push(function() {
+            // clear out the container (its filled for SEO/legacy purposes)
+            document.getElementById(disqus_container_id).innerHTML = '';
+        });
+                config.callbacks.onReady.push(function() {
+            // sync comments in the background so we don't block the page
+            var script = document.createElement('script');
+            script.async = true;
+            script.src = '?cf_action=sync_comments&post_id=9264';
+
+            var firstScript = document.getElementsByTagName( "script" )[0];
+            firstScript.parentNode.insertBefore(script, firstScript);
+        });
+                    };
+    var facebookXdReceiverPath = '/web/20130817203610/http://wordpress.lixiaolai.com/wp-content/plugins/disqus-comment-system/xd_receiver.htm';
+/* ]]> */
+</script>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+    var DsqLocal = {
+        'trackbacks': [
+        ],
+        'trackback_url': "/web/20130817203610/http://wordpress.lixiaolai.com\/archives\/9264.html\/trackback"    };
+/* ]]> */
+</script>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript';
+    dsq.async = true;
+        dsq.src = 'http' + '://' + disqus_shortname + '.' + 'disqus.com' + '/embed.js?pname=wordpress&pver=2.73';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+/* ]]> */
+</script>
+					<div class="prev_next post_nav">
+						<p class="previous">Previous post: <a href="/web/20130817203610/http://wordpress.lixiaolai.com/archives/9248.html" rel="prev">AutoIt教程：8. 阅读帮助文件</a></p>
+						<p>Next post: <a href="/web/20130817203610/http://wordpress.lixiaolai.com/archives/10947.html" rel="next">用Secrets修改OS X的未公开设定</a></p>
+					</div>
+		</div>
+
+		<div id="sidebars">
+			<div id="multimedia_box" class="image_box">
+				<div id="image_box">
+<a href="/web/20130817203610/http://www.satoefl.com/sat-og-reading-intro.php?hmsr=lixiaolai.com&amp;hmmd=%E5%B1%95%E7%A4%BA%E5%B9%BF%E5%91%8A&amp;hmpl=%E6%9D%8E%E7%AC%91%E6%9D%A5%E4%B8%AA%E4%BA%BA%E4%B8%BB%E9%A1%B5%E5%B8%B8%E5%B9%B4%E5%B1%95%E7%A4%BA&amp;hmkw=&amp;hmci="><img class="square" src="/web/20130817203610im_/http://wordpress.lixiaolai.com/wp-content/themes/thesis_182/custom/rotator/sat-guide.jpeg" alt="sat-guide.jpeg" /></a>
+				</div>
+			</div>
+			<div id="sidebar_1" class="sidebar">
+				<ul class="sidebar_list">
+<li class="widget widget_archive" id="archives-2"><h3>Archives</h3>		<select name="archive-dropdown" onchange='document.location.href=this.options[this.selectedIndex].value;'> <option value="">Select Month</option> 	<option value='http://wordpress.lixiaolai.com/archives/date/2012/09'> September 2012 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2012/08'> August 2012 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2012/07'> July 2012 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2012/06'> June 2012 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2012/05'> May 2012 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2012/04'> April 2012 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2012/03'> March 2012 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2012/02'> February 2012 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2012/01'> January 2012 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2011/12'> December 2011 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2011/11'> November 2011 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2011/10'> October 2011 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2011/09'> September 2011 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2011/08'> August 2011 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2011/07'> July 2011 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2011/06'> June 2011 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2011/05'> May 2011 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2011/04'> April 2011 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2011/03'> March 2011 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2011/02'> February 2011 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2011/01'> January 2011 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2010/12'> December 2010 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2010/11'> November 2010 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2010/10'> October 2010 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2010/09'> September 2010 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2010/08'> August 2010 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2010/07'> July 2010 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2010/06'> June 2010 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2010/05'> May 2010 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2010/04'> April 2010 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2010/03'> March 2010 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2010/02'> February 2010 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2010/01'> January 2010 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2009/12'> December 2009 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2009/11'> November 2009 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2009/10'> October 2009 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2009/09'> September 2009 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2009/08'> August 2009 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2009/07'> July 2009 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2009/06'> June 2009 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2009/05'> May 2009 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2009/04'> April 2009 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2009/03'> March 2009 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2009/02'> February 2009 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2009/01'> January 2009 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2008/12'> December 2008 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2008/11'> November 2008 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2008/10'> October 2008 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2008/09'> September 2008 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2008/08'> August 2008 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2008/07'> July 2008 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2008/06'> June 2008 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2008/05'> May 2008 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2008/04'> April 2008 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2008/03'> March 2008 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2008/02'> February 2008 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2008/01'> January 2008 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2007/12'> December 2007 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2007/11'> November 2007 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2007/10'> October 2007 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2007/09'> September 2007 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2007/08'> August 2007 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2007/07'> July 2007 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2007/06'> June 2007 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2007/05'> May 2007 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2007/04'> April 2007 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2007/03'> March 2007 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2007/02'> February 2007 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2007/01'> January 2007 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2006/12'> December 2006 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2006/11'> November 2006 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2006/10'> October 2006 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2006/06'> June 2006 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2006/05'> May 2006 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2000/01'> January 2000 </option>
+ </select>
+</li><li class="widget widget_collapscat" id="collapscat-3"><h3>Categories</h3><ul id='widget-collapscat-3-top' class='collapsing categories list'>
+      <li class='collapsing categories item'><a href='/web/20130817203610/http://wordpress.lixiaolai.com/archives/category/applying-stackexchange-com' title="View all posts filed under applying.stackexchange.com">applying.stackexchange.com</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130817203610/http://wordpress.lixiaolai.com/archives/category/daily' title="View all posts filed under Daily">Daily</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130817203610/http://wordpress.lixiaolai.com/archives/category/dont-buy-bullshits' title="View all posts filed under Don&#8217;t buy bullshits">Don&#8217;t buy bullshits</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130817203610/http://wordpress.lixiaolai.com/archives/category/faq-sets' title="View all posts filed under FAQ问答集">FAQ问答集</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130817203610/http://wordpress.lixiaolai.com/archives/category/gmat-prep' title="View all posts filed under GMAT考试准备">GMAT考试准备</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130817203610/http://wordpress.lixiaolai.com/archives/category/uncategorized' title="View all posts filed under uncategorized">uncategorized</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130817203610/http://wordpress.lixiaolai.com/archives/category/video-and-audio' title="View all posts filed under Video and Audio">Video and Audio</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130817203610/http://wordpress.lixiaolai.com/archives/category/%e4%b8%80%e5%88%86%e9%92%9f%e6%94%b9%e5%8f%98%e7%94%9f%e6%b4%bb-%e6%88%91%e6%98%af%e8%b0%81%ef%bc%9f-in-chinese' title="View all posts filed under 一分钟改变生活——我是谁？">一分钟改变生活——我是谁？</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130817203610/http://wordpress.lixiaolai.com/archives/category/books-that-should-not-be-missed' title="View all posts filed under 书——不得不看">书——不得不看</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130817203610/http://wordpress.lixiaolai.com/archives/category/people' title="View all posts filed under 人物">人物</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130817203610/http://wordpress.lixiaolai.com/archives/category/readings-for-writing' title="View all posts filed under 作文素材">作文素材</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130817203610/http://wordpress.lixiaolai.com/archives/category/clear-writing' title="View all posts filed under 写清楚（系列）">写清楚（系列）</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130817203610/http://wordpress.lixiaolai.com/archives/category/learning-learning-to-learn-better' title="View all posts filed under 学习学习再学习">学习学习再学习</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130817203610/http://wordpress.lixiaolai.com/archives/category/versatile' title="View all posts filed under 强人高手">强人高手</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130817203610/http://wordpress.lixiaolai.com/archives/category/thinking-tools' title="View all posts filed under 思维工具">思维工具</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130817203610/http://wordpress.lixiaolai.com/archives/category/thinking-clearly-series' title="View all posts filed under 想明白（系列）">想明白（系列）</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130817203610/http://wordpress.lixiaolai.com/archives/category/response-to-readers' title="View all posts filed under 我要问笑来">我要问笑来</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130817203610/http://wordpress.lixiaolai.com/archives/category/finding-examples' title="View all posts filed under 找例子玩">找例子玩</a>      </li> <!-- ending category -->
+      <li class='collapsing categories expandable'><span class='collapsing categories expand'><span class='sym'>&#x25BA;</span></span><a href='/web/20130817203610/http://wordpress.lixiaolai.com/archives/category/time-as-a-friend' title="View all posts filed under 把时间当作朋友">把时间当作朋友</a>
+     <div id='collapsCat-17:3' style="display:none">
+<ul><li class='collapsing categories item'><a href='/web/20130817203610/http://wordpress.lixiaolai.com/archives/category/time-as-a-friend/time-as-a-friend-3rd-edition' title="View all posts filed under 《把时间当作朋友》第三版">《把时间当作朋友》第三版</a>         </li> <!-- ending subcategory -->
+</ul>        </div>
+      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130817203610/http://wordpress.lixiaolai.com/archives/category/public-speaking-skills-for-everyone' title="View all posts filed under 普通人的当众讲话技能">普通人的当众讲话技能</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130817203610/http://wordpress.lixiaolai.com/archives/category/things-better-learned-before-getting-a-job' title="View all posts filed under 求职前最好学会的那些事儿">求职前最好学会的那些事儿</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130817203610/http://wordpress.lixiaolai.com/archives/category/qa-for-application' title="View all posts filed under 留学问答">留学问答</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130817203610/http://wordpress.lixiaolai.com/archives/category/movie-time' title="View all posts filed under 看看电影">看看电影</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130817203610/http://wordpress.lixiaolai.com/archives/category/marvelous-brain' title="View all posts filed under 神奇的大脑">神奇的大脑</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130817203610/http://wordpress.lixiaolai.com/archives/category/temp-list' title="View all posts filed under 算是流水帐">算是流水帐</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130817203610/http://wordpress.lixiaolai.com/archives/category/diabetes-common-knowledge' title="View all posts filed under 糖尿病常识">糖尿病常识</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130817203610/http://wordpress.lixiaolai.com/archives/category/us-universities-and-colleges' title="View all posts filed under 美国大学">美国大学</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130817203610/http://wordpress.lixiaolai.com/archives/category/%e7%be%8e%e5%9b%bd%e5%a4%a7%e5%ad%a6%e6%9c%ac%e7%a7%91%e7%94%b3%e8%af%b7diy%e7%ae%80%e6%98%8e%e6%8c%87%e5%8d%97' title="View all posts filed under 美国大学本科申请DIY简明指南">美国大学本科申请DIY简明指南</a>      </li> <!-- ending category -->
+      <li class='collapsing categories expandable'><span class='collapsing categories expand'><span class='sym'>&#x25BA;</span></span><a href='/web/20130817203610/http://wordpress.lixiaolai.com/archives/category/english-learning' title="View all posts filed under 英语相关文章">英语相关文章</a>
+     <div id='collapsCat-3:3' style="display:none">
+<ul><li class='collapsing categories item'><a href='/web/20130817203610/http://wordpress.lixiaolai.com/archives/category/english-learning/1800-hours' title="View all posts filed under 1800小时 &#8211; 高中两年慢跑冲进美国名校">1800小时 &#8211; 高中两年慢跑冲进美国名校</a>         </li> <!-- ending subcategory -->
+<li class='collapsing categories item'><a href='/web/20130817203610/http://wordpress.lixiaolai.com/archives/category/english-learning/awa-basic-instruction' title="View all posts filed under AWA（GRE/GMAT写作）考试简明教程">AWA（GRE/GMAT写作）考试简明教程</a>         </li> <!-- ending subcategory -->
+<li class='collapsing categories item'><a href='/web/20130817203610/http://wordpress.lixiaolai.com/archives/category/english-learning/toefl-ibt-qualified-samples-for-ets-official-185-topic-pool' title="View all posts filed under TOEFL iBT 高分作文">TOEFL iBT 高分作文</a>         </li> <!-- ending subcategory -->
+<li class='collapsing categories item'><a href='/web/20130817203610/http://wordpress.lixiaolai.com/archives/category/english-learning/master-toefl-essential-vocabulary-in-21-days' title="View all posts filed under TOEFL核心词汇21天突破">TOEFL核心词汇21天突破</a>         </li> <!-- ending subcategory -->
+<li class='collapsing categories item'><a href='/web/20130817203610/http://wordpress.lixiaolai.com/archives/category/english-learning/everyone-can-use-english' title="View all posts filed under 人人都能用英语">人人都能用英语</a>         </li> <!-- ending subcategory -->
+<li class='collapsing categories item'><a href='/web/20130817203610/http://wordpress.lixiaolai.com/archives/category/english-learning/how-to-accelerate-reading-speed' title="View all posts filed under 如何提高阅读速度">如何提高阅读速度</a>         </li> <!-- ending subcategory -->
+<li class='collapsing categories item'><a href='/web/20130817203610/http://wordpress.lixiaolai.com/archives/category/english-learning/toefl-listening-and-speaking' title="View all posts filed under 托福听说训练">托福听说训练</a>         </li> <!-- ending subcategory -->
+<li class='collapsing categories item'><a href='/web/20130817203610/http://wordpress.lixiaolai.com/archives/category/english-learning/toefl-ibt-topic-vocabulary' title="View all posts filed under 新托福iBT词汇分类突破">新托福iBT词汇分类突破</a>         </li> <!-- ending subcategory -->
+<li class='collapsing categories item'><a href='/web/20130817203610/http://wordpress.lixiaolai.com/archives/category/english-learning/toefl-vocabulary-classification' title="View all posts filed under 新托福词汇分类突破">新托福词汇分类突破</a>         </li> <!-- ending subcategory -->
+<li class='collapsing categories item'><a href='/web/20130817203610/http://wordpress.lixiaolai.com/archives/category/english-learning/test-preparation' title="View all posts filed under 留学考试准备">留学考试准备</a>         </li> <!-- ending subcategory -->
+<li class='collapsing categories item'><a href='/web/20130817203610/http://wordpress.lixiaolai.com/archives/category/english-learning/earn-vocabulary-with-me' title="View all posts filed under 跟我攒单词">跟我攒单词</a>         </li> <!-- ending subcategory -->
+</ul>        </div>
+      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130817203610/http://wordpress.lixiaolai.com/archives/category/opinions' title="View all posts filed under 言论与八卦">言论与八卦</a>      </li> <!-- ending category -->
+      <li class='collapsing categories expandable parent'><span class='collapsing categories collapse'><span class='sym'>&#x25BC;</span></span><a href='/web/20130817203610/http://wordpress.lixiaolai.com/archives/category/computer-related' title="View all posts filed under 计算机相关">计算机相关</a>
+     <div id='collapsCat-12:3' style="display:block">
+<ul><li class='collapsing categories expandable'><span class='collapsing categories expand'><span class='sym'>&#x25BA;</span></span><a href='/web/20130817203610/http://wordpress.lixiaolai.com/archives/category/computer-related/all-about-apple' title="View all posts filed under All about Apple">All about Apple</a>
+<div id='collapsCat-164:3' style="display:none">
+<ul><li class='collapsing categories item'><a href='/web/20130817203610/http://wordpress.lixiaolai.com/archives/category/computer-related/all-about-apple/ios' title="View all posts filed under iOS">iOS</a>         </li> <!-- ending subcategory -->
+<li class='collapsing categories item'><a href='/web/20130817203610/http://wordpress.lixiaolai.com/archives/category/computer-related/all-about-apple/iphone' title="View all posts filed under iPhone">iPhone</a>         </li> <!-- ending subcategory -->
+<li class='collapsing categories item'><a href='/web/20130817203610/http://wordpress.lixiaolai.com/archives/category/computer-related/all-about-apple/freeware' title="View all posts filed under 免费软件">免费软件</a>         </li> <!-- ending subcategory -->
+<li class='collapsing categories item'><a href='/web/20130817203610/http://wordpress.lixiaolai.com/archives/category/computer-related/all-about-apple/basics' title="View all posts filed under 入门">入门</a>         </li> <!-- ending subcategory -->
+<li class='collapsing categories item'><a href='/web/20130817203610/http://wordpress.lixiaolai.com/archives/category/computer-related/all-about-apple/shareware' title="View all posts filed under 共享软件">共享软件</a>         </li> <!-- ending subcategory -->
+<li class='collapsing categories item'><a href='/web/20130817203610/http://wordpress.lixiaolai.com/archives/category/computer-related/all-about-apple/tips' title="View all posts filed under 小技巧">小技巧</a>         </li> <!-- ending subcategory -->
+</ul>          </div>
+         </li> <!-- ending subcategory -->
+<li class='collapsing categories item parent'><a href='/web/20130817203610/http://wordpress.lixiaolai.com/archives/category/computer-related/auto-it' title="View all posts filed under Auto-It">Auto-It</a>         </li> <!-- ending subcategory -->
+<li class='collapsing categories item'><a href='/web/20130817203610/http://wordpress.lixiaolai.com/archives/category/computer-related/firefox' title="View all posts filed under Firefox">Firefox</a>         </li> <!-- ending subcategory -->
+<li class='collapsing categories item'><a href='/web/20130817203610/http://wordpress.lixiaolai.com/archives/category/computer-related/google' title="View all posts filed under Google">Google</a>         </li> <!-- ending subcategory -->
+<li class='collapsing categories item'><a href='/web/20130817203610/http://wordpress.lixiaolai.com/archives/category/computer-related/rails-notes' title="View all posts filed under rails notes">rails notes</a>         </li> <!-- ending subcategory -->
+<li class='collapsing categories item'><a href='/web/20130817203610/http://wordpress.lixiaolai.com/archives/category/computer-related/ubuntu' title="View all posts filed under Ubuntu">Ubuntu</a>         </li> <!-- ending subcategory -->
+<li class='collapsing categories item'><a href='/web/20130817203610/http://wordpress.lixiaolai.com/archives/category/computer-related/wordpress-computer-related' title="View all posts filed under WordPress">WordPress</a>         </li> <!-- ending subcategory -->
+<li class='collapsing categories item'><a href='/web/20130817203610/http://wordpress.lixiaolai.com/archives/category/computer-related/blogging-experience' title="View all posts filed under 博客经验谈">博客经验谈</a>         </li> <!-- ending subcategory -->
+<li class='collapsing categories item'><a href='/web/20130817203610/http://wordpress.lixiaolai.com/archives/category/computer-related/computer-and-internet-common-sense-for-dummies' title="View all posts filed under 网络常识菜鸟笔记">网络常识菜鸟笔记</a>         </li> <!-- ending subcategory -->
+</ul>        </div>
+      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130817203610/http://wordpress.lixiaolai.com/archives/category/lecture-schedule' title="View all posts filed under 讲座行程">讲座行程</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130817203610/http://wordpress.lixiaolai.com/archives/category/resouces-recommended' title="View all posts filed under 资源推荐">资源推荐</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130817203610/http://wordpress.lixiaolai.com/archives/category/isssue-and-argumentation' title="View all posts filed under 问题与争论">问题与争论</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130817203610/http://wordpress.lixiaolai.com/archives/category/scratches' title="View all posts filed under 随便想想">随便想想</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130817203610/http://wordpress.lixiaolai.com/archives/category/%e9%9a%8f%e4%be%bf%e6%83%b3%e6%83%b3' title="View all posts filed under 随便想想">随便想想</a>      </li> <!-- ending category -->
+<li style='display:none'><script type="text/javascript">
+// <![CDATA[
+/* These variables are part of the Collapsing Categories Plugin 
+      *  Version: 2.0.3
+      *  $Id: collapscat.php 561313 2012-06-20 19:45:14Z robfelty $
+      * Copyright 2007 Robert Felty (robfelty.com)
+      */
+var expandSym='&#x25BA;';
+var collapseSym='&#x25BC;';
+try { collapsItems['catTest'] = 'test'; } catch (err) { collapsItems = new Object(); }
+collapsItems['collapsCat-151:3'] = '<ul></ul>';
+collapsItems['collapsCat-230:3'] = '<ul></ul>';
+collapsItems['collapsCat-231:3'] = '<ul></ul>';
+collapsItems['collapsCat-40:3'] = '<ul></ul>';
+collapsItems['collapsCat-148:3'] = '<ul></ul>';
+collapsItems['collapsCat-1:3'] = '<ul></ul>';
+collapsItems['collapsCat-136:3'] = '<ul></ul>';
+collapsItems['collapsCat-165:3'] = '<ul></ul>';
+collapsItems['collapsCat-123:3'] = '<ul></ul>';
+collapsItems['collapsCat-100:3'] = '<ul></ul>';
+collapsItems['collapsCat-84:3'] = '<ul></ul>';
+collapsItems['collapsCat-75:3'] = '<ul></ul>';
+collapsItems['collapsCat-146:3'] = '<ul></ul>';
+collapsItems['collapsCat-97:3'] = '<ul></ul>';
+collapsItems['collapsCat-15:3'] = '<ul></ul>';
+collapsItems['collapsCat-16:3'] = '<ul></ul>';
+collapsItems['collapsCat-33:3'] = '<ul></ul>';
+collapsItems['collapsCat-6:3'] = '<ul></ul>';
+collapsItems['collapsCat-150:3'] = '<ul></ul>';
+collapsItems['collapsCat-17:3'] = '<ul><li class=\'collapsing categories item\'><a href=\'/web/20130817203610/http://wordpress.lixiaolai.com/archives/category/time-as-a-friend/time-as-a-friend-3rd-edition\' title=\"View all posts filed under 《把时间当作朋友》第三版\">《把时间当作朋友》第三版</a>         </li> <!-- ending subcategory --></ul>';
+collapsItems['collapsCat-147:3'] = '<ul></ul>';
+collapsItems['collapsCat-129:3'] = '<ul></ul>';
+collapsItems['collapsCat-24:3'] = '<ul></ul>';
+collapsItems['collapsCat-8:3'] = '<ul></ul>';
+collapsItems['collapsCat-140:3'] = '<ul></ul>';
+collapsItems['collapsCat-9:3'] = '<ul></ul>';
+collapsItems['collapsCat-128:3'] = '<ul></ul>';
+collapsItems['collapsCat-114:3'] = '<ul></ul>';
+collapsItems['collapsCat-235:3'] = '<ul></ul>';
+collapsItems['collapsCat-124:3'] = '<ul></ul>';
+collapsItems['collapsCat-139:3'] = '<ul></ul>';
+collapsItems['collapsCat-121:3'] = '<ul></ul>';
+collapsItems['collapsCat-122:3'] = '<ul></ul>';
+collapsItems['collapsCat-149:3'] = '<ul></ul>';
+collapsItems['collapsCat-125:3'] = '<ul></ul>';
+collapsItems['collapsCat-119:3'] = '<ul></ul>';
+collapsItems['collapsCat-133:3'] = '<ul></ul>';
+collapsItems['collapsCat-117:3'] = '<ul></ul>';
+collapsItems['collapsCat-145:3'] = '<ul></ul>';
+collapsItems['collapsCat-96:3'] = '<ul></ul>';
+collapsItems['collapsCat-3:3'] = '<ul><li class=\'collapsing categories item\'><a href=\'/web/20130817203610/http://wordpress.lixiaolai.com/archives/category/english-learning/1800-hours\' title=\"View all posts filed under 1800小时 &#8211; 高中两年慢跑冲进美国名校\">1800小时 &#8211; 高中两年慢跑冲进美国名校</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130817203610/http://wordpress.lixiaolai.com/archives/category/english-learning/awa-basic-instruction\' title=\"View all posts filed under AWA（GRE/GMAT写作）考试简明教程\">AWA（GRE/GMAT写作）考试简明教程</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130817203610/http://wordpress.lixiaolai.com/archives/category/english-learning/toefl-ibt-qualified-samples-for-ets-official-185-topic-pool\' title=\"View all posts filed under TOEFL iBT 高分作文\">TOEFL iBT 高分作文</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130817203610/http://wordpress.lixiaolai.com/archives/category/english-learning/master-toefl-essential-vocabulary-in-21-days\' title=\"View all posts filed under TOEFL核心词汇21天突破\">TOEFL核心词汇21天突破</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130817203610/http://wordpress.lixiaolai.com/archives/category/english-learning/everyone-can-use-english\' title=\"View all posts filed under 人人都能用英语\">人人都能用英语</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130817203610/http://wordpress.lixiaolai.com/archives/category/english-learning/how-to-accelerate-reading-speed\' title=\"View all posts filed under 如何提高阅读速度\">如何提高阅读速度</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130817203610/http://wordpress.lixiaolai.com/archives/category/english-learning/toefl-listening-and-speaking\' title=\"View all posts filed under 托福听说训练\">托福听说训练</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130817203610/http://wordpress.lixiaolai.com/archives/category/english-learning/toefl-ibt-topic-vocabulary\' title=\"View all posts filed under 新托福iBT词汇分类突破\">新托福iBT词汇分类突破</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130817203610/http://wordpress.lixiaolai.com/archives/category/english-learning/toefl-vocabulary-classification\' title=\"View all posts filed under 新托福词汇分类突破\">新托福词汇分类突破</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130817203610/http://wordpress.lixiaolai.com/archives/category/english-learning/test-preparation\' title=\"View all posts filed under 留学考试准备\">留学考试准备</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130817203610/http://wordpress.lixiaolai.com/archives/category/english-learning/earn-vocabulary-with-me\' title=\"View all posts filed under 跟我攒单词\">跟我攒单词</a>         </li> <!-- ending subcategory --></ul>';
+collapsItems['collapsCat-11:3'] = '<ul></ul>';
+collapsItems['collapsCat-155:3'] = '<ul></ul>';
+collapsItems['collapsCat-156:3'] = '<ul></ul>';
+collapsItems['collapsCat-158:3'] = '<ul></ul>';
+collapsItems['collapsCat-159:3'] = '<ul></ul>';
+collapsItems['collapsCat-160:3'] = '<ul></ul>';
+collapsItems['collapsCat-161:3'] = '<ul></ul>';
+collapsItems['collapsCat-164:3'] = '<li class=\'collapsing categories item\'><a href=\'/web/20130817203610/http://wordpress.lixiaolai.com/archives/category/computer-related/all-about-apple/ios\' title=\"View all posts filed under iOS\">iOS</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130817203610/http://wordpress.lixiaolai.com/archives/category/computer-related/all-about-apple/iphone\' title=\"View all posts filed under iPhone\">iPhone</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130817203610/http://wordpress.lixiaolai.com/archives/category/computer-related/all-about-apple/freeware\' title=\"View all posts filed under 免费软件\">免费软件</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130817203610/http://wordpress.lixiaolai.com/archives/category/computer-related/all-about-apple/basics\' title=\"View all posts filed under 入门\">入门</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130817203610/http://wordpress.lixiaolai.com/archives/category/computer-related/all-about-apple/shareware\' title=\"View all posts filed under 共享软件\">共享软件</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130817203610/http://wordpress.lixiaolai.com/archives/category/computer-related/all-about-apple/tips\' title=\"View all posts filed under 小技巧\">小技巧</a>         </li> <!-- ending subcategory -->';
+collapsItems['collapsCat-109:3'] = '<ul></ul>';
+collapsItems['collapsCat-86:3'] = '<ul></ul>';
+collapsItems['collapsCat-93:3'] = '<ul></ul>';
+collapsItems['collapsCat-153:3'] = '<ul></ul>';
+collapsItems['collapsCat-110:3'] = '<ul></ul>';
+collapsItems['collapsCat-98:3'] = '<ul></ul>';
+collapsItems['collapsCat-127:3'] = '<ul></ul>';
+collapsItems['collapsCat-132:3'] = '<ul></ul>';
+collapsItems['collapsCat-12:3'] = '<ul><li class=\'collapsing categories expandable\'><span class=\'collapsing categories expand\'><span class=\'sym\'>&#x25BA;</span></span><a href=\'/web/20130817203610/http://wordpress.lixiaolai.com/archives/category/computer-related/all-about-apple\' title=\"View all posts filed under All about Apple\">All about Apple</a><div id=\'collapsCat-164:3\' style=\"display:none\"><ul><li class=\'collapsing categories item\'><a href=\'/web/20130817203610/http://wordpress.lixiaolai.com/archives/category/computer-related/all-about-apple/ios\' title=\"View all posts filed under iOS\">iOS</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130817203610/http://wordpress.lixiaolai.com/archives/category/computer-related/all-about-apple/iphone\' title=\"View all posts filed under iPhone\">iPhone</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130817203610/http://wordpress.lixiaolai.com/archives/category/computer-related/all-about-apple/freeware\' title=\"View all posts filed under 免费软件\">免费软件</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130817203610/http://wordpress.lixiaolai.com/archives/category/computer-related/all-about-apple/basics\' title=\"View all posts filed under 入门\">入门</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130817203610/http://wordpress.lixiaolai.com/archives/category/computer-related/all-about-apple/shareware\' title=\"View all posts filed under 共享软件\">共享软件</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130817203610/http://wordpress.lixiaolai.com/archives/category/computer-related/all-about-apple/tips\' title=\"View all posts filed under 小技巧\">小技巧</a>         </li> <!-- ending subcategory --></ul>          </div>         </li> <!-- ending subcategory --><li class=\'collapsing categories item parent\'><a href=\'/web/20130817203610/http://wordpress.lixiaolai.com/archives/category/computer-related/auto-it\' title=\"View all posts filed under Auto-It\">Auto-It</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130817203610/http://wordpress.lixiaolai.com/archives/category/computer-related/firefox\' title=\"View all posts filed under Firefox\">Firefox</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130817203610/http://wordpress.lixiaolai.com/archives/category/computer-related/google\' title=\"View all posts filed under Google\">Google</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130817203610/http://wordpress.lixiaolai.com/archives/category/computer-related/rails-notes\' title=\"View all posts filed under rails notes\">rails notes</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130817203610/http://wordpress.lixiaolai.com/archives/category/computer-related/ubuntu\' title=\"View all posts filed under Ubuntu\">Ubuntu</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130817203610/http://wordpress.lixiaolai.com/archives/category/computer-related/wordpress-computer-related\' title=\"View all posts filed under WordPress\">WordPress</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130817203610/http://wordpress.lixiaolai.com/archives/category/computer-related/blogging-experience\' title=\"View all posts filed under 博客经验谈\">博客经验谈</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130817203610/http://wordpress.lixiaolai.com/archives/category/computer-related/computer-and-internet-common-sense-for-dummies\' title=\"View all posts filed under 网络常识菜鸟笔记\">网络常识菜鸟笔记</a>         </li> <!-- ending subcategory --></ul>';
+collapsItems['collapsCat-95:3'] = '<ul></ul>';
+collapsItems['collapsCat-13:3'] = '<ul></ul>';
+collapsItems['collapsCat-138:3'] = '<ul></ul>';
+collapsItems['collapsCat-14:3'] = '<ul></ul>';
+collapsItems['collapsCat-229:3'] = '<ul></ul>';
+/*  Collapse Functions, version 2.0
+ *
+ *--------------------------------------------------------------------------*/
+String.prototype.trim = function() {
+  return this.replace(/^\s+|\s+$/g,"");
+}
+
+function createCookie(name,value,days) {
+  if (days) {
+    var date = new Date();
+    date.setTime(date.getTime()+(days*24*60*60*1000));
+    var expires = "; expires="+date.toGMTString();
+  } else {
+    var expires = "";
+  }
+  document.cookie = name+"="+value+expires+"; path=/";
+}
+
+function readCookie(name) {
+  var nameEQ = name + "=";
+  var ca = document.cookie.split(';');
+  for(var i=0;i < ca.length;i++) {
+    var c = ca[i];
+    while (c.charAt(0)==' ') {
+      c = c.substring(1,c.length);
+    }
+    if (c.indexOf(nameEQ) == 0) {
+      return c.substring(nameEQ.length,c.length);
+    }
+  }
+  return null;
+}
+
+function eraseCookie(name) {
+  createCookie(name,"",-1);
+}
+
+function addExpandCollapse(id, expandSym, collapseSym, accordion) {
+  jQuery('#' + id + ' .expand').live('click', function() {
+    if (accordion==1) {
+      var theDiv = jQuery(this).parent().parent().find('span.collapse').parent().find('div');
+      jQuery(theDiv).hide('normal');
+      jQuery(this).parent().parent().find('span.collapse').removeClass('collapse').addClass('expand');
+        createCookie(theDiv.attr('id'), 0, 7);
+    }
+    jQuery('#' + id + ' .expand .sym').html(expandSym);
+    expandCat(this, expandSym, collapseSym);
+    return false;
+  });
+  jQuery('#' + id + ' .collapse').live('click', function() {
+    collapseCat(this, expandSym, collapseSym);
+    return false;
+  });
+}
+
+function expandCat(symbol, expandSym, collapseSym) {
+    var theDiv = jQuery(symbol).parent().find('div');
+    jQuery(theDiv).html(collapsItems[jQuery(theDiv).attr('id')]).show('normal');
+    jQuery(symbol).removeClass('expand').addClass('collapse');
+    jQuery(symbol).find('.sym').html(collapseSym);
+  createCookie(theDiv.attr('id'), 1, 7);
+}
+function collapseCat(symbol, expandSym, collapseSym) {
+    var theDiv = jQuery(symbol).parent().find('div');
+    jQuery(theDiv).hide('normal');
+    jQuery(symbol).removeClass('collapse').addClass('expand');
+    jQuery(symbol).find('.sym').html(expandSym);
+  createCookie(theDiv.attr('id'), 0, 7);
+}
+addExpandCollapse('widget-collapscat-3-top','&#x25BA;', '&#x25BC;', 1)// ]]>
+</script></li>
+</ul>
+</li>				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+<p>© 2011 lixiaolai.com – All rights reserved. – Tell whom you should tell.</p>
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+});
+</script>
+	</div>
+</div>
+</div>
+<!--[if lte IE 8]>
+<div id="ie_clear"></div>
+<![endif]-->
+<div id="afterfooter">
+
+</div>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-1452494-10']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? '/web/20130817203610/https://ssl' : '/web/20130817203610/http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F2a09bb839c493d7f27c193efe0b11d15' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+</body>
+</html>
+
+
+
+
+<!--
+     FILE ARCHIVED ON 20:36:10 Aug 17, 2013 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 2:03:15 Nov 16, 2014.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

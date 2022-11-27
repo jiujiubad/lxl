@@ -1,0 +1,1720 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
+<head profile="http://gmpg.org/xfn/11">
+<link rel="stylesheet" href="./static_files/style.css" type="text/css" media="screen, projection">
+<link rel="stylesheet" href="./static_files/layout.css" type="text/css" media="screen, projection">
+<link rel="stylesheet" href="./static_files/style.css" type="text/css" media="screen, projection">
+<link rel="stylesheet" href="./static_files/layout.css" type="text/css" media="screen, projection">
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>在自己的主机上建个WordPress用来学习与测试</title>
+<meta name="robots" content="noodp, noydir" />
+<meta name="description" content="本文写给那些好奇心旺盛的所谓“门外汉”。整个过程不需要任何编程知识，只要会用键盘与鼠标就可以完成……而我只不过是打开了一扇门而已。 在一些特定的阶段中，“学”根本就不需要问“What”和“Why”，只要关心“How”就可以了。而“What”与“Why”往往真的会“船到桥头自然直”…… XAMPP XAMPP无需安装，只要解压到本地硬盘上就可以开始使用——按照官方说法XAMPP就是一个“Take-Run-Delete-Forget-it”的包。因为只是用来做本机测试，建议下载的是“xampplite”（下载页面）。 下载之后解压至硬盘某一目录（以下假定xampp的目录为“D:\xampp”）； 双击执行“D:\xampp\setup_xampp.bat”； 双击执行“D:\xampp\xampp-control.exe”； 点击Apache右侧的“Start”按钮； 点击MySql右侧的“Start”按钮； 至于FileZilla和Mercury，以后再说吧…… 现在打开浏览器（推荐使用Firefox，因为过后有很多Firefox插件，比如“Firebug”等等，实在是太好用……），在地址栏输入“localhost”之后回车，即可看到“XAMPP for Windows”的页面（地址栏中的地址将被自动转至http://localhost/xampp）。 phpMyAdmin phpMyAdmin是一个MySql的Web界面管理程序。在“XAMPP for Windows”的页面的左侧边栏找到“phpMyAdmin”链接，点击之后，就进入phpMyAdmin的管理页面了： 在“创建一个新的数据库”下的文本框中输入：“mytestingwordpress”（随便起个名字，但要记下来，一会儿要用到），而后点击“创建”按钮； 找到“权限”链接，进入“权限”设置页面，“添加新用户”；输入用户名（比如“myusername”）、输入两遍密码(比如“mypassword”）、“主机”之后的文本框里输入“localhost”； 点击页面右下角的“执行”按钮； 回到“权限”页面，点击用户“myusername”那行最后一个图标（“编辑权限”）； 在“用户 &#8216;myusername&#8217;@'localhost&#8217; : 编辑权限”页面中的“按数据库指定权限”中，拉下“在下列数据库添加权限”右侧的下拉框中选中“mytestingwordpress”； 在其后的页面中，点击“按数据库指定权限”右侧的“全选”链接； 点击该文本域右下角的“执行”按钮。 至此，MySql数据库设置告一段落。 WordPress WordPress安装步骤： 到WordPress官方网站下载最新版本； 把下载的zip包里的“wordpress”目录拷贝到“D:\xampp\htdocs”目录中； 打开浏览器，在地址栏里输入“http://localhost/wordpress”； 按照指示，填写数据库连接信息： Database Name: mytestingwordpress User Name: myusername" />
+<link rel="stylesheet" href="/web/20130822161032cs_/http://wordpress.lixiaolai.com/wp-content/themes/thesis_182/style.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="/web/20130822161032cs_/http://wordpress.lixiaolai.com/wp-content/themes/thesis_182/custom/layout.css" type="text/css" media="screen, projection" />
+<!--[if lte IE 8]><link rel="stylesheet" href="/web/20130822161032/http://wordpress.lixiaolai.com/wp-content/themes/thesis_182/lib/css/ie.css" type="text/css" media="screen, projection" /><![endif]-->
+<link rel="stylesheet" href="/web/20130822161032cs_/http://wordpress.lixiaolai.com/wp-content/themes/thesis_182/custom/custom.css" type="text/css" media="screen, projection" />
+<link rel="canonical" href="http://wordpress.lixiaolai.com/archives/1541.html" />
+<link rel="alternate" type="application/rss+xml" title="Reborn RSS Feed" href="http://wordpress.lixiaolai.com/feed" />
+<link rel="pingback" href="http://wordpress.lixiaolai.com/xmlrpc.php" />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://wordpress.lixiaolai.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://wordpress.lixiaolai.com/wp-includes/wlwmanifest.xml" />
+<link rel="shortcut icon" type="image/ico" href="/web/20130822161032im_/http://www.lixiaolai.com/wp-content/themes/thesis_182/lib/images/favicon.ico">
+<link type="image/png" rel="apple-touch-icon" href="http:///www.lixiaolai.com/wp-content/themes/thesis_182/lib/images/r.png" />
+<link rel="alternate" type="application/rss+xml" title="Reborn &raquo; 在自己的主机上建个WordPress用来学习与测试 Comments Feed" href="http://wordpress.lixiaolai.com/archives/1541.html/feed" />
+<link rel='stylesheet' id='Shadows Into Light-css'  href='/web/20130822161032cs_/http://fonts.googleapis.com/css?family=Shadows+Into+Light&amp;ver=3.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='Shadows Into Light Two-css'  href='/web/20130822161032cs_/http://fonts.googleapis.com/css?family=Shadows+Into+Light+Two&amp;ver=3.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='ttsp-all-css'  href='/web/20130822161032cs_/http://wordpress.lixiaolai.com/wp-content/plugins/thethe-sliding-panels/style/css/ttsp.all.css?ver=3.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-syntax-css-css'  href='/web/20130822161032cs_/http://wordpress.lixiaolai.com/wp-content/plugins/wp-syntax/wp-syntax.css?ver=3.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='jquery-ui-style-ui-lightness-css'  href='/web/20130822161032cs_/http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/ui-lightness/jquery-ui.css?ver=3.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='thethe-haccordion-css'  href='/web/20130822161032cs_/http://wordpress.lixiaolai.com/wp-content/plugins/thethe-tabs-and-accordions/style/thethe-haccordion.css?ver=3.4.2' type='text/css' media='all' />
+<script type='text/javascript' src='/web/20130822161032js_/http://code.jquery.com/jquery-latest.min.js?ver=latest'></script>
+<script type='text/javascript' src='/web/20130822161032js_/http://wordpress.lixiaolai.com/wp-content/plugins/thethe-marquee/style/js/jquery.easing.1.3.js?ver=3.4.2'></script>
+<script type='text/javascript' src='/web/20130822161032js_/http://wordpress.lixiaolai.com/wp-content/plugins/thethe-marquee/style/js/jquery.marquee.js?ver=3.4.2'></script>
+<script type='text/javascript' src='/web/20130822161032js_/http://wordpress.lixiaolai.com/wp-includes/js/comment-reply.js?ver=3.4.2'></script>
+<script type='text/javascript' src='/web/20130822161032js_/http://wordpress.lixiaolai.com/wp-content/plugins/jquery-accordion-slideshow/js/jquery.min.js?ver=3.4.2'></script>
+<script type='text/javascript' src='/web/20130822161032js_/http://wordpress.lixiaolai.com/wp-content/plugins/jquery-accordion-slideshow/js/jquery.zaccordion.min.js?ver=3.4.2'></script>
+<script type='text/javascript' src='/web/20130822161032js_/http://wordpress.lixiaolai.com/wp-content/plugins/jquery-accordion-slideshow/js/jquery.easing.1.3.js?ver=3.4.2'></script>
+<script type='text/javascript' src='/web/20130822161032js_/http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js?ver=3.4.2'></script>
+<script type='text/javascript' src='/web/20130822161032js_/http://wordpress.lixiaolai.com/wp-content/plugins/thethe-sliding-panels/style/js/jquery.cookie.min.js?ver=3.4.2'></script>
+<script type='text/javascript' src='/web/20130822161032js_/http://wordpress.lixiaolai.com/wp-content/plugins/thethe-sliding-panels/style/js/jquery.ttsp.js?ver=3.4.2'></script>
+<script type='text/javascript' src='/web/20130822161032js_/http://wordpress.lixiaolai.com/wp-content/plugins/thethe-tabs-and-accordions/style/js/thethe.toggle.js?ver=3.4.2'></script>
+<script type='text/javascript' src='/web/20130822161032js_/http://wordpress.lixiaolai.com/wp-content/plugins/thethe-tabs-and-accordions/style/js/thethe.haccordion.js?ver=3.4.2'></script>
+<style type="text/css">
+	.addw2p {
+		list-style-type: none;
+		list-style-image: none;
+	}
+</style>
+<script type="text/javascript" src="/web/20130822161032js_/http://wordpress.lixiaolai.com/wp-content/plugins/audio-player/assets/audio-player.js?ver=2.0.4.1"></script>
+<script type="text/javascript">AudioPlayer.setup("/web/20130822161032/http://wordpress.lixiaolai.com/wp-content/plugins/audio-player/assets/player.swf?ver=2.0.4.1", {width:"290",animation:"yes",encode:"yes",initialvolume:"60",remaining:"no",noinfo:"no",buffer:"5",checkpolicy:"no",rtl:"no",bg:"f8f8f8",text:"666666",leftbg:"eeeeee",lefticon:"666666",volslider:"666666",voltrack:"FFFFFF",rightbg:"cccccc",rightbghover:"999999",righticon:"666666",righticonhover:"ffffff",track:"FFFFFF",loader:"9FFFB8",border:"666666",tracker:"DDDDDD",skip:"666666",pagebg:"FFFFFF",transparentpagebg:"yes"});</script>
+<style type='text/css'>
+#widget-collapscat-3-top span.collapsing.categories {
+        border:0;
+        padding:0; 
+        margin:0; 
+        cursor:pointer;
+} 
+
+#widget-collapscat-3-top li.widget_collapscat h2 span.sym {float:right;padding:0 .5em}
+#widget-collapscat-3-top li.collapsing.categories.self a {font-weight:bold}
+#widget-collapscat-3-top:before {content:'';} 
+#widget-collapscat-3-top  li.collapsing.categories:before {content:'';} 
+#widget-collapscat-3-top  li.collapsing.categories {list-style-type:none}
+#widget-collapscat-3-top  li.collapsing.categories{
+       padding:0 0 0 1em;
+       text-indent:-1em;
+}
+#widget-collapscat-3-top li.collapsing.categories.item:before {content: '\00BB \00A0' !important;} 
+#widget-collapscat-3-top li.collapsing.categories .sym {
+   cursor:pointer;
+   font-size:1.1em;
+   font-family:Arial, Helvetica;
+    padding-right:5px;}</style>
+<!-- TheThe Marquee v.1.0.0 Custom CSS begin //-->
+<style type="text/css" media="screen">
+div.marquee {}
+div.marquee div.mul {}
+
+</style>
+<!-- TheThe Marquee Custom CSS end //-->
+<script type='text/javascript'>
+jQuery(document).ready(function($) {
+});
+</script>		<style type="text/css">
+						ol.footnotes li {list-style-type:decimal;}
+						ol.footnotes{font-size:13px; color:#666666;}		</style>
+				<script type="text/javascript" charset="utf-8">
+			var href = "/web/20130822161032/http://wordpress.lixiaolai.com";
+			// solves the issue where app mode does not set the correct UA String.
+			if ( window.navigator.standalone ) {
+				href += "?onswipe_redirect=yes";
+				location.href = href;
+			};
+			try{
+			// make reader urls work backwards.
+				href += "?p=" + location.hash.match(/\#!\/entry\/.+,(\d+)$/)[1];
+				location.href = href;
+			}catch(e){}		
+		</script>
+		
+	<!-- Clean Archives Reloaded v3.2.0 | /web/20130822161032/http://www.viper007bond.com/wordpress-plugins/clean-archives-reloaded/ -->
+	<style type="text/css">.car-collapse .car-yearmonth { cursor: s-resize; } </style>
+	<script type="text/javascript">
+		/* <![CDATA[ */
+			jQuery(document).ready(function() {
+				jQuery('.car-collapse').find('.car-monthlisting').hide();
+				jQuery('.car-collapse').find('.car-monthlisting:first').show();
+				jQuery('.car-collapse').find('.car-yearmonth').click(function() {
+					jQuery(this).next('ul').slideToggle('fast');
+				});
+				jQuery('.car-collapse').find('.car-toggler').click(function() {
+					if ( 'Expand All' == jQuery(this).text() ) {
+						jQuery(this).parent('.car-container').find('.car-monthlisting').show();
+						jQuery(this).text('Collapse All');
+					}
+					else {
+						jQuery(this).parent('.car-container').find('.car-monthlisting').hide();
+						jQuery(this).text('Expand All');
+					}
+					return false;
+				});
+			});
+		/* ]]> */
+	</script>
+
+</head>
+<body class="custom">
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script> if (window.archive_analytics) { window.archive_analytics.values['server_name']="wwwb-app12.us.archive.org";}; </script>
+
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">
+var __wm = (function(){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://wordpress.lixiaolai.com/archives/1541.html";
+
+var firstYear = 1996;
+var imgWidth = 475,imgHeight = 27;
+var yearImgWidth = 25,monthImgWidth = 2;
+var displayDay = "22";
+var displayMonth = "Aug";
+var displayYear = "2013";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function getElementX2(obj) {
+  var $e=jQuery(obj);
+  return (typeof $e=="undefined"||typeof $e.offset=="undefined")?
+    getElementX(obj):Math.round($e.offset().left);
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX2(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})();
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0"></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://wordpress.lixiaolai.com/archives/1541.html" style="width:400px;" onfocus="this.focus();this.select();"><input type="hidden" name="type" value="replay"><input type="hidden" name="date" value="20130822161032"><input type="submit" value="Go"><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    <a href="/web/20130512112425/http://wordpress.lixiaolai.com/archives/1541.html" title="12 May 2013">MAY</a>
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 16:10:32 Aug 22, 2013">AUG</td>
+		<td class="f" nowrap="nowrap">
+		
+		    <a href="/web/20131011104926/http://wordpress.lixiaolai.com/archives/1541.html" title="11 Oct 2013"><strong>OCT</a>
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20130512112425/http://wordpress.lixiaolai.com/archives/1541.html" title="11:24:25 May 12, 2013"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 16:10:32 Aug 22, 2013">22</td>
+	       <td class="f" nowrap="nowrap">
+               
+		   <a href="/web/20131011104926/http://wordpress.lixiaolai.com/archives/1541.html" title="10:49:26 Oct 11, 2013"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0"/></a>
+	       
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   2012
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 16:10:32 Aug 22, 2013">2013</td>
+	       <td class="f" nowrap="nowrap">
+               
+                   2014
+               
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20130822161032*/http://wordpress.lixiaolai.com/archives/1541.html" title="See a list of every capture for this URL">7 captures</a>
+           <div class="r" title="Timespan for captures of this URL">6 Oct 12 - 4 Jul 14</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="475"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=475_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000000000000_2003:-1:000000000000_2004:-1:000000000000_2005:-1:000000000000_2006:-1:000000000000_2007:-1:000000000000_2008:-1:000000000000_2009:-1:000000000000_2010:-1:000000000000_2011:-1:000000000000_2012:-1:000000000110_2013:7:100010010100_2014:-1:000000100000">
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+<div id="container">
+<div id="page">
+	<div id="header_box">
+		<div id="header">
+		<p id="logo"><a href="/web/20130822161032/http://wordpress.lixiaolai.com/">Reborn</a></p>
+	</div>
+	<div id="header_box_right">
+		<form action="/web/20130822161032/http://www.google.com/cse" id="cse-search-box">
+	    <input type="hidden" name="cx" value="017195234153172777936:zntod-n-hbc">
+	    <input type="hidden" name="ie" value="UTF-8">
+			<input type="text" onblur="if (this.value == '') {this.value = 'To search, type and hit enter';}" onfocus="if (this.value == 'To search, type and hit enter') {this.value = '';}" id="s" name="q" value="To search, type and hit enter" class="text_input">
+		</form>
+				<a href="/web/20130822161032/https://twitter.com/xiaolai"><img src="/web/20130822161032im_/http://wordpress.lixiaolai.com/wp-content/themes/thesis_182/custom/images/twitter.png" alt="@xiaolai" /></a>
+						<a href="mailto:lixiaolai@gmail.com"><img src="/web/20130822161032im_/http://wordpress.lixiaolai.com/wp-content/themes/thesis_182/custom/images/gmail.png" alt="lixiaolai@gmail.com" /></a>
+		<a href="/web/20130822161032/http://wordpress.lixiaolai.com/feed"><img src="/web/20130822161032im_/http://wordpress.lixiaolai.com/wp-content/themes/thesis_182/custom/images/rss.png" alt="RSS" /></a>
+	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="menu-navbar-container"><ul id="menu-navbar" class="menu"><li id="menu-item-12082" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12082"><a href="/web/20130822161032/http://www.lixiaolai.com/">Home</a></li>
+<li id="menu-item-10859" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10859"><a href="/web/20130822161032/http://wordpress.lixiaolai.com/archives">Archives</a></li>
+<li id="menu-item-10860" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10860"><a href="/web/20130822161032/http://wordpress.lixiaolai.com/downloads">Downloads</a></li>
+<li id="menu-item-12081" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12081"><a href="/web/20130822161032/http://www.eduise.com/">eduise.com</a></li>
+<li id="menu-item-12080" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12080"><a href="/web/20130822161032/http://www.eduise.com/client/evaluation">免费留学申请选校评估</a></li>
+<li id="menu-item-12240" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12240"><a title="linode" href="/web/20130822161032/http://www.lixiaolai.com/linode-vps">linode</a></li>
+</ul></div>
+	<div id="content_box">
+		<div id="content" class="hfeed">
+
+			<div class="post-1541 post type-post status-publish format-standard hentry category-wordpress-computer-related post_box top" id="post-1541">
+				<div class="headline_area">
+					<h1 class="entry-title">在自己的主机上建个WordPress用来学习与测试</h1>
+					<p class="headline_meta">by <span class="author vcard fn">xiaolai</span> on <abbr class="published" title="2008-11-25">2008/11/25</abbr> &middot; <span><a href="/web/20130822161032/http://wordpress.lixiaolai.com/archives/1541.html#comments" rel="nofollow"><span class="dsq-postid" rel="1541 http://www.lixiaolai.com/index.php/archives/1541.html">61 comments</span></a></span></p>
+					<p class="headline_meta">in <span><a href="/web/20130822161032/http://wordpress.lixiaolai.com/archives/category/computer-related/wordpress-computer-related" title="View all posts in WordPress" rel="category tag">WordPress</a></span></p>
+				</div>
+				<div class="format_text entry-content">
+<p><em>本文写给那些<strong>好奇心旺盛</strong>的所谓“门外汉”。整个过程不需要任何编程知识，只要会用键盘与鼠标就可以完成……<span style="display:none;">而我只不过是打开了一扇门而已。</span></em></p>
+<p><em>在一些特定的阶段中，“学”根本就不需要问“What”和“Why”，<strong>只要关心“How”</strong>就可以了。而“What”与“Why”往往真的会“船到桥头自然直”……</em></p>
+<h3>XAMPP</h3>
+<p><a href="/web/20130822161032/http://www.apachefriends.org/en/xampp.html" target="_blank">XAMPP</a>无需安装，只要解压到本地硬盘上就可以开始使用——按照官方说法<a target="_blank">XAMPP</a>就是一个“Take-Run-Delete-Forget-it”的包。因为只是用来做本机测试，建议下载的是“<a href="/web/20130822161032/http://www.apachefriends.org/download.php?xampplite-win32-1.6.8.zip">xampplite</a>”（<a href="/web/20130822161032/http://www.apachefriends.org/en/xampp-windows.html" target="_blank">下载页面</a>）。</p>
+<ul>
+<li>下载之后解压至硬盘某一目录（以下假定xampp的目录为“<u>D:\xampp</u>”）；</li>
+<li>双击执行“<u>D:\xampp\setup_xampp.bat</u>”；</li>
+<li>双击执行“<u>D:\xampp\xampp-control.exe</u>”；</li>
+<li>点击Apache右侧的“Start”按钮；</li>
+<li>点击MySql右侧的“Start”按钮；</li>
+<li>至于FileZilla和Mercury，以后再说吧……</li>
+</ul>
+<p>现在打开浏览器（推荐使用Firefox，因为过后有很多Firefox插件，比如“Firebug”等等，实在是太好用……），在地址栏输入“<u>localhost</u>”之后回车，即可看到“XAMPP for Windows”的页面（地址栏中的地址将被自动转至<u>http://localhost/xampp</u>）。</p>
+<h3>phpMyAdmin</h3>
+<p><a href="/web/20130822161032/http://www.phpmyadmin.net/" target="_blank">phpMyAdmin</a>是一个MySql的Web界面管理程序。在“XAMPP for Windows”的页面的左侧边栏找到“<u>phpMyAdmin</u>”链接，点击之后，就进入phpMyAdmin的管理页面了：</p>
+<ul>
+<li>在“创建一个新的数据库”下的文本框中输入：“<u>mytestingwordpress</u>”（随便起个名字，但要记下来，一会儿要用到），而后点击“创建”按钮；</li>
+<li>找到“权限”链接，进入“权限”设置页面，“添加新用户”；输入用户名（比如“<u>myusername</u>”）、输入两遍密码(比如“<u>mypassword</u>”）、“主机”之后的文本框里输入“<u>localhost</u>”；</li>
+<li>点击页面右下角的“<u>执行</u>”按钮；</li>
+<li>回到“权限”页面，点击用户“<u>myusername</u>”那行最后一个图标（“编辑权限”）；</li>
+<li>在“<u>用户 &#8216;myusername&#8217;@'localhost&#8217; : 编辑权限</u>”页面中的“按数据库指定权限”中，拉下“在下列数据库添加权限”右侧的下拉框中选中“<u>mytestingwordpress</u>”；</li>
+<li>在其后的页面中，点击“<u>按数据库指定权限</u>”右侧的“<u>全选</u>”链接；</li>
+<li>点击该文本域右下角的“<u>执行</u>”按钮。</li>
+</ul>
+<p>至此，MySql数据库设置告一段落。</p>
+<h3>WordPress</h3>
+<p>WordPress安装步骤：</p>
+<ul>
+<li>到<a href="/web/20130822161032/http://www.wordpress.org/" target="_blank">WordPress官方网站</a>下载最新版本；</li>
+<li>把下载的zip包里的“wordpress”目录拷贝到“<u>D:\xampp\htdocs</u>”目录中；</li>
+<li>打开浏览器，在地址栏里输入“<u>http://localhost/wordpress</u>”；</li>
+<li>按照指示，填写数据库连接信息：<br />
+  Database Name: <u>mytestingwordpress</u><br />
+  User Name: <u>myusername</u><br />
+  Password: <u>mypassword</u><br />
+  Database Host: <u>localhost</u><br />
+  Table Prefix: <u>wp_</u></li>
+<li>而后要设定博客名称（Blog Title）：<u>WordPress Testing Site</u>；email地址（Your e-mail)：<u>abcexample@gmail.com</u>；（这两项在安装之后都可以在后台“设置”页面重新设定）</li>
+<li>在随后的页面中，WordPress会自动生成一个用户“<u>admin</u>”并为其设定一个随机密码——要把这个密码拷贝粘贴至记事本，以防一会儿忘记；</li>
+<li>使用用户名“<u>admin</u>”和刚刚得到的密码登录WordPress；</li>
+<li>在后台页面右上部可以找到“<u>Users</u>”链接，点击进去修改用户“<u>admin</u>”的密码。</li>
+</ul>
+<p>中文版安装步骤：</p>
+<ul>
+<li>使用<a href="/web/20130822161032/http://codex.wordpress.org/WordPress_in_Your_Language#Chinese_-_.E4.B8.AD.E6.96.87_.28zh_CN.29" target="_blank">这个链接</a>访问WordPress中文包链接列表；</li>
+<li>也可以直接选择“<a href="/web/20130822161032/http://code.google.com/p/wpcn/downloads/list" target="_blank">WordPress 中文团队</a>”；</li>
+<li>下载<a href="/web/20130822161032/http://wpcn.googlecode.com/files/WordPress.v2.6.2.Simp.Chinese.pack.only.v2-wpcng.zip" target="_blank">简体中文语言包</a>（语言包目前是2.6.2版本的，但基本上并不妨碍WordPress最新版2.6.3使用）；</li>
+<li>其实只需要找到“languages”目录，把这个目录拷贝到“<u>D:\xampp\htdocs\wordpress\wp-content</u>”目录下即可；</li>
+<li>而后用记事本修改“<u>D:\xampp\htdocs\wordpress\wp-config.php</u>”文件，找到“<u>define (&#8216;WPLANG&#8217;, &#8221;);</u>”，修改成：“<u>define (&#8216;WPLANG&#8217;, &#8216;zh_CN&#8217;);</u>”；</li>
+<li>重新访问“<u>http://localhost/wordpress</u>”，WordPress已经是中文版了……</li>
+</ul>
+<h3>搞定！</h3>
+<p>可以把“<u>http://localhost/wordpress</u>”放到收藏夹，或者Firefox的“书签工具栏”上，以便随时访问……</p>
+<blockquote><ol>
+<li><a href="/web/20130822161032/http://wordpress.lixiaolai.com/archives/1541.html">在自己的主机上建个WordPress用来学习与测试</a></li>
+<li><a href="/web/20130822161032/http://wordpress.lixiaolai.com/archives/1560.html">想起小时候用过的打水泵……</a></li>
+<li><a href="/web/20130822161032/http://wordpress.lixiaolai.com/archives/1628.html">定制WordPress外观</a></li>
+<li><a href="/web/20130822161032/http://wordpress.lixiaolai.com/archives/1654.html">扩展WordPress功能</a></li>
+<li><a href="/web/20130822161032/http://wordpress.lixiaolai.com/archives/1709.html">工具专业，人就更容易专业一点</a></li>
+<li><a href="/web/20130822161032/http://wordpress.lixiaolai.com/archives/1720.html">一个显示器怎么够用？</a></li>
+</ol>
+</blockquote>
+				</div>
+			</div>
+
+
+<div id="disqus_thread">
+                    <div id="dsq-content">
+
+
+            <ul id="dsq-comments">
+                    <li class="comment even thread-even depth-1" id="dsq-comment-5037">
+        <div id="dsq-comment-header-5037" class="dsq-comment-header">
+            <cite id="dsq-cite-5037">
+                <span id="dsq-author-user-5037">teng</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-5037" class="dsq-comment-body">
+            <div id="dsq-comment-message-5037" class="dsq-comment-message"><p>我就是你文章开头说的那种人&hellip;&hellip;</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-5038">
+        <div id="dsq-comment-header-5038" class="dsq-comment-header">
+            <cite id="dsq-cite-5038">
+                <span id="dsq-author-user-5038">chendandan</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-5038" class="dsq-comment-body">
+            <div id="dsq-comment-message-5038" class="dsq-comment-message"><p>太好了，我一地要好好学学，谢谢老师！！<br />
+&nbsp;</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment even thread-even depth-1" id="dsq-comment-5039">
+        <div id="dsq-comment-header-5039" class="dsq-comment-header">
+            <cite id="dsq-cite-5039">
+http://sites.google.com/site/liberalart                <span id="dsq-author-user-5039">吞拿</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-5039" class="dsq-comment-body">
+            <div id="dsq-comment-message-5039" class="dsq-comment-message"><p>啊哈, 前一段时间找了免费的空间, 结果不支持PHP, 找到了支持PHP的结果要求域名经过ICP备案, 就想要不要我自己架一个WordPress, 结果RSS里面就出现了这篇文章. 这样就能先自己折腾, 等有了银子再租服务器去</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-5040">
+        <div id="dsq-comment-header-5040" class="dsq-comment-header">
+            <cite id="dsq-cite-5040">
+http://zhiqiang.org/blog/                <span id="dsq-author-user-5040">zhiqiang</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-5040" class="dsq-comment-body">
+            <div id="dsq-comment-message-5040" class="dsq-comment-message"><p>这个网上到处都是，窃以为不需要再写一次，还不如写一篇搜索技巧呢</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment even thread-even depth-1" id="dsq-comment-5041">
+        <div id="dsq-comment-header-5041" class="dsq-comment-header">
+            <cite id="dsq-cite-5041">
+http://www.live8easy.cn                <span id="dsq-author-user-5041">jason</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-5041" class="dsq-comment-body">
+            <div id="dsq-comment-message-5041" class="dsq-comment-message"><p>好东东，比我找个免费主机折腾强多了哈&nbsp; ths</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment byuser comment-author-admin bypostauthor odd alt thread-odd thread-alt depth-1" id="dsq-comment-5042">
+        <div id="dsq-comment-header-5042" class="dsq-comment-header">
+            <cite id="dsq-cite-5042">
+                <span id="dsq-author-user-5042">李笑来</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-5042" class="dsq-comment-body">
+            <div id="dsq-comment-message-5042" class="dsq-comment-message"><p>to zhiqiang: 是啊，如果只这一篇的话，那还真的不用写了；不过，这篇只是最开头&hellip;&hellip;我Google过了之后才决定开始写的呢。</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment even thread-even depth-1" id="dsq-comment-5043">
+        <div id="dsq-comment-header-5043" class="dsq-comment-header">
+            <cite id="dsq-cite-5043">
+                <span id="dsq-author-user-5043">hai</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-5043" class="dsq-comment-body">
+            <div id="dsq-comment-message-5043" class="dsq-comment-message"><p>只是个开头？难道老师要写个系列的wordpress从入门到精通吗？<br />
+如果是那样的话还真不错。</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-5044">
+        <div id="dsq-comment-header-5044" class="dsq-comment-header">
+            <cite id="dsq-cite-5044">
+                <span id="dsq-author-user-5044">jack</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-5044" class="dsq-comment-body">
+            <div id="dsq-comment-message-5044" class="dsq-comment-message"><p>我喜欢！！！</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment even thread-even depth-1" id="dsq-comment-5046">
+        <div id="dsq-comment-header-5046" class="dsq-comment-header">
+            <cite id="dsq-cite-5046">
+http://loulourun.com                <span id="dsq-author-user-5046">loulourun</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-5046" class="dsq-comment-body">
+            <div id="dsq-comment-message-5046" class="dsq-comment-message"><p>&ldquo;phpMyAdmin 试图连接到 MySQL 服务器，但服务器拒绝连接。您应该检查 config.inc.php  中的主机、用户名和密码，并且确定这些信息与 MySQL 服务器的管理员所给出的信息一致。&rdquo;<br />
+这是我点击phpmyadmin的时候出现的情况。。<br />
+<!-- PMA-SQL-ERROR --><br />
+<!-- PMA-SQL-ERROR --></p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment byuser comment-author-admin bypostauthor odd alt thread-odd thread-alt depth-1" id="dsq-comment-5047">
+        <div id="dsq-comment-header-5047" class="dsq-comment-header">
+            <cite id="dsq-cite-5047">
+                <span id="dsq-author-user-5047">李笑来</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-5047" class="dsq-comment-body">
+            <div id="dsq-comment-message-5047" class="dsq-comment-message"><p>用xampp的话，phpMyAdmin应该是不用任何设置的啊，只要最初的时候</p>
+<ul>
+<li>双击执行&ldquo;<span style="text-decoration: underline;">D:\xampp\xampp-control.exe</span>&rdquo;；</li>
+<li>点击Apache右侧的&ldquo;Start&rdquo;按钮；</li>
+<li>点击MySql右侧的&ldquo;Start&rdquo;按钮；</li>
+</ul>
+<p>&hellip;&hellip;</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment even thread-even depth-1" id="dsq-comment-5048">
+        <div id="dsq-comment-header-5048" class="dsq-comment-header">
+            <cite id="dsq-cite-5048">
+                <span id="dsq-author-user-5048">jack</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-5048" class="dsq-comment-body">
+            <div id="dsq-comment-message-5048" class="dsq-comment-message"><p>疑惑&nbsp;&nbsp; Apache 和 Mysql 无法start</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-5049">
+        <div id="dsq-comment-header-5049" class="dsq-comment-header">
+            <cite id="dsq-cite-5049">
+                <span id="dsq-author-user-5049">李笑来</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-5049" class="dsq-comment-body">
+            <div id="dsq-comment-message-5049" class="dsq-comment-message"><p>to jack: 重新启动一下？呵呵。</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment even thread-even depth-1" id="dsq-comment-5050">
+        <div id="dsq-comment-header-5050" class="dsq-comment-header">
+            <cite id="dsq-cite-5050">
+                <span id="dsq-author-user-5050">frank</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-5050" class="dsq-comment-body">
+            <div id="dsq-comment-message-5050" class="dsq-comment-message"><p>从下午两点多到现在才初步搞定，其中主要是Apache无法启动的问题，google过后才解决的。<br />
+我的是80端口被占而导致的apache无法启动的。<br />
+在下面的页面介绍的方法后解决的<br />
+<a href="/web/20130822161032/http://www.cnitblog.com/benwhite/archive/2008/04/30/43118.html" rel="nofollow">Apache2.2 服务无法启动等相关问题 解决方案汇总</a><br />
+使用xamp，wamp开发php，根本不需要考虑配置问题，但是作为一名求是的开发者，还是应该亲手尝试一下，于是开始自己分别下载apache php，然后配置。但是问题来了：apache 服务无法启动&#8211;&#8221;Apache2.2 服务因 1 (0&#215;1) 服务性错误而停止&#8221;，于是马上百度，再加上自己的琢磨，下面是解决方案：<br />
+1 80端口问题很大部分的原因来自端口，如果你机子上的IIS或者其他程序占用了80端口，那么apache肯定无法启动。所以第一个思 路是：解决端口问题&#8211;可以用netstat -an查看端口使用情况，停止使用80端口的程序，然后启动服务；也可以让apache运行在另一个端口，譬如8080上。两者皆可。<br />
+2配置文件httpd.conf问题配置文件是第二个问题来源。拼写错误，路径不对，以及版本参数的不匹配都会导致问题。因此第二个思路是：每次修改都要备份http.conf文件，若果发现问题，则回到原配置文件，看看是否还有问题，若没有，肯定是新配置文件里有错误。检查LoadModule php5_module &#8220;D:/php-5.2.5-Win32/php5apache2_2.dll&#8221;AddType application/x-httpd-php .php的拼写问题，包括空格。当然最好直接复制粘贴，这样最可靠。其他诸如文件路径的斜杠，以及ErrorLog等路径无效也都应注意。<br />
+如果上面两步都安全通过，那么我们的Apache应该可以启动服务了！！<br />
+&nbsp;</p>
+<p>还有一类问题，服务可以启动但是输入localhost无法打开页面这一般是<a href="/web/20130822161032/http://baike.baidu.com/view/32803.htm" rel="nofollow">netbios</a>解析失败造成的。解决的办法很简单，步骤如下：1 在&#8221; 网上邻居&#8221;上 点右键，菜单上选&#8221;属性(R)&#8221;。出来&#8221;网络连接&#8221;窗口，在&#8221;本地连接&#8221;上点右键，菜单中点&#8221;属性(R)&#8221;。出来&#8221;本地连接 属性&#8221;面板，在&#8221;此链接使用下列项目&#8221;中找到：&#8221;Internet 协议 (TCP/IP)&#8221;，并点击它。在弹出的&#8221;Internet 协议 (TCP/IP) 属性&#8221;面板上，点击&#8221;高级(V)&#8230;&#8221;按钮。&#8221;高级 TCP/IP 设置&#8221;面板上点&#8221;WINS&#8221;选项标签，去掉&#8221;启用 LMHOSTS 查询(L)&#8221;前面的勾，点&#8221;确定&#8221;按钮。<strong>（此处介绍出错了，因该是在LMHOSTS查询之前打勾，然后把\xampp\apache\bin目录下的apache.exe导入，然后确定&#8212;&#8211;frank注）</strong> 2 打开&#8221;控制面板&#8221;，点击&#8221;Windows 防火墙&#8221;，点击&#8221;高级&#8221;选项标签，选择&#8221;本地连接&#8221;，并点击旁边的&#8221;设置(T)&#8230;&#8221;按钮。在服务选项中找到&#8221;安全 Web 服务器(HTTPS)&#8221;，并把它勾选上，点&#8221;确定&#8221;按钮。<br />
+最后一类问题 php文件无法解析当你万分惊喜的发现可以打开<a href="/web/20130822161032/http://localhost/" rel="nofollow">http://localhost</a> 并看到apache的&#8221;IT works!&#8221;的页面时，你很激动的马上测试一个phpnifo的页面，却发现无法解析。这是因为，apache不知道如何解析php文件。虽然 LoadModule和AddType语句已经告诉apache 载入php模块并注意php后缀的文件，但是真正的解析还是要调用php5ts.dll等等文件，所以方案一：在path里添加php所在目录 并在httpd.conf里添加PHPiniDir &#8220;D:/php-5.2.5-Win32/&#8221;方案二：直接将php5ts.dll从php目录拷贝到apache的bin目录即可<br />
+另外有一点需要注意 apache2.2以上的版本需要使用php5apache2_2.dll在php5.2.5 已经自带了 而使用以前的版本，譬如php5.1请到<a href="/web/20130822161032/http://php.net/" rel="nofollow">http://php.net</a>下载补丁php5apache2.dll-php5.1.x.rar并解压.共有三个文件.vcredist_x86.exephp5apache2.dllhttpd.exe.manifest1.将 php5apache2.dll 覆盖掉你原来PHP目录下的 php5apache2.dll 文件.2.将 httpd.exe.manifest 文件复制到你的apache安装目录下的bin文件夹下.3.双击运行vcredist_x86.exe安装.(如果您的系统里已安装了 .NET framework 2.就可以省掉这一步)完成!重启你的apache2.2试试吧.当然，使用php5.2.5 完全不用管这个问题！<br />
+好了，大抵就这些问题比较常见，希望能给大家一点帮助！<br />
+Ben White 2008-4-30</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-5051">
+        <div id="dsq-comment-header-5051" class="dsq-comment-header">
+            <cite id="dsq-cite-5051">
+                <span id="dsq-author-user-5051">李笑来</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-5051" class="dsq-comment-body">
+            <div id="dsq-comment-message-5051" class="dsq-comment-message"><p>我好想还遇到过因为正在用迅雷下载而导致xampp的apache无法启动的情况，好象是因为迅雷占用80端口&hellip;&hellip;</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment even thread-even depth-1" id="dsq-comment-5052">
+        <div id="dsq-comment-header-5052" class="dsq-comment-header">
+            <cite id="dsq-cite-5052">
+                <span id="dsq-author-user-5052">yangshaoshun</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-5052" class="dsq-comment-body">
+            <div id="dsq-comment-message-5052" class="dsq-comment-message"><p>呵呵，试用了已经搭好了，进一步学习中，很不错的教程啊</p>
+<p>不过似乎有2个小小的地方没写上啊，不知道是不是因为太简单了所以笑来老师没写上</p>
+<p>1、第一步在双击执行xampp-control.exe之前，似乎得先双击执行<br />
+   setup_xampp.bat<br />
+   不然怎么也启动不了那2个服务的<br />
+2、最后一步在用记事本修改wp-config.php时，<br />
+   zh-CN  似乎应该是  zh_CN<br />
+   应该是下划线吧，直接在2个单引号里面手动输入<br />
+   zh_CN<br />
+   保存，就好了</p>
+<p>期待笑来老师下面的教程，当然自己也会找点东西来学的</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-5053">
+        <div id="dsq-comment-header-5053" class="dsq-comment-header">
+            <cite id="dsq-cite-5053">
+                <span id="dsq-author-user-5053">Ai</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-5053" class="dsq-comment-body">
+            <div id="dsq-comment-message-5053" class="dsq-comment-message"><p>我想知道能不能用已有的blogger的域名作为网站的url呢</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment even thread-even depth-1" id="dsq-comment-5054">
+        <div id="dsq-comment-header-5054" class="dsq-comment-header">
+            <cite id="dsq-cite-5054">
+                <span id="dsq-author-user-5054">jack</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-5054" class="dsq-comment-body">
+            <div id="dsq-comment-message-5054" class="dsq-comment-message"><p>解决了&nbsp; 先执行setup_xampp.bat 就能启动Apache 和 MySQL了</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment byuser comment-author-admin bypostauthor odd alt thread-odd thread-alt depth-1" id="dsq-comment-5055">
+        <div id="dsq-comment-header-5055" class="dsq-comment-header">
+            <cite id="dsq-cite-5055">
+                <span id="dsq-author-user-5055">李笑来</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-5055" class="dsq-comment-body">
+            <div id="dsq-comment-message-5055" class="dsq-comment-message"><p>to <strong>yangshaoshun: </strong>改过。</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment even thread-even depth-1" id="dsq-comment-5057">
+        <div id="dsq-comment-header-5057" class="dsq-comment-header">
+            <cite id="dsq-cite-5057">
+http://www.zreading.cn                <span id="dsq-author-user-5057">左岸读书</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-5057" class="dsq-comment-body">
+            <div id="dsq-comment-message-5057" class="dsq-comment-message"><p>笑来老师除了善于说理，还很懂技术哟！佩服一下！</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-5058">
+        <div id="dsq-comment-header-5058" class="dsq-comment-header">
+            <cite id="dsq-cite-5058">
+                <span id="dsq-author-user-5058">yanbook</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-5058" class="dsq-comment-body">
+            <div id="dsq-comment-message-5058" class="dsq-comment-message"><p>我在安装时遇到的问题：1.安装XAMPP时Apache可以运行，有可能无法启用MySql，我把自己的IIS关闭，SQL Server服务也关闭了，还是不行，最后是退出XAMPP然后先运行&ldquo;setup_xampp.bat&rdquo;再运行&ldquo;xampp-control.exe&rdquo;就可以了；2.在phpMyAdmin设置权限时加入&ldquo;权限&rdquo;链接页面后看不到&ldquo;添加新用户&rdquo;选项，只要再打开右下侧的&ldquo;Open new phpMyAdmin windowOpen new phpMyAdmin window&rdquo;打开一个新窗口就会出现；3.安装WordPress，中文语言包在<a href="/web/20130822161032/http://wpchina.org/downloads/" rel="nofollow">http://wpchina.org/downloads/</a>已有2.3.6最新版的了。我是把&ldquo;languages&rdquo;目录放在<strong>\wordpress\wp-includes</strong>才行，而且要注意：define (&#8216;WPLANG&#8217;, &#8216;zh_CN&#8217;);中是&#8217;zh_CN&#8217;不是&#8217;zh-CN&#8217;。</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment even thread-even depth-1" id="dsq-comment-5063">
+        <div id="dsq-comment-header-5063" class="dsq-comment-header">
+            <cite id="dsq-cite-5063">
+                <span id="dsq-author-user-5063">lovelyrosa</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-5063" class="dsq-comment-body">
+            <div id="dsq-comment-message-5063" class="dsq-comment-message"><p>好东西，学习啦。<br />
+再补充几点，给使用mac OS操作系统的的童鞋们：<br />
+1.XAMPP下载地址：<a href="/web/20130822161032/http://www.apachefriends.org/en/xampp-macosx.html" rel="nofollow">XAMPP(mac OS)</a>92M<br />
+<a href="/web/20130822161032/http://www.apachefriends.org/download.php?xampp-macosx-0.7.4.dmg" rel="nofollow">XAMPP Mac OS X 0.7.4</a>和<a href="/web/20130822161032/http://www.apachefriends.org/download.php?xampp-macosx-0.7.4.tar.gz" rel="nofollow">XAMPP Mac OS X (tar) 0.7.4</a>都可以下载，一个是原安装文件，后一个是它的压缩包<br />
+2.下载后请使用 Stuffit Expander 或类似的软件将其解压缩，并双击 pkg 文件：<br />
+&nbsp;</p>
+<p>&nbsp;</p>
+<p>MacOS 的安装程序会启动，并询问您点击&ldquo;继续&rdquo;。 安装程序还会向您询问管理员密码（你自己没有设置就不用啦）。 安装成功后，MacOS X 版的 XAMPP 将被安装到 /Applications/xampp下。<br />
+安装完成后，使用下面的命令开始运行 XAMPP：</p>
+<p>在终端下以系统管理员 root 的身份登录：</p>
+<p>&nbsp;<br />
+使用下面的命令启动 XAMPP：<br />
+/Applications/xampp/xamppfiles/mampp start</p>
+<p> Starting XAMPP for MacOS X 0.7.4&#8230; XAMPP: Starting Apache with SSL (and PHP5)&#8230; XAMPP: Starting MySQL&#8230; XAMPP: Starting ProFTPD&#8230; XAMPP for MacOS X started. </p>
+<p>好了。Apache 和 MySQL 正在运行中。<br />
+4.phpMyAdmin跟windows下的操作一样<br />
+5.把下载的WP解压后放入(计算机名)\Applications\xampp\xamppfiles\htdocs目录，接下来的设置同上。。。。（省略100字）<br />
+好了，完事该干嘛干嘛吧<br />
+&nbsp;<br />
+<a href="/web/20130822161032/http://search.yahoo.com/search?p=2.%E5%AE%89%E8%A3%85%E6%97%B6%E9%9C%80%E8%A6%81%E8%BE%93%E5%85%A5%E8%B4%A6%E6%88%B7%E5%90%8D%EF%BC%9A" rel="nofollow"></a><a href="/web/20130822161032/http://www.flickr.com/search/?q=2.%E5%AE%89%E8%A3%85%E6%97%B6%E9%9C%80%E8%A6%81%E8%BE%93%E5%85%A5%E8%B4%A6%E6%88%B7%E5%90%8D%EF%BC%9A" rel="nofollow"></a></p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-5094">
+        <div id="dsq-comment-header-5094" class="dsq-comment-header">
+            <cite id="dsq-cite-5094">
+http://guangle.yo2.cn                <span id="dsq-author-user-5094">知秋小明</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-5094" class="dsq-comment-body">
+            <div id="dsq-comment-message-5094" class="dsq-comment-message"><p>笑来，我在自己的wordpress博客试着输出Google Reader分享项目的时候，出了一点问题，可不可以向你请教一下？</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment even thread-even depth-1" id="dsq-comment-5127">
+        <div id="dsq-comment-header-5127" class="dsq-comment-header">
+            <cite id="dsq-cite-5127">
+                <span id="dsq-author-user-5127">fanfan</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-5127" class="dsq-comment-body">
+            <div id="dsq-comment-message-5127" class="dsq-comment-message"><p>找到&ldquo;权限&rdquo;链接，进入&ldquo;权限&rdquo;设置页面，&ldquo;添加新用户&rdquo;；输入用户名（比如&ldquo;myusername&rdquo;）、输入两遍密码(比如&ldquo;mypassword&rdquo;）、&ldquo;主机&rdquo;之后的文本框里输入&ldquo;localhost&rdquo;；<br />
+我进入&ldquo;权限&rdquo;页面怎么没有&ldquo;添加新用户&rdquo;这个选项呢？<br />
+只有一个列表，列了2个用户。</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-5128">
+        <div id="dsq-comment-header-5128" class="dsq-comment-header">
+            <cite id="dsq-cite-5128">
+                <span id="dsq-author-user-5128">李笑来</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-5128" class="dsq-comment-body">
+            <div id="dsq-comment-message-5128" class="dsq-comment-message"><p>to fanfan: 在页面中间，是一个链接&hellip;&hellip;</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment even thread-even depth-1" id="dsq-comment-5415">
+        <div id="dsq-comment-header-5415" class="dsq-comment-header">
+            <cite id="dsq-cite-5415">
+http://Website                <span id="dsq-author-user-5415">Name</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-5415" class="dsq-comment-body">
+            <div id="dsq-comment-message-5415" class="dsq-comment-message"><p>现在打开浏览器（推荐使用Firefox，因为过后有很多Firefox插件，比如&ldquo;Firebug&rdquo;等等，实在是太好用&hellip;&hellip;），在地址栏输入&ldquo;localhost&rdquo;之后回车<br />
+&nbsp;<br />
+&nbsp;<br />
+为什么是页面载入出错 ？试了好多次。。。。。请帮忙解答</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-5416">
+        <div id="dsq-comment-header-5416" class="dsq-comment-header">
+            <cite id="dsq-cite-5416">
+http://Website                <span id="dsq-author-user-5416">Name</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-5416" class="dsq-comment-body">
+            <div id="dsq-comment-message-5416" class="dsq-comment-message"><p>几次让人崩溃的尝试之后 点了安装包里restart的件 竟然好用了</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment even thread-even depth-1" id="dsq-comment-5481">
+        <div id="dsq-comment-header-5481" class="dsq-comment-header">
+            <cite id="dsq-cite-5481">
+http://Website                <span id="dsq-author-user-5481">袁</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-5481" class="dsq-comment-body">
+            <div id="dsq-comment-message-5481" class="dsq-comment-message"><p>Error establishing a database connection这是怎么回事？？</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-5752">
+        <div id="dsq-comment-header-5752" class="dsq-comment-header">
+            <cite id="dsq-cite-5752">
+http://Website                <span id="dsq-author-user-5752">ljeiu</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-5752" class="dsq-comment-body">
+            <div id="dsq-comment-message-5752" class="dsq-comment-message"><p>成功搭建了,师傅领进门,修行靠个人,小女子自学去了</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment even thread-even depth-1" id="dsq-comment-5794">
+        <div id="dsq-comment-header-5794" class="dsq-comment-header">
+            <cite id="dsq-cite-5794">
+http://Website                <span id="dsq-author-user-5794">ljeiu</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-5794" class="dsq-comment-body">
+            <div id="dsq-comment-message-5794" class="dsq-comment-message"><p>笑来老师,我搞了两个晚上都没有搞出来,突然发现还要买虚拟空间和域名,有个问题,想知道,就是那个虚拟空间的ip地址是什么意思,有些事1个ip,有些是18个ip,具体是指什么呢?今天弄了头像,下定决心要整出自己的博客,</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-6536">
+        <div id="dsq-comment-header-6536" class="dsq-comment-header">
+            <cite id="dsq-cite-6536">
+http://Website                <span id="dsq-author-user-6536">那啥</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-6536" class="dsq-comment-body">
+            <div id="dsq-comment-message-6536" class="dsq-comment-message"><p>说说偶遇到的小问题，就是安装中文版语言包的时候，用记事本将&ldquo;D：\xammp\htdocs\wordpress\wp-config.php&rdquo;文件中的&ldquo;define(&#8216;WPLANG&#8217;,&#8221;);&rdquo;修改为&#8221;define(&#8216;WPLANG&#8217;,'zh_CN&#8217;)&#8221;.<br />
+我之前一直以为是&#8217;zh&nbsp; CN&#8217;，所以就没弄成中文版，后来仔细看过之后总算改过来了，谢谢笑来老师！我会继续学习的~~</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="post pingback">
+        <p>Pingback: <a href='/web/20130822161032/http://woogle.yo2.cn/articles/%e7%bd%91%e8%b7%af%e6%96%87%e6%91%98-01072009.html' rel='external nofollow' class='url'>网路文摘 01/07/2009 | 老馆——Woogle‘s Blawg</a></p>
+    </li>
+    </li>
+    <li class="comment even thread-even depth-1" id="dsq-comment-7632">
+        <div id="dsq-comment-header-7632" class="dsq-comment-header">
+            <cite id="dsq-cite-7632">
+                <span id="dsq-author-user-7632">wei</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-7632" class="dsq-comment-body">
+            <div id="dsq-comment-message-7632" class="dsq-comment-message"><p>Object not found!<br />
+The requested URL was not found on this server.          If you entered the URL manually please check your     spelling and try again.<br />
+If you think this is a server error, please contact the <a href="mailto:admin@localhost" rel="nofollow">webmaster</a>.<br />
+Error 404<br />
+ <a href="/web/20130822161032/http://localhost/" rel="nofollow">localhost</a> 01/30/09 01:40:07 Apache/2.2.11 (Win32) DAV/2 mod_ssl/2.2.11 OpenSSL/0.9.8i mod_autoindex_color PHP/5.2.8what&#8217;s this problem? </p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-11899">
+        <div id="dsq-comment-header-11899" class="dsq-comment-header">
+            <cite id="dsq-cite-11899">
+                <span id="dsq-author-user-11899">bourne</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-11899" class="dsq-comment-body">
+            <div id="dsq-comment-message-11899" class="dsq-comment-message"><p>要学的东西太多了，自己懒人一个，还是看看别人的博客算求了</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment even thread-even depth-1" id="dsq-comment-12290">
+        <div id="dsq-comment-header-12290" class="dsq-comment-header">
+            <cite id="dsq-cite-12290">
+                <span id="dsq-author-user-12290">alexchen</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-12290" class="dsq-comment-body">
+            <div id="dsq-comment-message-12290" class="dsq-comment-message"><p>向笑来致敬！！！<br />
+想弄清楚如何用WORDPRESS来架设自己的博客，&nbsp;在网上找了半天资料，没什么收获，突然记起印象中在这里看过一篇关于WORDPRESS的文章，之前由于没有这方面的想法，所以没有放在心上，后来我在GOOGLE上搜&ldquo;李笑来 WORDPRESS&rdquo;，找着你这个材料，跟做一往遍，搞懂了很多东西！太感谢了！！！</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-12379">
+        <div id="dsq-comment-header-12379" class="dsq-comment-header">
+            <cite id="dsq-cite-12379">
+                <span id="dsq-author-user-12379">it的爱好者</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-12379" class="dsq-comment-body">
+            <div id="dsq-comment-message-12379" class="dsq-comment-message"><p>谢谢老师！我以后的目标是要用WordPress写自己的博客</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment even thread-even depth-1" id="dsq-comment-15129">
+        <div id="dsq-comment-header-15129" class="dsq-comment-header">
+            <cite id="dsq-cite-15129">
+                <span id="dsq-author-user-15129">萝卜</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-15129" class="dsq-comment-body">
+            <div id="dsq-comment-message-15129" class="dsq-comment-message"><p>我是一个WordPress超级新人..昨天也是用这个方法在自己的电脑上弄好的<br />
+但是有几个比较弱的问题不太清楚, 希望你能回答下<br />
+&nbsp;<br />
+1.我现在是不是需要买一个域名才能成为真正的网站?<br />
+2.我的电脑如果不开的话, 那么别人能不能访问我的网站?<br />
+3.速度会不会很慢..<br />
+谢谢回答哦..</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-15197">
+        <div id="dsq-comment-header-15197" class="dsq-comment-header">
+            <cite id="dsq-cite-15197">
+                <span id="dsq-author-user-15197">goodman</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-15197" class="dsq-comment-body">
+            <div id="dsq-comment-message-15197" class="dsq-comment-message"><p>这个模板怎么弄到啊？</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment even thread-even depth-1" id="dsq-comment-15209">
+        <div id="dsq-comment-header-15209" class="dsq-comment-header">
+            <cite id="dsq-cite-15209">
+                <span id="dsq-author-user-15209">goodman</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-15209" class="dsq-comment-body">
+            <div id="dsq-comment-message-15209" class="dsq-comment-message"><p>李老师，你这个博客做的很漂亮，可否告诉，怎么做的呢？<br />
+&nbsp;<br />
+看了下wordpress，感觉有很大改动，都用了什么插件啊？</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-15212">
+        <div id="dsq-comment-header-15212" class="dsq-comment-header">
+            <cite id="dsq-cite-15212">
+http://www.lixiaolai.com                <span id="dsq-author-user-15212">李笑来</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-15212" class="dsq-comment-body">
+            <div id="dsq-comment-message-15212" class="dsq-comment-message"><p>这个theme是clear home改的。</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment even thread-even depth-1" id="dsq-comment-15220">
+        <div id="dsq-comment-header-15220" class="dsq-comment-header">
+            <cite id="dsq-cite-15220">
+                <span id="dsq-author-user-15220">goodman</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-15220" class="dsq-comment-body">
+            <div id="dsq-comment-message-15220" class="dsq-comment-message"><p>怎么改的呢？用了哪些插件啊？麻烦么？</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-15543">
+        <div id="dsq-comment-header-15543" class="dsq-comment-header">
+            <cite id="dsq-cite-15543">
+                <span id="dsq-author-user-15543">goodman</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-15543" class="dsq-comment-body">
+            <div id="dsq-comment-message-15543" class="dsq-comment-message"><p>老师，模板共享一下思路，如何啊？</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment even thread-even depth-1" id="dsq-comment-16169">
+        <div id="dsq-comment-header-16169" class="dsq-comment-header">
+            <cite id="dsq-cite-16169">
+http://cid-105295aa0f0fe688.spaces.live.com/default.aspx                <span id="dsq-author-user-16169">笑笑</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-16169" class="dsq-comment-body">
+            <div id="dsq-comment-message-16169" class="dsq-comment-message"><p>好，学习学习！</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-16570">
+        <div id="dsq-comment-header-16570" class="dsq-comment-header">
+            <cite id="dsq-cite-16570">
+                <span id="dsq-author-user-16570">小默</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-16570" class="dsq-comment-body">
+            <div id="dsq-comment-message-16570" class="dsq-comment-message"><p>呵呵！早上爬起来弄了不到两个小时竟然就搞定了，看看之前的留言，大概大家塔谈过的问题都没遇到：）(虽然起晚了很惭愧&#8230;)。最后一步时对于&ldquo;<strong><em>而后用记事本修改&ldquo;D:\xampp\htdocs\wordpress\wp-config.php&rdquo;文件</em></strong>&rdquo;这句话产生了小疑问，经摆渡并理解，原来这句话的意思是，&ldquo;<strong><em>用记事本打开这个.php文件，并修改之</em></strong>&rdquo;。嗯，专门贡献上来，以便让和我一样的脑盲节省点时间。<br />
+&nbsp;</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment even thread-even depth-1" id="dsq-comment-16571">
+        <div id="dsq-comment-header-16571" class="dsq-comment-header">
+            <cite id="dsq-cite-16571">
+http://hi.baidu.com/%E5%B0%8F%E9%BB%98                <span id="dsq-author-user-16571">小默</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-16571" class="dsq-comment-body">
+            <div id="dsq-comment-message-16571" class="dsq-comment-message"><p>&mdash;&mdash;看了上面自己的留言，才知道下划线会变成红色，嗯，很醒目，很人性：）</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-16951">
+        <div id="dsq-comment-header-16951" class="dsq-comment-header">
+            <cite id="dsq-cite-16951">
+                <span id="dsq-author-user-16951">Super Dull</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-16951" class="dsq-comment-body">
+            <div id="dsq-comment-message-16951" class="dsq-comment-message"><p>我找不到D:\xampp\htdocs\wordpress\wp-content&rdquo;目录啊、有人告诉我下么<br />
+谢谢。</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment even thread-even depth-1" id="dsq-comment-19958">
+        <div id="dsq-comment-header-19958" class="dsq-comment-header">
+            <cite id="dsq-cite-19958">
+                <span id="dsq-author-user-19958">moz</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-19958" class="dsq-comment-body">
+            <div id="dsq-comment-message-19958" class="dsq-comment-message"><p>谢谢笑来老师<br />
+按您的方法我会用了<br />
+很兴奋啊 呵呵<br />
+就是下一步 有自己的wordpress博客</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-20142">
+        <div id="dsq-comment-header-20142" class="dsq-comment-header">
+            <cite id="dsq-cite-20142">
+                <span id="dsq-author-user-20142">小艾</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-20142" class="dsq-comment-body">
+            <div id="dsq-comment-message-20142" class="dsq-comment-message"><p>笑来老师，能不能写个，如何用wp建站的文章啊！ 最好能傻瓜一些的，呵呵！不用知道why。</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment even thread-even depth-1" id="dsq-comment-22005">
+        <div id="dsq-comment-header-22005" class="dsq-comment-header">
+            <cite id="dsq-cite-22005">
+                <span id="dsq-author-user-22005">新月人</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-22005" class="dsq-comment-body">
+            <div id="dsq-comment-message-22005" class="dsq-comment-message"><p>wonderful.After reading,I find the link&#8211;www.lixiaolai.com/wp-login.php</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-22016">
+        <div id="dsq-comment-header-22016" class="dsq-comment-header">
+            <cite id="dsq-cite-22016">
+http://www.onlyswan.net                <span id="dsq-author-user-22016">Eason</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-22016" class="dsq-comment-body">
+            <div id="dsq-comment-message-22016" class="dsq-comment-message"><p>太麻烦了，俺直接花133大洋买了个米国的空间和域名（68+65）</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment even thread-even depth-1" id="dsq-comment-26103">
+        <div id="dsq-comment-header-26103" class="dsq-comment-header">
+            <cite id="dsq-cite-26103">
+                <span id="dsq-author-user-26103">wang</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-26103" class="dsq-comment-body">
+            <div id="dsq-comment-message-26103" class="dsq-comment-message"><p>一个小时，成功搞定。</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-26104">
+        <div id="dsq-comment-header-26104" class="dsq-comment-header">
+            <cite id="dsq-cite-26104">
+                <span id="dsq-author-user-26104">wang</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-26104" class="dsq-comment-body">
+            <div id="dsq-comment-message-26104" class="dsq-comment-message"><p>下一步的目标是折腾折腾，弄一下自己喜欢的主题出来。</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment even thread-even depth-1" id="dsq-comment-26138">
+        <div id="dsq-comment-header-26138" class="dsq-comment-header">
+            <cite id="dsq-cite-26138">
+http://www.myhang.net                <span id="dsq-author-user-26138">myhang</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-26138" class="dsq-comment-body">
+            <div id="dsq-comment-message-26138" class="dsq-comment-message"><p>老师出现Error establishing a database connection这个问题如何解决呢？我Google过但是还是不懂如何解决，希望得到你的指点。</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-29110">
+        <div id="dsq-comment-header-29110" class="dsq-comment-header">
+            <cite id="dsq-cite-29110">
+                <span id="dsq-author-user-29110">大狗DVD</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-29110" class="dsq-comment-body">
+            <div id="dsq-comment-message-29110" class="dsq-comment-message"><p>我用的是<strike>xampplite-win32-1.7.3.zip</strike>这个版本，出现一个问题是当我创建一个名为“mytestingwordpress”的DB后，按照你说说的“在“用户 ‘myusername’@&#8217;localhost’ : 编辑权限”页面中的<strong>“按数据库指定权限”中，拉下“在下列数据库添加权限”右侧的下拉框中选中“mytestingwordpress”； ”</strong>,我却找不到这个数据库，后来我以为是之前哪里做错了，又建立了一个qhbTestPhbMyAdmin数据库，再回到刚才的下拉框，发现mytestingwordpress看得见，但是第二个建的“qhbTestPhbMyAdmin”缺看不见，不知道是哪里引起了这个滞后，<br />
+笑老师，还有<cite>ls +lx</cite>的各位高手说说为什么啊</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="post pingback">
+        <p>Pingback: <a href='/web/20130822161032/http://www.xbc.me/wordpress-first-experience/' rel='external nofollow' class='url'>wordpress初体验–在自己的主机上建个WordPress用来学习与测试 | 学编程</a></p>
+    </li>
+    </li>
+    <li class="post pingback">
+        <p>Pingback: <a href='/web/20130822161032/http://sosowo.org/archives/94' rel='external nofollow' class='url'>Wordpress 折腾手记(1) &#124; sosowo&#039;s blog</a></p>
+    </li>
+    </li>
+    <li class="post pingback">
+        <p>Pingback: <a href='/web/20130822161032/http://www.gongzhiyuan.com/?p=6' rel='external nofollow' class='url'>不管怎么着吧 | 阿拉蕾</a></p>
+    </li>
+    </li>
+    <li class="comment even thread-even depth-1" id="dsq-comment-44060">
+        <div id="dsq-comment-header-44060" class="dsq-comment-header">
+            <cite id="dsq-cite-44060">
+http://www.dyfkw.cn                <span id="dsq-author-user-44060">杭州人流医院</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-44060" class="dsq-comment-body">
+            <div id="dsq-comment-message-44060" class="dsq-comment-message"><p>XAMPP下载地址：XAMPP(mac OS)92M<br />
+XAMPP Mac OS X 0.7.4和XAMPP Mac OS X (tar) 0.7.4都可以下载，一个是原安装文件，后一个是它的压缩包<br />
+弱弱的问下还可以用吗？？</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-45900">
+        <div id="dsq-comment-header-45900" class="dsq-comment-header">
+            <cite id="dsq-cite-45900">
+                <span id="dsq-author-user-45900">misuzu</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-45900" class="dsq-comment-body">
+            <div id="dsq-comment-message-45900" class="dsq-comment-message"><p>老师，如果要让人能够搜索到，那么是不是一定要租一个服务器，然后缴费之类的。<br />
+实在是新手，现在想用wordpress做一个blog，不过不懂的太多了，<br />
+现在刚刚学会用在自己的主机上使用wordpress，但是这还差的很远。<br />
+希望您能详细一点</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="post pingback">
+        <p>Pingback: <a href='/web/20130822161032/http://momentago.co.nu/momentago/2009/11/why-and-how-to-build-a-blog/' rel='external nofollow' class='url'>建个博客并不难 | MomentAgo</a></p>
+    </li>
+    </li>
+    <li class="post pingback">
+        <p>Pingback: <a href='/web/20130822161032/http://momentago.sysublog.com/2009/11/why-and-how-to-build-a-blog.html' rel='external nofollow' class='url'>建个博客并不难 | MomentAgo</a></p>
+    </li>
+    </li>
+    <li class="comment even thread-even depth-1" id="dsq-comment-56594">
+        <div id="dsq-comment-header-56594" class="dsq-comment-header">
+            <cite id="dsq-cite-56594">
+                <span id="dsq-author-user-56594">Cai Xiaodian</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-56594" class="dsq-comment-body">
+            <div id="dsq-comment-message-56594" class="dsq-comment-message"><p>搭建好了.博客起来了,第一篇博文也起来了.谢了,大叔.</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+            </ul>
+
+
+        </div>
+
+    </div>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+    var disqus_url = '/web/20130822161032/http://wordpress.lixiaolai.com/archives/1541.html';
+    var disqus_identifier = '1541 /web/20130822161032/http://www.lixiaolai.com/index.php/archives/1541.html';
+    var disqus_container_id = 'disqus_thread';
+    var disqus_domain = 'disqus.com';
+    var disqus_shortname = 'lixiaolai';
+    var disqus_title = "在自己的主机上建个WordPress用来学习与测试";
+        var disqus_config = function () {
+        var config = this; // Access to the config object
+
+        /*
+           All currently supported events:
+            * preData — fires just before we request for initial data
+            * preInit - fires after we get initial data but before we load any dependencies
+            * onInit  - fires when all dependencies are resolved but before dtpl template is rendered
+            * afterRender - fires when template is rendered but before we show it
+            * onReady - everything is done
+         */
+
+        config.callbacks.preData.push(function() {
+            // clear out the container (its filled for SEO/legacy purposes)
+            document.getElementById(disqus_container_id).innerHTML = '';
+        });
+                config.callbacks.onReady.push(function() {
+            // sync comments in the background so we don't block the page
+            var script = document.createElement('script');
+            script.async = true;
+            script.src = '?cf_action=sync_comments&post_id=1541';
+
+            var firstScript = document.getElementsByTagName( "script" )[0];
+            firstScript.parentNode.insertBefore(script, firstScript);
+        });
+                    };
+    var facebookXdReceiverPath = '/web/20130822161032/http://wordpress.lixiaolai.com/wp-content/plugins/disqus-comment-system/xd_receiver.htm';
+/* ]]> */
+</script>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+    var DsqLocal = {
+        'trackbacks': [
+            {
+                'author_name':    "网路文摘 01\/07\/2009 | 老馆——Woogle‘s Blawg",
+                'author_url':    "/web/20130822161032/http://woogle.yo2.cn\/articles\/%e7%bd%91%e8%b7%af%e6%96%87%e6%91%98-01072009.html",
+                'date':            "01\/07\/2009 09:31 AM",
+                'excerpt':        "[...] 在自己的主机上建个WordPress用来学习与测试 | Pure Pleasure - Reborn [...] ",
+                'type':            "pingback"            }
+,            {
+                'author_name':    "wordpress初体验–在自己的主机上建个WordPress用来学习与测试 | 学编程",
+                'author_url':    "/web/20130822161032/http://www.xbc.me\/wordpress-first-experience\/",
+                'date':            "10\/15\/2010 10:40 AM",
+                'excerpt':        "[...] 最近看了这里的安装的过程忍不住 自己动手实践了一把。 [...] ",
+                'type':            "pingback"            }
+,            {
+                'author_name':    "Wordpress 折腾手记(1) &#124; sosowo&#039;s blog",
+                'author_url':    "/web/20130822161032/http://sosowo.org\/archives\/94",
+                'date':            "08\/14\/2011 04:20 PM",
+                'excerpt':        "[...] 鉴于之前的经验，首先就认真看了李笑来老师博客中的WordPress入门系列，明确了整个折腾的流程。 [...] ",
+                'type':            "pingback"            }
+,            {
+                'author_name':    "不管怎么着吧 | 阿拉蕾",
+                'author_url':    "/web/20130822161032/http://www.gongzhiyuan.com\/?p=6",
+                'date':            "09\/08\/2011 11:59 AM",
+                'excerpt':        "[...] 从周二开始，从零开始，以一篇笑来老师的博文‘在自己的主机上建个WordPress用来学习与测试’启蒙，在自己的机器上开始摆置。周二晚上开始琢磨买域名跟空间，周三购齐，并进行了简单的调试，今天上午又调试，解决了一很傻的问题（修改‘wp-config.php’时保存的问题，在此感谢博主），中午已经可以访问。 [...] ",
+                'type':            "pingback"            }
+,            {
+                'author_name':    "建个博客并不难 | MomentAgo",
+                'author_url':    "/web/20130822161032/http://momentago.co.nu\/momentago\/2009\/11\/why-and-how-to-build-a-blog\/",
+                'date':            "11\/13\/2011 10:30 PM",
+                'excerpt':        "[...] 网络最初给予我的是，李笑来老师博客上的一篇教程。其它的事，自然会按照你的好奇心而水到渠成。   此条目发表在 互联网 分类目录，贴了 Momentago, 博客 标签。将固定链接加入收藏夹。    &larr; 交流的局限 “温水青蛙效应”是一个寓言故事 &rarr; [...] ",
+                'type':            "pingback"            }
+,            {
+                'author_name':    "建个博客并不难 | MomentAgo",
+                'author_url':    "/web/20130822161032/http://momentago.sysublog.com\/2009\/11\/why-and-how-to-build-a-blog.html",
+                'date':            "12\/10\/2011 07:47 PM",
+                'excerpt':        "[...] 网络最初给予我的是，李笑来老师博客上的一篇教程。其它的事，自然会按照你的好奇心而水到渠成。   This entry was posted in 互联网 and tagged Momentago, 博客 by momentago. Bookmark the permalink. [...] ",
+                'type':            "pingback"            }
+        ],
+        'trackback_url': "/web/20130822161032/http://wordpress.lixiaolai.com\/archives\/1541.html\/trackback"    };
+/* ]]> */
+</script>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript';
+    dsq.async = true;
+        dsq.src = 'http' + '://' + disqus_shortname + '.' + 'disqus.com' + '/embed.js?pname=wordpress&pver=2.73';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+/* ]]> */
+</script>
+					<div class="prev_next post_nav">
+						<p class="previous">Previous post: <a href="/web/20130822161032/http://wordpress.lixiaolai.com/archives/1532.html" rel="prev">如何面对非议（兼某读者问）</a></p>
+						<p>Next post: <a href="/web/20130822161032/http://wordpress.lixiaolai.com/archives/1560.html" rel="next">想起小时候用过的打水泵……</a></p>
+					</div>
+		</div>
+
+		<div id="sidebars">
+			<div id="multimedia_box" class="image_box">
+				<div id="image_box">
+<a href="/web/20130822161032/http://www.satoefl.com/sat-og-reading-intro.php?hmsr=lixiaolai.com&amp;hmmd=%E5%B1%95%E7%A4%BA%E5%B9%BF%E5%91%8A&amp;hmpl=%E6%9D%8E%E7%AC%91%E6%9D%A5%E4%B8%AA%E4%BA%BA%E4%B8%BB%E9%A1%B5%E5%B8%B8%E5%B9%B4%E5%B1%95%E7%A4%BA&amp;hmkw=&amp;hmci="><img class="square" src="/web/20130822161032im_/http://wordpress.lixiaolai.com/wp-content/themes/thesis_182/custom/rotator/sat-guide.jpeg" alt="sat-guide.jpeg" /></a>
+				</div>
+			</div>
+			<div id="sidebar_1" class="sidebar">
+				<ul class="sidebar_list">
+<li class="widget widget_archive" id="archives-2"><h3>Archives</h3>		<select name="archive-dropdown" onchange='document.location.href=this.options[this.selectedIndex].value;'> <option value="">Select Month</option> 	<option value='http://wordpress.lixiaolai.com/archives/date/2012/09'> September 2012 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2012/08'> August 2012 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2012/07'> July 2012 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2012/06'> June 2012 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2012/05'> May 2012 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2012/04'> April 2012 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2012/03'> March 2012 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2012/02'> February 2012 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2012/01'> January 2012 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2011/12'> December 2011 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2011/11'> November 2011 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2011/10'> October 2011 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2011/09'> September 2011 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2011/08'> August 2011 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2011/07'> July 2011 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2011/06'> June 2011 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2011/05'> May 2011 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2011/04'> April 2011 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2011/03'> March 2011 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2011/02'> February 2011 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2011/01'> January 2011 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2010/12'> December 2010 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2010/11'> November 2010 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2010/10'> October 2010 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2010/09'> September 2010 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2010/08'> August 2010 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2010/07'> July 2010 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2010/06'> June 2010 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2010/05'> May 2010 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2010/04'> April 2010 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2010/03'> March 2010 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2010/02'> February 2010 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2010/01'> January 2010 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2009/12'> December 2009 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2009/11'> November 2009 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2009/10'> October 2009 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2009/09'> September 2009 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2009/08'> August 2009 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2009/07'> July 2009 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2009/06'> June 2009 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2009/05'> May 2009 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2009/04'> April 2009 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2009/03'> March 2009 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2009/02'> February 2009 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2009/01'> January 2009 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2008/12'> December 2008 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2008/11'> November 2008 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2008/10'> October 2008 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2008/09'> September 2008 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2008/08'> August 2008 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2008/07'> July 2008 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2008/06'> June 2008 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2008/05'> May 2008 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2008/04'> April 2008 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2008/03'> March 2008 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2008/02'> February 2008 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2008/01'> January 2008 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2007/12'> December 2007 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2007/11'> November 2007 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2007/10'> October 2007 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2007/09'> September 2007 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2007/08'> August 2007 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2007/07'> July 2007 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2007/06'> June 2007 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2007/05'> May 2007 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2007/04'> April 2007 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2007/03'> March 2007 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2007/02'> February 2007 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2007/01'> January 2007 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2006/12'> December 2006 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2006/11'> November 2006 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2006/10'> October 2006 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2006/06'> June 2006 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2006/05'> May 2006 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2000/01'> January 2000 </option>
+ </select>
+</li><li class="widget widget_collapscat" id="collapscat-3"><h3>Categories</h3><ul id='widget-collapscat-3-top' class='collapsing categories list'>
+      <li class='collapsing categories item'><a href='/web/20130822161032/http://wordpress.lixiaolai.com/archives/category/applying-stackexchange-com' title="View all posts filed under applying.stackexchange.com">applying.stackexchange.com</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130822161032/http://wordpress.lixiaolai.com/archives/category/daily' title="View all posts filed under Daily">Daily</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130822161032/http://wordpress.lixiaolai.com/archives/category/dont-buy-bullshits' title="View all posts filed under Don&#8217;t buy bullshits">Don&#8217;t buy bullshits</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130822161032/http://wordpress.lixiaolai.com/archives/category/faq-sets' title="View all posts filed under FAQ问答集">FAQ问答集</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130822161032/http://wordpress.lixiaolai.com/archives/category/gmat-prep' title="View all posts filed under GMAT考试准备">GMAT考试准备</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130822161032/http://wordpress.lixiaolai.com/archives/category/uncategorized' title="View all posts filed under uncategorized">uncategorized</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130822161032/http://wordpress.lixiaolai.com/archives/category/video-and-audio' title="View all posts filed under Video and Audio">Video and Audio</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130822161032/http://wordpress.lixiaolai.com/archives/category/%e4%b8%80%e5%88%86%e9%92%9f%e6%94%b9%e5%8f%98%e7%94%9f%e6%b4%bb-%e6%88%91%e6%98%af%e8%b0%81%ef%bc%9f-in-chinese' title="View all posts filed under 一分钟改变生活——我是谁？">一分钟改变生活——我是谁？</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130822161032/http://wordpress.lixiaolai.com/archives/category/books-that-should-not-be-missed' title="View all posts filed under 书——不得不看">书——不得不看</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130822161032/http://wordpress.lixiaolai.com/archives/category/people' title="View all posts filed under 人物">人物</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130822161032/http://wordpress.lixiaolai.com/archives/category/readings-for-writing' title="View all posts filed under 作文素材">作文素材</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130822161032/http://wordpress.lixiaolai.com/archives/category/clear-writing' title="View all posts filed under 写清楚（系列）">写清楚（系列）</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130822161032/http://wordpress.lixiaolai.com/archives/category/learning-learning-to-learn-better' title="View all posts filed under 学习学习再学习">学习学习再学习</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130822161032/http://wordpress.lixiaolai.com/archives/category/versatile' title="View all posts filed under 强人高手">强人高手</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130822161032/http://wordpress.lixiaolai.com/archives/category/thinking-tools' title="View all posts filed under 思维工具">思维工具</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130822161032/http://wordpress.lixiaolai.com/archives/category/thinking-clearly-series' title="View all posts filed under 想明白（系列）">想明白（系列）</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130822161032/http://wordpress.lixiaolai.com/archives/category/response-to-readers' title="View all posts filed under 我要问笑来">我要问笑来</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130822161032/http://wordpress.lixiaolai.com/archives/category/finding-examples' title="View all posts filed under 找例子玩">找例子玩</a>      </li> <!-- ending category -->
+      <li class='collapsing categories expandable'><span class='collapsing categories expand'><span class='sym'>&#x25BA;</span></span><a href='/web/20130822161032/http://wordpress.lixiaolai.com/archives/category/time-as-a-friend' title="View all posts filed under 把时间当作朋友">把时间当作朋友</a>
+     <div id='collapsCat-17:3' style="display:none">
+<ul><li class='collapsing categories item'><a href='/web/20130822161032/http://wordpress.lixiaolai.com/archives/category/time-as-a-friend/time-as-a-friend-3rd-edition' title="View all posts filed under 《把时间当作朋友》第三版">《把时间当作朋友》第三版</a>         </li> <!-- ending subcategory -->
+</ul>        </div>
+      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130822161032/http://wordpress.lixiaolai.com/archives/category/public-speaking-skills-for-everyone' title="View all posts filed under 普通人的当众讲话技能">普通人的当众讲话技能</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130822161032/http://wordpress.lixiaolai.com/archives/category/things-better-learned-before-getting-a-job' title="View all posts filed under 求职前最好学会的那些事儿">求职前最好学会的那些事儿</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130822161032/http://wordpress.lixiaolai.com/archives/category/qa-for-application' title="View all posts filed under 留学问答">留学问答</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130822161032/http://wordpress.lixiaolai.com/archives/category/movie-time' title="View all posts filed under 看看电影">看看电影</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130822161032/http://wordpress.lixiaolai.com/archives/category/marvelous-brain' title="View all posts filed under 神奇的大脑">神奇的大脑</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130822161032/http://wordpress.lixiaolai.com/archives/category/temp-list' title="View all posts filed under 算是流水帐">算是流水帐</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130822161032/http://wordpress.lixiaolai.com/archives/category/diabetes-common-knowledge' title="View all posts filed under 糖尿病常识">糖尿病常识</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130822161032/http://wordpress.lixiaolai.com/archives/category/us-universities-and-colleges' title="View all posts filed under 美国大学">美国大学</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130822161032/http://wordpress.lixiaolai.com/archives/category/%e7%be%8e%e5%9b%bd%e5%a4%a7%e5%ad%a6%e6%9c%ac%e7%a7%91%e7%94%b3%e8%af%b7diy%e7%ae%80%e6%98%8e%e6%8c%87%e5%8d%97' title="View all posts filed under 美国大学本科申请DIY简明指南">美国大学本科申请DIY简明指南</a>      </li> <!-- ending category -->
+      <li class='collapsing categories expandable'><span class='collapsing categories expand'><span class='sym'>&#x25BA;</span></span><a href='/web/20130822161032/http://wordpress.lixiaolai.com/archives/category/english-learning' title="View all posts filed under 英语相关文章">英语相关文章</a>
+     <div id='collapsCat-3:3' style="display:none">
+<ul><li class='collapsing categories item'><a href='/web/20130822161032/http://wordpress.lixiaolai.com/archives/category/english-learning/1800-hours' title="View all posts filed under 1800小时 &#8211; 高中两年慢跑冲进美国名校">1800小时 &#8211; 高中两年慢跑冲进美国名校</a>         </li> <!-- ending subcategory -->
+<li class='collapsing categories item'><a href='/web/20130822161032/http://wordpress.lixiaolai.com/archives/category/english-learning/awa-basic-instruction' title="View all posts filed under AWA（GRE/GMAT写作）考试简明教程">AWA（GRE/GMAT写作）考试简明教程</a>         </li> <!-- ending subcategory -->
+<li class='collapsing categories item'><a href='/web/20130822161032/http://wordpress.lixiaolai.com/archives/category/english-learning/toefl-ibt-qualified-samples-for-ets-official-185-topic-pool' title="View all posts filed under TOEFL iBT 高分作文">TOEFL iBT 高分作文</a>         </li> <!-- ending subcategory -->
+<li class='collapsing categories item'><a href='/web/20130822161032/http://wordpress.lixiaolai.com/archives/category/english-learning/master-toefl-essential-vocabulary-in-21-days' title="View all posts filed under TOEFL核心词汇21天突破">TOEFL核心词汇21天突破</a>         </li> <!-- ending subcategory -->
+<li class='collapsing categories item'><a href='/web/20130822161032/http://wordpress.lixiaolai.com/archives/category/english-learning/everyone-can-use-english' title="View all posts filed under 人人都能用英语">人人都能用英语</a>         </li> <!-- ending subcategory -->
+<li class='collapsing categories item'><a href='/web/20130822161032/http://wordpress.lixiaolai.com/archives/category/english-learning/how-to-accelerate-reading-speed' title="View all posts filed under 如何提高阅读速度">如何提高阅读速度</a>         </li> <!-- ending subcategory -->
+<li class='collapsing categories item'><a href='/web/20130822161032/http://wordpress.lixiaolai.com/archives/category/english-learning/toefl-listening-and-speaking' title="View all posts filed under 托福听说训练">托福听说训练</a>         </li> <!-- ending subcategory -->
+<li class='collapsing categories item'><a href='/web/20130822161032/http://wordpress.lixiaolai.com/archives/category/english-learning/toefl-ibt-topic-vocabulary' title="View all posts filed under 新托福iBT词汇分类突破">新托福iBT词汇分类突破</a>         </li> <!-- ending subcategory -->
+<li class='collapsing categories item'><a href='/web/20130822161032/http://wordpress.lixiaolai.com/archives/category/english-learning/toefl-vocabulary-classification' title="View all posts filed under 新托福词汇分类突破">新托福词汇分类突破</a>         </li> <!-- ending subcategory -->
+<li class='collapsing categories item'><a href='/web/20130822161032/http://wordpress.lixiaolai.com/archives/category/english-learning/test-preparation' title="View all posts filed under 留学考试准备">留学考试准备</a>         </li> <!-- ending subcategory -->
+<li class='collapsing categories item'><a href='/web/20130822161032/http://wordpress.lixiaolai.com/archives/category/english-learning/earn-vocabulary-with-me' title="View all posts filed under 跟我攒单词">跟我攒单词</a>         </li> <!-- ending subcategory -->
+</ul>        </div>
+      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130822161032/http://wordpress.lixiaolai.com/archives/category/opinions' title="View all posts filed under 言论与八卦">言论与八卦</a>      </li> <!-- ending category -->
+      <li class='collapsing categories expandable parent'><span class='collapsing categories collapse'><span class='sym'>&#x25BC;</span></span><a href='/web/20130822161032/http://wordpress.lixiaolai.com/archives/category/computer-related' title="View all posts filed under 计算机相关">计算机相关</a>
+     <div id='collapsCat-12:3' style="display:block">
+<ul><li class='collapsing categories expandable'><span class='collapsing categories expand'><span class='sym'>&#x25BA;</span></span><a href='/web/20130822161032/http://wordpress.lixiaolai.com/archives/category/computer-related/all-about-apple' title="View all posts filed under All about Apple">All about Apple</a>
+<div id='collapsCat-164:3' style="display:none">
+<ul><li class='collapsing categories item'><a href='/web/20130822161032/http://wordpress.lixiaolai.com/archives/category/computer-related/all-about-apple/ios' title="View all posts filed under iOS">iOS</a>         </li> <!-- ending subcategory -->
+<li class='collapsing categories item'><a href='/web/20130822161032/http://wordpress.lixiaolai.com/archives/category/computer-related/all-about-apple/iphone' title="View all posts filed under iPhone">iPhone</a>         </li> <!-- ending subcategory -->
+<li class='collapsing categories item'><a href='/web/20130822161032/http://wordpress.lixiaolai.com/archives/category/computer-related/all-about-apple/freeware' title="View all posts filed under 免费软件">免费软件</a>         </li> <!-- ending subcategory -->
+<li class='collapsing categories item'><a href='/web/20130822161032/http://wordpress.lixiaolai.com/archives/category/computer-related/all-about-apple/basics' title="View all posts filed under 入门">入门</a>         </li> <!-- ending subcategory -->
+<li class='collapsing categories item'><a href='/web/20130822161032/http://wordpress.lixiaolai.com/archives/category/computer-related/all-about-apple/shareware' title="View all posts filed under 共享软件">共享软件</a>         </li> <!-- ending subcategory -->
+<li class='collapsing categories item'><a href='/web/20130822161032/http://wordpress.lixiaolai.com/archives/category/computer-related/all-about-apple/tips' title="View all posts filed under 小技巧">小技巧</a>         </li> <!-- ending subcategory -->
+</ul>          </div>
+         </li> <!-- ending subcategory -->
+<li class='collapsing categories item'><a href='/web/20130822161032/http://wordpress.lixiaolai.com/archives/category/computer-related/auto-it' title="View all posts filed under Auto-It">Auto-It</a>         </li> <!-- ending subcategory -->
+<li class='collapsing categories item'><a href='/web/20130822161032/http://wordpress.lixiaolai.com/archives/category/computer-related/firefox' title="View all posts filed under Firefox">Firefox</a>         </li> <!-- ending subcategory -->
+<li class='collapsing categories item'><a href='/web/20130822161032/http://wordpress.lixiaolai.com/archives/category/computer-related/google' title="View all posts filed under Google">Google</a>         </li> <!-- ending subcategory -->
+<li class='collapsing categories item'><a href='/web/20130822161032/http://wordpress.lixiaolai.com/archives/category/computer-related/rails-notes' title="View all posts filed under rails notes">rails notes</a>         </li> <!-- ending subcategory -->
+<li class='collapsing categories item'><a href='/web/20130822161032/http://wordpress.lixiaolai.com/archives/category/computer-related/ubuntu' title="View all posts filed under Ubuntu">Ubuntu</a>         </li> <!-- ending subcategory -->
+<li class='collapsing categories item parent'><a href='/web/20130822161032/http://wordpress.lixiaolai.com/archives/category/computer-related/wordpress-computer-related' title="View all posts filed under WordPress">WordPress</a>         </li> <!-- ending subcategory -->
+<li class='collapsing categories item'><a href='/web/20130822161032/http://wordpress.lixiaolai.com/archives/category/computer-related/blogging-experience' title="View all posts filed under 博客经验谈">博客经验谈</a>         </li> <!-- ending subcategory -->
+<li class='collapsing categories item'><a href='/web/20130822161032/http://wordpress.lixiaolai.com/archives/category/computer-related/computer-and-internet-common-sense-for-dummies' title="View all posts filed under 网络常识菜鸟笔记">网络常识菜鸟笔记</a>         </li> <!-- ending subcategory -->
+</ul>        </div>
+      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130822161032/http://wordpress.lixiaolai.com/archives/category/lecture-schedule' title="View all posts filed under 讲座行程">讲座行程</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130822161032/http://wordpress.lixiaolai.com/archives/category/resouces-recommended' title="View all posts filed under 资源推荐">资源推荐</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130822161032/http://wordpress.lixiaolai.com/archives/category/isssue-and-argumentation' title="View all posts filed under 问题与争论">问题与争论</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130822161032/http://wordpress.lixiaolai.com/archives/category/scratches' title="View all posts filed under 随便想想">随便想想</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130822161032/http://wordpress.lixiaolai.com/archives/category/%e9%9a%8f%e4%be%bf%e6%83%b3%e6%83%b3' title="View all posts filed under 随便想想">随便想想</a>      </li> <!-- ending category -->
+<li style='display:none'><script type="text/javascript">
+// <![CDATA[
+/* These variables are part of the Collapsing Categories Plugin 
+      *  Version: 2.0.3
+      *  $Id: collapscat.php 561313 2012-06-20 19:45:14Z robfelty $
+      * Copyright 2007 Robert Felty (robfelty.com)
+      */
+var expandSym='&#x25BA;';
+var collapseSym='&#x25BC;';
+try { collapsItems['catTest'] = 'test'; } catch (err) { collapsItems = new Object(); }
+collapsItems['collapsCat-151:3'] = '<ul></ul>';
+collapsItems['collapsCat-230:3'] = '<ul></ul>';
+collapsItems['collapsCat-231:3'] = '<ul></ul>';
+collapsItems['collapsCat-40:3'] = '<ul></ul>';
+collapsItems['collapsCat-148:3'] = '<ul></ul>';
+collapsItems['collapsCat-1:3'] = '<ul></ul>';
+collapsItems['collapsCat-136:3'] = '<ul></ul>';
+collapsItems['collapsCat-165:3'] = '<ul></ul>';
+collapsItems['collapsCat-123:3'] = '<ul></ul>';
+collapsItems['collapsCat-100:3'] = '<ul></ul>';
+collapsItems['collapsCat-84:3'] = '<ul></ul>';
+collapsItems['collapsCat-75:3'] = '<ul></ul>';
+collapsItems['collapsCat-146:3'] = '<ul></ul>';
+collapsItems['collapsCat-97:3'] = '<ul></ul>';
+collapsItems['collapsCat-15:3'] = '<ul></ul>';
+collapsItems['collapsCat-16:3'] = '<ul></ul>';
+collapsItems['collapsCat-33:3'] = '<ul></ul>';
+collapsItems['collapsCat-6:3'] = '<ul></ul>';
+collapsItems['collapsCat-150:3'] = '<ul></ul>';
+collapsItems['collapsCat-17:3'] = '<ul><li class=\'collapsing categories item\'><a href=\'/web/20130822161032/http://wordpress.lixiaolai.com/archives/category/time-as-a-friend/time-as-a-friend-3rd-edition\' title=\"View all posts filed under 《把时间当作朋友》第三版\">《把时间当作朋友》第三版</a>         </li> <!-- ending subcategory --></ul>';
+collapsItems['collapsCat-147:3'] = '<ul></ul>';
+collapsItems['collapsCat-129:3'] = '<ul></ul>';
+collapsItems['collapsCat-24:3'] = '<ul></ul>';
+collapsItems['collapsCat-8:3'] = '<ul></ul>';
+collapsItems['collapsCat-140:3'] = '<ul></ul>';
+collapsItems['collapsCat-9:3'] = '<ul></ul>';
+collapsItems['collapsCat-128:3'] = '<ul></ul>';
+collapsItems['collapsCat-114:3'] = '<ul></ul>';
+collapsItems['collapsCat-235:3'] = '<ul></ul>';
+collapsItems['collapsCat-124:3'] = '<ul></ul>';
+collapsItems['collapsCat-139:3'] = '<ul></ul>';
+collapsItems['collapsCat-121:3'] = '<ul></ul>';
+collapsItems['collapsCat-122:3'] = '<ul></ul>';
+collapsItems['collapsCat-149:3'] = '<ul></ul>';
+collapsItems['collapsCat-125:3'] = '<ul></ul>';
+collapsItems['collapsCat-119:3'] = '<ul></ul>';
+collapsItems['collapsCat-133:3'] = '<ul></ul>';
+collapsItems['collapsCat-117:3'] = '<ul></ul>';
+collapsItems['collapsCat-145:3'] = '<ul></ul>';
+collapsItems['collapsCat-96:3'] = '<ul></ul>';
+collapsItems['collapsCat-3:3'] = '<ul><li class=\'collapsing categories item\'><a href=\'/web/20130822161032/http://wordpress.lixiaolai.com/archives/category/english-learning/1800-hours\' title=\"View all posts filed under 1800小时 &#8211; 高中两年慢跑冲进美国名校\">1800小时 &#8211; 高中两年慢跑冲进美国名校</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130822161032/http://wordpress.lixiaolai.com/archives/category/english-learning/awa-basic-instruction\' title=\"View all posts filed under AWA（GRE/GMAT写作）考试简明教程\">AWA（GRE/GMAT写作）考试简明教程</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130822161032/http://wordpress.lixiaolai.com/archives/category/english-learning/toefl-ibt-qualified-samples-for-ets-official-185-topic-pool\' title=\"View all posts filed under TOEFL iBT 高分作文\">TOEFL iBT 高分作文</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130822161032/http://wordpress.lixiaolai.com/archives/category/english-learning/master-toefl-essential-vocabulary-in-21-days\' title=\"View all posts filed under TOEFL核心词汇21天突破\">TOEFL核心词汇21天突破</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130822161032/http://wordpress.lixiaolai.com/archives/category/english-learning/everyone-can-use-english\' title=\"View all posts filed under 人人都能用英语\">人人都能用英语</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130822161032/http://wordpress.lixiaolai.com/archives/category/english-learning/how-to-accelerate-reading-speed\' title=\"View all posts filed under 如何提高阅读速度\">如何提高阅读速度</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130822161032/http://wordpress.lixiaolai.com/archives/category/english-learning/toefl-listening-and-speaking\' title=\"View all posts filed under 托福听说训练\">托福听说训练</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130822161032/http://wordpress.lixiaolai.com/archives/category/english-learning/toefl-ibt-topic-vocabulary\' title=\"View all posts filed under 新托福iBT词汇分类突破\">新托福iBT词汇分类突破</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130822161032/http://wordpress.lixiaolai.com/archives/category/english-learning/toefl-vocabulary-classification\' title=\"View all posts filed under 新托福词汇分类突破\">新托福词汇分类突破</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130822161032/http://wordpress.lixiaolai.com/archives/category/english-learning/test-preparation\' title=\"View all posts filed under 留学考试准备\">留学考试准备</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130822161032/http://wordpress.lixiaolai.com/archives/category/english-learning/earn-vocabulary-with-me\' title=\"View all posts filed under 跟我攒单词\">跟我攒单词</a>         </li> <!-- ending subcategory --></ul>';
+collapsItems['collapsCat-11:3'] = '<ul></ul>';
+collapsItems['collapsCat-155:3'] = '<ul></ul>';
+collapsItems['collapsCat-156:3'] = '<ul></ul>';
+collapsItems['collapsCat-158:3'] = '<ul></ul>';
+collapsItems['collapsCat-159:3'] = '<ul></ul>';
+collapsItems['collapsCat-160:3'] = '<ul></ul>';
+collapsItems['collapsCat-161:3'] = '<ul></ul>';
+collapsItems['collapsCat-164:3'] = '<li class=\'collapsing categories item\'><a href=\'/web/20130822161032/http://wordpress.lixiaolai.com/archives/category/computer-related/all-about-apple/ios\' title=\"View all posts filed under iOS\">iOS</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130822161032/http://wordpress.lixiaolai.com/archives/category/computer-related/all-about-apple/iphone\' title=\"View all posts filed under iPhone\">iPhone</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130822161032/http://wordpress.lixiaolai.com/archives/category/computer-related/all-about-apple/freeware\' title=\"View all posts filed under 免费软件\">免费软件</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130822161032/http://wordpress.lixiaolai.com/archives/category/computer-related/all-about-apple/basics\' title=\"View all posts filed under 入门\">入门</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130822161032/http://wordpress.lixiaolai.com/archives/category/computer-related/all-about-apple/shareware\' title=\"View all posts filed under 共享软件\">共享软件</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130822161032/http://wordpress.lixiaolai.com/archives/category/computer-related/all-about-apple/tips\' title=\"View all posts filed under 小技巧\">小技巧</a>         </li> <!-- ending subcategory -->';
+collapsItems['collapsCat-109:3'] = '<ul></ul>';
+collapsItems['collapsCat-86:3'] = '<ul></ul>';
+collapsItems['collapsCat-93:3'] = '<ul></ul>';
+collapsItems['collapsCat-153:3'] = '<ul></ul>';
+collapsItems['collapsCat-110:3'] = '<ul></ul>';
+collapsItems['collapsCat-98:3'] = '<ul></ul>';
+collapsItems['collapsCat-127:3'] = '<ul></ul>';
+collapsItems['collapsCat-132:3'] = '<ul></ul>';
+collapsItems['collapsCat-12:3'] = '<ul><li class=\'collapsing categories expandable\'><span class=\'collapsing categories expand\'><span class=\'sym\'>&#x25BA;</span></span><a href=\'/web/20130822161032/http://wordpress.lixiaolai.com/archives/category/computer-related/all-about-apple\' title=\"View all posts filed under All about Apple\">All about Apple</a><div id=\'collapsCat-164:3\' style=\"display:none\"><ul><li class=\'collapsing categories item\'><a href=\'/web/20130822161032/http://wordpress.lixiaolai.com/archives/category/computer-related/all-about-apple/ios\' title=\"View all posts filed under iOS\">iOS</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130822161032/http://wordpress.lixiaolai.com/archives/category/computer-related/all-about-apple/iphone\' title=\"View all posts filed under iPhone\">iPhone</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130822161032/http://wordpress.lixiaolai.com/archives/category/computer-related/all-about-apple/freeware\' title=\"View all posts filed under 免费软件\">免费软件</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130822161032/http://wordpress.lixiaolai.com/archives/category/computer-related/all-about-apple/basics\' title=\"View all posts filed under 入门\">入门</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130822161032/http://wordpress.lixiaolai.com/archives/category/computer-related/all-about-apple/shareware\' title=\"View all posts filed under 共享软件\">共享软件</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130822161032/http://wordpress.lixiaolai.com/archives/category/computer-related/all-about-apple/tips\' title=\"View all posts filed under 小技巧\">小技巧</a>         </li> <!-- ending subcategory --></ul>          </div>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130822161032/http://wordpress.lixiaolai.com/archives/category/computer-related/auto-it\' title=\"View all posts filed under Auto-It\">Auto-It</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130822161032/http://wordpress.lixiaolai.com/archives/category/computer-related/firefox\' title=\"View all posts filed under Firefox\">Firefox</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130822161032/http://wordpress.lixiaolai.com/archives/category/computer-related/google\' title=\"View all posts filed under Google\">Google</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130822161032/http://wordpress.lixiaolai.com/archives/category/computer-related/rails-notes\' title=\"View all posts filed under rails notes\">rails notes</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130822161032/http://wordpress.lixiaolai.com/archives/category/computer-related/ubuntu\' title=\"View all posts filed under Ubuntu\">Ubuntu</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item parent\'><a href=\'/web/20130822161032/http://wordpress.lixiaolai.com/archives/category/computer-related/wordpress-computer-related\' title=\"View all posts filed under WordPress\">WordPress</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130822161032/http://wordpress.lixiaolai.com/archives/category/computer-related/blogging-experience\' title=\"View all posts filed under 博客经验谈\">博客经验谈</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130822161032/http://wordpress.lixiaolai.com/archives/category/computer-related/computer-and-internet-common-sense-for-dummies\' title=\"View all posts filed under 网络常识菜鸟笔记\">网络常识菜鸟笔记</a>         </li> <!-- ending subcategory --></ul>';
+collapsItems['collapsCat-95:3'] = '<ul></ul>';
+collapsItems['collapsCat-13:3'] = '<ul></ul>';
+collapsItems['collapsCat-138:3'] = '<ul></ul>';
+collapsItems['collapsCat-14:3'] = '<ul></ul>';
+collapsItems['collapsCat-229:3'] = '<ul></ul>';
+/*  Collapse Functions, version 2.0
+ *
+ *--------------------------------------------------------------------------*/
+String.prototype.trim = function() {
+  return this.replace(/^\s+|\s+$/g,"");
+}
+
+function createCookie(name,value,days) {
+  if (days) {
+    var date = new Date();
+    date.setTime(date.getTime()+(days*24*60*60*1000));
+    var expires = "; expires="+date.toGMTString();
+  } else {
+    var expires = "";
+  }
+  document.cookie = name+"="+value+expires+"; path=/";
+}
+
+function readCookie(name) {
+  var nameEQ = name + "=";
+  var ca = document.cookie.split(';');
+  for(var i=0;i < ca.length;i++) {
+    var c = ca[i];
+    while (c.charAt(0)==' ') {
+      c = c.substring(1,c.length);
+    }
+    if (c.indexOf(nameEQ) == 0) {
+      return c.substring(nameEQ.length,c.length);
+    }
+  }
+  return null;
+}
+
+function eraseCookie(name) {
+  createCookie(name,"",-1);
+}
+
+function addExpandCollapse(id, expandSym, collapseSym, accordion) {
+  jQuery('#' + id + ' .expand').live('click', function() {
+    if (accordion==1) {
+      var theDiv = jQuery(this).parent().parent().find('span.collapse').parent().find('div');
+      jQuery(theDiv).hide('normal');
+      jQuery(this).parent().parent().find('span.collapse').removeClass('collapse').addClass('expand');
+        createCookie(theDiv.attr('id'), 0, 7);
+    }
+    jQuery('#' + id + ' .expand .sym').html(expandSym);
+    expandCat(this, expandSym, collapseSym);
+    return false;
+  });
+  jQuery('#' + id + ' .collapse').live('click', function() {
+    collapseCat(this, expandSym, collapseSym);
+    return false;
+  });
+}
+
+function expandCat(symbol, expandSym, collapseSym) {
+    var theDiv = jQuery(symbol).parent().find('div');
+    jQuery(theDiv).html(collapsItems[jQuery(theDiv).attr('id')]).show('normal');
+    jQuery(symbol).removeClass('expand').addClass('collapse');
+    jQuery(symbol).find('.sym').html(collapseSym);
+  createCookie(theDiv.attr('id'), 1, 7);
+}
+function collapseCat(symbol, expandSym, collapseSym) {
+    var theDiv = jQuery(symbol).parent().find('div');
+    jQuery(theDiv).hide('normal');
+    jQuery(symbol).removeClass('collapse').addClass('expand');
+    jQuery(symbol).find('.sym').html(expandSym);
+  createCookie(theDiv.attr('id'), 0, 7);
+}
+addExpandCollapse('widget-collapscat-3-top','&#x25BA;', '&#x25BC;', 1)// ]]>
+</script></li>
+</ul>
+</li>				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+<p>© 2011 lixiaolai.com – All rights reserved. – Tell whom you should tell.</p>
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+});
+</script>
+	</div>
+</div>
+</div>
+<!--[if lte IE 8]>
+<div id="ie_clear"></div>
+<![endif]-->
+<div id="afterfooter">
+
+</div>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-1452494-10']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? '/web/20130822161032/https://ssl' : '/web/20130822161032/http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F2a09bb839c493d7f27c193efe0b11d15' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+</body>
+</html>
+
+
+
+
+<!--
+     FILE ARCHIVED ON 16:10:32 Aug 22, 2013 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 3:57:07 Nov 16, 2014.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

@@ -1,0 +1,927 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
+<head profile="http://gmpg.org/xfn/11">
+<link rel="stylesheet" href="./static_files/style.css" type="text/css" media="screen, projection">
+<link rel="stylesheet" href="./static_files/layout.css" type="text/css" media="screen, projection">
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>提高效率的诀窍：分辨任务属性——并行与串行（一）</title>
+<meta name="robots" content="noodp, noydir" />
+<meta name="description" content="早在读中学的时候，我们就在物理课上得知电路有两种联接方式：“串联”和“并联”，还背过相关的一些规律，比如“串联分压、并联分流”。在任务管理的过程中，可以运用类似的思考方式去思考任务与任务之间的关系：这两个任务之间究竟应该是串行关系呢，还是并行关系？ 无论学到什么东西，都可以接着问自己“那……这个道理还可运用在什么地方？”反复问自己这样简单的问题，会锻炼只记得“融会贯通、举一反三”的能力。尽管总是有人劝诫“速成没戏”，但还是不停地有人宣扬各种速成的方法，并且信者大有人在的同时，“野火烧不尽，春风吹又生”。为什么呢？他们在中学学过“省功不省力、省力不省功”的啊？这些人缺乏的就是这种思考能力或者说思考习惯。 有些任务之间只能是串行关系。比如，要先洗手再吃饭。“洗手”和“吃饭”，不仅是串行关系的任务，还是顺序确定的任务。尽管确实有些人真的“不洗手先吃饭而后再洗手”，但是，大多数人还是能够看到这么做事的“明显之荒谬”。而很多的时候，所谓的效率提高了，指的就是“原本只能串行完成的两个任务，现在可以并行完成”。（尽管争议颇多）“迅雷看看”就是效率因把串行变成并行而提高的典型例子。过去我们只能“先下载”影音文件，而后才能“播放”——那时“下载”与“播放”是两个串行关系的任务，并且，先“播放”后“下载”显然是不可能的。然而，现在网络带宽增加了，再加上Bit Torrent技术使得下载速度产生了革命性的提高，使得迅雷可以做到很快就能下载影音文件中一定量的“够看/够听”的内容之后让用户“边观看边下载”。 俗话说，“一心不可二用”，某种意义上这是对的。不过我们也确实很难做到“一心一意”地长期只做一件事，事实上，我们一生要做的事情随时随刻都可能是至少两件和两件以上。计算机操作系统最初的时候是“单任务操作系统”，比如微软早期的DOS；而为了提高效率，程序员们写出了“多任务操作系统”，比如UNIX、比如现在的Windows。某种意义上，为了提高效率，我们必须把自己的大脑打造成一个“多任务操作系统”。" />
+<link rel="stylesheet" href="/web/20130630173514cs_/http://wordpress.lixiaolai.com/wp-content/themes/thesis_182/style.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="/web/20130630173514cs_/http://wordpress.lixiaolai.com/wp-content/themes/thesis_182/custom/layout.css" type="text/css" media="screen, projection" />
+<!--[if lte IE 8]><link rel="stylesheet" href="/web/20130630173514/http://wordpress.lixiaolai.com/wp-content/themes/thesis_182/lib/css/ie.css" type="text/css" media="screen, projection" /><![endif]-->
+<link rel="stylesheet" href="/web/20130630173514cs_/http://wordpress.lixiaolai.com/wp-content/themes/thesis_182/custom/custom.css" type="text/css" media="screen, projection" />
+<link rel="canonical" href="http://wordpress.lixiaolai.com/archives/5502.html" />
+<link rel="alternate" type="application/rss+xml" title="Reborn RSS Feed" href="http://wordpress.lixiaolai.com/feed" />
+<link rel="pingback" href="http://wordpress.lixiaolai.com/xmlrpc.php" />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://wordpress.lixiaolai.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://wordpress.lixiaolai.com/wp-includes/wlwmanifest.xml" />
+<link rel="shortcut icon" type="image/ico" href="/web/20130630173514im_/http://www.lixiaolai.com/wp-content/themes/thesis_182/lib/images/favicon.ico">
+<link type="image/png" rel="apple-touch-icon" href="http:///www.lixiaolai.com/wp-content/themes/thesis_182/lib/images/r.png" />
+<link rel="alternate" type="application/rss+xml" title="Reborn &raquo; 提高效率的诀窍：分辨任务属性——并行与串行（一） Comments Feed" href="http://wordpress.lixiaolai.com/archives/5502.html/feed" />
+<link rel='stylesheet' id='Shadows Into Light-css'  href='/web/20130630173514cs_/http://fonts.googleapis.com/css?family=Shadows+Into+Light&amp;ver=3.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='Shadows Into Light Two-css'  href='/web/20130630173514cs_/http://fonts.googleapis.com/css?family=Shadows+Into+Light+Two&amp;ver=3.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='ttsp-all-css'  href='/web/20130630173514cs_/http://wordpress.lixiaolai.com/wp-content/plugins/thethe-sliding-panels/style/css/ttsp.all.css?ver=3.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-syntax-css-css'  href='/web/20130630173514cs_/http://wordpress.lixiaolai.com/wp-content/plugins/wp-syntax/wp-syntax.css?ver=3.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='jquery-ui-style-ui-lightness-css'  href='/web/20130630173514cs_/http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/ui-lightness/jquery-ui.css?ver=3.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='thethe-haccordion-css'  href='/web/20130630173514cs_/http://wordpress.lixiaolai.com/wp-content/plugins/thethe-tabs-and-accordions/style/thethe-haccordion.css?ver=3.4.2' type='text/css' media='all' />
+<script type='text/javascript' src='/web/20130630173514js_/http://code.jquery.com/jquery-latest.min.js?ver=latest'></script>
+<script type='text/javascript' src='/web/20130630173514js_/http://wordpress.lixiaolai.com/wp-content/plugins/thethe-marquee/style/js/jquery.easing.1.3.js?ver=3.4.2'></script>
+<script type='text/javascript' src='/web/20130630173514js_/http://wordpress.lixiaolai.com/wp-content/plugins/thethe-marquee/style/js/jquery.marquee.js?ver=3.4.2'></script>
+<script type='text/javascript' src='/web/20130630173514js_/http://wordpress.lixiaolai.com/wp-includes/js/comment-reply.js?ver=3.4.2'></script>
+<script type='text/javascript' src='/web/20130630173514js_/http://wordpress.lixiaolai.com/wp-content/plugins/jquery-accordion-slideshow/js/jquery.min.js?ver=3.4.2'></script>
+<script type='text/javascript' src='/web/20130630173514js_/http://wordpress.lixiaolai.com/wp-content/plugins/jquery-accordion-slideshow/js/jquery.zaccordion.min.js?ver=3.4.2'></script>
+<script type='text/javascript' src='/web/20130630173514js_/http://wordpress.lixiaolai.com/wp-content/plugins/jquery-accordion-slideshow/js/jquery.easing.1.3.js?ver=3.4.2'></script>
+<script type='text/javascript' src='/web/20130630173514js_/http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js?ver=3.4.2'></script>
+<script type='text/javascript' src='/web/20130630173514js_/http://wordpress.lixiaolai.com/wp-content/plugins/thethe-sliding-panels/style/js/jquery.cookie.min.js?ver=3.4.2'></script>
+<script type='text/javascript' src='/web/20130630173514js_/http://wordpress.lixiaolai.com/wp-content/plugins/thethe-sliding-panels/style/js/jquery.ttsp.js?ver=3.4.2'></script>
+<script type='text/javascript' src='/web/20130630173514js_/http://wordpress.lixiaolai.com/wp-content/plugins/thethe-tabs-and-accordions/style/js/thethe.toggle.js?ver=3.4.2'></script>
+<script type='text/javascript' src='/web/20130630173514js_/http://wordpress.lixiaolai.com/wp-content/plugins/thethe-tabs-and-accordions/style/js/thethe.haccordion.js?ver=3.4.2'></script>
+<style type="text/css">
+	.addw2p {
+		list-style-type: none;
+		list-style-image: none;
+	}
+</style>
+<script type="text/javascript" src="/web/20130630173514js_/http://wordpress.lixiaolai.com/wp-content/plugins/audio-player/assets/audio-player.js?ver=2.0.4.1"></script>
+<script type="text/javascript">AudioPlayer.setup("/web/20130630173514/http://wordpress.lixiaolai.com/wp-content/plugins/audio-player/assets/player.swf?ver=2.0.4.1", {width:"290",animation:"yes",encode:"yes",initialvolume:"60",remaining:"no",noinfo:"no",buffer:"5",checkpolicy:"no",rtl:"no",bg:"f8f8f8",text:"666666",leftbg:"eeeeee",lefticon:"666666",volslider:"666666",voltrack:"FFFFFF",rightbg:"cccccc",rightbghover:"999999",righticon:"666666",righticonhover:"ffffff",track:"FFFFFF",loader:"9FFFB8",border:"666666",tracker:"DDDDDD",skip:"666666",pagebg:"FFFFFF",transparentpagebg:"yes"});</script>
+<style type='text/css'>
+#widget-collapscat-3-top span.collapsing.categories {
+        border:0;
+        padding:0; 
+        margin:0; 
+        cursor:pointer;
+} 
+
+#widget-collapscat-3-top li.widget_collapscat h2 span.sym {float:right;padding:0 .5em}
+#widget-collapscat-3-top li.collapsing.categories.self a {font-weight:bold}
+#widget-collapscat-3-top:before {content:'';} 
+#widget-collapscat-3-top  li.collapsing.categories:before {content:'';} 
+#widget-collapscat-3-top  li.collapsing.categories {list-style-type:none}
+#widget-collapscat-3-top  li.collapsing.categories{
+       padding:0 0 0 1em;
+       text-indent:-1em;
+}
+#widget-collapscat-3-top li.collapsing.categories.item:before {content: '\00BB \00A0' !important;} 
+#widget-collapscat-3-top li.collapsing.categories .sym {
+   cursor:pointer;
+   font-size:1.1em;
+   font-family:Arial, Helvetica;
+    padding-right:5px;}</style>
+<!-- TheThe Marquee v.1.0.0 Custom CSS begin //-->
+<style type="text/css" media="screen">
+div.marquee {}
+div.marquee div.mul {}
+
+</style>
+<!-- TheThe Marquee Custom CSS end //-->
+<script type='text/javascript'>
+jQuery(document).ready(function($) {
+});
+</script>		<style type="text/css">
+						ol.footnotes li {list-style-type:decimal;}
+						ol.footnotes{font-size:13px; color:#666666;}		</style>
+				<script type="text/javascript" charset="utf-8">
+			var href = "/web/20130630173514/http://wordpress.lixiaolai.com";
+			// solves the issue where app mode does not set the correct UA String.
+			if ( window.navigator.standalone ) {
+				href += "?onswipe_redirect=yes";
+				location.href = href;
+			};
+			try{
+			// make reader urls work backwards.
+				href += "?p=" + location.hash.match(/\#!\/entry\/.+,(\d+)$/)[1];
+				location.href = href;
+			}catch(e){}		
+		</script>
+		
+	<!-- Clean Archives Reloaded v3.2.0 | /web/20130630173514/http://www.viper007bond.com/wordpress-plugins/clean-archives-reloaded/ -->
+	<style type="text/css">.car-collapse .car-yearmonth { cursor: s-resize; } </style>
+	<script type="text/javascript">
+		/* <![CDATA[ */
+			jQuery(document).ready(function() {
+				jQuery('.car-collapse').find('.car-monthlisting').hide();
+				jQuery('.car-collapse').find('.car-monthlisting:first').show();
+				jQuery('.car-collapse').find('.car-yearmonth').click(function() {
+					jQuery(this).next('ul').slideToggle('fast');
+				});
+				jQuery('.car-collapse').find('.car-toggler').click(function() {
+					if ( 'Expand All' == jQuery(this).text() ) {
+						jQuery(this).parent('.car-container').find('.car-monthlisting').show();
+						jQuery(this).text('Collapse All');
+					}
+					else {
+						jQuery(this).parent('.car-container').find('.car-monthlisting').hide();
+						jQuery(this).text('Expand All');
+					}
+					return false;
+				});
+			});
+		/* ]]> */
+	</script>
+
+</head>
+<body class="custom">
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script> if (window.archive_analytics) { window.archive_analytics.values['server_name']="wwwb-app13.us.archive.org";}; </script>
+
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">
+var __wm = (function(){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://wordpress.lixiaolai.com/archives/5502.html";
+
+var firstYear = 1996;
+var imgWidth = 475,imgHeight = 27;
+var yearImgWidth = 25,monthImgWidth = 2;
+var displayDay = "30";
+var displayMonth = "Jun";
+var displayYear = "2013";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function getElementX2(obj) {
+  var $e=jQuery(obj);
+  return (typeof $e=="undefined"||typeof $e.offset=="undefined")?
+    getElementX(obj):Math.round($e.offset().left);
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX2(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})();
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0"></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://wordpress.lixiaolai.com/archives/5502.html" style="width:400px;" onfocus="this.focus();this.select();"><input type="hidden" name="type" value="replay"><input type="hidden" name="date" value="20130630173514"><input type="submit" value="Go"><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    <a href="/web/20130318200725/http://wordpress.lixiaolai.com/archives/5502.html" title="18 Mar 2013">MAR</a>
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 17:35:14 Jun 30, 2013">JUN</td>
+		<td class="f" nowrap="nowrap">
+		
+		    <a href="/web/20131011092442/http://wordpress.lixiaolai.com/archives/5502.html" title="11 Oct 2013"><strong>OCT</a>
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20130318200725/http://wordpress.lixiaolai.com/archives/5502.html" title="20:07:25 Mar 18, 2013"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 17:35:14 Jun 30, 2013">30</td>
+	       <td class="f" nowrap="nowrap">
+               
+		   <a href="/web/20131011092442/http://wordpress.lixiaolai.com/archives/5502.html" title="9:24:42 Oct 11, 2013"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0"/></a>
+	       
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   2012
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 17:35:14 Jun 30, 2013">2013</td>
+	       <td class="f" nowrap="nowrap">
+               
+	           <a href="/web/20140817222419/http://wordpress.lixiaolai.com/archives/5502.html" title="17 Aug 2014"><strong>2014</strong></a>
+	       
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20130630173514*/http://wordpress.lixiaolai.com/archives/5502.html" title="See a list of every capture for this URL">5 captures</a>
+           <div class="r" title="Timespan for captures of this URL">30 Oct 12 - 17 Aug 14</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="475"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=475_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000000000000_2003:-1:000000000000_2004:-1:000000000000_2005:-1:000000000000_2006:-1:000000000000_2007:-1:000000000000_2008:-1:000000000000_2009:-1:000000000000_2010:-1:000000000000_2011:-1:000000000000_2012:-1:000000000100_2013:5:001001000100_2014:-1:000000010000">
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+<div id="container">
+<div id="page">
+	<div id="header_box">
+		<div id="header">
+		<p id="logo"><a href="/web/20130630173514/http://wordpress.lixiaolai.com/">Reborn</a></p>
+	</div>
+	<div id="header_box_right">
+		<form action="/web/20130630173514/http://www.google.com/cse" id="cse-search-box">
+	    <input type="hidden" name="cx" value="017195234153172777936:zntod-n-hbc">
+	    <input type="hidden" name="ie" value="UTF-8">
+			<input type="text" onblur="if (this.value == '') {this.value = 'To search, type and hit enter';}" onfocus="if (this.value == 'To search, type and hit enter') {this.value = '';}" id="s" name="q" value="To search, type and hit enter" class="text_input">
+		</form>
+				<a href="/web/20130630173514/https://twitter.com/xiaolai"><img src="/web/20130630173514im_/http://wordpress.lixiaolai.com/wp-content/themes/thesis_182/custom/images/twitter.png" alt="@xiaolai" /></a>
+						<a href="mailto:lixiaolai@gmail.com"><img src="/web/20130630173514im_/http://wordpress.lixiaolai.com/wp-content/themes/thesis_182/custom/images/gmail.png" alt="lixiaolai@gmail.com" /></a>
+		<a href="/web/20130630173514/http://wordpress.lixiaolai.com/feed"><img src="/web/20130630173514im_/http://wordpress.lixiaolai.com/wp-content/themes/thesis_182/custom/images/rss.png" alt="RSS" /></a>
+	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="menu-navbar-container"><ul id="menu-navbar" class="menu"><li id="menu-item-12082" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12082"><a href="/web/20130630173514/http://www.lixiaolai.com/">Home</a></li>
+<li id="menu-item-10859" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10859"><a href="/web/20130630173514/http://wordpress.lixiaolai.com/archives">Archives</a></li>
+<li id="menu-item-10860" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10860"><a href="/web/20130630173514/http://wordpress.lixiaolai.com/downloads">Downloads</a></li>
+<li id="menu-item-12081" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12081"><a href="/web/20130630173514/http://www.eduise.com/">eduise.com</a></li>
+<li id="menu-item-12080" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12080"><a href="/web/20130630173514/http://www.eduise.com/client/evaluation">免费留学申请选校评估</a></li>
+<li id="menu-item-12240" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12240"><a title="linode" href="/web/20130630173514/http://www.lixiaolai.com/linode-vps">linode</a></li>
+</ul></div>
+	<div id="content_box">
+		<div id="content" class="hfeed">
+
+			<div class="post-5502 post type-post status-publish format-standard hentry category-time-as-a-friend post_box top" id="post-5502">
+				<div class="headline_area">
+					<h1 class="entry-title">提高效率的诀窍：分辨任务属性——并行与串行（一）</h1>
+					<p class="headline_meta">by <span class="author vcard fn">xiaolai</span> on <abbr class="published" title="2009-02-13">2009/02/13</abbr> &middot; <span><a href="/web/20130630173514/http://wordpress.lixiaolai.com/archives/5502.html#comments" rel="nofollow"><span class="dsq-postid" rel="5502 http://www.lixiaolai.com/?p=5502">8 comments</span></a></span></p>
+					<p class="headline_meta">in <span><a href="/web/20130630173514/http://wordpress.lixiaolai.com/archives/category/time-as-a-friend" title="View all posts in 把时间当作朋友" rel="category tag">把时间当作朋友</a></span></p>
+				</div>
+				<div class="format_text entry-content">
+<p>早在读中学的时候，我们就在物理课上得知电路有两种联接方式：“串联”和“并联”，还背过相关的一些规律，比如“串联分压、并联分流”。在任务管理的过程中，可以运用类似的思考方式去思考任务与任务之间的关系：这两个任务之间究竟应该是串行关系呢，还是并行关系？</p>
+<p>无论学到什么东西，都可以接着问自己“<a href="/web/20130630173514/http://wordpress.lixiaolai.com/archives/4758.html" target="_blank">那……这个道理还可运用在什么地方？</a>”反复问自己这样简单的问题，会锻炼只记得“融会贯通、举一反三”的能力。尽管总是有人劝诫“<a href="/web/20130630173514/http://wordpress.lixiaolai.com/archives/168.html" target="_blank">速成没戏</a>”，但还是不停地有人宣扬各种速成的方法，并且信者大有人在的同时，“野火烧不尽，春风吹又生”。为什么呢？他们在中学学过“省功不省力、省力不省功”的啊？这些人缺乏的就是这种思考能力或者说思考习惯。</p>
+<p><strong>有些任务之间只能是串行关系</strong>。比如，要先洗手再吃饭。“洗手”和“吃饭”，不仅是串行关系的任务，还是顺序确定的任务。尽管确实有些人真的“不洗手先吃饭而后再洗手”，但是，大多数人还是能够看到这么做事的“明显之荒谬”。而很多的时候，所谓的效率提高了，指的就是“原本只能串行完成的两个任务，现在可以并行完成”。（尽管争议颇多）“<a href="/web/20130630173514/http://kankan.xunlei.com/" target="_blank">迅雷看看</a>”就是效率因把串行变成并行而提高的典型例子。过去我们只能“先下载”影音文件，而后才能“播放”——那时“下载”与“播放”是两个串行关系的任务，并且，先“播放”后“下载”显然是不可能的。然而，现在网络带宽增加了，再加上Bit Torrent技术使得下载速度产生了革命性的提高，使得迅雷可以做到很快就能下载影音文件中一定量的“够看/够听”的内容之后让用户“边观看边下载”。</p>
+<p>俗话说，“一心不可二用”，某种意义上这是对的。不过我们也确实很难做到“一心一意”地长期只做一件事，事实上，我们一生要做的事情随时随刻都可能是至少两件和两件以上。计算机操作系统最初的时候是“单任务操作系统”，比如微软早期的DOS；而为了提高效率，程序员们写出了“多任务操作系统”，比如UNIX、比如现在的Windows。某种意义上，为了提高效率，<strong>我们必须把自己的大脑打造成一个“多任务操作系统”</strong>。</p>
+				</div>
+			</div>
+
+
+<div id="disqus_thread">
+                    <div id="dsq-content">
+
+
+            <ul id="dsq-comments">
+                    <li class="comment even thread-even depth-1" id="dsq-comment-8134">
+        <div id="dsq-comment-header-8134" class="dsq-comment-header">
+            <cite id="dsq-cite-8134">
+                <span id="dsq-author-user-8134">apu</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-8134" class="dsq-comment-body">
+            <div id="dsq-comment-message-8134" class="dsq-comment-message"><p>我觉得这个主题可以引申出一个最关键的问题，那就是&ldquo;如何分配或者优化你的任务&rdquo;来提高效率。</p>
+<p>拿CPU为例（多核的CPU除外），CPU在一个时间段内其实只能做一件事，因为它只有一个个体，一个时空。对CPU来说，它只不过是离散地按顺序执行一系列的互不相干的基础运算而已，每一个运算都耗费一个很短的时间段，所有的运算在CPU看来它们之间并无任何联系。多任务操作系统把一个长的时间段划分成很多短小的时间片，每个时间片只让CPU执行一个进程(process)的任务，A的时间到了就暂时挂起，执行B进程的任务，B完了继续往后轮，然后循环，这样连续起来就好像是它同时运行着很多进程，实际上它就像是视觉暂留一样。这就像是一个负责盖章审批的领导，你递上去申请书，别人也递上去申请书，他总是要一个一个的挨个看并且盖章，早晚有一天会轮到你那份申请的，这个过程我们无法优化，这是底层机制的执行方式。而对我们来说，程序，也就是人的智慧，是可以优化的，有的程序执行效率高，反应快而灵敏，有的程序迟钝缓慢，还总是出错，这里面就体现了程序员的智慧水平。一个程序在操作系统中运行的时候往往就是一个进程(process)，或几个互相独立又有可能互相沟通或依赖的进程，每个进程内部还可以生成许多线程(thread)来同时执行几个并行运算，线程之间如何完美地协调就是编程的最大挑战了，有些线程互不依赖，而有些则需要互相依赖和等待对方的结果返回。有些数据运算只能串行处理因为每一步的运算都需要等待上一步的结果，而有些数据运算经过算法优化则可以适当的安排并行执行。许多优秀程序正是由于程序员采用了高效的算法和数据组织结构，充分的利用了计算机的全部性能达到较高的执行效率。</p>
+<p>人也类似，我们在一秒钟之内只能够做一件事（指头脑活动），当然你可以边擦地边学习，边炒菜边听歌，这是因为人有五官、四肢，但是人只有一个大脑，它同一时刻只能集中处理一个信息，三心二意带来的必定是效率的低下，没有什么方法可以比集中精力效率更高的了。人脑是串行处理任务的，但是人脑又是会分配任务的，我们可以把一件事情拆开成很多小份，划分成许多阶段来分别完成，这是人类思维的本能，也就是将一个事物进行分析并归纳分类的能力。比如拿学英语这件事情来说，可以把学习过程分成&ldquo;听、说、读、写&rdquo;四个能力的训练过程，每一种能力在教材中往往都分成Unit1、Unit2、Unit3&hellip;&hellip;，每个Unit又分别是课文、词汇、习题等等。抑或是另一种更简单的归纳，比如英语就是词汇+语法而已，这样一来词汇又是被分成100个一组的WordList来分组记忆，或是被分成不同学科的分类词汇来记忆，语法则被归纳为各种呜哩哇啦的大道理小条目。学生们就是按照这种被拆解成许多小单元的知识来一点一滴地习得英语这门本领的。那么哪一种才是合理和高效的任务分解方法呢？相信谁也不会先把所有的词汇都背会以后再去学语法，谁也不会先把听力练的完美无缺了再去练写作，事实情况是，这些事情是不可避免地齐头并进的进行下去的，每个人都有自己的判断力和决断力，去分配任务，去执行任务。</p>
+<p>记得在上初中的时候老师所采用的方法就是：每一个单元在学习之前先用一天时间把此单元的所有生词背会，后面才开始读课文、讲课文、背课文、做习题，这样我发现的确比先学课文再找出生词再记忆生词的学习效率高的多。进而我们又逐渐尝试把一学期的所有生词用一周时间背会然后再开始从第一单元学课文，但是你又不能把初中三年的生词都背会再去从最开始学起，这样可能又会增加记忆难度从而降低效率。</p>
+<p>再拿炒菜来做例子，炒菜要先把料都备好，然后按菜谱上的顺序分别下锅处理，谁也不会把肉下锅后再去切芹菜，需要料汁的时候再去现调，这样菜就糊锅了，这是一个顺序和时间都严格限定并且不可逆的程序。另外，如果要炒四个菜呢？应该是先备好所有的料再一个一个炒好上桌才对，如果你备一个菜的料炒一个菜，那炒好最后一个菜的时候前面三个菜全都放凉了，仍然是不合适的方法，尽管其总体时间花费是差不多的。</p>
+<p>如果你有100个wav音频文件要用LAME程序压缩成mp3格式，你该怎么做？最笨的办法就是用命令行一个一个的去敲，或者用鼠标一个一个的把wav文件拖到LAME程序上，生成一个一个的mp3文件。好一些的办法是用批处理，或者干脆用支持批处理的LAME外壳程序，把wav文件全部拖进列表里，设定好参数，开始执行！然后你就可以去干别的或者睡觉去。假如你有一个双核的CPU呢？老版本的LAME只能利用一个内核的性能，在双核CPU上执行，CPU占用率最多只能达到50%，那我就同时打开两个LAME，每个分别处理50个wav文件，同时执行压缩，这样压缩速度提高将近一倍！当然，优秀的程序员为我们准备好了LAME的多线程版本，可以完全利用双核处理器的优势了，那我们就只开一个LAME便可以达到效率最佳化。</p>
+<p>总结起来，人在做一件事情之前，必须要充分思考时间片的安排，比如这一次出门，有哪些事情可以一起办，走怎样的路线可以节省时间。今天背了word&nbsp;list&nbsp;1，明天是背word&nbsp;list&nbsp;2还是去读一篇阅读文章？这种复杂的心理安排我想每个人都是随时随地在思考的，如果没思考就说明你的思维方式有问题，或者说，是个没条理的人。我们不可能做到像电脑那样精确地在每一个时间片内执行一个精确的独立任务块，从而可以任意的三心二意，但是我们在相对精力比较集中的一个时间片内执行任务时尽量不要中断注意力，最好不要被外界打断，否则就会像程序的进度条没有走到100%就被按下了abort或cancel键一样，会丢失一些数据，造成了部分工作的前功尽弃。</p>
+<p><!--EndFragment--></p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-8142">
+        <div id="dsq-comment-header-8142" class="dsq-comment-header">
+            <cite id="dsq-cite-8142">
+http://***                <span id="dsq-author-user-8142">anthony</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-8142" class="dsq-comment-body">
+            <div id="dsq-comment-message-8142" class="dsq-comment-message"><p>Unix应该是较早的os之一，出现在dos之前吧</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment even thread-even depth-1" id="dsq-comment-8149">
+        <div id="dsq-comment-header-8149" class="dsq-comment-header">
+            <cite id="dsq-cite-8149">
+http://hi.baidu.com/%C8%D5%CA%A1%C8%D5%D0%C2                <span id="dsq-author-user-8149">Genegun</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-8149" class="dsq-comment-body">
+            <div id="dsq-comment-message-8149" class="dsq-comment-message"><p>apu说得很透彻，佩服！最赞这一点：&ldquo;我们在相对精力比较集中的一个时间片内执行任务时尽量不要中断注意力，最好不要被外界打断，否则就会像程序的进度条没有走到100%就被按下了abort或cancel键一样，会丢失一些数据，造成了部分工作的前功尽弃&rdquo;。感觉对人而言，专注还是最重要的（因为我们只有一个核？），否则即使可以在表面上通过&ldquo;并行&rdquo;实现高效率，但工作的质量可能是不同的。特别是对进行创造性的思维活动，如果不能专注是不可能有深刻的认识和灵感的顿悟的。当然，各项任务的安排和计划是可以通过运筹学的原理进行优化，好比中学学过的一篇关于烧水泡茶的文章所说的那样。但细究起来，其中的并行其实只是因为某些事件的执行时间是另外一些事件时间的子集而言。对大脑而言，那些跨度长的事件，运行后就暂时放弃控制了，或者说从大脑中清除了，让事件自行运行，只不过到了一定的时间大脑再接过来运行。因此如果只观察大脑的运行的话，其实还是不同程序的串联执行而已。</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment byuser comment-author-admin bypostauthor odd alt thread-odd thread-alt depth-1" id="dsq-comment-8150">
+        <div id="dsq-comment-header-8150" class="dsq-comment-header">
+            <cite id="dsq-cite-8150">
+                <span id="dsq-author-user-8150">李笑来</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-8150" class="dsq-comment-body">
+            <div id="dsq-comment-message-8150" class="dsq-comment-message"><p>to anthony，谢谢提醒。</p>
+<p>to apu: 你提到的炒菜的例子很恰当。:)</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment even thread-even depth-1" id="dsq-comment-8151">
+        <div id="dsq-comment-header-8151" class="dsq-comment-header">
+            <cite id="dsq-cite-8151">
+                <span id="dsq-author-user-8151">Jung</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-8151" class="dsq-comment-body">
+            <div id="dsq-comment-message-8151" class="dsq-comment-message"><p><em>尽管总是有人劝诫&ldquo;<a href="/web/20130630173514/http://wordpress.lixiaolai.com/archives/168.html" rel="nofollow">速成没戏</a>&rdquo;，但还是不停地有人宣扬各种速成的方法，并且信者大有人在的同时，&ldquo;野火烧不尽，春风吹又生&rdquo;。为什么呢？他们在中学学过&ldquo;省功不省力、省力不省功&rdquo;的啊？</em><br />
+想起我同学一个很精妙的比喻：做一件事情的时候有&ldquo;有效功&rdquo;和&ldquo;无效功&rdquo;，我们只能尽可能减少后者而无法减少前者。但必须充分认识到很多情况下前者的量本来就是很大的，所以一定要端正心态不要以为可以通过什么方法来速成：所谓&ldquo;速成&rdquo;很多时候只能以牺牲&ldquo;有效功&rdquo;为代价，这是得不偿失的</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-8152">
+        <div id="dsq-comment-header-8152" class="dsq-comment-header">
+            <cite id="dsq-cite-8152">
+http://hi.baidu.com/%B9%FA%CD%E2%D5%B9%BB%E1/                <span id="dsq-author-user-8152">日月山人</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-8152" class="dsq-comment-body">
+            <div id="dsq-comment-message-8152" class="dsq-comment-message"><p>&nbsp;我看，楼上三位说的太有问题，这不是典型的书呆子理论嘛？<br />
+&nbsp;工作中不被打扰，进入唯我主义，请明白工作不等同于学习，学习可以闭门造车，工作你闭门看看。<br />
+&nbsp; 笑来老师说的，串行，跟平行，我觉得有问题。<br />
+&nbsp; 比如说自己吧，我经常在工作的时候，利用空闲时间，比如网络打开的时候，比如比较累的时候，来看google reader抓取的新闻，但是我发现，马上注意力就转移了，一个不够，在看看第二个吧。。<br />
+&nbsp; 如此的平行，让我的工作效率很慢。。<br />
+&nbsp; 于是我，现在开始专门划一个时间来看新闻，在特定时间只干一件事情，这就是串行吧。<br />
+&nbsp; 也不知道我的理解是不是对路，也请笑来老师对于我的情况给予指点。谢谢<br />
+&nbsp;<br />
+&nbsp;<br />
+&nbsp;<br />
+&nbsp;<br />
+&nbsp;</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment even thread-even depth-1" id="dsq-comment-8192">
+        <div id="dsq-comment-header-8192" class="dsq-comment-header">
+            <cite id="dsq-cite-8192">
+                <span id="dsq-author-user-8192">apu</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-8192" class="dsq-comment-body">
+            <div id="dsq-comment-message-8192" class="dsq-comment-message"><p>呵呵，我要说的正是&ldquo;如何最优化地分配任务&rdquo;的问题，任务要并行执行是绝对的，但是如何将任务分配到并行的进程当中是没有绝对的唯一真理的，只有因人而异，人人都动脑筋并实践。<br />
+关于看新闻这件事，我个人感觉的确是很浪费时间，很分散注意力，这是现代网络社会带给人的负面影响，就是效率低下。所以要避免在该集中注意力的时候被唾手可得的其他信息给打扰，如果你总是在工作或学习的过程中时不时地去看google reader或者新闻网站，这说明你的时间片分配的太短促，不断的在几个事情上来回切换，以至于每个事情都不能彻底进入注意力集中的高效时段，因为人要集中注意力是需要一定的酝酿时间的，试着集中注意力，延长每个时间片的时长，尽量在一个时间片内安排一个阶段性的小目标，达到后，再切换到另一个任务去&ldquo;执行&rdquo;。</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-8388">
+        <div id="dsq-comment-header-8388" class="dsq-comment-header">
+            <cite id="dsq-cite-8388">
+                <span id="dsq-author-user-8388">噢</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-8388" class="dsq-comment-body">
+            <div id="dsq-comment-message-8388" class="dsq-comment-message"><p>龟兔赛跑故事存在的意义是，光会跑是没有用的.</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+            </ul>
+
+
+        </div>
+
+    </div>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+    var disqus_url = '/web/20130630173514/http://wordpress.lixiaolai.com/archives/5502.html';
+    var disqus_identifier = '5502 /web/20130630173514/http://www.lixiaolai.com/?p=5502';
+    var disqus_container_id = 'disqus_thread';
+    var disqus_domain = 'disqus.com';
+    var disqus_shortname = 'lixiaolai';
+    var disqus_title = "提高效率的诀窍：分辨任务属性——并行与串行（一）";
+        var disqus_config = function () {
+        var config = this; // Access to the config object
+
+        /*
+           All currently supported events:
+            * preData — fires just before we request for initial data
+            * preInit - fires after we get initial data but before we load any dependencies
+            * onInit  - fires when all dependencies are resolved but before dtpl template is rendered
+            * afterRender - fires when template is rendered but before we show it
+            * onReady - everything is done
+         */
+
+        config.callbacks.preData.push(function() {
+            // clear out the container (its filled for SEO/legacy purposes)
+            document.getElementById(disqus_container_id).innerHTML = '';
+        });
+                config.callbacks.onReady.push(function() {
+            // sync comments in the background so we don't block the page
+            var script = document.createElement('script');
+            script.async = true;
+            script.src = '?cf_action=sync_comments&post_id=5502';
+
+            var firstScript = document.getElementsByTagName( "script" )[0];
+            firstScript.parentNode.insertBefore(script, firstScript);
+        });
+                    };
+    var facebookXdReceiverPath = '/web/20130630173514/http://wordpress.lixiaolai.com/wp-content/plugins/disqus-comment-system/xd_receiver.htm';
+/* ]]> */
+</script>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+    var DsqLocal = {
+        'trackbacks': [
+        ],
+        'trackback_url': "/web/20130630173514/http://wordpress.lixiaolai.com\/archives\/5502.html\/trackback"    };
+/* ]]> */
+</script>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript';
+    dsq.async = true;
+        dsq.src = 'http' + '://' + disqus_shortname + '.' + 'disqus.com' + '/embed.js?pname=wordpress&pver=2.73';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+/* ]]> */
+</script>
+					<div class="prev_next post_nav">
+						<p class="previous">Previous post: <a href="/web/20130630173514/http://wordpress.lixiaolai.com/archives/5505.html" rel="prev">烟花爆竹引发的灾难从来都不是小概率事件……</a></p>
+						<p>Next post: <a href="/web/20130630173514/http://wordpress.lixiaolai.com/archives/5523.html" rel="next">关于对烟花爆竹“禁”、“限”、“放”之看法的调查贴</a></p>
+					</div>
+		</div>
+
+		<div id="sidebars">
+			<div id="multimedia_box" class="image_box">
+				<div id="image_box">
+<a href="/web/20130630173514/http://product.dangdang.com/product.aspx?product_id=22777584"><img class="square" src="/web/20130630173514im_/http://wordpress.lixiaolai.com/wp-content/themes/thesis_182/custom/rotator/new-toefl-vocabulary-in-topics.jpg" alt="new-toefl-vocabulary-in-topics.jpg" /></a>
+				</div>
+			</div>
+			<div id="sidebar_1" class="sidebar">
+				<ul class="sidebar_list">
+<li class="widget widget_archive" id="archives-2"><h3>Archives</h3>		<select name="archive-dropdown" onchange='document.location.href=this.options[this.selectedIndex].value;'> <option value="">Select Month</option> 	<option value='http://wordpress.lixiaolai.com/archives/date/2012/09'> September 2012 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2012/08'> August 2012 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2012/07'> July 2012 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2012/06'> June 2012 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2012/05'> May 2012 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2012/04'> April 2012 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2012/03'> March 2012 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2012/02'> February 2012 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2012/01'> January 2012 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2011/12'> December 2011 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2011/11'> November 2011 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2011/10'> October 2011 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2011/09'> September 2011 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2011/08'> August 2011 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2011/07'> July 2011 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2011/06'> June 2011 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2011/05'> May 2011 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2011/04'> April 2011 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2011/03'> March 2011 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2011/02'> February 2011 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2011/01'> January 2011 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2010/12'> December 2010 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2010/11'> November 2010 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2010/10'> October 2010 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2010/09'> September 2010 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2010/08'> August 2010 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2010/07'> July 2010 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2010/06'> June 2010 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2010/05'> May 2010 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2010/04'> April 2010 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2010/03'> March 2010 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2010/02'> February 2010 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2010/01'> January 2010 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2009/12'> December 2009 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2009/11'> November 2009 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2009/10'> October 2009 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2009/09'> September 2009 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2009/08'> August 2009 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2009/07'> July 2009 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2009/06'> June 2009 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2009/05'> May 2009 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2009/04'> April 2009 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2009/03'> March 2009 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2009/02'> February 2009 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2009/01'> January 2009 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2008/12'> December 2008 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2008/11'> November 2008 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2008/10'> October 2008 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2008/09'> September 2008 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2008/08'> August 2008 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2008/07'> July 2008 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2008/06'> June 2008 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2008/05'> May 2008 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2008/04'> April 2008 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2008/03'> March 2008 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2008/02'> February 2008 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2008/01'> January 2008 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2007/12'> December 2007 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2007/11'> November 2007 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2007/10'> October 2007 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2007/09'> September 2007 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2007/08'> August 2007 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2007/07'> July 2007 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2007/06'> June 2007 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2007/05'> May 2007 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2007/04'> April 2007 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2007/03'> March 2007 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2007/02'> February 2007 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2007/01'> January 2007 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2006/12'> December 2006 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2006/11'> November 2006 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2006/10'> October 2006 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2006/06'> June 2006 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2006/05'> May 2006 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2000/01'> January 2000 </option>
+ </select>
+</li><li class="widget widget_collapscat" id="collapscat-3"><h3>Categories</h3><ul id='widget-collapscat-3-top' class='collapsing categories list'>
+      <li class='collapsing categories item'><a href='/web/20130630173514/http://wordpress.lixiaolai.com/archives/category/applying-stackexchange-com' title="View all posts filed under applying.stackexchange.com">applying.stackexchange.com</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130630173514/http://wordpress.lixiaolai.com/archives/category/daily' title="View all posts filed under Daily">Daily</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130630173514/http://wordpress.lixiaolai.com/archives/category/dont-buy-bullshits' title="View all posts filed under Don&#8217;t buy bullshits">Don&#8217;t buy bullshits</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130630173514/http://wordpress.lixiaolai.com/archives/category/faq-sets' title="View all posts filed under FAQ问答集">FAQ问答集</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130630173514/http://wordpress.lixiaolai.com/archives/category/gmat-prep' title="View all posts filed under GMAT考试准备">GMAT考试准备</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130630173514/http://wordpress.lixiaolai.com/archives/category/uncategorized' title="View all posts filed under uncategorized">uncategorized</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130630173514/http://wordpress.lixiaolai.com/archives/category/video-and-audio' title="View all posts filed under Video and Audio">Video and Audio</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130630173514/http://wordpress.lixiaolai.com/archives/category/%e4%b8%80%e5%88%86%e9%92%9f%e6%94%b9%e5%8f%98%e7%94%9f%e6%b4%bb-%e6%88%91%e6%98%af%e8%b0%81%ef%bc%9f-in-chinese' title="View all posts filed under 一分钟改变生活——我是谁？">一分钟改变生活——我是谁？</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130630173514/http://wordpress.lixiaolai.com/archives/category/books-that-should-not-be-missed' title="View all posts filed under 书——不得不看">书——不得不看</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130630173514/http://wordpress.lixiaolai.com/archives/category/people' title="View all posts filed under 人物">人物</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130630173514/http://wordpress.lixiaolai.com/archives/category/readings-for-writing' title="View all posts filed under 作文素材">作文素材</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130630173514/http://wordpress.lixiaolai.com/archives/category/clear-writing' title="View all posts filed under 写清楚（系列）">写清楚（系列）</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130630173514/http://wordpress.lixiaolai.com/archives/category/learning-learning-to-learn-better' title="View all posts filed under 学习学习再学习">学习学习再学习</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130630173514/http://wordpress.lixiaolai.com/archives/category/versatile' title="View all posts filed under 强人高手">强人高手</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130630173514/http://wordpress.lixiaolai.com/archives/category/thinking-tools' title="View all posts filed under 思维工具">思维工具</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130630173514/http://wordpress.lixiaolai.com/archives/category/thinking-clearly-series' title="View all posts filed under 想明白（系列）">想明白（系列）</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130630173514/http://wordpress.lixiaolai.com/archives/category/response-to-readers' title="View all posts filed under 我要问笑来">我要问笑来</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130630173514/http://wordpress.lixiaolai.com/archives/category/finding-examples' title="View all posts filed under 找例子玩">找例子玩</a>      </li> <!-- ending category -->
+      <li class='collapsing categories expandable parent'><span class='collapsing categories collapse'><span class='sym'>&#x25BC;</span></span><a href='/web/20130630173514/http://wordpress.lixiaolai.com/archives/category/time-as-a-friend' title="View all posts filed under 把时间当作朋友">把时间当作朋友</a>
+     <div id='collapsCat-17:3' style="display:block">
+<ul><li class='collapsing categories item'><a href='/web/20130630173514/http://wordpress.lixiaolai.com/archives/category/time-as-a-friend/time-as-a-friend-3rd-edition' title="View all posts filed under 《把时间当作朋友》第三版">《把时间当作朋友》第三版</a>         </li> <!-- ending subcategory -->
+</ul>        </div>
+      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130630173514/http://wordpress.lixiaolai.com/archives/category/public-speaking-skills-for-everyone' title="View all posts filed under 普通人的当众讲话技能">普通人的当众讲话技能</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130630173514/http://wordpress.lixiaolai.com/archives/category/things-better-learned-before-getting-a-job' title="View all posts filed under 求职前最好学会的那些事儿">求职前最好学会的那些事儿</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130630173514/http://wordpress.lixiaolai.com/archives/category/qa-for-application' title="View all posts filed under 留学问答">留学问答</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130630173514/http://wordpress.lixiaolai.com/archives/category/movie-time' title="View all posts filed under 看看电影">看看电影</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130630173514/http://wordpress.lixiaolai.com/archives/category/marvelous-brain' title="View all posts filed under 神奇的大脑">神奇的大脑</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130630173514/http://wordpress.lixiaolai.com/archives/category/temp-list' title="View all posts filed under 算是流水帐">算是流水帐</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130630173514/http://wordpress.lixiaolai.com/archives/category/diabetes-common-knowledge' title="View all posts filed under 糖尿病常识">糖尿病常识</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130630173514/http://wordpress.lixiaolai.com/archives/category/us-universities-and-colleges' title="View all posts filed under 美国大学">美国大学</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130630173514/http://wordpress.lixiaolai.com/archives/category/%e7%be%8e%e5%9b%bd%e5%a4%a7%e5%ad%a6%e6%9c%ac%e7%a7%91%e7%94%b3%e8%af%b7diy%e7%ae%80%e6%98%8e%e6%8c%87%e5%8d%97' title="View all posts filed under 美国大学本科申请DIY简明指南">美国大学本科申请DIY简明指南</a>      </li> <!-- ending category -->
+      <li class='collapsing categories expandable'><span class='collapsing categories expand'><span class='sym'>&#x25BA;</span></span><a href='/web/20130630173514/http://wordpress.lixiaolai.com/archives/category/english-learning' title="View all posts filed under 英语相关文章">英语相关文章</a>
+     <div id='collapsCat-3:3' style="display:none">
+<ul><li class='collapsing categories item'><a href='/web/20130630173514/http://wordpress.lixiaolai.com/archives/category/english-learning/1800-hours' title="View all posts filed under 1800小时 &#8211; 高中两年慢跑冲进美国名校">1800小时 &#8211; 高中两年慢跑冲进美国名校</a>         </li> <!-- ending subcategory -->
+<li class='collapsing categories item'><a href='/web/20130630173514/http://wordpress.lixiaolai.com/archives/category/english-learning/awa-basic-instruction' title="View all posts filed under AWA（GRE/GMAT写作）考试简明教程">AWA（GRE/GMAT写作）考试简明教程</a>         </li> <!-- ending subcategory -->
+<li class='collapsing categories item'><a href='/web/20130630173514/http://wordpress.lixiaolai.com/archives/category/english-learning/toefl-ibt-qualified-samples-for-ets-official-185-topic-pool' title="View all posts filed under TOEFL iBT 高分作文">TOEFL iBT 高分作文</a>         </li> <!-- ending subcategory -->
+<li class='collapsing categories item'><a href='/web/20130630173514/http://wordpress.lixiaolai.com/archives/category/english-learning/master-toefl-essential-vocabulary-in-21-days' title="View all posts filed under TOEFL核心词汇21天突破">TOEFL核心词汇21天突破</a>         </li> <!-- ending subcategory -->
+<li class='collapsing categories item'><a href='/web/20130630173514/http://wordpress.lixiaolai.com/archives/category/english-learning/everyone-can-use-english' title="View all posts filed under 人人都能用英语">人人都能用英语</a>         </li> <!-- ending subcategory -->
+<li class='collapsing categories item'><a href='/web/20130630173514/http://wordpress.lixiaolai.com/archives/category/english-learning/how-to-accelerate-reading-speed' title="View all posts filed under 如何提高阅读速度">如何提高阅读速度</a>         </li> <!-- ending subcategory -->
+<li class='collapsing categories item'><a href='/web/20130630173514/http://wordpress.lixiaolai.com/archives/category/english-learning/toefl-listening-and-speaking' title="View all posts filed under 托福听说训练">托福听说训练</a>         </li> <!-- ending subcategory -->
+<li class='collapsing categories item'><a href='/web/20130630173514/http://wordpress.lixiaolai.com/archives/category/english-learning/toefl-ibt-topic-vocabulary' title="View all posts filed under 新托福iBT词汇分类突破">新托福iBT词汇分类突破</a>         </li> <!-- ending subcategory -->
+<li class='collapsing categories item'><a href='/web/20130630173514/http://wordpress.lixiaolai.com/archives/category/english-learning/toefl-vocabulary-classification' title="View all posts filed under 新托福词汇分类突破">新托福词汇分类突破</a>         </li> <!-- ending subcategory -->
+<li class='collapsing categories item'><a href='/web/20130630173514/http://wordpress.lixiaolai.com/archives/category/english-learning/test-preparation' title="View all posts filed under 留学考试准备">留学考试准备</a>         </li> <!-- ending subcategory -->
+<li class='collapsing categories item'><a href='/web/20130630173514/http://wordpress.lixiaolai.com/archives/category/english-learning/earn-vocabulary-with-me' title="View all posts filed under 跟我攒单词">跟我攒单词</a>         </li> <!-- ending subcategory -->
+</ul>        </div>
+      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130630173514/http://wordpress.lixiaolai.com/archives/category/opinions' title="View all posts filed under 言论与八卦">言论与八卦</a>      </li> <!-- ending category -->
+      <li class='collapsing categories expandable'><span class='collapsing categories expand'><span class='sym'>&#x25BA;</span></span><a href='/web/20130630173514/http://wordpress.lixiaolai.com/archives/category/computer-related' title="View all posts filed under 计算机相关">计算机相关</a>
+     <div id='collapsCat-12:3' style="display:none">
+<ul><li class='collapsing categories expandable'><span class='collapsing categories expand'><span class='sym'>&#x25BA;</span></span><a href='/web/20130630173514/http://wordpress.lixiaolai.com/archives/category/computer-related/all-about-apple' title="View all posts filed under All about Apple">All about Apple</a>
+<div id='collapsCat-164:3' style="display:none">
+<ul><li class='collapsing categories item'><a href='/web/20130630173514/http://wordpress.lixiaolai.com/archives/category/computer-related/all-about-apple/ios' title="View all posts filed under iOS">iOS</a>         </li> <!-- ending subcategory -->
+<li class='collapsing categories item'><a href='/web/20130630173514/http://wordpress.lixiaolai.com/archives/category/computer-related/all-about-apple/iphone' title="View all posts filed under iPhone">iPhone</a>         </li> <!-- ending subcategory -->
+<li class='collapsing categories item'><a href='/web/20130630173514/http://wordpress.lixiaolai.com/archives/category/computer-related/all-about-apple/freeware' title="View all posts filed under 免费软件">免费软件</a>         </li> <!-- ending subcategory -->
+<li class='collapsing categories item'><a href='/web/20130630173514/http://wordpress.lixiaolai.com/archives/category/computer-related/all-about-apple/basics' title="View all posts filed under 入门">入门</a>         </li> <!-- ending subcategory -->
+<li class='collapsing categories item'><a href='/web/20130630173514/http://wordpress.lixiaolai.com/archives/category/computer-related/all-about-apple/shareware' title="View all posts filed under 共享软件">共享软件</a>         </li> <!-- ending subcategory -->
+<li class='collapsing categories item'><a href='/web/20130630173514/http://wordpress.lixiaolai.com/archives/category/computer-related/all-about-apple/tips' title="View all posts filed under 小技巧">小技巧</a>         </li> <!-- ending subcategory -->
+</ul>          </div>
+         </li> <!-- ending subcategory -->
+<li class='collapsing categories item'><a href='/web/20130630173514/http://wordpress.lixiaolai.com/archives/category/computer-related/auto-it' title="View all posts filed under Auto-It">Auto-It</a>         </li> <!-- ending subcategory -->
+<li class='collapsing categories item'><a href='/web/20130630173514/http://wordpress.lixiaolai.com/archives/category/computer-related/firefox' title="View all posts filed under Firefox">Firefox</a>         </li> <!-- ending subcategory -->
+<li class='collapsing categories item'><a href='/web/20130630173514/http://wordpress.lixiaolai.com/archives/category/computer-related/google' title="View all posts filed under Google">Google</a>         </li> <!-- ending subcategory -->
+<li class='collapsing categories item'><a href='/web/20130630173514/http://wordpress.lixiaolai.com/archives/category/computer-related/rails-notes' title="View all posts filed under rails notes">rails notes</a>         </li> <!-- ending subcategory -->
+<li class='collapsing categories item'><a href='/web/20130630173514/http://wordpress.lixiaolai.com/archives/category/computer-related/ubuntu' title="View all posts filed under Ubuntu">Ubuntu</a>         </li> <!-- ending subcategory -->
+<li class='collapsing categories item'><a href='/web/20130630173514/http://wordpress.lixiaolai.com/archives/category/computer-related/wordpress-computer-related' title="View all posts filed under WordPress">WordPress</a>         </li> <!-- ending subcategory -->
+<li class='collapsing categories item'><a href='/web/20130630173514/http://wordpress.lixiaolai.com/archives/category/computer-related/blogging-experience' title="View all posts filed under 博客经验谈">博客经验谈</a>         </li> <!-- ending subcategory -->
+<li class='collapsing categories item'><a href='/web/20130630173514/http://wordpress.lixiaolai.com/archives/category/computer-related/computer-and-internet-common-sense-for-dummies' title="View all posts filed under 网络常识菜鸟笔记">网络常识菜鸟笔记</a>         </li> <!-- ending subcategory -->
+</ul>        </div>
+      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130630173514/http://wordpress.lixiaolai.com/archives/category/lecture-schedule' title="View all posts filed under 讲座行程">讲座行程</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130630173514/http://wordpress.lixiaolai.com/archives/category/resouces-recommended' title="View all posts filed under 资源推荐">资源推荐</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130630173514/http://wordpress.lixiaolai.com/archives/category/isssue-and-argumentation' title="View all posts filed under 问题与争论">问题与争论</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130630173514/http://wordpress.lixiaolai.com/archives/category/scratches' title="View all posts filed under 随便想想">随便想想</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130630173514/http://wordpress.lixiaolai.com/archives/category/%e9%9a%8f%e4%be%bf%e6%83%b3%e6%83%b3' title="View all posts filed under 随便想想">随便想想</a>      </li> <!-- ending category -->
+<li style='display:none'><script type="text/javascript">
+// <![CDATA[
+/* These variables are part of the Collapsing Categories Plugin 
+      *  Version: 2.0.3
+      *  $Id: collapscat.php 561313 2012-06-20 19:45:14Z robfelty $
+      * Copyright 2007 Robert Felty (robfelty.com)
+      */
+var expandSym='&#x25BA;';
+var collapseSym='&#x25BC;';
+try { collapsItems['catTest'] = 'test'; } catch (err) { collapsItems = new Object(); }
+collapsItems['collapsCat-151:3'] = '<ul></ul>';
+collapsItems['collapsCat-230:3'] = '<ul></ul>';
+collapsItems['collapsCat-231:3'] = '<ul></ul>';
+collapsItems['collapsCat-40:3'] = '<ul></ul>';
+collapsItems['collapsCat-148:3'] = '<ul></ul>';
+collapsItems['collapsCat-1:3'] = '<ul></ul>';
+collapsItems['collapsCat-136:3'] = '<ul></ul>';
+collapsItems['collapsCat-165:3'] = '<ul></ul>';
+collapsItems['collapsCat-123:3'] = '<ul></ul>';
+collapsItems['collapsCat-100:3'] = '<ul></ul>';
+collapsItems['collapsCat-84:3'] = '<ul></ul>';
+collapsItems['collapsCat-75:3'] = '<ul></ul>';
+collapsItems['collapsCat-146:3'] = '<ul></ul>';
+collapsItems['collapsCat-97:3'] = '<ul></ul>';
+collapsItems['collapsCat-15:3'] = '<ul></ul>';
+collapsItems['collapsCat-16:3'] = '<ul></ul>';
+collapsItems['collapsCat-33:3'] = '<ul></ul>';
+collapsItems['collapsCat-6:3'] = '<ul></ul>';
+collapsItems['collapsCat-150:3'] = '<ul></ul>';
+collapsItems['collapsCat-17:3'] = '<ul><li class=\'collapsing categories item\'><a href=\'/web/20130630173514/http://wordpress.lixiaolai.com/archives/category/time-as-a-friend/time-as-a-friend-3rd-edition\' title=\"View all posts filed under 《把时间当作朋友》第三版\">《把时间当作朋友》第三版</a>         </li> <!-- ending subcategory --></ul>';
+collapsItems['collapsCat-147:3'] = '<ul></ul>';
+collapsItems['collapsCat-129:3'] = '<ul></ul>';
+collapsItems['collapsCat-24:3'] = '<ul></ul>';
+collapsItems['collapsCat-8:3'] = '<ul></ul>';
+collapsItems['collapsCat-140:3'] = '<ul></ul>';
+collapsItems['collapsCat-9:3'] = '<ul></ul>';
+collapsItems['collapsCat-128:3'] = '<ul></ul>';
+collapsItems['collapsCat-114:3'] = '<ul></ul>';
+collapsItems['collapsCat-235:3'] = '<ul></ul>';
+collapsItems['collapsCat-124:3'] = '<ul></ul>';
+collapsItems['collapsCat-139:3'] = '<ul></ul>';
+collapsItems['collapsCat-121:3'] = '<ul></ul>';
+collapsItems['collapsCat-122:3'] = '<ul></ul>';
+collapsItems['collapsCat-149:3'] = '<ul></ul>';
+collapsItems['collapsCat-125:3'] = '<ul></ul>';
+collapsItems['collapsCat-119:3'] = '<ul></ul>';
+collapsItems['collapsCat-133:3'] = '<ul></ul>';
+collapsItems['collapsCat-117:3'] = '<ul></ul>';
+collapsItems['collapsCat-145:3'] = '<ul></ul>';
+collapsItems['collapsCat-96:3'] = '<ul></ul>';
+collapsItems['collapsCat-3:3'] = '<ul><li class=\'collapsing categories item\'><a href=\'/web/20130630173514/http://wordpress.lixiaolai.com/archives/category/english-learning/1800-hours\' title=\"View all posts filed under 1800小时 &#8211; 高中两年慢跑冲进美国名校\">1800小时 &#8211; 高中两年慢跑冲进美国名校</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130630173514/http://wordpress.lixiaolai.com/archives/category/english-learning/awa-basic-instruction\' title=\"View all posts filed under AWA（GRE/GMAT写作）考试简明教程\">AWA（GRE/GMAT写作）考试简明教程</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130630173514/http://wordpress.lixiaolai.com/archives/category/english-learning/toefl-ibt-qualified-samples-for-ets-official-185-topic-pool\' title=\"View all posts filed under TOEFL iBT 高分作文\">TOEFL iBT 高分作文</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130630173514/http://wordpress.lixiaolai.com/archives/category/english-learning/master-toefl-essential-vocabulary-in-21-days\' title=\"View all posts filed under TOEFL核心词汇21天突破\">TOEFL核心词汇21天突破</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130630173514/http://wordpress.lixiaolai.com/archives/category/english-learning/everyone-can-use-english\' title=\"View all posts filed under 人人都能用英语\">人人都能用英语</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130630173514/http://wordpress.lixiaolai.com/archives/category/english-learning/how-to-accelerate-reading-speed\' title=\"View all posts filed under 如何提高阅读速度\">如何提高阅读速度</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130630173514/http://wordpress.lixiaolai.com/archives/category/english-learning/toefl-listening-and-speaking\' title=\"View all posts filed under 托福听说训练\">托福听说训练</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130630173514/http://wordpress.lixiaolai.com/archives/category/english-learning/toefl-ibt-topic-vocabulary\' title=\"View all posts filed under 新托福iBT词汇分类突破\">新托福iBT词汇分类突破</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130630173514/http://wordpress.lixiaolai.com/archives/category/english-learning/toefl-vocabulary-classification\' title=\"View all posts filed under 新托福词汇分类突破\">新托福词汇分类突破</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130630173514/http://wordpress.lixiaolai.com/archives/category/english-learning/test-preparation\' title=\"View all posts filed under 留学考试准备\">留学考试准备</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130630173514/http://wordpress.lixiaolai.com/archives/category/english-learning/earn-vocabulary-with-me\' title=\"View all posts filed under 跟我攒单词\">跟我攒单词</a>         </li> <!-- ending subcategory --></ul>';
+collapsItems['collapsCat-11:3'] = '<ul></ul>';
+collapsItems['collapsCat-155:3'] = '<ul></ul>';
+collapsItems['collapsCat-156:3'] = '<ul></ul>';
+collapsItems['collapsCat-158:3'] = '<ul></ul>';
+collapsItems['collapsCat-159:3'] = '<ul></ul>';
+collapsItems['collapsCat-160:3'] = '<ul></ul>';
+collapsItems['collapsCat-161:3'] = '<ul></ul>';
+collapsItems['collapsCat-164:3'] = '<li class=\'collapsing categories item\'><a href=\'/web/20130630173514/http://wordpress.lixiaolai.com/archives/category/computer-related/all-about-apple/ios\' title=\"View all posts filed under iOS\">iOS</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130630173514/http://wordpress.lixiaolai.com/archives/category/computer-related/all-about-apple/iphone\' title=\"View all posts filed under iPhone\">iPhone</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130630173514/http://wordpress.lixiaolai.com/archives/category/computer-related/all-about-apple/freeware\' title=\"View all posts filed under 免费软件\">免费软件</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130630173514/http://wordpress.lixiaolai.com/archives/category/computer-related/all-about-apple/basics\' title=\"View all posts filed under 入门\">入门</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130630173514/http://wordpress.lixiaolai.com/archives/category/computer-related/all-about-apple/shareware\' title=\"View all posts filed under 共享软件\">共享软件</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130630173514/http://wordpress.lixiaolai.com/archives/category/computer-related/all-about-apple/tips\' title=\"View all posts filed under 小技巧\">小技巧</a>         </li> <!-- ending subcategory -->';
+collapsItems['collapsCat-109:3'] = '<ul></ul>';
+collapsItems['collapsCat-86:3'] = '<ul></ul>';
+collapsItems['collapsCat-93:3'] = '<ul></ul>';
+collapsItems['collapsCat-153:3'] = '<ul></ul>';
+collapsItems['collapsCat-110:3'] = '<ul></ul>';
+collapsItems['collapsCat-98:3'] = '<ul></ul>';
+collapsItems['collapsCat-127:3'] = '<ul></ul>';
+collapsItems['collapsCat-132:3'] = '<ul></ul>';
+collapsItems['collapsCat-12:3'] = '<ul><li class=\'collapsing categories expandable\'><span class=\'collapsing categories expand\'><span class=\'sym\'>&#x25BA;</span></span><a href=\'/web/20130630173514/http://wordpress.lixiaolai.com/archives/category/computer-related/all-about-apple\' title=\"View all posts filed under All about Apple\">All about Apple</a><div id=\'collapsCat-164:3\' style=\"display:none\"><ul><li class=\'collapsing categories item\'><a href=\'/web/20130630173514/http://wordpress.lixiaolai.com/archives/category/computer-related/all-about-apple/ios\' title=\"View all posts filed under iOS\">iOS</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130630173514/http://wordpress.lixiaolai.com/archives/category/computer-related/all-about-apple/iphone\' title=\"View all posts filed under iPhone\">iPhone</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130630173514/http://wordpress.lixiaolai.com/archives/category/computer-related/all-about-apple/freeware\' title=\"View all posts filed under 免费软件\">免费软件</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130630173514/http://wordpress.lixiaolai.com/archives/category/computer-related/all-about-apple/basics\' title=\"View all posts filed under 入门\">入门</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130630173514/http://wordpress.lixiaolai.com/archives/category/computer-related/all-about-apple/shareware\' title=\"View all posts filed under 共享软件\">共享软件</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130630173514/http://wordpress.lixiaolai.com/archives/category/computer-related/all-about-apple/tips\' title=\"View all posts filed under 小技巧\">小技巧</a>         </li> <!-- ending subcategory --></ul>          </div>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130630173514/http://wordpress.lixiaolai.com/archives/category/computer-related/auto-it\' title=\"View all posts filed under Auto-It\">Auto-It</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130630173514/http://wordpress.lixiaolai.com/archives/category/computer-related/firefox\' title=\"View all posts filed under Firefox\">Firefox</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130630173514/http://wordpress.lixiaolai.com/archives/category/computer-related/google\' title=\"View all posts filed under Google\">Google</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130630173514/http://wordpress.lixiaolai.com/archives/category/computer-related/rails-notes\' title=\"View all posts filed under rails notes\">rails notes</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130630173514/http://wordpress.lixiaolai.com/archives/category/computer-related/ubuntu\' title=\"View all posts filed under Ubuntu\">Ubuntu</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130630173514/http://wordpress.lixiaolai.com/archives/category/computer-related/wordpress-computer-related\' title=\"View all posts filed under WordPress\">WordPress</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130630173514/http://wordpress.lixiaolai.com/archives/category/computer-related/blogging-experience\' title=\"View all posts filed under 博客经验谈\">博客经验谈</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130630173514/http://wordpress.lixiaolai.com/archives/category/computer-related/computer-and-internet-common-sense-for-dummies\' title=\"View all posts filed under 网络常识菜鸟笔记\">网络常识菜鸟笔记</a>         </li> <!-- ending subcategory --></ul>';
+collapsItems['collapsCat-95:3'] = '<ul></ul>';
+collapsItems['collapsCat-13:3'] = '<ul></ul>';
+collapsItems['collapsCat-138:3'] = '<ul></ul>';
+collapsItems['collapsCat-14:3'] = '<ul></ul>';
+collapsItems['collapsCat-229:3'] = '<ul></ul>';
+/*  Collapse Functions, version 2.0
+ *
+ *--------------------------------------------------------------------------*/
+String.prototype.trim = function() {
+  return this.replace(/^\s+|\s+$/g,"");
+}
+
+function createCookie(name,value,days) {
+  if (days) {
+    var date = new Date();
+    date.setTime(date.getTime()+(days*24*60*60*1000));
+    var expires = "; expires="+date.toGMTString();
+  } else {
+    var expires = "";
+  }
+  document.cookie = name+"="+value+expires+"; path=/";
+}
+
+function readCookie(name) {
+  var nameEQ = name + "=";
+  var ca = document.cookie.split(';');
+  for(var i=0;i < ca.length;i++) {
+    var c = ca[i];
+    while (c.charAt(0)==' ') {
+      c = c.substring(1,c.length);
+    }
+    if (c.indexOf(nameEQ) == 0) {
+      return c.substring(nameEQ.length,c.length);
+    }
+  }
+  return null;
+}
+
+function eraseCookie(name) {
+  createCookie(name,"",-1);
+}
+
+function addExpandCollapse(id, expandSym, collapseSym, accordion) {
+  jQuery('#' + id + ' .expand').live('click', function() {
+    if (accordion==1) {
+      var theDiv = jQuery(this).parent().parent().find('span.collapse').parent().find('div');
+      jQuery(theDiv).hide('normal');
+      jQuery(this).parent().parent().find('span.collapse').removeClass('collapse').addClass('expand');
+        createCookie(theDiv.attr('id'), 0, 7);
+    }
+    jQuery('#' + id + ' .expand .sym').html(expandSym);
+    expandCat(this, expandSym, collapseSym);
+    return false;
+  });
+  jQuery('#' + id + ' .collapse').live('click', function() {
+    collapseCat(this, expandSym, collapseSym);
+    return false;
+  });
+}
+
+function expandCat(symbol, expandSym, collapseSym) {
+    var theDiv = jQuery(symbol).parent().find('div');
+    jQuery(theDiv).html(collapsItems[jQuery(theDiv).attr('id')]).show('normal');
+    jQuery(symbol).removeClass('expand').addClass('collapse');
+    jQuery(symbol).find('.sym').html(collapseSym);
+  createCookie(theDiv.attr('id'), 1, 7);
+}
+function collapseCat(symbol, expandSym, collapseSym) {
+    var theDiv = jQuery(symbol).parent().find('div');
+    jQuery(theDiv).hide('normal');
+    jQuery(symbol).removeClass('collapse').addClass('expand');
+    jQuery(symbol).find('.sym').html(expandSym);
+  createCookie(theDiv.attr('id'), 0, 7);
+}
+addExpandCollapse('widget-collapscat-3-top','&#x25BA;', '&#x25BC;', 1)// ]]>
+</script></li>
+</ul>
+</li>				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+<p>© 2011 lixiaolai.com – All rights reserved. – Tell whom you should tell.</p>
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+});
+</script>
+	</div>
+</div>
+</div>
+<!--[if lte IE 8]>
+<div id="ie_clear"></div>
+<![endif]-->
+<div id="afterfooter">
+
+</div>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-1452494-10']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? '/web/20130630173514/https://ssl' : '/web/20130630173514/http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F2a09bb839c493d7f27c193efe0b11d15' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+</body>
+</html>
+
+
+
+
+<!--
+     FILE ARCHIVED ON 17:35:14 Jun 30, 2013 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 3:53:15 Nov 16, 2014.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

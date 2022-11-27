@@ -1,0 +1,1301 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
+<head profile="http://gmpg.org/xfn/11">
+<link rel="stylesheet" href="./static_files/style.css" type="text/css" media="screen, projection">
+<link rel="stylesheet" href="./static_files/layout.css" type="text/css" media="screen, projection">
+<link rel="stylesheet" href="./static_files/style.css" type="text/css" media="screen, projection">
+<link rel="stylesheet" href="./static_files/layout.css" type="text/css" media="screen, projection">
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>为Prezi Desktop设置中文字体</title>
+<meta name="robots" content="noodp, noydir" />
+<meta name="description" content="Prezi是个很酷的演讲辅助工具，演示效果比PowerPoint、Keynote炫多了，不仅如此，更重要的是，它在文字、数据视觉化方面确实比其他工具高出了好几个层次。 真正吸引我的，其实不是它那种“炫”的效果——因为某一种效果，看多了就没意思了。最吸引我的是它的信息展示方式——用Prezi很容易做到让观众一直保持关注“the BIG picture”——即，不会像看PPT/Keynote那样，很容易迷失到某个细节里面…… 然而，Prezi“很贵”，Pro版本要每年159美元——不是一次性的159美元…… Prezi的缺陷是对中文字体支持较差（尽管也内置了中文字体）——很多中文字符无法显示。Google了一下，发现Prezi Desktop上还是可以加载自定义字体的（网页版不行，Desktop编辑，就只能用159美元的Pro版本）。 点击这里下载字体文件（字体制作者网站）（前两个链接都失效了。昨天[20120718]在Twitter上，@goldengraple告诉我一个新的下载地址：http://vdisk.weibo.com/s/8L12d）： 将解压缩后的文件中所有swf文件拷贝到： Mac OS X: ~/Library/Preferences/com.prezi.PreziDesktop/Local Store/fonts Windows 7: C:\Users\[username]\AppData\Roaming\com.prezi.PreziDesktop\Local Store\fonts Linux: ~/.appdata/com.prezi.PreziDesktop/Local Store/fonts 注意，要覆盖原有的文件！ 创建一个新的Prezi文档。 选择合适的模板。 按下Ctrl+Shift+C打开CSS模板编辑器。 修改@font-face中的src: url(&#8216;xxx.swf&#8217;)为GBC Fonts中提供的中文字体，例如： @font-face { src: url(&#8216;STXINWEI.swf&#8217;); fontFamily: body; } @font-face { src: url(&#8216;STCAIYUN.swf&#8217;); fontFamily:" />
+<link rel="stylesheet" href="/web/20130819214332cs_/http://wordpress.lixiaolai.com/wp-content/themes/thesis_182/style.css" type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="/web/20130819214332cs_/http://wordpress.lixiaolai.com/wp-content/themes/thesis_182/custom/layout.css" type="text/css" media="screen, projection" />
+<!--[if lte IE 8]><link rel="stylesheet" href="/web/20130819214332/http://wordpress.lixiaolai.com/wp-content/themes/thesis_182/lib/css/ie.css" type="text/css" media="screen, projection" /><![endif]-->
+<link rel="stylesheet" href="/web/20130819214332cs_/http://wordpress.lixiaolai.com/wp-content/themes/thesis_182/custom/custom.css" type="text/css" media="screen, projection" />
+<link rel="canonical" href="http://wordpress.lixiaolai.com/archives/11264.html" />
+<link rel="alternate" type="application/rss+xml" title="Reborn RSS Feed" href="http://wordpress.lixiaolai.com/feed" />
+<link rel="pingback" href="http://wordpress.lixiaolai.com/xmlrpc.php" />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://wordpress.lixiaolai.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://wordpress.lixiaolai.com/wp-includes/wlwmanifest.xml" />
+<link rel="shortcut icon" type="image/ico" href="/web/20130819214332im_/http://www.lixiaolai.com/wp-content/themes/thesis_182/lib/images/favicon.ico">
+<link type="image/png" rel="apple-touch-icon" href="http:///www.lixiaolai.com/wp-content/themes/thesis_182/lib/images/r.png" />
+<link rel="alternate" type="application/rss+xml" title="Reborn &raquo; 为Prezi Desktop设置中文字体 Comments Feed" href="http://wordpress.lixiaolai.com/archives/11264.html/feed" />
+<link rel='stylesheet' id='Shadows Into Light-css'  href='/web/20130819214332cs_/http://fonts.googleapis.com/css?family=Shadows+Into+Light&amp;ver=3.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='Shadows Into Light Two-css'  href='/web/20130819214332cs_/http://fonts.googleapis.com/css?family=Shadows+Into+Light+Two&amp;ver=3.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='ttsp-all-css'  href='/web/20130819214332cs_/http://wordpress.lixiaolai.com/wp-content/plugins/thethe-sliding-panels/style/css/ttsp.all.css?ver=3.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-syntax-css-css'  href='/web/20130819214332cs_/http://wordpress.lixiaolai.com/wp-content/plugins/wp-syntax/wp-syntax.css?ver=3.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='jquery-ui-style-ui-lightness-css'  href='/web/20130819214332cs_/http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/ui-lightness/jquery-ui.css?ver=3.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='thethe-haccordion-css'  href='/web/20130819214332cs_/http://wordpress.lixiaolai.com/wp-content/plugins/thethe-tabs-and-accordions/style/thethe-haccordion.css?ver=3.4.2' type='text/css' media='all' />
+<script type='text/javascript' src='/web/20130819214332js_/http://code.jquery.com/jquery-latest.min.js?ver=latest'></script>
+<script type='text/javascript' src='/web/20130819214332js_/http://wordpress.lixiaolai.com/wp-content/plugins/thethe-marquee/style/js/jquery.easing.1.3.js?ver=3.4.2'></script>
+<script type='text/javascript' src='/web/20130819214332js_/http://wordpress.lixiaolai.com/wp-content/plugins/thethe-marquee/style/js/jquery.marquee.js?ver=3.4.2'></script>
+<script type='text/javascript' src='/web/20130819214332js_/http://wordpress.lixiaolai.com/wp-includes/js/comment-reply.js?ver=3.4.2'></script>
+<script type='text/javascript' src='/web/20130819214332js_/http://wordpress.lixiaolai.com/wp-content/plugins/jquery-accordion-slideshow/js/jquery.min.js?ver=3.4.2'></script>
+<script type='text/javascript' src='/web/20130819214332js_/http://wordpress.lixiaolai.com/wp-content/plugins/jquery-accordion-slideshow/js/jquery.zaccordion.min.js?ver=3.4.2'></script>
+<script type='text/javascript' src='/web/20130819214332js_/http://wordpress.lixiaolai.com/wp-content/plugins/jquery-accordion-slideshow/js/jquery.easing.1.3.js?ver=3.4.2'></script>
+<script type='text/javascript' src='/web/20130819214332js_/http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js?ver=3.4.2'></script>
+<script type='text/javascript' src='/web/20130819214332js_/http://wordpress.lixiaolai.com/wp-content/plugins/thethe-sliding-panels/style/js/jquery.cookie.min.js?ver=3.4.2'></script>
+<script type='text/javascript' src='/web/20130819214332js_/http://wordpress.lixiaolai.com/wp-content/plugins/thethe-sliding-panels/style/js/jquery.ttsp.js?ver=3.4.2'></script>
+<script type='text/javascript' src='/web/20130819214332js_/http://wordpress.lixiaolai.com/wp-content/plugins/thethe-tabs-and-accordions/style/js/thethe.toggle.js?ver=3.4.2'></script>
+<script type='text/javascript' src='/web/20130819214332js_/http://wordpress.lixiaolai.com/wp-content/plugins/thethe-tabs-and-accordions/style/js/thethe.haccordion.js?ver=3.4.2'></script>
+<style type="text/css">
+	.addw2p {
+		list-style-type: none;
+		list-style-image: none;
+	}
+</style>
+<script type="text/javascript" src="/web/20130819214332js_/http://wordpress.lixiaolai.com/wp-content/plugins/audio-player/assets/audio-player.js?ver=2.0.4.1"></script>
+<script type="text/javascript">AudioPlayer.setup("/web/20130819214332/http://wordpress.lixiaolai.com/wp-content/plugins/audio-player/assets/player.swf?ver=2.0.4.1", {width:"290",animation:"yes",encode:"yes",initialvolume:"60",remaining:"no",noinfo:"no",buffer:"5",checkpolicy:"no",rtl:"no",bg:"f8f8f8",text:"666666",leftbg:"eeeeee",lefticon:"666666",volslider:"666666",voltrack:"FFFFFF",rightbg:"cccccc",rightbghover:"999999",righticon:"666666",righticonhover:"ffffff",track:"FFFFFF",loader:"9FFFB8",border:"666666",tracker:"DDDDDD",skip:"666666",pagebg:"FFFFFF",transparentpagebg:"yes"});</script>
+<style type='text/css'>
+#widget-collapscat-3-top span.collapsing.categories {
+        border:0;
+        padding:0; 
+        margin:0; 
+        cursor:pointer;
+} 
+
+#widget-collapscat-3-top li.widget_collapscat h2 span.sym {float:right;padding:0 .5em}
+#widget-collapscat-3-top li.collapsing.categories.self a {font-weight:bold}
+#widget-collapscat-3-top:before {content:'';} 
+#widget-collapscat-3-top  li.collapsing.categories:before {content:'';} 
+#widget-collapscat-3-top  li.collapsing.categories {list-style-type:none}
+#widget-collapscat-3-top  li.collapsing.categories{
+       padding:0 0 0 1em;
+       text-indent:-1em;
+}
+#widget-collapscat-3-top li.collapsing.categories.item:before {content: '\00BB \00A0' !important;} 
+#widget-collapscat-3-top li.collapsing.categories .sym {
+   cursor:pointer;
+   font-size:1.1em;
+   font-family:Arial, Helvetica;
+    padding-right:5px;}</style>
+<!-- TheThe Marquee v.1.0.0 Custom CSS begin //-->
+<style type="text/css" media="screen">
+div.marquee {}
+div.marquee div.mul {}
+
+</style>
+<!-- TheThe Marquee Custom CSS end //-->
+<script type='text/javascript'>
+jQuery(document).ready(function($) {
+});
+</script>		<style type="text/css">
+						ol.footnotes li {list-style-type:decimal;}
+						ol.footnotes{font-size:13px; color:#666666;}		</style>
+				<script type="text/javascript" charset="utf-8">
+			var href = "/web/20130819214332/http://wordpress.lixiaolai.com";
+			// solves the issue where app mode does not set the correct UA String.
+			if ( window.navigator.standalone ) {
+				href += "?onswipe_redirect=yes";
+				location.href = href;
+			};
+			try{
+			// make reader urls work backwards.
+				href += "?p=" + location.hash.match(/\#!\/entry\/.+,(\d+)$/)[1];
+				location.href = href;
+			}catch(e){}		
+		</script>
+		
+	<!-- Clean Archives Reloaded v3.2.0 | /web/20130819214332/http://www.viper007bond.com/wordpress-plugins/clean-archives-reloaded/ -->
+	<style type="text/css">.car-collapse .car-yearmonth { cursor: s-resize; } </style>
+	<script type="text/javascript">
+		/* <![CDATA[ */
+			jQuery(document).ready(function() {
+				jQuery('.car-collapse').find('.car-monthlisting').hide();
+				jQuery('.car-collapse').find('.car-monthlisting:first').show();
+				jQuery('.car-collapse').find('.car-yearmonth').click(function() {
+					jQuery(this).next('ul').slideToggle('fast');
+				});
+				jQuery('.car-collapse').find('.car-toggler').click(function() {
+					if ( 'Expand All' == jQuery(this).text() ) {
+						jQuery(this).parent('.car-container').find('.car-monthlisting').show();
+						jQuery(this).text('Collapse All');
+					}
+					else {
+						jQuery(this).parent('.car-container').find('.car-monthlisting').hide();
+						jQuery(this).text('Expand All');
+					}
+					return false;
+				});
+			});
+		/* ]]> */
+	</script>
+
+</head>
+<body class="custom">
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script> if (window.archive_analytics) { window.archive_analytics.values['server_name']="wwwb-app18.us.archive.org";}; </script>
+
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">
+var __wm = (function(){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://wordpress.lixiaolai.com/archives/11264.html";
+
+var firstYear = 1996;
+var imgWidth = 475,imgHeight = 27;
+var yearImgWidth = 25,monthImgWidth = 2;
+var displayDay = "19";
+var displayMonth = "Aug";
+var displayYear = "2013";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function getElementX2(obj) {
+  var $e=jQuery(obj);
+  return (typeof $e=="undefined"||typeof $e.offset=="undefined")?
+    getElementX(obj):Math.round($e.offset().left);
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX2(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})();
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0"></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://wordpress.lixiaolai.com/archives/11264.html" style="width:400px;" onfocus="this.focus();this.select();"><input type="hidden" name="type" value="replay"><input type="hidden" name="date" value="20130819214332"><input type="submit" value="Go"><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    <a href="/web/20130512130453/http://wordpress.lixiaolai.com/archives/11264.html" title="12 May 2013">MAY</a>
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 21:43:32 Aug 19, 2013">AUG</td>
+		<td class="f" nowrap="nowrap">
+		
+		    <a href="/web/20131011112834/http://wordpress.lixiaolai.com/archives/11264.html" title="11 Oct 2013"><strong>OCT</a>
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20130512130453/http://wordpress.lixiaolai.com/archives/11264.html" title="13:04:53 May 12, 2013"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 21:43:32 Aug 19, 2013">19</td>
+	       <td class="f" nowrap="nowrap">
+               
+		   <a href="/web/20131011112834/http://wordpress.lixiaolai.com/archives/11264.html" title="11:28:34 Oct 11, 2013"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0"/></a>
+	       
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   2012
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 21:43:32 Aug 19, 2013">2013</td>
+	       <td class="f" nowrap="nowrap">
+               
+                   2014
+               
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20130819214332*/http://wordpress.lixiaolai.com/archives/11264.html" title="See a list of every capture for this URL">6 captures</a>
+           <div class="r" title="Timespan for captures of this URL">8 Oct 12 - 4 Jul 14</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="475"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=475_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000000000000_2003:-1:000000000000_2004:-1:000000000000_2005:-1:000000000000_2006:-1:000000000000_2007:-1:000000000000_2008:-1:000000000000_2009:-1:000000000000_2010:-1:000000000000_2011:-1:000000000000_2012:-1:000000000100_2013:7:000010010101_2014:-1:000000100000">
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+<div id="container">
+<div id="page">
+	<div id="header_box">
+		<div id="header">
+		<p id="logo"><a href="/web/20130819214332/http://wordpress.lixiaolai.com/">Reborn</a></p>
+	</div>
+	<div id="header_box_right">
+		<form action="/web/20130819214332/http://www.google.com/cse" id="cse-search-box">
+	    <input type="hidden" name="cx" value="017195234153172777936:zntod-n-hbc">
+	    <input type="hidden" name="ie" value="UTF-8">
+			<input type="text" onblur="if (this.value == '') {this.value = 'To search, type and hit enter';}" onfocus="if (this.value == 'To search, type and hit enter') {this.value = '';}" id="s" name="q" value="To search, type and hit enter" class="text_input">
+		</form>
+				<a href="/web/20130819214332/https://twitter.com/xiaolai"><img src="/web/20130819214332im_/http://wordpress.lixiaolai.com/wp-content/themes/thesis_182/custom/images/twitter.png" alt="@xiaolai" /></a>
+						<a href="mailto:lixiaolai@gmail.com"><img src="/web/20130819214332im_/http://wordpress.lixiaolai.com/wp-content/themes/thesis_182/custom/images/gmail.png" alt="lixiaolai@gmail.com" /></a>
+		<a href="/web/20130819214332/http://wordpress.lixiaolai.com/feed"><img src="/web/20130819214332im_/http://wordpress.lixiaolai.com/wp-content/themes/thesis_182/custom/images/rss.png" alt="RSS" /></a>
+	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="menu-navbar-container"><ul id="menu-navbar" class="menu"><li id="menu-item-12082" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12082"><a href="/web/20130819214332/http://www.lixiaolai.com/">Home</a></li>
+<li id="menu-item-10859" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10859"><a href="/web/20130819214332/http://wordpress.lixiaolai.com/archives">Archives</a></li>
+<li id="menu-item-10860" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10860"><a href="/web/20130819214332/http://wordpress.lixiaolai.com/downloads">Downloads</a></li>
+<li id="menu-item-12081" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12081"><a href="/web/20130819214332/http://www.eduise.com/">eduise.com</a></li>
+<li id="menu-item-12080" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12080"><a href="/web/20130819214332/http://www.eduise.com/client/evaluation">免费留学申请选校评估</a></li>
+<li id="menu-item-12240" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12240"><a title="linode" href="/web/20130819214332/http://www.lixiaolai.com/linode-vps">linode</a></li>
+</ul></div>
+	<div id="content_box">
+		<div id="content" class="hfeed">
+
+			<div class="post-11264 post type-post status-publish format-standard hentry category-computer-related post_box top" id="post-11264">
+				<div class="headline_area">
+					<h1 class="entry-title">为Prezi Desktop设置中文字体</h1>
+					<p class="headline_meta">by <span class="author vcard fn">xiaolai</span> on <abbr class="published" title="2011-12-23">2011/12/23</abbr> &middot; <span><a href="/web/20130819214332/http://wordpress.lixiaolai.com/archives/11264.html#comments" rel="nofollow"><span class="dsq-postid" rel="11264 http://www.lixiaolai.com/?p=11264">35 comments</span></a></span></p>
+					<p class="headline_meta">in <span><a href="/web/20130819214332/http://wordpress.lixiaolai.com/archives/category/computer-related" title="View all posts in 计算机相关" rel="category tag">计算机相关</a></span></p>
+				</div>
+				<div class="format_text entry-content">
+<p><a href="/web/20130819214332/http://prezi.com/" target="_blank">Prezi</a>是个很酷的演讲辅助工具，演示效果比PowerPoint、Keynote炫多了，不仅如此，更重要的是，它在文字、数据视觉化方面确实比其他工具高出了好几个层次。</p>
+<p>真正吸引我的，其实不是它那种“炫”的效果——因为某一种效果，看多了就没意思了。最吸引我的是它的信息展示方式——用Prezi很容易做到让观众一直保持关注“the BIG picture”——即，不会像看PPT/Keynote那样，很容易迷失到某个细节里面……</p>
+<p>然而，Prezi“很贵”，Pro版本要每年159美元——不是一次性的159美元……</p>
+<p>Prezi的缺陷是对中文字体支持较差（尽管也内置了中文字体）——很多中文字符无法显示。Google了一下，发现Prezi Desktop上还是可以加载自定义字体的（网页版不行，Desktop编辑，就只能用159美元的Pro版本）。</p>
+<p><a href="/web/20130819214332/http://www.gbcgbc.tk/wiki/%E6%96%87%E4%BB%B6%3APez_GBC_Fonts.7z" target="_blank">点击这里下载</a>字体文件（<a href="/web/20130819214332/http://www.gbcgbc.tk/" target="_blank">字体制作者网站</a>）（前两个链接都失效了。昨天[20120718]在Twitter上，@goldengraple告诉我一个新的下载地址：<a href="/web/20130819214332/http://vdisk.weibo.com/s/8L12d" target="_blank">http://vdisk.weibo.com/s/8L12d</a>）：</p>
+<p>将解压缩后的文件中所有swf文件拷贝到：</p>
+<p><strong>Mac OS X</strong>:</p>
+<blockquote><p>~/Library/Preferences/com.prezi.PreziDesktop/Local Store/fonts</p></blockquote>
+<p><strong>Windows 7</strong>:</p>
+<blockquote><p>C:\Users\[username]\AppData\Roaming\com.prezi.PreziDesktop\Local Store\fonts</p></blockquote>
+<p><strong>Linux</strong>:</p>
+<blockquote><p>~/.appdata/com.prezi.PreziDesktop/Local Store/fonts</p></blockquote>
+<p><strong>注意，要覆盖原有的文件！</strong></p>
+<p>创建一个新的Prezi文档。</p>
+<p>选择合适的模板。</p>
+<p>按下Ctrl+Shift+C打开CSS模板编辑器。</p>
+<p>修改@font-face中的src: url(&#8216;xxx.swf&#8217;)为GBC Fonts中提供的中文字体，例如：</p>
+<blockquote><p>@font-face<br />
+{<br />
+	src: url(&#8216;STXINWEI.swf&#8217;);<br />
+	fontFamily: body;<br />
+}</p>
+<p>@font-face<br />
+{<br />
+	src: url(&#8216;STCAIYUN.swf&#8217;);<br />
+	fontFamily: strong;<br />
+}</p>
+<p>@font-face<br />
+{<br />
+	src: url(&#8216;STXINGKA.swf&#8217;);<br />
+	fontFamily: head;<br />
+}</p></blockquote>
+<p>而后点击“Apply”按钮。</p>
+<p>另外，iPhone上的Remote Pro可以用来当“遥控器”。</p>
+				</div>
+			</div>
+
+
+<div id="disqus_thread">
+                    <div id="dsq-content">
+
+
+            <ul id="dsq-comments">
+                    <li class="comment even thread-even depth-1" id="dsq-comment-48698">
+        <div id="dsq-comment-header-48698" class="dsq-comment-header">
+            <cite id="dsq-cite-48698">
+                <span id="dsq-author-user-48698">Hui</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-48698" class="dsq-comment-body">
+            <div id="dsq-comment-message-48698" class="dsq-comment-message"><p>网站上编辑有个选颜色和字体的，选中那个中文就可以输入汉字了。</p>
+</div>
+        </div>
+    </li>
+
+    <ul class='children'>
+    <li class="comment odd alt depth-2" id="dsq-comment-48699">
+        <div id="dsq-comment-header-48699" class="dsq-comment-header">
+            <cite id="dsq-cite-48699">
+                <span id="dsq-author-user-48699">Hui</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-48699" class="dsq-comment-body">
+            <div id="dsq-comment-message-48699" class="dsq-comment-message"><p>是的，自带的中文字体很多显示不了。这软件就是靠zoom来zoom去的效果，开始看还是很新鲜的。</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment even depth-2" id="dsq-comment-48701">
+        <div id="dsq-comment-header-48701" class="dsq-comment-header">
+            <cite id="dsq-cite-48701">
+                <span id="dsq-author-user-48701">Hui</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-48701" class="dsq-comment-body">
+            <div id="dsq-comment-message-48701" class="dsq-comment-message"><p>可以把文字做成图片上传。</p>
+</div>
+        </div>
+    </li>
+
+    <ul class='children'>
+    <li class="comment odd alt depth-3" id="dsq-comment-55709">
+        <div id="dsq-comment-header-55709" class="dsq-comment-header">
+            <cite id="dsq-cite-55709">
+                <span id="dsq-author-user-55709">youbor</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-55709" class="dsq-comment-body">
+            <div id="dsq-comment-message-55709" class="dsq-comment-message"><p>可是图片有时会失真，而且盖住后面的背景。</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+</ul>
+</li>
+</ul>
+</li>
+    <li class="comment even thread-odd thread-alt depth-1" id="dsq-comment-48703">
+        <div id="dsq-comment-header-48703" class="dsq-comment-header">
+            <cite id="dsq-cite-48703">
+                <span id="dsq-author-user-48703">刘孟贤</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-48703" class="dsq-comment-body">
+            <div id="dsq-comment-message-48703" class="dsq-comment-message"><p>想学很久了</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment odd alt thread-even depth-1" id="dsq-comment-48708">
+        <div id="dsq-comment-header-48708" class="dsq-comment-header">
+            <cite id="dsq-cite-48708">
+http://kinslover.info                <span id="dsq-author-user-48708">kinslover</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-48708" class="dsq-comment-body">
+            <div id="dsq-comment-message-48708" class="dsq-comment-message"><p>转来转去挺晕的。。。。</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment even thread-odd thread-alt depth-1" id="dsq-comment-48709">
+        <div id="dsq-comment-header-48709" class="dsq-comment-header">
+            <cite id="dsq-cite-48709">
+                <span id="dsq-author-user-48709">funyi</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-48709" class="dsq-comment-body">
+            <div id="dsq-comment-message-48709" class="dsq-comment-message"><p>有学校电子邮箱的同学可以申请针对学生的“优惠”版本。能够免费使用到很多功能。</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment odd alt thread-even depth-1" id="dsq-comment-48711">
+        <div id="dsq-comment-header-48711" class="dsq-comment-header">
+            <cite id="dsq-cite-48711">
+                <span id="dsq-author-user-48711">Fei</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-48711" class="dsq-comment-body">
+            <div id="dsq-comment-message-48711" class="dsq-comment-message"><p>请问您的域名是从哪里注册的，您能推荐一个好的域名服务商吗？谢谢！</p>
+</div>
+        </div>
+    </li>
+
+    <ul class='children'>
+    <li class="comment even depth-2" id="dsq-comment-48740">
+        <div id="dsq-comment-header-48740" class="dsq-comment-header">
+            <cite id="dsq-cite-48740">
+                <span id="dsq-author-user-48740">Fredpata</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-48740" class="dsq-comment-body">
+            <div id="dsq-comment-message-48740" class="dsq-comment-message"><p>godaddy不错……支持支付宝</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+</ul>
+</li>
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-48717">
+        <div id="dsq-comment-header-48717" class="dsq-comment-header">
+            <cite id="dsq-cite-48717">
+http://none                <span id="dsq-author-user-48717">Kevin Wu</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-48717" class="dsq-comment-body">
+            <div id="dsq-comment-message-48717" class="dsq-comment-message"><p>I have tried the prezi to organize my team presentation, and it is awesome!</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment even thread-even depth-1" id="dsq-comment-48746">
+        <div id="dsq-comment-header-48746" class="dsq-comment-header">
+            <cite id="dsq-cite-48746">
+http://www.shjjsb.com/a/zhongyao/                <span id="dsq-author-user-48746">中药丰胸</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-48746" class="dsq-comment-body">
+            <div id="dsq-comment-message-48746" class="dsq-comment-message"><p>好东西,谢谢了</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-48764">
+        <div id="dsq-comment-header-48764" class="dsq-comment-header">
+            <cite id="dsq-cite-48764">
+                <span id="dsq-author-user-48764">yard</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-48764" class="dsq-comment-body">
+            <div id="dsq-comment-message-48764" class="dsq-comment-message"><p>不要伤害宠物</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment even thread-even depth-1" id="dsq-comment-48776">
+        <div id="dsq-comment-header-48776" class="dsq-comment-header">
+            <cite id="dsq-cite-48776">
+                <span id="dsq-author-user-48776">skndmx</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-48776" class="dsq-comment-body">
+            <div id="dsq-comment-message-48776" class="dsq-comment-message"><p>我的毕业论文就是用这个发表的。效果很好。</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-49526">
+        <div id="dsq-comment-header-49526" class="dsq-comment-header">
+            <cite id="dsq-cite-49526">
+http://lanfei.sinaapp.com/                <span id="dsq-author-user-49526">蓝飞</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-49526" class="dsq-comment-body">
+            <div id="dsq-comment-message-49526" class="dsq-comment-message"><p>XP呢？</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment even thread-even depth-1" id="dsq-comment-49813">
+        <div id="dsq-comment-header-49813" class="dsq-comment-header">
+            <cite id="dsq-cite-49813">
+                <span id="dsq-author-user-49813">飞人</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-49813" class="dsq-comment-body">
+            <div id="dsq-comment-message-49813" class="dsq-comment-message"><p>字体下载不了.有其他下载地址么</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-50754">
+        <div id="dsq-comment-header-50754" class="dsq-comment-header">
+            <cite id="dsq-cite-50754">
+                <span id="dsq-author-user-50754">blueslmj</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-50754" class="dsq-comment-body">
+            <div id="dsq-comment-message-50754" class="dsq-comment-message"><p>字体文件下载不了了，楼主能分享到网盘上吗？多谢~！</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment even thread-even depth-1" id="dsq-comment-50966">
+        <div id="dsq-comment-header-50966" class="dsq-comment-header">
+            <cite id="dsq-cite-50966">
+                <span id="dsq-author-user-50966">victor</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-50966" class="dsq-comment-body">
+            <div id="dsq-comment-message-50966" class="dsq-comment-message"><p>字体下载不了啊，能不能发到我邮箱里？voctor_victor@sina.com</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-51251">
+        <div id="dsq-comment-header-51251" class="dsq-comment-header">
+            <cite id="dsq-cite-51251">
+                <span id="dsq-author-user-51251">Kevin</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-51251" class="dsq-comment-body">
+            <div id="dsq-comment-message-51251" class="dsq-comment-message"><p>你好，那个原作者的下载链接已经无法使用了，能否提供一下你下载好的字体库给我，非常感谢！</p>
+<p><a href="mailto:saka.az@gmail.com">saka.az@gmail.com</a></p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment even thread-even depth-1" id="dsq-comment-51265">
+        <div id="dsq-comment-header-51265" class="dsq-comment-header">
+            <cite id="dsq-cite-51265">
+                <span id="dsq-author-user-51265">Mason</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-51265" class="dsq-comment-body">
+            <div id="dsq-comment-message-51265" class="dsq-comment-message"><p>你好 请问那个字体库你还有吗 能否给我发一份 原链接已经失效了 感谢！</p>
+</div>
+        </div>
+    </li>
+
+    <ul class='children'>
+    <li class="comment odd alt depth-2" id="dsq-comment-51266">
+        <div id="dsq-comment-header-51266" class="dsq-comment-header">
+            <cite id="dsq-cite-51266">
+                <span id="dsq-author-user-51266">Mason</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-51266" class="dsq-comment-body">
+            <div id="dsq-comment-message-51266" class="dsq-comment-message"><p>我的邮箱是masonzhy@gmail.com</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+</ul>
+</li>
+    <li class="comment even thread-odd thread-alt depth-1" id="dsq-comment-51280">
+        <div id="dsq-comment-header-51280" class="dsq-comment-header">
+            <cite id="dsq-cite-51280">
+http://uedesign.me                <span id="dsq-author-user-51280">marc</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-51280" class="dsq-comment-body">
+            <div id="dsq-comment-message-51280" class="dsq-comment-message"><p>楼主威武，但字体下载不了，请发一份字体给我吧！cafachunyang@gmail.com</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="post pingback">
+        <p>Pingback: <a href='/web/20130819214332/http://dengbiao.me/?p=101' rel='external nofollow' class='url'>Prezi，以后做PPT请用它！ | On The Way</a></p>
+    </li>
+    </li>
+    <li class="comment odd alt thread-even depth-1" id="dsq-comment-51405">
+        <div id="dsq-comment-header-51405" class="dsq-comment-header">
+            <cite id="dsq-cite-51405">
+                <span id="dsq-author-user-51405">50hz</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-51405" class="dsq-comment-body">
+            <div id="dsq-comment-message-51405" class="dsq-comment-message"><p>下不了了，网上也找不到，麻烦楼主发我一份吧</p>
+<p><a href="mailto:r.wang.50hz@gmail.com">r.wang.50hz@gmail.com</a></p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment even thread-odd thread-alt depth-1" id="dsq-comment-51410">
+        <div id="dsq-comment-header-51410" class="dsq-comment-header">
+            <cite id="dsq-cite-51410">
+                <span id="dsq-author-user-51410">Travis Hu</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-51410" class="dsq-comment-body">
+            <div id="dsq-comment-message-51410" class="dsq-comment-message"><p>笑来老师，能麻烦给发一份吗，最近在用Prezi做课件，中文一直是在用图片转成PDF进行显示，白色背景还好弄，但一遇到颜色渐变的那种背景，基本就没戏了，希望能试一下这个字体，作者的原链接已经失效了，网上传的“GBC Fonts.7z”根本就接收不到，估计是服务器已经停用了。hubocfcool@gmail.com，感激不尽！</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment odd alt thread-even depth-1" id="dsq-comment-51432">
+        <div id="dsq-comment-header-51432" class="dsq-comment-header">
+            <cite id="dsq-cite-51432">
+                <span id="dsq-author-user-51432">小白</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-51432" class="dsq-comment-body">
+            <div id="dsq-comment-message-51432" class="dsq-comment-message"><p>老师，字体下不到了啊，可以用其他的字体么，或者能发我一个么~谢谢了<br />
+<a href="mailto:394335556@qq.com">394335556@qq.com</a></p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment even thread-odd thread-alt depth-1" id="dsq-comment-51442">
+        <div id="dsq-comment-header-51442" class="dsq-comment-header">
+            <cite id="dsq-cite-51442">
+                <span id="dsq-author-user-51442">Thomas Wang</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-51442" class="dsq-comment-body">
+            <div id="dsq-comment-message-51442" class="dsq-comment-message"><p>字体原链接已经失效了，不知楼主和楼上各位是否可以发一份字体文件给我，谢谢~</p>
+</div>
+        </div>
+    </li>
+
+    <ul class='children'>
+    <li class="comment odd alt depth-2" id="dsq-comment-51443">
+        <div id="dsq-comment-header-51443" class="dsq-comment-header">
+            <cite id="dsq-cite-51443">
+                <span id="dsq-author-user-51443">Thomas Wang</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-51443" class="dsq-comment-body">
+            <div id="dsq-comment-message-51443" class="dsq-comment-message"><p>我的邮箱：thomaswang1992@hotmail.com</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+</ul>
+</li>
+    <li class="comment even thread-even depth-1" id="dsq-comment-52891">
+        <div id="dsq-comment-header-52891" class="dsq-comment-header">
+            <cite id="dsq-cite-52891">
+                <span id="dsq-author-user-52891">XUBAO</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-52891" class="dsq-comment-body">
+            <div id="dsq-comment-message-52891" class="dsq-comment-message"><p>楼主能不能给我发一份字体，谢谢啦  <a href="mailto:chenxumark@foxmail.com">chenxumark@foxmail.com</a></p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-52973">
+        <div id="dsq-comment-header-52973" class="dsq-comment-header">
+            <cite id="dsq-cite-52973">
+                <span id="dsq-author-user-52973">goldengrape (@goldengrape)</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-52973" class="dsq-comment-body">
+            <div id="dsq-comment-message-52973" class="dsq-comment-message"><p>也是遇到无法下载字体的问题，搜了一圈，发现一个叫做sIFR的东西，可以将ttf字体转换成SWF的。使用方法在：http://wiki.novemberborn.net/sifr/ 这里还有一个简单的在线版本的http://www.sifrgenerator.com/ 但是下载安装sIFR我没成功，不知道为何。对于在线版本测试英文ttf字体通过，但是对于中文字体报错，说是文件太大。</p>
+<p>继续研究中</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment even thread-even depth-1" id="dsq-comment-54678">
+        <div id="dsq-comment-header-54678" class="dsq-comment-header">
+            <cite id="dsq-cite-54678">
+                <span id="dsq-author-user-54678">SummenyChen</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-54678" class="dsq-comment-body">
+            <div id="dsq-comment-message-54678" class="dsq-comment-message"><p>你好，可否將該中文字體包發於我郵箱？setison@qq.com，謝謝</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-54958">
+        <div id="dsq-comment-header-54958" class="dsq-comment-header">
+            <cite id="dsq-cite-54958">
+                <span id="dsq-author-user-54958">Kane</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-54958" class="dsq-comment-body">
+            <div id="dsq-comment-message-54958" class="dsq-comment-message"><p>请问可否发给我一份中文字体包？<br />
+<a href="mailto:KANE1979@GMAIL.COM">KANE1979@GMAIL.COM</a></p>
+<p>谢谢！</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment even thread-even depth-1" id="dsq-comment-55239">
+        <div id="dsq-comment-header-55239" class="dsq-comment-header">
+            <cite id="dsq-cite-55239">
+                <span id="dsq-author-user-55239">Burce</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-55239" class="dsq-comment-body">
+            <div id="dsq-comment-message-55239" class="dsq-comment-message"><p>您好，同样遇到无法下载中文字体的问题，请问能否发一份到我邮箱，liangpab@163.com，非常想用prezi作中文演示，谢谢！！</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-55706">
+        <div id="dsq-comment-header-55706" class="dsq-comment-header">
+            <cite id="dsq-cite-55706">
+                <span id="dsq-author-user-55706">kingwindang</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-55706" class="dsq-comment-body">
+            <div id="dsq-comment-message-55706" class="dsq-comment-message"><p>转了好久了，还是没有找到能输入简体中文的方法，kingwindang@gmail.com，我的邮箱，麻烦您也能发一份到我邮箱，多谢了。</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment even thread-even depth-1" id="dsq-comment-56008">
+        <div id="dsq-comment-header-56008" class="dsq-comment-header">
+            <cite id="dsq-cite-56008">
+                <span id="dsq-author-user-56008">俊杰</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-56008" class="dsq-comment-body">
+            <div id="dsq-comment-message-56008" class="dsq-comment-message"><p>LZ，不好意思，请发一份到我的邮箱<br />
+<a href="mailto:kirafreedomseed@hotmail.com">kirafreedomseed@hotmail.com</a><br />
+多谢！</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="post pingback">
+        <p>Pingback: <a href='/web/20130819214332/http://www.xjteam.com/?p=739' rel='external nofollow' class='url'>新老生交流会中信杰介绍展示时所运用的工具介绍 - 信杰信息技术团队</a></p>
+    </li>
+    </li>
+            </ul>
+
+
+        </div>
+
+    </div>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+    var disqus_url = '/web/20130819214332/http://wordpress.lixiaolai.com/archives/11264.html';
+    var disqus_identifier = '11264 /web/20130819214332/http://www.lixiaolai.com/?p=11264';
+    var disqus_container_id = 'disqus_thread';
+    var disqus_domain = 'disqus.com';
+    var disqus_shortname = 'lixiaolai';
+    var disqus_title = "为Prezi Desktop设置中文字体";
+        var disqus_config = function () {
+        var config = this; // Access to the config object
+
+        /*
+           All currently supported events:
+            * preData — fires just before we request for initial data
+            * preInit - fires after we get initial data but before we load any dependencies
+            * onInit  - fires when all dependencies are resolved but before dtpl template is rendered
+            * afterRender - fires when template is rendered but before we show it
+            * onReady - everything is done
+         */
+
+        config.callbacks.preData.push(function() {
+            // clear out the container (its filled for SEO/legacy purposes)
+            document.getElementById(disqus_container_id).innerHTML = '';
+        });
+                config.callbacks.onReady.push(function() {
+            // sync comments in the background so we don't block the page
+            var script = document.createElement('script');
+            script.async = true;
+            script.src = '?cf_action=sync_comments&post_id=11264';
+
+            var firstScript = document.getElementsByTagName( "script" )[0];
+            firstScript.parentNode.insertBefore(script, firstScript);
+        });
+                    };
+    var facebookXdReceiverPath = '/web/20130819214332/http://wordpress.lixiaolai.com/wp-content/plugins/disqus-comment-system/xd_receiver.htm';
+/* ]]> */
+</script>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+    var DsqLocal = {
+        'trackbacks': [
+            {
+                'author_name':    "Prezi，以后做PPT请用它！ | On The Way",
+                'author_url':    "/web/20130819214332/http://dengbiao.me\/?p=101",
+                'date':            "05\/13\/2012 08:28 PM",
+                'excerpt':        "[...] 1、让Prezi名声大振的演讲视频：Interview: James Geary (TED) 2、为Prezi Desktop设置中文字体 [...] ",
+                'type':            "pingback"            }
+,            {
+                'author_name':    "新老生交流会中信杰介绍展示时所运用的工具介绍 - 信杰信息技术团队",
+                'author_url':    "/web/20130819214332/http://www.xjteam.com\/?p=739",
+                'date':            "09\/13\/2012 12:02 PM",
+                'excerpt':        "[...] 在考虑了一翻之后，我决定运用prezi了，因为我觉得prezi能够更立体的显示一些逻辑的上的关系，虽然动感并没有powtone这么好，但我感觉还是可以吸引下观众的，prezi是可以在网上直接操作，但因为是国外的网站吧，会有点延迟，于是我就把该软件下载下来了，下载详细说明:/web/20130819214332/http://www.prezicn.com\/viewtopic.php?id=8,但是prezi是收费的，一开始只有30天试用期，破解方法在该网站的最下面评论有链接，大家可以去看看。prezi还有个小问题，就是只支持中国繁体字体，而如果你是用简体字打出来的话，会显示不出来的，如果想用自己的字体的话,就可以上该网站/web/20130819214332/http://www.lixiaolai.com\/archives\/11264.html.  这次信杰展示时,用的是STXINWEI.swf的字体。最后，导出的Prezi文件是个压缩包，解压后，其实是可以把APP文件给删除的，那个是为了兼容苹果电脑的文件，所以一般windows是可以删除的。新老生交流会上展示的prezi，我可是从xj7版本，我是第一完成的时候是xj版本，可想而知，弄这个我花了多少心力，当然也多亏colynn强力支援，没有他的PS，就没那么完美了，所以说美工是所有程序的美容师哦。 [...] ",
+                'type':            "pingback"            }
+        ],
+        'trackback_url': "/web/20130819214332/http://wordpress.lixiaolai.com\/archives\/11264.html\/trackback"    };
+/* ]]> */
+</script>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript';
+    dsq.async = true;
+        dsq.src = 'http' + '://' + disqus_shortname + '.' + 'disqus.com' + '/embed.js?pname=wordpress&pver=2.73';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+/* ]]> */
+</script>
+					<div class="prev_next post_nav">
+						<p class="previous">Previous post: <a href="/web/20130819214332/http://wordpress.lixiaolai.com/archives/11260.html" rel="prev">Moneyball (2011)</a></p>
+						<p>Next post: <a href="/web/20130819214332/http://wordpress.lixiaolai.com/archives/11270.html" rel="next">Prezi 101: What is Prezi?</a></p>
+					</div>
+		</div>
+
+		<div id="sidebars">
+			<div id="multimedia_box" class="image_box">
+				<div id="image_box">
+<a href="/web/20130819214332/http://product.dangdang.com/product.aspx?product_id=22741868"><img class="square" src="/web/20130819214332im_/http://wordpress.lixiaolai.com/wp-content/themes/thesis_182/custom/rotator/sat-essential-vocabulary-21.jpg" alt="sat-essential-vocabulary-21.jpg" /></a>
+				</div>
+			</div>
+			<div id="sidebar_1" class="sidebar">
+				<ul class="sidebar_list">
+<li class="widget widget_archive" id="archives-2"><h3>Archives</h3>		<select name="archive-dropdown" onchange='document.location.href=this.options[this.selectedIndex].value;'> <option value="">Select Month</option> 	<option value='http://wordpress.lixiaolai.com/archives/date/2012/09'> September 2012 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2012/08'> August 2012 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2012/07'> July 2012 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2012/06'> June 2012 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2012/05'> May 2012 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2012/04'> April 2012 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2012/03'> March 2012 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2012/02'> February 2012 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2012/01'> January 2012 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2011/12'> December 2011 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2011/11'> November 2011 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2011/10'> October 2011 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2011/09'> September 2011 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2011/08'> August 2011 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2011/07'> July 2011 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2011/06'> June 2011 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2011/05'> May 2011 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2011/04'> April 2011 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2011/03'> March 2011 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2011/02'> February 2011 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2011/01'> January 2011 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2010/12'> December 2010 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2010/11'> November 2010 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2010/10'> October 2010 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2010/09'> September 2010 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2010/08'> August 2010 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2010/07'> July 2010 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2010/06'> June 2010 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2010/05'> May 2010 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2010/04'> April 2010 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2010/03'> March 2010 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2010/02'> February 2010 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2010/01'> January 2010 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2009/12'> December 2009 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2009/11'> November 2009 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2009/10'> October 2009 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2009/09'> September 2009 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2009/08'> August 2009 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2009/07'> July 2009 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2009/06'> June 2009 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2009/05'> May 2009 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2009/04'> April 2009 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2009/03'> March 2009 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2009/02'> February 2009 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2009/01'> January 2009 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2008/12'> December 2008 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2008/11'> November 2008 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2008/10'> October 2008 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2008/09'> September 2008 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2008/08'> August 2008 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2008/07'> July 2008 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2008/06'> June 2008 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2008/05'> May 2008 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2008/04'> April 2008 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2008/03'> March 2008 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2008/02'> February 2008 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2008/01'> January 2008 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2007/12'> December 2007 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2007/11'> November 2007 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2007/10'> October 2007 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2007/09'> September 2007 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2007/08'> August 2007 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2007/07'> July 2007 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2007/06'> June 2007 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2007/05'> May 2007 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2007/04'> April 2007 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2007/03'> March 2007 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2007/02'> February 2007 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2007/01'> January 2007 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2006/12'> December 2006 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2006/11'> November 2006 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2006/10'> October 2006 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2006/06'> June 2006 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2006/05'> May 2006 </option>
+	<option value='http://wordpress.lixiaolai.com/archives/date/2000/01'> January 2000 </option>
+ </select>
+</li><li class="widget widget_collapscat" id="collapscat-3"><h3>Categories</h3><ul id='widget-collapscat-3-top' class='collapsing categories list'>
+      <li class='collapsing categories item'><a href='/web/20130819214332/http://wordpress.lixiaolai.com/archives/category/applying-stackexchange-com' title="View all posts filed under applying.stackexchange.com">applying.stackexchange.com</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130819214332/http://wordpress.lixiaolai.com/archives/category/daily' title="View all posts filed under Daily">Daily</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130819214332/http://wordpress.lixiaolai.com/archives/category/dont-buy-bullshits' title="View all posts filed under Don&#8217;t buy bullshits">Don&#8217;t buy bullshits</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130819214332/http://wordpress.lixiaolai.com/archives/category/faq-sets' title="View all posts filed under FAQ问答集">FAQ问答集</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130819214332/http://wordpress.lixiaolai.com/archives/category/gmat-prep' title="View all posts filed under GMAT考试准备">GMAT考试准备</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130819214332/http://wordpress.lixiaolai.com/archives/category/uncategorized' title="View all posts filed under uncategorized">uncategorized</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130819214332/http://wordpress.lixiaolai.com/archives/category/video-and-audio' title="View all posts filed under Video and Audio">Video and Audio</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130819214332/http://wordpress.lixiaolai.com/archives/category/%e4%b8%80%e5%88%86%e9%92%9f%e6%94%b9%e5%8f%98%e7%94%9f%e6%b4%bb-%e6%88%91%e6%98%af%e8%b0%81%ef%bc%9f-in-chinese' title="View all posts filed under 一分钟改变生活——我是谁？">一分钟改变生活——我是谁？</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130819214332/http://wordpress.lixiaolai.com/archives/category/books-that-should-not-be-missed' title="View all posts filed under 书——不得不看">书——不得不看</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130819214332/http://wordpress.lixiaolai.com/archives/category/people' title="View all posts filed under 人物">人物</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130819214332/http://wordpress.lixiaolai.com/archives/category/readings-for-writing' title="View all posts filed under 作文素材">作文素材</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130819214332/http://wordpress.lixiaolai.com/archives/category/clear-writing' title="View all posts filed under 写清楚（系列）">写清楚（系列）</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130819214332/http://wordpress.lixiaolai.com/archives/category/learning-learning-to-learn-better' title="View all posts filed under 学习学习再学习">学习学习再学习</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130819214332/http://wordpress.lixiaolai.com/archives/category/versatile' title="View all posts filed under 强人高手">强人高手</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130819214332/http://wordpress.lixiaolai.com/archives/category/thinking-tools' title="View all posts filed under 思维工具">思维工具</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130819214332/http://wordpress.lixiaolai.com/archives/category/thinking-clearly-series' title="View all posts filed under 想明白（系列）">想明白（系列）</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130819214332/http://wordpress.lixiaolai.com/archives/category/response-to-readers' title="View all posts filed under 我要问笑来">我要问笑来</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130819214332/http://wordpress.lixiaolai.com/archives/category/finding-examples' title="View all posts filed under 找例子玩">找例子玩</a>      </li> <!-- ending category -->
+      <li class='collapsing categories expandable'><span class='collapsing categories expand'><span class='sym'>&#x25BA;</span></span><a href='/web/20130819214332/http://wordpress.lixiaolai.com/archives/category/time-as-a-friend' title="View all posts filed under 把时间当作朋友">把时间当作朋友</a>
+     <div id='collapsCat-17:3' style="display:none">
+<ul><li class='collapsing categories item'><a href='/web/20130819214332/http://wordpress.lixiaolai.com/archives/category/time-as-a-friend/time-as-a-friend-3rd-edition' title="View all posts filed under 《把时间当作朋友》第三版">《把时间当作朋友》第三版</a>         </li> <!-- ending subcategory -->
+</ul>        </div>
+      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130819214332/http://wordpress.lixiaolai.com/archives/category/public-speaking-skills-for-everyone' title="View all posts filed under 普通人的当众讲话技能">普通人的当众讲话技能</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130819214332/http://wordpress.lixiaolai.com/archives/category/things-better-learned-before-getting-a-job' title="View all posts filed under 求职前最好学会的那些事儿">求职前最好学会的那些事儿</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130819214332/http://wordpress.lixiaolai.com/archives/category/qa-for-application' title="View all posts filed under 留学问答">留学问答</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130819214332/http://wordpress.lixiaolai.com/archives/category/movie-time' title="View all posts filed under 看看电影">看看电影</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130819214332/http://wordpress.lixiaolai.com/archives/category/marvelous-brain' title="View all posts filed under 神奇的大脑">神奇的大脑</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130819214332/http://wordpress.lixiaolai.com/archives/category/temp-list' title="View all posts filed under 算是流水帐">算是流水帐</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130819214332/http://wordpress.lixiaolai.com/archives/category/diabetes-common-knowledge' title="View all posts filed under 糖尿病常识">糖尿病常识</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130819214332/http://wordpress.lixiaolai.com/archives/category/us-universities-and-colleges' title="View all posts filed under 美国大学">美国大学</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130819214332/http://wordpress.lixiaolai.com/archives/category/%e7%be%8e%e5%9b%bd%e5%a4%a7%e5%ad%a6%e6%9c%ac%e7%a7%91%e7%94%b3%e8%af%b7diy%e7%ae%80%e6%98%8e%e6%8c%87%e5%8d%97' title="View all posts filed under 美国大学本科申请DIY简明指南">美国大学本科申请DIY简明指南</a>      </li> <!-- ending category -->
+      <li class='collapsing categories expandable'><span class='collapsing categories expand'><span class='sym'>&#x25BA;</span></span><a href='/web/20130819214332/http://wordpress.lixiaolai.com/archives/category/english-learning' title="View all posts filed under 英语相关文章">英语相关文章</a>
+     <div id='collapsCat-3:3' style="display:none">
+<ul><li class='collapsing categories item'><a href='/web/20130819214332/http://wordpress.lixiaolai.com/archives/category/english-learning/1800-hours' title="View all posts filed under 1800小时 &#8211; 高中两年慢跑冲进美国名校">1800小时 &#8211; 高中两年慢跑冲进美国名校</a>         </li> <!-- ending subcategory -->
+<li class='collapsing categories item'><a href='/web/20130819214332/http://wordpress.lixiaolai.com/archives/category/english-learning/awa-basic-instruction' title="View all posts filed under AWA（GRE/GMAT写作）考试简明教程">AWA（GRE/GMAT写作）考试简明教程</a>         </li> <!-- ending subcategory -->
+<li class='collapsing categories item'><a href='/web/20130819214332/http://wordpress.lixiaolai.com/archives/category/english-learning/toefl-ibt-qualified-samples-for-ets-official-185-topic-pool' title="View all posts filed under TOEFL iBT 高分作文">TOEFL iBT 高分作文</a>         </li> <!-- ending subcategory -->
+<li class='collapsing categories item'><a href='/web/20130819214332/http://wordpress.lixiaolai.com/archives/category/english-learning/master-toefl-essential-vocabulary-in-21-days' title="View all posts filed under TOEFL核心词汇21天突破">TOEFL核心词汇21天突破</a>         </li> <!-- ending subcategory -->
+<li class='collapsing categories item'><a href='/web/20130819214332/http://wordpress.lixiaolai.com/archives/category/english-learning/everyone-can-use-english' title="View all posts filed under 人人都能用英语">人人都能用英语</a>         </li> <!-- ending subcategory -->
+<li class='collapsing categories item'><a href='/web/20130819214332/http://wordpress.lixiaolai.com/archives/category/english-learning/how-to-accelerate-reading-speed' title="View all posts filed under 如何提高阅读速度">如何提高阅读速度</a>         </li> <!-- ending subcategory -->
+<li class='collapsing categories item'><a href='/web/20130819214332/http://wordpress.lixiaolai.com/archives/category/english-learning/toefl-listening-and-speaking' title="View all posts filed under 托福听说训练">托福听说训练</a>         </li> <!-- ending subcategory -->
+<li class='collapsing categories item'><a href='/web/20130819214332/http://wordpress.lixiaolai.com/archives/category/english-learning/toefl-ibt-topic-vocabulary' title="View all posts filed under 新托福iBT词汇分类突破">新托福iBT词汇分类突破</a>         </li> <!-- ending subcategory -->
+<li class='collapsing categories item'><a href='/web/20130819214332/http://wordpress.lixiaolai.com/archives/category/english-learning/toefl-vocabulary-classification' title="View all posts filed under 新托福词汇分类突破">新托福词汇分类突破</a>         </li> <!-- ending subcategory -->
+<li class='collapsing categories item'><a href='/web/20130819214332/http://wordpress.lixiaolai.com/archives/category/english-learning/test-preparation' title="View all posts filed under 留学考试准备">留学考试准备</a>         </li> <!-- ending subcategory -->
+<li class='collapsing categories item'><a href='/web/20130819214332/http://wordpress.lixiaolai.com/archives/category/english-learning/earn-vocabulary-with-me' title="View all posts filed under 跟我攒单词">跟我攒单词</a>         </li> <!-- ending subcategory -->
+</ul>        </div>
+      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130819214332/http://wordpress.lixiaolai.com/archives/category/opinions' title="View all posts filed under 言论与八卦">言论与八卦</a>      </li> <!-- ending category -->
+      <li class='collapsing categories expandable parent'><span class='collapsing categories collapse'><span class='sym'>&#x25BC;</span></span><a href='/web/20130819214332/http://wordpress.lixiaolai.com/archives/category/computer-related' title="View all posts filed under 计算机相关">计算机相关</a>
+     <div id='collapsCat-12:3' style="display:block">
+<ul><li class='collapsing categories expandable'><span class='collapsing categories expand'><span class='sym'>&#x25BA;</span></span><a href='/web/20130819214332/http://wordpress.lixiaolai.com/archives/category/computer-related/all-about-apple' title="View all posts filed under All about Apple">All about Apple</a>
+<div id='collapsCat-164:3' style="display:none">
+<ul><li class='collapsing categories item'><a href='/web/20130819214332/http://wordpress.lixiaolai.com/archives/category/computer-related/all-about-apple/ios' title="View all posts filed under iOS">iOS</a>         </li> <!-- ending subcategory -->
+<li class='collapsing categories item'><a href='/web/20130819214332/http://wordpress.lixiaolai.com/archives/category/computer-related/all-about-apple/iphone' title="View all posts filed under iPhone">iPhone</a>         </li> <!-- ending subcategory -->
+<li class='collapsing categories item'><a href='/web/20130819214332/http://wordpress.lixiaolai.com/archives/category/computer-related/all-about-apple/freeware' title="View all posts filed under 免费软件">免费软件</a>         </li> <!-- ending subcategory -->
+<li class='collapsing categories item'><a href='/web/20130819214332/http://wordpress.lixiaolai.com/archives/category/computer-related/all-about-apple/basics' title="View all posts filed under 入门">入门</a>         </li> <!-- ending subcategory -->
+<li class='collapsing categories item'><a href='/web/20130819214332/http://wordpress.lixiaolai.com/archives/category/computer-related/all-about-apple/shareware' title="View all posts filed under 共享软件">共享软件</a>         </li> <!-- ending subcategory -->
+<li class='collapsing categories item'><a href='/web/20130819214332/http://wordpress.lixiaolai.com/archives/category/computer-related/all-about-apple/tips' title="View all posts filed under 小技巧">小技巧</a>         </li> <!-- ending subcategory -->
+</ul>          </div>
+         </li> <!-- ending subcategory -->
+<li class='collapsing categories item'><a href='/web/20130819214332/http://wordpress.lixiaolai.com/archives/category/computer-related/auto-it' title="View all posts filed under Auto-It">Auto-It</a>         </li> <!-- ending subcategory -->
+<li class='collapsing categories item'><a href='/web/20130819214332/http://wordpress.lixiaolai.com/archives/category/computer-related/firefox' title="View all posts filed under Firefox">Firefox</a>         </li> <!-- ending subcategory -->
+<li class='collapsing categories item'><a href='/web/20130819214332/http://wordpress.lixiaolai.com/archives/category/computer-related/google' title="View all posts filed under Google">Google</a>         </li> <!-- ending subcategory -->
+<li class='collapsing categories item'><a href='/web/20130819214332/http://wordpress.lixiaolai.com/archives/category/computer-related/rails-notes' title="View all posts filed under rails notes">rails notes</a>         </li> <!-- ending subcategory -->
+<li class='collapsing categories item'><a href='/web/20130819214332/http://wordpress.lixiaolai.com/archives/category/computer-related/ubuntu' title="View all posts filed under Ubuntu">Ubuntu</a>         </li> <!-- ending subcategory -->
+<li class='collapsing categories item'><a href='/web/20130819214332/http://wordpress.lixiaolai.com/archives/category/computer-related/wordpress-computer-related' title="View all posts filed under WordPress">WordPress</a>         </li> <!-- ending subcategory -->
+<li class='collapsing categories item'><a href='/web/20130819214332/http://wordpress.lixiaolai.com/archives/category/computer-related/blogging-experience' title="View all posts filed under 博客经验谈">博客经验谈</a>         </li> <!-- ending subcategory -->
+<li class='collapsing categories item'><a href='/web/20130819214332/http://wordpress.lixiaolai.com/archives/category/computer-related/computer-and-internet-common-sense-for-dummies' title="View all posts filed under 网络常识菜鸟笔记">网络常识菜鸟笔记</a>         </li> <!-- ending subcategory -->
+</ul>        </div>
+      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130819214332/http://wordpress.lixiaolai.com/archives/category/lecture-schedule' title="View all posts filed under 讲座行程">讲座行程</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130819214332/http://wordpress.lixiaolai.com/archives/category/resouces-recommended' title="View all posts filed under 资源推荐">资源推荐</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130819214332/http://wordpress.lixiaolai.com/archives/category/isssue-and-argumentation' title="View all posts filed under 问题与争论">问题与争论</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130819214332/http://wordpress.lixiaolai.com/archives/category/scratches' title="View all posts filed under 随便想想">随便想想</a>      </li> <!-- ending category -->
+      <li class='collapsing categories item'><a href='/web/20130819214332/http://wordpress.lixiaolai.com/archives/category/%e9%9a%8f%e4%be%bf%e6%83%b3%e6%83%b3' title="View all posts filed under 随便想想">随便想想</a>      </li> <!-- ending category -->
+<li style='display:none'><script type="text/javascript">
+// <![CDATA[
+/* These variables are part of the Collapsing Categories Plugin 
+      *  Version: 2.0.3
+      *  $Id: collapscat.php 561313 2012-06-20 19:45:14Z robfelty $
+      * Copyright 2007 Robert Felty (robfelty.com)
+      */
+var expandSym='&#x25BA;';
+var collapseSym='&#x25BC;';
+try { collapsItems['catTest'] = 'test'; } catch (err) { collapsItems = new Object(); }
+collapsItems['collapsCat-151:3'] = '<ul></ul>';
+collapsItems['collapsCat-230:3'] = '<ul></ul>';
+collapsItems['collapsCat-231:3'] = '<ul></ul>';
+collapsItems['collapsCat-40:3'] = '<ul></ul>';
+collapsItems['collapsCat-148:3'] = '<ul></ul>';
+collapsItems['collapsCat-1:3'] = '<ul></ul>';
+collapsItems['collapsCat-136:3'] = '<ul></ul>';
+collapsItems['collapsCat-165:3'] = '<ul></ul>';
+collapsItems['collapsCat-123:3'] = '<ul></ul>';
+collapsItems['collapsCat-100:3'] = '<ul></ul>';
+collapsItems['collapsCat-84:3'] = '<ul></ul>';
+collapsItems['collapsCat-75:3'] = '<ul></ul>';
+collapsItems['collapsCat-146:3'] = '<ul></ul>';
+collapsItems['collapsCat-97:3'] = '<ul></ul>';
+collapsItems['collapsCat-15:3'] = '<ul></ul>';
+collapsItems['collapsCat-16:3'] = '<ul></ul>';
+collapsItems['collapsCat-33:3'] = '<ul></ul>';
+collapsItems['collapsCat-6:3'] = '<ul></ul>';
+collapsItems['collapsCat-150:3'] = '<ul></ul>';
+collapsItems['collapsCat-17:3'] = '<ul><li class=\'collapsing categories item\'><a href=\'/web/20130819214332/http://wordpress.lixiaolai.com/archives/category/time-as-a-friend/time-as-a-friend-3rd-edition\' title=\"View all posts filed under 《把时间当作朋友》第三版\">《把时间当作朋友》第三版</a>         </li> <!-- ending subcategory --></ul>';
+collapsItems['collapsCat-147:3'] = '<ul></ul>';
+collapsItems['collapsCat-129:3'] = '<ul></ul>';
+collapsItems['collapsCat-24:3'] = '<ul></ul>';
+collapsItems['collapsCat-8:3'] = '<ul></ul>';
+collapsItems['collapsCat-140:3'] = '<ul></ul>';
+collapsItems['collapsCat-9:3'] = '<ul></ul>';
+collapsItems['collapsCat-128:3'] = '<ul></ul>';
+collapsItems['collapsCat-114:3'] = '<ul></ul>';
+collapsItems['collapsCat-235:3'] = '<ul></ul>';
+collapsItems['collapsCat-124:3'] = '<ul></ul>';
+collapsItems['collapsCat-139:3'] = '<ul></ul>';
+collapsItems['collapsCat-121:3'] = '<ul></ul>';
+collapsItems['collapsCat-122:3'] = '<ul></ul>';
+collapsItems['collapsCat-149:3'] = '<ul></ul>';
+collapsItems['collapsCat-125:3'] = '<ul></ul>';
+collapsItems['collapsCat-119:3'] = '<ul></ul>';
+collapsItems['collapsCat-133:3'] = '<ul></ul>';
+collapsItems['collapsCat-117:3'] = '<ul></ul>';
+collapsItems['collapsCat-145:3'] = '<ul></ul>';
+collapsItems['collapsCat-96:3'] = '<ul></ul>';
+collapsItems['collapsCat-3:3'] = '<ul><li class=\'collapsing categories item\'><a href=\'/web/20130819214332/http://wordpress.lixiaolai.com/archives/category/english-learning/1800-hours\' title=\"View all posts filed under 1800小时 &#8211; 高中两年慢跑冲进美国名校\">1800小时 &#8211; 高中两年慢跑冲进美国名校</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130819214332/http://wordpress.lixiaolai.com/archives/category/english-learning/awa-basic-instruction\' title=\"View all posts filed under AWA（GRE/GMAT写作）考试简明教程\">AWA（GRE/GMAT写作）考试简明教程</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130819214332/http://wordpress.lixiaolai.com/archives/category/english-learning/toefl-ibt-qualified-samples-for-ets-official-185-topic-pool\' title=\"View all posts filed under TOEFL iBT 高分作文\">TOEFL iBT 高分作文</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130819214332/http://wordpress.lixiaolai.com/archives/category/english-learning/master-toefl-essential-vocabulary-in-21-days\' title=\"View all posts filed under TOEFL核心词汇21天突破\">TOEFL核心词汇21天突破</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130819214332/http://wordpress.lixiaolai.com/archives/category/english-learning/everyone-can-use-english\' title=\"View all posts filed under 人人都能用英语\">人人都能用英语</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130819214332/http://wordpress.lixiaolai.com/archives/category/english-learning/how-to-accelerate-reading-speed\' title=\"View all posts filed under 如何提高阅读速度\">如何提高阅读速度</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130819214332/http://wordpress.lixiaolai.com/archives/category/english-learning/toefl-listening-and-speaking\' title=\"View all posts filed under 托福听说训练\">托福听说训练</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130819214332/http://wordpress.lixiaolai.com/archives/category/english-learning/toefl-ibt-topic-vocabulary\' title=\"View all posts filed under 新托福iBT词汇分类突破\">新托福iBT词汇分类突破</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130819214332/http://wordpress.lixiaolai.com/archives/category/english-learning/toefl-vocabulary-classification\' title=\"View all posts filed under 新托福词汇分类突破\">新托福词汇分类突破</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130819214332/http://wordpress.lixiaolai.com/archives/category/english-learning/test-preparation\' title=\"View all posts filed under 留学考试准备\">留学考试准备</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130819214332/http://wordpress.lixiaolai.com/archives/category/english-learning/earn-vocabulary-with-me\' title=\"View all posts filed under 跟我攒单词\">跟我攒单词</a>         </li> <!-- ending subcategory --></ul>';
+collapsItems['collapsCat-11:3'] = '<ul></ul>';
+collapsItems['collapsCat-155:3'] = '<ul></ul>';
+collapsItems['collapsCat-156:3'] = '<ul></ul>';
+collapsItems['collapsCat-158:3'] = '<ul></ul>';
+collapsItems['collapsCat-159:3'] = '<ul></ul>';
+collapsItems['collapsCat-160:3'] = '<ul></ul>';
+collapsItems['collapsCat-161:3'] = '<ul></ul>';
+collapsItems['collapsCat-164:3'] = '<li class=\'collapsing categories item\'><a href=\'/web/20130819214332/http://wordpress.lixiaolai.com/archives/category/computer-related/all-about-apple/ios\' title=\"View all posts filed under iOS\">iOS</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130819214332/http://wordpress.lixiaolai.com/archives/category/computer-related/all-about-apple/iphone\' title=\"View all posts filed under iPhone\">iPhone</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130819214332/http://wordpress.lixiaolai.com/archives/category/computer-related/all-about-apple/freeware\' title=\"View all posts filed under 免费软件\">免费软件</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130819214332/http://wordpress.lixiaolai.com/archives/category/computer-related/all-about-apple/basics\' title=\"View all posts filed under 入门\">入门</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130819214332/http://wordpress.lixiaolai.com/archives/category/computer-related/all-about-apple/shareware\' title=\"View all posts filed under 共享软件\">共享软件</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130819214332/http://wordpress.lixiaolai.com/archives/category/computer-related/all-about-apple/tips\' title=\"View all posts filed under 小技巧\">小技巧</a>         </li> <!-- ending subcategory -->';
+collapsItems['collapsCat-109:3'] = '<ul></ul>';
+collapsItems['collapsCat-86:3'] = '<ul></ul>';
+collapsItems['collapsCat-93:3'] = '<ul></ul>';
+collapsItems['collapsCat-153:3'] = '<ul></ul>';
+collapsItems['collapsCat-110:3'] = '<ul></ul>';
+collapsItems['collapsCat-98:3'] = '<ul></ul>';
+collapsItems['collapsCat-127:3'] = '<ul></ul>';
+collapsItems['collapsCat-132:3'] = '<ul></ul>';
+collapsItems['collapsCat-12:3'] = '<ul><li class=\'collapsing categories expandable\'><span class=\'collapsing categories expand\'><span class=\'sym\'>&#x25BA;</span></span><a href=\'/web/20130819214332/http://wordpress.lixiaolai.com/archives/category/computer-related/all-about-apple\' title=\"View all posts filed under All about Apple\">All about Apple</a><div id=\'collapsCat-164:3\' style=\"display:none\"><ul><li class=\'collapsing categories item\'><a href=\'/web/20130819214332/http://wordpress.lixiaolai.com/archives/category/computer-related/all-about-apple/ios\' title=\"View all posts filed under iOS\">iOS</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130819214332/http://wordpress.lixiaolai.com/archives/category/computer-related/all-about-apple/iphone\' title=\"View all posts filed under iPhone\">iPhone</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130819214332/http://wordpress.lixiaolai.com/archives/category/computer-related/all-about-apple/freeware\' title=\"View all posts filed under 免费软件\">免费软件</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130819214332/http://wordpress.lixiaolai.com/archives/category/computer-related/all-about-apple/basics\' title=\"View all posts filed under 入门\">入门</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130819214332/http://wordpress.lixiaolai.com/archives/category/computer-related/all-about-apple/shareware\' title=\"View all posts filed under 共享软件\">共享软件</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130819214332/http://wordpress.lixiaolai.com/archives/category/computer-related/all-about-apple/tips\' title=\"View all posts filed under 小技巧\">小技巧</a>         </li> <!-- ending subcategory --></ul>          </div>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130819214332/http://wordpress.lixiaolai.com/archives/category/computer-related/auto-it\' title=\"View all posts filed under Auto-It\">Auto-It</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130819214332/http://wordpress.lixiaolai.com/archives/category/computer-related/firefox\' title=\"View all posts filed under Firefox\">Firefox</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130819214332/http://wordpress.lixiaolai.com/archives/category/computer-related/google\' title=\"View all posts filed under Google\">Google</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130819214332/http://wordpress.lixiaolai.com/archives/category/computer-related/rails-notes\' title=\"View all posts filed under rails notes\">rails notes</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130819214332/http://wordpress.lixiaolai.com/archives/category/computer-related/ubuntu\' title=\"View all posts filed under Ubuntu\">Ubuntu</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130819214332/http://wordpress.lixiaolai.com/archives/category/computer-related/wordpress-computer-related\' title=\"View all posts filed under WordPress\">WordPress</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130819214332/http://wordpress.lixiaolai.com/archives/category/computer-related/blogging-experience\' title=\"View all posts filed under 博客经验谈\">博客经验谈</a>         </li> <!-- ending subcategory --><li class=\'collapsing categories item\'><a href=\'/web/20130819214332/http://wordpress.lixiaolai.com/archives/category/computer-related/computer-and-internet-common-sense-for-dummies\' title=\"View all posts filed under 网络常识菜鸟笔记\">网络常识菜鸟笔记</a>         </li> <!-- ending subcategory --></ul>';
+collapsItems['collapsCat-95:3'] = '<ul></ul>';
+collapsItems['collapsCat-13:3'] = '<ul></ul>';
+collapsItems['collapsCat-138:3'] = '<ul></ul>';
+collapsItems['collapsCat-14:3'] = '<ul></ul>';
+collapsItems['collapsCat-229:3'] = '<ul></ul>';
+/*  Collapse Functions, version 2.0
+ *
+ *--------------------------------------------------------------------------*/
+String.prototype.trim = function() {
+  return this.replace(/^\s+|\s+$/g,"");
+}
+
+function createCookie(name,value,days) {
+  if (days) {
+    var date = new Date();
+    date.setTime(date.getTime()+(days*24*60*60*1000));
+    var expires = "; expires="+date.toGMTString();
+  } else {
+    var expires = "";
+  }
+  document.cookie = name+"="+value+expires+"; path=/";
+}
+
+function readCookie(name) {
+  var nameEQ = name + "=";
+  var ca = document.cookie.split(';');
+  for(var i=0;i < ca.length;i++) {
+    var c = ca[i];
+    while (c.charAt(0)==' ') {
+      c = c.substring(1,c.length);
+    }
+    if (c.indexOf(nameEQ) == 0) {
+      return c.substring(nameEQ.length,c.length);
+    }
+  }
+  return null;
+}
+
+function eraseCookie(name) {
+  createCookie(name,"",-1);
+}
+
+function addExpandCollapse(id, expandSym, collapseSym, accordion) {
+  jQuery('#' + id + ' .expand').live('click', function() {
+    if (accordion==1) {
+      var theDiv = jQuery(this).parent().parent().find('span.collapse').parent().find('div');
+      jQuery(theDiv).hide('normal');
+      jQuery(this).parent().parent().find('span.collapse').removeClass('collapse').addClass('expand');
+        createCookie(theDiv.attr('id'), 0, 7);
+    }
+    jQuery('#' + id + ' .expand .sym').html(expandSym);
+    expandCat(this, expandSym, collapseSym);
+    return false;
+  });
+  jQuery('#' + id + ' .collapse').live('click', function() {
+    collapseCat(this, expandSym, collapseSym);
+    return false;
+  });
+}
+
+function expandCat(symbol, expandSym, collapseSym) {
+    var theDiv = jQuery(symbol).parent().find('div');
+    jQuery(theDiv).html(collapsItems[jQuery(theDiv).attr('id')]).show('normal');
+    jQuery(symbol).removeClass('expand').addClass('collapse');
+    jQuery(symbol).find('.sym').html(collapseSym);
+  createCookie(theDiv.attr('id'), 1, 7);
+}
+function collapseCat(symbol, expandSym, collapseSym) {
+    var theDiv = jQuery(symbol).parent().find('div');
+    jQuery(theDiv).hide('normal');
+    jQuery(symbol).removeClass('collapse').addClass('expand');
+    jQuery(symbol).find('.sym').html(expandSym);
+  createCookie(theDiv.attr('id'), 0, 7);
+}
+addExpandCollapse('widget-collapscat-3-top','&#x25BA;', '&#x25BC;', 1)// ]]>
+</script></li>
+</ul>
+</li>				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+<p>© 2011 lixiaolai.com – All rights reserved. – Tell whom you should tell.</p>
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+});
+</script>
+	</div>
+</div>
+</div>
+<!--[if lte IE 8]>
+<div id="ie_clear"></div>
+<![endif]-->
+<div id="afterfooter">
+
+</div>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-1452494-10']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? '/web/20130819214332/https://ssl' : '/web/20130819214332/http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F2a09bb839c493d7f27c193efe0b11d15' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+</body>
+</html>
+
+
+
+
+<!--
+     FILE ARCHIVED ON 21:43:32 Aug 19, 2013 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 1:52:19 Nov 16, 2014.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

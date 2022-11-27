@@ -1,0 +1,2203 @@
+.. raw:: html
+
+   <div id="wm-ipp" lang="en" style="display:none;">
+
+.. raw:: html
+
+   <div style="position:fixed;left:0;top:0;width:100%!important">
+
+.. raw:: html
+
+   <div id="wm-ipp-inside">
+
+|Wayback Machine|
+Aug
+SEP
+`OCT </web/20131011094734/http://wordpress.lixiaolai.com/archives/498.html>`__
+|Previous capture|
+9
+|Next capture|
+2012
+2013
+2014
+`2
+captures </web/20130909082054*/http://wordpress.lixiaolai.com/archives/498.html>`__
+
+.. raw:: html
+
+   <div class="r" title="Timespan for captures of this URL">
+
+9 Sep 13 - 11 Oct 13
+
+.. raw:: html
+
+   </div>
+
+` <>`__
+
+.. raw:: html
+
+   <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+
+|sparklines|
+
+.. raw:: html
+
+   </div>
+
+`Close <#close>`__ `Help <http://faq.web.archive.org/>`__
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   <div id="container">
+
+.. raw:: html
+
+   <div id="page">
+
+.. raw:: html
+
+   <div id="header_box">
+
+.. raw:: html
+
+   <div id="header">
+
+`Reborn </web/20130909082054/http://wordpress.lixiaolai.com/>`__
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   <div id="header_box_right">
+
+|@xiaolai| |lixiaolai@gmail.com| |RSS|
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   <div style="clear:both;">
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   <div class="menu-navbar-container">
+
+-  
+
+   .. raw:: html
+
+      <div id="menu-item-12082">
+
+   .. raw:: html
+
+      </div>
+
+   `Home </web/20130909082054/http://www.lixiaolai.com/>`__
+-  
+
+   .. raw:: html
+
+      <div id="menu-item-10859">
+
+   .. raw:: html
+
+      </div>
+
+   `Archives </web/20130909082054/http://wordpress.lixiaolai.com/archives>`__
+-  
+
+   .. raw:: html
+
+      <div id="menu-item-10860">
+
+   .. raw:: html
+
+      </div>
+
+   `Downloads </web/20130909082054/http://wordpress.lixiaolai.com/downloads>`__
+-  
+
+   .. raw:: html
+
+      <div id="menu-item-12081">
+
+   .. raw:: html
+
+      </div>
+
+   `eduise.com </web/20130909082054/http://www.eduise.com/>`__
+-  
+
+   .. raw:: html
+
+      <div id="menu-item-12080">
+
+   .. raw:: html
+
+      </div>
+
+   `免费留学申请选校评估 </web/20130909082054/http://www.eduise.com/client/evaluation>`__
+-  
+
+   .. raw:: html
+
+      <div id="menu-item-12240">
+
+   .. raw:: html
+
+      </div>
+
+   `linode </web/20130909082054/http://www.lixiaolai.com/linode-vps>`__
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   <div id="content_box">
+
+.. raw:: html
+
+   <div id="content" class="hfeed">
+
+.. raw:: html
+
+   <div id="post-498"
+   class="post-498 post type-post status-publish format-standard hentry category-thinking-clearly-series post_box top">
+
+.. raw:: html
+
+   <div class="headline_area">
+
+想明白（之十五）
+================
+
+by xiaolai on 2008/06/11 · `44
+comments </web/20130909082054/http://wordpress.lixiaolai.com/archives/498.html#comments>`__
+
+in
+`想明白（系列） </web/20130909082054/http://wordpress.lixiaolai.com/archives/category/thinking-clearly-series>`__
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   <div class="format_text entry-content">
+
+清楚分类原本就不是易事，再加上这世界充满了喜欢和稀泥的人（他们的所作所为常常被描述为“混淆是非”——也许是他们自己弄不清楚；“混淆视听”——他们想让别人弄不清楚），于是想明白看清楚就最终总是并不那么容易。除此之外，还有另外一个难以处理的细节——可能性。处理可能性问题是异常繁琐的事情，举例来说：
+
+据说政客通常是虚伪的，这是个不可辩驳的事实（注意“通常”这个限定词）；可同时我们也都知道并不是所有的政客都是虚伪的，总是有一些人无论做什么都以公正、公平为最终原则。那么，如果我们遇到一个政客，我们该相信他到什么程度？或者换一种说法，如果我们从一开始就相信他究竟会有多大的风险？如果这个政客是我们原本就熟悉的，那么我们对他的信任程度是不是就应该根据我们对他的了解成都而有所调整？……难办的地方并不在于我们可以提出这种问题的最终数量，而是在于几乎每一个问题都没有确定的答案。
+
+事实上，人们普遍对这种繁琐的事情缺乏耐心。这也直接导致了人们的一种普遍心理——喜欢确定，厌烦不确定。很多父母几乎是逼自己的孩子大学毕业之后去考公务员（当然也有很多大学毕业生不顾父母的反对毅然决然地去考公务员），大抵上都是偏好“确定”的心理所导致的选择。很多人相对更加偏好储蓄而不是股票投资，也都是更喜欢“确定”而不喜欢“不确定”的表现。
+
+喜欢稳定、确定、没有风险，都是很正常的想法。可问题在于，我们就生活在一个充满不确定的世界里。很多的时候我们只能面对不确定的可能结果。（有些人会因为事情已经发生，于是对那些早先并不确定的事情产生“\ `我早就知 </web/20130909082054/http://en.wikipedia.org/wiki/Hindsight_bias>`__\ 道”的认知错觉，于是他们会因此进一步回避不确定。）
+
+最近的关于地震是否可以预测的争论其实集中体现的就是人们对“可能性”的理解相互不同——当然有人在故意和稀泥或者利用有些人在这方面的思维盲点，这是另外一个庞杂的话题。对地震预测嗤之以鼻的人，往往的根据是“既然不能百分之百，那还有什么用？”
+
+关于蟾蜍上街是否就是地震的前兆，人们有很多争论。很多人，尤其是有些“喜欢打着科学旗号的人”，这样评论道：“迄今为止没有证据表明动物的这种行为与地震发生有着必然的联系”。这话本身确实没错，但是，这种评论其实恰恰说明这些人是不懂科学的\ :sup:`[`1 <#footnote_0_498>`__]`
+。废话，谁也找不到“必然”联系——因为这是研究可能性的领域。有些人以为只有能够论证必然的理论才有用才有价值，这种想法太落后了——要不然近两百年来人们就没什么必要大力研究并发展微积分、概率、统计等数学领域了。
+
+可事实上，我们几乎总是可以把可能性大致划分为“小于百分之五十”、“一半一半”、“大于百分之五十”三种。如果说，某种预测方法之准确的可能性小于百分之五十，我们可能暂时可以置之不理；如果其可能性是“一半一半”，我们置之不理的话，我们的心理基本上已经与赌徒无异了；如果其可能性是“大于百分之五十”，我们依然置之不理，显然是愚蠢的。
+
+预测是关于可能性的理解，预防则是应对策略。也许最优的应对策略是不管地震发生的可能性究竟是多少，只要“大于零”就应该有所准备。北川刘汉希望小学就是这么做的。地震发生后，483名学生无一受伤，老师们带着71个孩子翻山越岭转移到安全地带，这个奇迹般的成绩当非偶然——记者拍下的照片中我们可以看到校舍墙上残存的各类安全规章制度，其中明确了在发生地震火灾等情况时，如何疏散，教师站立的具体位置……
+
+事实上，在现在这样的时刻，没有哪一个普通人有心思去探究预测的准确程度到底是百分之多少，人们关心的是为什么很多学校竟然一点预防的策略都没有，为什么工程队在断层地带盖房子竟然好像并不知道那里是断层地带一样，为什么……？更重要的问题是，以后我们必然还会遇到类似问题，到时候还要重复现在所看到的悲剧么？
+
+再说另外一个例子。有一次，我遇到一个自命不凡（没有贬义）的学生向我解释他最终没有被名校录取，而在他看来远不如他的同学却被名校录取的心里不平衡。他的心理安慰是“好学校毕业的不一定是好学生”，所以，反过来也一样，尽管我读的是差一点的学校，那并不能证明我是差学生。我没有当场与他争辩，事实上是因为我知道这样的时候争辩没有什么意义，他只需要肯定他目前想法的答案。
+
+“好学校毕业的不一定是好学生”这句话本身是完全正确的，就好像“好学校里毕业的一定是好学生”肯定是错误的一样。但很少有人注意到类似第一句话那样的句子其实是完全没有意义的。因为这里的“不一定”只是对可能性的含混描述。“好学校毕业的基本上是好学生”、“好学校毕业的很少有差学生”、“好学校毕业的更可能是好学生”，这些句子一样完全正确，但却与第一个句子有着本质性的不同——它们共同描述了“好学校毕业的学生是好学生”的可能性至少大于百分之五十。于是，后面的这些句子是有助于其他人（比如各企业的人力资源总监）对这样的预测实施对应策略的，而前面第一个句子“好学校毕业的不一定是好学生”却没有任何实际指导意义，除了对那些心里不平衡的人有着心理安慰作用之外。
+
+大多数情况下，多花点时间精力研究一下可能性百利而无一弊。因为所有的对策最终是要产生结果的，而如果结果是不好的，那即意味着说我们要为之付出代价。
+
+--------------
+
+补充：
+| 关于“地震预测”：
+| 
+**真命题：**\ 地震不能准确预测；目前地震还不能够正确预测；历史上的所谓地震的准确预测之“准确程度”依然有待商榷。
+|  **假命题：**\ 地震不能预测；地震永远不能预测；地震预测根本没有用。
+
+| **真命题：**\ 地震预测的准确程度哪怕只有1%也不应该完全忽视——因为人命关天。
+| 
+**假命题：**\ 地震预测的准确程度从来都很低，所以任何预防措施都没有意义。
+
+--------------
+
+Footnotes:
+
+#. 
+
+   .. raw:: html
+
+      <div id="footnote_0_498">
+
+   .. raw:: html
+
+      </div>
+
+   这句话显然带来了争议，有必要补充一下：懂科学的人（或者范围小一点，懂逻辑的人也一样）不会因为“缺乏必然联系”就认为“没有任何联系”。证明”必然联系存在“是一回事儿；证明”没有任何联系”是另外一回事儿。无法证明“必然联系存在”，并不意味着说已经自动证明“没有任何联系”
+   [`↩ <#identifier_0_498>`__\ ]
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   <div id="disqus_thread">
+
+.. raw:: html
+
+   <div id="dsq-content">
+
+.. raw:: html
+
+   <div id="dsq-comment-header-2187" class="dsq-comment-header">
+
+电脑
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   <div id="dsq-comment-body-2187" class="dsq-comment-body">
+
+.. raw:: html
+
+   <div id="dsq-comment-message-2187" class="dsq-comment-message">
+
+“好学校毕业的基本上是好学生”、“好学校毕业的很少有差学生”、“好学校毕业的更可能是好学生”，这些句子一样完全正确，但却与第一个句子有着本质性的不同——它们共同描述了“好学校毕业的学生是好学生”的可能性至少大于百分之五十。
+
+如果是49%,就非大部分了? 也太量化了吧
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   <div id="dsq-comment-header-2189" class="dsq-comment-header">
+
+李笑来
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   <div id="dsq-comment-body-2189" class="dsq-comment-body">
+
+.. raw:: html
+
+   <div id="dsq-comment-message-2189" class="dsq-comment-message">
+
+| 1) 你想想究竟有多大的可能是”可能性等于49%”呢？
+|  2）”大部分”这个词究竟是什么意思，指的是怎样的范围，不是我定义的啊。
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   </div>
+
+-  
+
+   .. raw:: html
+
+      <div id="dsq-comment-2344">
+
+   .. raw:: html
+
+      </div>
+
+   .. raw:: html
+
+      <div id="dsq-comment-header-2344" class="dsq-comment-header">
+
+   电脑
+
+   .. raw:: html
+
+      </div>
+
+   .. raw:: html
+
+      <div id="dsq-comment-body-2344" class="dsq-comment-body">
+
+   .. raw:: html
+
+      <div id="dsq-comment-message-2344" class="dsq-comment-message">
+
+   大部分 这个词的惯常理解是非量化的 而笑来老师用量化的百分之五十定义了
+   那47%呢45%呢 这个难道就非大部分么
+
+   .. raw:: html
+
+      </div>
+
+   .. raw:: html
+
+      </div>
+
+.. raw:: html
+
+   <div id="dsq-comment-header-2191" class="dsq-comment-header">
+
+LY
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   <div id="dsq-comment-body-2191" class="dsq-comment-body">
+
+.. raw:: html
+
+   <div id="dsq-comment-message-2191" class="dsq-comment-message">
+
+“好学校”大概就是指名校吧,怎么定义”好学生”呢?
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   <div id="dsq-comment-header-2199" class="dsq-comment-header">
+
+stonewang
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   <div id="dsq-comment-body-2199" class="dsq-comment-body">
+
+.. raw:: html
+
+   <div id="dsq-comment-message-2199" class="dsq-comment-message">
+
+| 蟾蜍上街、地震预测的论述很有问题。新语丝上的讨论有很多，建议阅读。推荐寻正的一些文章：
+|  寻正博客：http://www.xys-reader.org/blogs/xunzheng/
+|  向中国地震局问责：还科学地震学真面目
+|  脸厚可以预测地震
+|  海城地震预报是一个国际笑柄
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   <div id="dsq-comment-header-2205" class="dsq-comment-header">
+
+李笑来
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   <div id="dsq-comment-body-2205" class="dsq-comment-body">
+
+.. raw:: html
+
+   <div id="dsq-comment-message-2205" class="dsq-comment-message">
+
+讨论”地震能否预测”实际上是无意义的事情，因为答案很清楚：能够预测。
+
+真正有意义的是讨论：
+
+| 1. 目前地震预测的准确度究竟能够达到多少？
+|  2. 面对准确度不高的地震预测结果，我们应该如何应对？
+
+目前网上关于地震预测的争论，绝大多数讨论都没落实到该讨论的地方。
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   <div id="dsq-comment-header-2207" class="dsq-comment-header">
+
+windstorm
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   <div id="dsq-comment-body-2207" class="dsq-comment-body">
+
+.. raw:: html
+
+   <div id="dsq-comment-message-2207" class="dsq-comment-message">
+
+| －－－－－－－－－－－－－
+|  讨论”地震能否预测”实际上是无意义的事情，因为答案很清楚：能够预测。
+|  －－－－－－－－－－－－－
+
+……笑来老师展开说说怎么个清楚法？
+
+“No. Neither the USGS nor Caltech nor any other scientists have ever
+predicted a major earthquake. They do not know how, and they do not
+expect to know how any time in the foreseeable future.”
+
+USGS的官方说法
+
+您的官方说法在哪里？摆出来给大家看看嘛，不能说你说地震目前可以预测，就可以预测吧
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   </div>
+
+-  
+
+   .. raw:: html
+
+      <div id="dsq-comment-2210">
+
+   .. raw:: html
+
+      </div>
+
+   .. raw:: html
+
+      <div id="dsq-comment-header-2210" class="dsq-comment-header">
+
+   李笑来
+
+   .. raw:: html
+
+      </div>
+
+   .. raw:: html
+
+      <div id="dsq-comment-body-2210" class="dsq-comment-body">
+
+   .. raw:: html
+
+      <div id="dsq-comment-message-2210" class="dsq-comment-message">
+
+   没必要拉虎皮扯大旗，这事儿用不着什么“官方”。USGS的这个说法也很好玩，如果100%如他所说，这个机构天天花着纳税人的钱是用来干什么的呢？
+
+   但我基本上明白了，应该是你我对”预测“这个概念的理解不尽然相同。
+
+   “汶川在地处断层地带，此处未来的100年内还会发生很多地震”。这算不算是预测呢？我认为算——于是，我会认为地震预测不是不可能的事情。
+
+   而你（以及很多其他人）确认为所谓的预测不能精确就不算作是预测。
+
+   个中的分歧应该在这里了。
+
+   .. raw:: html
+
+      </div>
+
+   .. raw:: html
+
+      </div>
+
+-  
+
+   .. raw:: html
+
+      <div id="dsq-comment-2218">
+
+   .. raw:: html
+
+      </div>
+
+   .. raw:: html
+
+      <div id="dsq-comment-header-2218" class="dsq-comment-header">
+
+   windstorm
+
+   .. raw:: html
+
+      </div>
+
+   .. raw:: html
+
+      <div id="dsq-comment-body-2218" class="dsq-comment-body">
+
+   .. raw:: html
+
+      <div id="dsq-comment-message-2218" class="dsq-comment-message">
+
+   不对，笑来老师这里的预测，应该说的是“根据某种规律和模型推算出某个概率”，但是我们所说的“地震预测”，就是predict，定义应该是
+
+   “根据所认识的地震发生规律，用科学方法对未来地震发生的时间、地点和强度作预先的估计”
+
+   wiki定义如下：
+
+   An earthquake prediction is a prediction that an earthquake in a
+   specific magnitude range will occur in a specific region and time
+   window. Predictions are considered as such to the extent that they
+   are reliable for practical, as well as scientific, purposes.
+
+   以“加州未来的40年内有40％地震概率发生地震”为例子，这句话，一没有相对具体的时间范围（我们都不说时间点了），二没有具体地点（加州整个都在地震带，不代表一地震就影响整个加州），三没有强度估计（这根本就无法估计），更别谈什么实用性了。
+
+   这种话语，你拿到中国地震局，日本地震局，美国地震局，都完全不符合“地震预测”的含义。所以压根不能算预测。
+
+   完全符合地震预测定义的“predict”，这是世界公认无法做到的。
+
+   笑来老师不应该根据自己的思想，去挑战地震预测的学术定义。
+
+   顺便提醒笑来老师一句，你连预测的定义都没有搞清楚就大谈预测，你自己就犯了没有想明白的毛病。
+
+   .. raw:: html
+
+      </div>
+
+   .. raw:: html
+
+      </div>
+
+-  
+
+   .. raw:: html
+
+      <div id="dsq-comment-2220">
+
+   .. raw:: html
+
+      </div>
+
+   .. raw:: html
+
+      <div id="dsq-comment-header-2220" class="dsq-comment-header">
+
+   windstorm
+
+   .. raw:: html
+
+      </div>
+
+   .. raw:: html
+
+      <div id="dsq-comment-body-2220" class="dsq-comment-body">
+
+   .. raw:: html
+
+      <div id="dsq-comment-message-2220" class="dsq-comment-message">
+
+   还有，笑来老师很明显误解了USGS了，它天天花纳税人的钱，不是要去攻克预测地震这个目前不可能攻克的东西，而是为了研究美国的地形，自然资源和自然灾害与其的应付方法。它负责四大科学范畴：生物学、地理学、地质学和水文学。它只是负责寻找事实的研究，不负责去迎合某些人群的理想。
+
+   而且我给你的链接，已经说明了它在地震研究中的主要作用：
+
+   The USGS focuses their efforts on the long-term mitigation of
+   earthquake hazards by helping to improve the safety of structures,
+   rather than by trying to accomplish short-term predictions
+
+   还有，我知道在你的网站上说服已经先入为主带有偏向性的你根本不可能，所以我也不费力说服你。只是提醒一下，老师很多文章中的对人的分析都很有道理，但是你也是人，你自己也犯了自己分析中的错误而已。
+
+   如果你坚持认为你是正确的，我也没办法。就这样吧。看完全部评论的人，自有公论。
+
+   .. raw:: html
+
+      </div>
+
+   .. raw:: html
+
+      </div>
+
+.. raw:: html
+
+   <div id="dsq-comment-header-2201" class="dsq-comment-header">
+
+windstorm
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   <div id="dsq-comment-body-2201" class="dsq-comment-body">
+
+.. raw:: html
+
+   <div id="dsq-comment-message-2201" class="dsq-comment-message">
+
+“最近的关于地震是否可以预测的争论其实集中体现的就是人们对“可能性”的理解相互不同——当然有人在故意和稀泥或者利用有些人在这方面的思维盲点，这是另外一个庞杂的话题。对地震预测嗤之以鼻的人，往往的根据是“既然不能百分之百，那还有什么用？””
+
+———————————–
+
+笑来老师这是在揣测各国地震预报研究人员的心思？据我所知很多研究地震的人员都没有抱着“既然不能百分之百，那还有什么用？”的根据，但是他们还是说地震无法预测阿。
+
+`http://earthquake.usgs.gov/learning/faq.php </web/20130909082054/http://earthquake.usgs.gov/learning/faq.php>`__
+
+笑来老师的英文应该没有问题吧，建议把全文读一遍
+
+| 1 地震能否预测
+|  2 动物能否帮助地震预测
+|  3 地震发生概率
+
+以及若干
+
+关于蟾蜍上街是否就是地震的前兆，笑来老师认为评论“迄今为止没有证据表明动物的这种行为与地震发生有着必然的联系”的人不懂科学？呵呵，那么笑来老师的观点是
+
+全世界的地质研究所人员不懂科学，因为他们都不承认甚至放弃了动物预报的研究，包括美国和日本
+
+那么笑来老师认为懂科学的人，就是说“动物的这种行为与地震发生有联系”的人，那么我只看到中国民科有这种说法。笑来老师能推荐几个学术界的，官方的，正式承认的说法？如果没有，懂科学的原来只有中国民科阿。
+
+笑来老师可能会觉得我上面的话讽刺意味很大，其实我是觉得笑来老师自己都没有“想明白”，用您自己的话说
+
+“他们的所作所为常常被描述为“混淆是非”——也许是他们自己弄不清楚；“混淆视听”——他们想让别人弄不清楚，于是想明白看清楚就最终总是并不那么容易。”
+
+笑来老师在写这篇文章的时候，自己把这个问题搞清楚没有呢？
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   <div id="dsq-comment-header-2203" class="dsq-comment-header">
+
+李笑来
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   <div id="dsq-comment-body-2203" class="dsq-comment-body">
+
+.. raw:: html
+
+   <div id="dsq-comment-message-2203" class="dsq-comment-message">
+
+懂科学的人不会因为\ **“缺乏必然联系”**\ 就认为\ **“没有任何联系”**\ 。证明”必然联系存在“是一回事儿；证明”没有任何联系”是另外一回事儿。无法证明“必然联系存在”，\ **并不意味着说已经自动证明**\ “没有任何联系”——这是很简单的逻辑啊。
+
+**我的观点中从来都没有也不可能有**\ “全世界的地质研究所人员不懂科学……”，这是你的臆想。至于“……他们都不承认甚至放弃了动物预报的研究，包括美国和日本……”，我想你理解错了。可能有些研究人员放弃了，但并非所有人都放弃了。另外，就算所谓的”放弃”，还有可能是基于当前条件所限才暂时中断的。（就好像历史上很多人都放弃了日心说，直到哥白尼伽利略的年代才有机会被重新提出并且被证明为科学；其中有个重要的原因是因为到了那个年代望远镜的制作与使用成为可能了——之前的千百年里，人们没有条件继续坚持日心说，也没有条件获得切实的证据证明日心说。）
+
+再次提醒你，是不是可以避免straw man
+fallacy呢？你总是尝试反驳并非对方所持有的观点，为什么呢？
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   <div id="dsq-comment-header-2206" class="dsq-comment-header">
+
+windstorm
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   <div id="dsq-comment-body-2206" class="dsq-comment-body">
+
+.. raw:: html
+
+   <div id="dsq-comment-message-2206" class="dsq-comment-message">
+
+笑来老师也比较喜欢想当然阿，我驳的明明就是你的观点，“全世界的地质研究所人员不懂科学”，这个很明显我是在讽刺你的观点而已。这样吧，我直接引用你的话OK？
+
+1
+“最近的关于地震是否可以预测的争论其实集中体现的就是人们对“可能性”的理解相互不同”
+
+这句话就是不对的，地震目前不可预测，这是世界地震研究机构公认的，有什么好争论的呢？笑来老师认为有争论的话，好啊，除了中国民科，请拿出其他有说服力的资料出来？
+
+2 “有些人以为只有能够论证必然的理论才有用才有价值，这种想法太落后了”
+
+很明显，笑来老师的意思是，虽然动物预报没有被充分论证，但是对于预报有实用价值。然后我给了你美国地质研究局的FAQ，美国官方认为是“However,
+consistent and reliable behavior prior to seismic events, and a
+mechanism explaining how it could work, still eludes
+us.”所以说，目前没有应用价值，这应该是没有争议的吧？
+
+3
+“如果说，某种预测方法之准确的可能性小于百分之五十，我们可能暂时可以置之不理；如果其可能性是“一半一半”，我们置之不理的话，我们的心理基本上已经与赌徒无异了；如果其可能性是“大于百分之五十”，我们依然置之不理，显然是愚蠢的。”
+
+“要不然近两百年来人们就没什么必要大力研究并发展微积分、概率、统计等数学领域了”
+
+| 笑来老师原来也知道，概率统计是有用的阿，那么
+| 
+`http://songshuhui.net/archives/216.html </web/20130909082054/http://songshuhui.net/archives/216.html>`__
+|  笑来老师去看看这篇文章，应该能明白，不预测的人是赌徒还是愚蠢吧。
+
+顺带说一句，蟾蜍大迁移实在不是什么稀奇事情，有关报道时见报端：今年5月9日在江苏泰州，去年5月23日在河北唐山、9月19日在山东临沂……都曾经发生成千上万只蟾蜍的大迁移。
+
+4
+“对地震预测嗤之以鼻的人，往往的根据是“既然不能百分之百，那还有什么用？””
+
+奇怪，很多官方机构对目前民间地震预测都嗤之以鼻阿，比如回答“Can you
+predict
+earthquakes?”，USGS的回答是“No”。根据却不是“既然不能百分之百，那还有什么用？”而是科学。笑来老师是不是总是尝试反驳并非对方所持有的观点？
+
+5
+笑来老师的补充也很好玩，“假命题：地震不能预测；地震永远不能预测；地震预测根本没有用”
+
+貌似没人说地震永远不能预测吧？笑来老师又开始反驳对方没有持有的观点了。所有留言反对你观点的人，估计都是持有“地震预测目前没有作用，地震目前无法预测”吧？还是刚才那个例子，回答“Can
+you predict earthquakes?”，USGS的回答是“No”，原来这是假命题阿。
+
+另外笑来老师这里明显偷换了概念，包括新语丝，松鼠会和很多人，都是觉得“地震预测的研究”有用，但“目前的地震预测没有用”。如果你觉得“地震预测有用”，那么请举例，美国和日本地震部门历史上有没有发布过大地震预报？如果有，reference。没有，说明什么问题？如果你以日本为例，我希望你能明白预报“余震”和预报“地震”的区别。
+
+其实笑来老师讨论这个问题的时候，就已经先入为主了。不站在客观立场来评论，何谈“想明白”？笑来老师在评论别人“不懂科学”的同时，并没有给出你“懂科学”的依据阿。
+
+希望笑来老师回复的时候，能先把我的问题回答了先，每次上纲上线分析我的思维，心理学这方面我自然是没有能力和笑来老师讨论的。
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   </div>
+
+-  
+
+   .. raw:: html
+
+      <div id="dsq-comment-2212">
+
+   .. raw:: html
+
+      </div>
+
+   .. raw:: html
+
+      <div id="dsq-comment-header-2212" class="dsq-comment-header">
+
+   打倒，打倒
+
+   .. raw:: html
+
+      </div>
+
+   .. raw:: html
+
+      <div id="dsq-comment-body-2212" class="dsq-comment-body">
+
+   .. raw:: html
+
+      <div id="dsq-comment-message-2212" class="dsq-comment-message">
+
+   | 原文是：
+   | 
+   很多人，尤其是有些“喜欢打着科学旗号的人”，这样评论道：“迄今为止没有证据表明动物的这种行为与地震发生有着必然的联系”。这话本身确实没错，但是，这种评论其实恰恰说明这些人是不懂科学的[1]
+   | 
+   小学毕业的人都能看出来，最后说的“这些人”，指的是“有些“喜欢打着科学旗号的人””，可是windstrom非要扣帽子说“笑来老师认为评论“迄今为止没有证据表明动物的这种行为与地震发生有着必然的联系”的人不懂科学”，这不是智商有问题，就是道德有问题啊。
+
+   | “地震目前不可预测，这是世界地震研究机构公认的，有什么好争论的呢？笑来老师认为有争论的话，好啊，除了中国民科，请拿出其他有说服力的资料出来？”
+   | 
+   你可以参考最新一期的《瞭望东方周刊》，李四光就认为地震可以预测，留下话说“再给我半年就能预测地震”；当年国际学术界“公认”中国是贫油国，李四光颠覆了这个结论，原来，李四光是不折不扣地“民科”啊。
+
+   | `http://earthquake.usgs.gov/learning/faq.php?categoryID=6&faqID=13 </web/20130909082054/http://earthquake.usgs.gov/learning/faq.php?categoryID=6&faqID=13>`__
+   |  However based on scientific data, probabilities can be calculated
+   for potential future earthquakes. For example, scientists estimate
+   that over the next 30 years the probability of a major EQ occurring
+   in the San Francisco Bay area is 67% and 60% in Southern California.
+   |  这里的67%和60%，如果不是“预测”，是什么呢？
+
+   .. raw:: html
+
+      </div>
+
+   .. raw:: html
+
+      </div>
+
+.. raw:: html
+
+   <div id="dsq-comment-header-2213" class="dsq-comment-header">
+
+打倒，打倒
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   <div id="dsq-comment-body-2213" class="dsq-comment-body">
+
+.. raw:: html
+
+   <div id="dsq-comment-message-2213" class="dsq-comment-message">
+
+| windstorm
+| 
+全世界的地质研究所人员不懂科学，因为他们都不承认甚至放弃了动物预报的研究，包括美国和日本
+|  ~~看看原文吧
+|  However, consistent and reliable behavior prior to seismic events,
+and a mechanism explaining how it could work, still eludes us. Most, but
+not all, scientists pursuing this mystery are in China or Japan.
+|  这就是你看的“原文”吗？
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   <div id="dsq-comment-header-2215" class="dsq-comment-header">
+
+windstorm
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   <div id="dsq-comment-body-2215" class="dsq-comment-body">
+
+.. raw:: html
+
+   <div id="dsq-comment-message-2215" class="dsq-comment-message">
+
+首先呢，打到打到兄说我语文不行，我赶紧诚惶诚恐再复习一遍原文
+
+“很多人，尤其是有些“喜欢打着科学旗号的人”，这样评论道：“迄今为止没有证据表明动物的这种行为与地震发生有着必然的联系”。这话本身确实没错，但是，这种评论其实恰恰说明这些人是不懂科学的”
+
+然后我告诉笑来老师，评论“迄今为止没有证据表明动物的这种行为与地震发生有着必然的联系”的，包括美国日本等各国研究员，他们也是打着科学旗号阿。就说中国，方舟子等人也是打着科学旗号阿，松鼠会也是打着科学的旗号阿，这样怎么就能“恰恰说明这些人是不懂科学的”呢？于是我讽刺了以下这个说法，“原来笑来老师认为全世界的地质研究所人员不懂科学，因为他们都不承认甚至放弃了动物预报的研究”，有疑问么？
+
+很明显，松鼠会我就不说了，方舟子是比笑来老师更懂科学吧？不然为什么笑来老师不是院士呢？然后各国研究院也是比笑来老师更懂科学吧？为什么他们都要打着“科学的旗号”说“动物预测不实用”，却被笑来老师认为“说明这些人是不懂科学的”，这个帽子实在是太大了哦。
+
+请打倒打倒兄再仔细思考一下，请排除你看见我的ID所以为了辩而辩的冲动，笑来老师这句话是不是过于主观和偏颇？
+
+其次，美国放弃动物地震预报是N年前的事情了，你不知道可以去搜一搜报道嘛，不想搜我也给了你官网说法了嘛。日本民间有学者在继续研究，但是官方从来没有承认过。
+
+However, consistent and reliable behavior prior to seismic events, and a
+mechanism explaining how it could work, still eludes us. Most, but not
+all, scientists pursuing this mystery are in China or Japan.
+
+这就是我看的原文阿？有什么问题？这难道不是给“没有证据表明动物的这种行为与地震发生有着必然的联系”的论点增添论据？要不要我给你翻译一遍？您语文很好，英语应该也不差嘛，至少name－calling的低级错误不会犯，我想就不用了吧:)
+
+对了，中国确实有很多相关的研究人员，特别是这次地震之后冒出来的，呵呵。除此之外，没有任何报道和发言表明，世界上某个国家认为“有证据表明动物的这种行为与地震发生有着必然的联系”。如有，请指出，谢谢。
+
+第三，原来打到打到兄认为，the next 30 years the probability of a major
+EQ occurring in the San Francisco Bay area is 67% and 60% in Southern
+California.
+
+| 叫做predict？？明白了，打到打到兄是想告诉我们，美国人是白痴阿，同一段话，前面说不可predict，后面又说我们predicted了
+| 
+，这才叫牛逼。计算出来的概率，原来就叫predict阿？哈哈，打到打到兄直接无视了“No.
+Neither the USGS nor Caltech nor any other scientists have ever
+predicted a major earthquake. They do not know how”
+
+打到打到兄应该不会不知道They do not know
+how的意思吧？话说我小学语文不及格，但是您中学英语应该是及格的吧
+
+另外郑重向打到打到兄推荐，您去开一家博彩预测公司，准火，光提供不用数字的组合概率就行了。不过电视台如果让你去预测欧锦赛，你可千万不要说出“意大利40年内有40％几率夺冠”这种预测阿，会笑死人的。
+
+顺便告诉打到打到兄，若干年后别人争论地震可以预测还是不可预测的时候，你还可以说
+
+“笑来老师说地震可以预测”，所以地震可以预测。
+
+话说回来，给阿基米德一根杠杆，他还能撬动地球呢，哈哈，笑死我了，李四光老先生我是很尊重的，正如我尊重阿基米德一样，但你也犯不着用这么白痴的语言逻辑来逗我吧。
+
+最后我想告诉打到打到同志，我驳你的时候，你的问题我一条一条单列回答，你驳我的时候为什么不回答我的问题？没有干货？不怕，这年头有网络嘛。这样吧，我把我的问题再列出来，你要不要先回答了再带上放大镜来挑我的语病？
+
+1
+地震目前不可预测，这是世界地震研究机构公认的，有什么好争论的呢？认为有争论的话，好啊，除了中国民科，请拿出其他有说服力的资料出来？千万不要又来一个“李四光说再给我x年时间”哦
+
+2 “对地震预测嗤之以鼻的人，往往的根据是“既然不能百分之百，那还有什么用”
+
+这句话是笑来老师原话，请问美国日本中国xxx国地震研究机构都申明目前地震不可predict，那么是不是根据是“既然不能百分之百，那还有什么用”
+
+3
+如果你觉得“地震预测有用”，那么请举例，美国和日本地震部门历史上有没有发布过大地震预测？如果有，reference。没有，说明什么问题？不要告诉我他们都是草菅人命的白痴阿。
+
+OK，打到打到兄，拿出干货来战吧，丫丫丫丫挑语病和玩文字游戏不是辩论的好习惯哦。你实在要挑，请先把我的问题回答了，OK？
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   </div>
+
+-  
+
+   .. raw:: html
+
+      <div id="dsq-comment-2219">
+
+   .. raw:: html
+
+      </div>
+
+   .. raw:: html
+
+      <div id="dsq-comment-header-2219" class="dsq-comment-header">
+
+   windstorm
+
+   .. raw:: html
+
+      </div>
+
+   .. raw:: html
+
+      <div id="dsq-comment-body-2219" class="dsq-comment-body">
+
+   .. raw:: html
+
+      <div id="dsq-comment-message-2219" class="dsq-comment-message">
+
+   顺便帮你把预测的标准科普一下：
+
+   我们所说的“地震预测”，就是predict，定义应该是
+
+   “根据所认识的地震发生规律，用科学方法对未来地震发生的时间、地点和强度作预先的估计”
+
+   wiki定义如下：
+
+   An earthquake prediction is a prediction that an earthquake in a
+   specific magnitude range will occur in a specific region and time
+   window. Predictions are considered as such to the extent that they
+   are reliable for practical, as well as scientific, purposes.
+
+   以“加州未来的40年内有40％地震概率发生地震”为例子，这句话，一没有相对具体的时间范围（我们都不说时间点了），二没有具体地点（加州整个都在地震带，不代表一地震就影响整个加州），三没有强度估计（这根本就无法估计），更别谈什么实用性了。
+
+   这种话语，你拿到中国地震局，日本地震局，美国地震局，都完全不符合“地震预测”的含义。所以压根不能算预测。
+
+   完全符合地震预测定义的“predict”，这是世界公认无法做到的。
+
+   .. raw:: html
+
+      </div>
+
+   .. raw:: html
+
+      </div>
+
+.. raw:: html
+
+   <div id="dsq-comment-header-2202" class="dsq-comment-header">
+
+曦玥
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   <div id="dsq-comment-body-2202" class="dsq-comment-body">
+
+.. raw:: html
+
+   <div id="dsq-comment-message-2202" class="dsq-comment-message">
+
+| 恩~
+|  老师可以看一下这个:
+
+`http://singularitys.spaces.live.com/blog/cns%21746E8659C6CDA329%21566.entry#comment </web/20130909082054/http://singularitys.spaces.live.com/blog/cns%21746E8659C6CDA329%21566.entry#comment>`__
+
+| 引用一下:
+| 
+“假设当6级以上破坏性地震（小地震有益无害，所以我们只考虑大地震）确实发生时预报有地震的概率为0.8（即80%，我们姑且把这个概率定高些以示预报的准确，实际上根本没这么准）；设当地震未发生时预报没有地震的概率也为0.8（理由同上）。现在利用这个预报手段对某个地区进行观测，根据历史资料知道该地区一年内发生6级以上破坏性地震的概率为百分之一（这符合我国的平均水平，许多大地震都至少是百年一遇的）。现在来求当预报将要地震时，地震确实发生的概率。
+
+解：用A表示事件“预报有地震”，用B表示事件“地震确实发生了”。已知有
+
+P (A\|B)=0.8，P
+(A\|B)=0.8（表示“取反”。本应用上划线，由于数学公式显示的问题，此处用下划线代替），P(B)=0.01。要求P(B\|A)
+
+这个问题很简单，利用贝耶斯公式直接可得：
+
+P(B\|A)= 0.8×0.01/(0.8×0.01+0.2×0.99)=0.039
+
+可见，地震预报的准确率不到4%，这还是建立在80%这样高精度假设的基础上，实际情况更加悲观。估计许多人会对这个结果心生恐惧继而选择逃避的不相信，这可以理解，因为不少人不具备起码的概率知识，宁肯彻夜不眠的画双色球号码分布图，也不会看一本基础的概率论教材。我只对这个结果作简要的说明：这实际上是个“先验概率”和“后验概率”的问题，那些预报成功的例子属于“后验概率”，等地震发生了再来炫耀预测的准确性，却不说那些大量预测错误的例子。民间管这个叫做“马后炮”、“事后诸葛亮”。
+“
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   </div>
+
+-  
+
+   .. raw:: html
+
+      <div id="dsq-comment-2204">
+
+   .. raw:: html
+
+      </div>
+
+   .. raw:: html
+
+      <div id="dsq-comment-header-2204" class="dsq-comment-header">
+
+   李笑来
+
+   .. raw:: html
+
+      </div>
+
+   .. raw:: html
+
+      <div id="dsq-comment-body-2204" class="dsq-comment-body">
+
+   .. raw:: html
+
+      <div id="dsq-comment-message-2204" class="dsq-comment-message">
+
+   你转过来的文章，和我这篇文章里面所说的事情，应该并非一回事儿。
+
+   见文章底部”补充“内容。
+
+   .. raw:: html
+
+      </div>
+
+   .. raw:: html
+
+      </div>
+
+.. raw:: html
+
+   <div id="dsq-comment-header-2216" class="dsq-comment-header">
+
+crazyyeah
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   <div id="dsq-comment-body-2216" class="dsq-comment-body">
+
+.. raw:: html
+
+   <div id="dsq-comment-message-2216" class="dsq-comment-message">
+
+windstorm和那个松树会博客的文章一样，考虑的大多是短期预测，比如通过发现某些征兆从而在短期内制定某些政策来躲避灾难，而实际上预测、概率更主要的考虑的是某些长期建设的问题，比如楼房是否应该提高成本以达到一定的抗震程度，学校是否应该抽出固定的时间进行抗灾培训，这一点在一定程度上是脱离预报而存在的，即不管何时地震发生都应该有抵御能力。
+
+windstorm是个不错的辩手，但是性子急了点，看得我都捏了把汗
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   <div id="dsq-comment-header-2225" class="dsq-comment-header">
+
+windstorm
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   <div id="dsq-comment-body-2225" class="dsq-comment-body">
+
+.. raw:: html
+
+   <div id="dsq-comment-message-2225" class="dsq-comment-message">
+
+“某些长期建设的问题，比如楼房是否应该提高成本以达到一定的抗震程度，学校是否应该抽出固定的时间进行抗灾培训，这一点在一定程度上是脱离预报而存在的”
+
+这应该不是和预测联系的，而是和预防有关的，我完全同意笑来老师的预防意见阿，事实上，目前所有的争论，包括网络的，都是关于预测而不是预防的。预防应该搞，预防也是现在所有地震研究机构的重心之一。
+
+至于预测，其实不管长期预测，还是短期预测，现在的学术界公认说法都是“无法做到”，预测的具体定义我下面已经有回复了。
+
+我的性子从小就急，见笑了。还有我的评论中讽刺话语多了些，这个回想起来不应该的。
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   <div id="dsq-comment-header-2226" class="dsq-comment-header">
+
+李笑来
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   <div id="dsq-comment-body-2226" class="dsq-comment-body">
+
+.. raw:: html
+
+   <div id="dsq-comment-message-2226" class="dsq-comment-message">
+
+其实，公认的应该是“无法做到精确”而不是“无法做到”。这是两回事儿。
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   </div>
+
+-  
+
+   .. raw:: html
+
+      <div id="dsq-comment-2228">
+
+   .. raw:: html
+
+      </div>
+
+   .. raw:: html
+
+      <div id="dsq-comment-header-2228" class="dsq-comment-header">
+
+   windstorm
+
+   .. raw:: html
+
+      </div>
+
+   .. raw:: html
+
+      <div id="dsq-comment-body-2228" class="dsq-comment-body">
+
+   .. raw:: html
+
+      <div id="dsq-comment-message-2228" class="dsq-comment-message">
+
+   笑来老师，我已经把“地震预测”的定义都给你给出来了，下面的留言我写得清清楚楚，也针对你的“预测”分析了，这不叫“预测”。
+
+   你说“预测”可以做到，你让你给出任何官方或者学术界意见，你又给不出来，还真是你说可以就可以阿？
+
+   为什么承认自己的错误就这么难？
+
+   .. raw:: html
+
+      </div>
+
+   .. raw:: html
+
+      </div>
+
+.. raw:: html
+
+   <div id="dsq-comment-header-2230" class="dsq-comment-header">
+
+李笑来
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   <div id="dsq-comment-body-2230" class="dsq-comment-body">
+
+.. raw:: html
+
+   <div id="dsq-comment-message-2230" class="dsq-comment-message">
+
+这次我全面回复。:)
+
+看\ `这里 </web/20130909082054/http://www.lixiaolai.com/?p=501>`__\ 。
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   <div id="dsq-comment-header-2217" class="dsq-comment-header">
+
+http://3fen.spaces.live.com 3fen
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   <div id="dsq-comment-body-2217" class="dsq-comment-body">
+
+.. raw:: html
+
+   <div id="dsq-comment-message-2217" class="dsq-comment-message">
+
+| 今天偶然想到一个素材，关于看人的问题：由于某个人的发展基本是一条连续的光滑的曲线，而我们对某个人的认识却是由一次次的接触取到的点而构成的阶梯状的图像——而且这些点相对于真实的图像可能或高或低，接着这种观点会至少保持到下次接触。
+|  不知道这算不算一个可以展开的话题…
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   <div id="dsq-comment-header-2221" class="dsq-comment-header">
+
+看明白的
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   <div id="dsq-comment-body-2221" class="dsq-comment-body">
+
+.. raw:: html
+
+   <div id="dsq-comment-message-2221" class="dsq-comment-message">
+
+看了半天，觉得windstorm不仅脑子不够用人品更差。
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   </div>
+
+-  
+
+   .. raw:: html
+
+      <div id="dsq-comment-2223">
+
+   .. raw:: html
+
+      </div>
+
+   .. raw:: html
+
+      <div id="dsq-comment-header-2223" class="dsq-comment-header">
+
+   李笑来
+
+   .. raw:: html
+
+      </div>
+
+   .. raw:: html
+
+      <div id="dsq-comment-body-2223" class="dsq-comment-body">
+
+   .. raw:: html
+
+      <div id="dsq-comment-message-2223" class="dsq-comment-message">
+
+   不要这么说，最好只关注正在讨论的问题。
+
+   .. raw:: html
+
+      </div>
+
+   .. raw:: html
+
+      </div>
+
+.. raw:: html
+
+   <div id="dsq-comment-header-2224" class="dsq-comment-header">
+
+pexi
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   <div id="dsq-comment-body-2224" class="dsq-comment-body">
+
+.. raw:: html
+
+   <div id="dsq-comment-message-2224" class="dsq-comment-message">
+
+| 没有看懂反对者的意见，但是还是觉的笑来老师的文章写的很有启发。
+|  我自己以前也觉的看写过argument,学过逻辑，就会了critical
+thinking;经常吹毛求疵，经常说一些笑来老师提到的“自以为是”的学生说的话，只去说些小概率的事件来自我解嘲，对解决问题没什么意义。
+|  谢谢老师，继续努力。
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   <div id="dsq-comment-header-2229" class="dsq-comment-header">
+
+LY
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   <div id="dsq-comment-body-2229" class="dsq-comment-body">
+
+.. raw:: html
+
+   <div id="dsq-comment-message-2229" class="dsq-comment-message">
+
+| 这是我看了文章和留言后的想法,大家讨论这么激烈我也学到很多,有不对的地方请指出
+| 
+1.”地震预测”的定义:根据所认识的地震发生规律，用科学方法对未来地震发生的时间、地点和强度作预先的估计
+| 
+2.”预测”这个词在预测学中指用数学方法推算出某个概率,其目的在于减少人类生活各个方面因事件所产生的风险.
+|  前者要求太过精确了目前没有办法做到,而文章中”处理可能性”讨论的是2.
+
+“迄今为止没有证据表明动物的这种行为与地震发生有着必然的联系.”我们不是这方面的专家,从逻辑的角度我们应该等有证据证明必然有联系或有证据证明完全没有联系时才下结论.我不会因为USGS现在弃用动物预报就赞同没有联系,也不会因为中国民科在研究就赞同有联系.
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   <div id="dsq-comment-header-2233" class="dsq-comment-header">
+
+stonewang
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   <div id="dsq-comment-body-2233" class="dsq-comment-body">
+
+.. raw:: html
+
+   <div id="dsq-comment-message-2233" class="dsq-comment-message">
+
+笑来老师这次有失水准…………
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   </div>
+
+-  
+
+   .. raw:: html
+
+      <div id="dsq-comment-2239">
+
+   .. raw:: html
+
+      </div>
+
+   .. raw:: html
+
+      <div id="dsq-comment-header-2239" class="dsq-comment-header">
+
+   李笑来
+
+   .. raw:: html
+
+      </div>
+
+   .. raw:: html
+
+      <div id="dsq-comment-body-2239" class="dsq-comment-body">
+
+   .. raw:: html
+
+      <div id="dsq-comment-message-2239" class="dsq-comment-message">
+
+   :)
+
+   .. raw:: html
+
+      </div>
+
+   .. raw:: html
+
+      </div>
+
+.. raw:: html
+
+   <div id="dsq-comment-header-2326" class="dsq-comment-header">
+
+董春鹏
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   <div id="dsq-comment-body-2326" class="dsq-comment-body">
+
+.. raw:: html
+
+   <div id="dsq-comment-message-2326" class="dsq-comment-message">
+
+第一个事情，关于地震预测的问题。我觉得笑来老师是错的。应该说，我理解，地震是可预测的。不过这个可预测和专家们说的不可预测是两回事。怎么两回事呢？专家们说的不可预测，说的是预测未达到实际要求的那个确定性。这个确定性非常高。估计在95%以上，看了前面的留言我觉得确定性很可能在99%以上才达到实际的要求。这个问题上的争论有些莫名其妙。
+
+第二个事情。关于“从好学校出来的未必是好学生”的言论，我觉得那个孩子说的很不错。很有骨气。“从好学校毕业的基本上是好学生”，这话经得起推敲吗？我看未必。“从好学校毕业的坏学生很少”，这种结论基本荒谬。问题在于，从坏学校毕业的坏学生也未必就多，这种歧视还不够好的学校的言论，显然欠考虑，分类有些简单。至于“从好学校毕业的更可能是好学生”这样的表述，几近白痴。实际上，学生的好坏是由他们自己决定的，与学校没什么关系。否则的话，我们就有充分的理由肯定：从坏学校毕业的更可能是坏学生了。这种逻辑显然通不过。
+
+不可否认，所谓好学校出来的好学生，分数可能更高，头脑可能更聪明，将来找到的工作可能更好。这是不可否认的。但是，如果把好这个标准上升到为社会做贡献这个层次，北京清华大学的毕业生有10%配的上他们母校的名头就不错了。大部分人一生平淡庸碌，所做的贡献和取得的报酬互相抵消了。至于道德上嘛，这些聪明人甚至比那些傻一点的人，更卑贱，更可耻。好又好在哪里呢？
+
+说个最现实的问题吧。笑来老师，你的大学同学当中又有多少对于真理和事实如你这般感兴趣呢？还是不要满脑子的精英学校意识吧。这种意识尽管看起来象常识，其实相当的可笑、滑稽。它显然不是一个很好的分类，很初级、很简单、很愚蠢。
+
+从冷静的教育的角度出发，我最近发现，目前社会上的普通学历教育，普遍的有害于接受它的学生。这里不仅包括大学，而且尤以它为甚。滑稽的是，那些最受这种教育认可的受教育者，也就是好学生们，受到的损害实际上更大。他们被彻底的矮化了。他们要比他们能达到的水准要低许多许多。最突出的表现就是，毫无创造性。可悲而滑稽的是，他们当中没有几个人认识到这一点—-他们当然认识不到，因为他们已经被教育的缺乏这种自我评价的能力了。更何况这种结论一旦确认，对他们来说这将是一种灾难，而且是不可挽回的那种。
+
+对了，最后说一句，写这些话的人，也就是我，初二未毕业，很幸运呀！各位高学历的看官。你们可以把这当作一个没有学历的人的自尊心在作怪。对于我来说，我只能不无遗憾的告诉你们，高学历的你们只会如此简单粗暴的推测一个人。恰恰说明问题本身。
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   <div id="dsq-comment-header-2334" class="dsq-comment-header">
+
+李笑来
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   <div id="dsq-comment-body-2334" class="dsq-comment-body">
+
+.. raw:: html
+
+   <div id="dsq-comment-message-2334" class="dsq-comment-message">
+
+你读到的，是你自己想读到的东西。
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   <div id="dsq-comment-header-2339" class="dsq-comment-header">
+
+董春鹏
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   <div id="dsq-comment-body-2339" class="dsq-comment-body">
+
+.. raw:: html
+
+   <div id="dsq-comment-message-2339" class="dsq-comment-message">
+
+确实是没仔细看你的文章。所以仔细看了一遍。发现了问题。你要说的核心意思：可能性总意味着什么，不是正向的就是反向的。尤其应该注意反向的意味。这个意思全文表达的很模糊。两个例子也举得牵强。所以我的结论是，不能怪我没把你的文章看仔细，而是你写的不够好。
+
+你对“没有必然联系”的理解也有错误。没有必然联系在那个特殊的语境里说的意思是：不能简单的凭借它来判断地震的有无。这个意思完全没有否定“没有任何联系”逻辑上的可能性。你较真较得过分了。
+
+关于好大学和好大学生的确定性问题。我认为，你的那个学生也许确实有点吃不到葡萄说葡萄酸：我看到了我想看到的。不过还是要说一下，也许你真的写的也不够清楚。是否考虑重新学习一下中文写作。
+
+个人认为，很多做判断和分析的时候，你有咬文嚼字之嫌。不值得提倡。还是让我们从问题和举例的机械方式中解脱出来。我的个人经验，一年当中解决3、4个基本问题，对一个人来说就已经很高效了。多了的话恐怕解决问题的质量会严重下降。恩，不排除这种可能性，那就是我很笨，解决问题的能力不足，所以解决不了那么多问题。谁知道，也许真的是大多数人都比我聪明。
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   </div>
+
+-  
+
+   .. raw:: html
+
+      <div id="dsq-comment-2342">
+
+   .. raw:: html
+
+      </div>
+
+   .. raw:: html
+
+      <div id="dsq-comment-header-2342" class="dsq-comment-header">
+
+   李笑来
+
+   .. raw:: html
+
+      </div>
+
+   .. raw:: html
+
+      <div id="dsq-comment-body-2342" class="dsq-comment-body">
+
+   .. raw:: html
+
+      <div id="dsq-comment-message-2342" class="dsq-comment-message">
+
+       ……是否考虑重新学习一下中文写作。
+
+   是呢。
+
+   .. raw:: html
+
+      </div>
+
+   .. raw:: html
+
+      </div>
+
+.. raw:: html
+
+   <div id="dsq-comment-header-2617" class="dsq-comment-header">
+
+haoxuesheng
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   <div id="dsq-comment-body-2617" class="dsq-comment-body">
+
+.. raw:: html
+
+   <div id="dsq-comment-message-2617" class="dsq-comment-message">
+
+我同意笑来的意见，地震是可以预报的。因为预报是中文词，带有概率和可能性。USGS说不能预报，是用的英语词汇，同时也是基于他们的人文精神。因为USGS说不能预报，所以，加州地震带上的房子都相对安全了，预防措施好。中国有许多地震带，可是，房子的安全系数要小多了。人们不能依赖地震预报，而是要相信科学。科学研究的结果已经给出了地震带（实际很简单，地震过的区域，就要早做预防），而政府和人民都考虑到什么程度了？侥幸心理要不得。
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   <div id="dsq-comment-header-2618" class="dsq-comment-header">
+
+haoxuesheng
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   <div id="dsq-comment-body-2618" class="dsq-comment-body">
+
+.. raw:: html
+
+   <div id="dsq-comment-message-2618" class="dsq-comment-message">
+
+其实，唐山就是一个好例子。那么多地震工作者在唐山，都已经知道，不是今天，也就明天，反正有一天要震的，而且时间也不远，从震前一两年就闹得很欢，结果，有什么预防措施吗？还是等着预报。这不是不把人当人吗？人是动物。人说出了他们的震前烦躁，动物怎么说？闹吧。世界上的现象都是相互联系的，有的是直接的，有的是间接的，多分析问题，就会少死人。绝对的话不要说。USGS也只是说他们美国或西方科学家不能预报地震，实际上是不敢预报地震（除科学研究外）。但是，他们也没有预报地震带上不会地震。
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   <div id="dsq-comment-header-2619" class="dsq-comment-header">
+
+haoxuesheng
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   <div id="dsq-comment-body-2619" class="dsq-comment-body">
+
+.. raw:: html
+
+   <div id="dsq-comment-message-2619" class="dsq-comment-message">
+
+显然，美国的科学家态度是严谨的。中国的科学家缺乏对人的认识。如果中国人也象美国人那样把一个人当一个人，那么，中国很多地方是不能住人的，中国人的住房问题就得不到解决。因此，这里存在文化、价值等诸方面的不同。这是中国国情决定的。另外，中国的国情也决定了中国的群防群策是非常有必要的，虽然不能准确预报地震，至少可以减少损失。美国人不能预报地震，但是，天天在防震；中国人也同样不能预报地震，但是，大家把不能预报当成了没有地震。这可能是中国和美国的最大差别。
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   <div id="dsq-comment-header-3110" class="dsq-comment-header">
+
+曦玥
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   <div id="dsq-comment-body-3110" class="dsq-comment-body">
+
+.. raw:: html
+
+   <div id="dsq-comment-message-3110" class="dsq-comment-message">
+
+| 老师的注释上升到的不是逻辑高度,是哲学高度了吧
+| 
+我想,高二,或者初二?接触到马克思主义哲学的人都知道吧,万事万物都是联系的,或许,这就是[常识].
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   <div id="dsq-comment-header-3111" class="dsq-comment-header">
+
+曦玥
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   <div id="dsq-comment-body-3111" class="dsq-comment-body">
+
+.. raw:: html
+
+   <div id="dsq-comment-message-3111" class="dsq-comment-message">
+
+| 道理讲得挺好的,让我们明白就行了
+|  但是例子举错了
+|  不过留言的结果是让我们完全转移到对地震预报的争论上去了
+|  我的意思是丫地震能不能预测好像完全跟你想说道理完全没关系
+|  做为一个论据,它不能好好的支持论点,那么它就是失败的.
+|  完.
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   <div id="dsq-comment-header-3112" class="dsq-comment-header">
+
+李笑来
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   <div id="dsq-comment-body-3112" class="dsq-comment-body">
+
+.. raw:: html
+
+   <div id="dsq-comment-message-3112" class="dsq-comment-message">
+
+丫？
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   <div id="dsq-comment-header-5814" class="dsq-comment-header">
+
+http://Website FFFrog
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   <div id="dsq-comment-body-5814" class="dsq-comment-body">
+
+.. raw:: html
+
+   <div id="dsq-comment-message-5814" class="dsq-comment-message">
+
+如果这个政客是我们原本就熟悉的，那么我们对他的信任程度是不是就应该根据我们对他的了解\ **成都**\ 而有所调整？ 
+->  程度
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   <div id="dsq-comment-header-6601" class="dsq-comment-header">
+
+Lee
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   <div id="dsq-comment-body-6601" class="dsq-comment-body">
+
+.. raw:: html
+
+   <div id="dsq-comment-message-6601" class="dsq-comment-message">
+
+|      目前地震还不能够真确预测
+|  -> 目前地震还不能够准确预测
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   <div id="dsq-comment-header-25931" class="dsq-comment-header">
+
+沉路
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   <div id="dsq-comment-body-25931" class="dsq-comment-body">
+
+.. raw:: html
+
+   <div id="dsq-comment-message-25931" class="dsq-comment-message">
+
+| 大概地看了两篇文章及其留言，想说几点：
+| 
+1，其实两个人的观点，没有大的“正面冲突”，争论和澄清到最后，都只剩下相互“攻击”对方的细枝末节的。从这点上看，笑来老师比较诚恳，比较实事求是；而“求胜心切”的另一方……呵呵，想必大家也看出来了。
+| 
+2，即使方舟子也承认，预测包括“准确的预测”和“中长期的概率预测”。他认为前者是不可能的，而后者是完全可能的，而且全世界都在做。
+| 
+3，“准确的预测”和“中长期的概率预测”的内涵和作用是很不相同的。前者是：某年某月某日某地有地震（时间，地点，震级），所以在地震来临之前做好疏散和转移，保障生命财产；后者如：某地40年内发生N级地震的概率是X%，请当地政府做好房屋加固等工作。
+| 
+4，国际主流科学界认为地震目前无法准确预测，同时有一派认为地震永远无法预测，因为它超出了人类认识的极限。可以看看方舟子的这篇文章：http://blog.sina.com.cn/s/blog\_4740687901009o7g.html
+| 
+5，即使“沙堆”模型是正确的，是否可以得出“地震永远无法准确预测”的结论呢？随着时间的推移，科技的进步，很多难题都被解决了，但是，是否所有出现的问题终究会被解决，还是会存在永远不可解决的问题呢？这已经是哲学问题了。按照辩证法，发展是无止境的，当然不存在“永远无法解决”的问题，也就是“一切皆有可能”；但在物理上，违背能量守恒定律的事情是不可能发生的；在数学上，“三等分角”是不可能的；微积分告诉我们，“极限”是存在的……
+|  6，“地震预测的准确程度哪怕只有1%也不应该完全忽视——因为人命关天。
+| 
+”。这句话本身是没错的，因为地震预测的研究总是可以进行的，但如果准确程度只有1%，在“地震预报”的实践中是完全行不通的。比如你预报了100次地震，99次报错，一次报对，固然后者获益极大，但前者的损失，是社会无法承受的。50%以下的准确率都是无效的，因为丢硬币也有50%的准确率。
+| 
+7，笑来老师说：“没有必然联系”不等于“没有任何联系”。从哲学上来讲，“联系”包括必然联系、偶然联系……所以，从这个意义上说，什么蛤蟆迁移、心灵感应跟地震都是有联系的，至少有“偶然联系”嘛。但这有意义么？
+| 
+8，迟到的讨论，呵呵。不知道笑来老师会不会回复，当然，我知道其中一定有不少错误，这不是先给自己留后路，而是我有一定的自知力：我对数学和逻辑的理解和掌握以及语言的使用还非常欠缺。
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   <div class="prev_next post_nav">
+
+Previous post:
+`想明白（之十四） </web/20130909082054/http://wordpress.lixiaolai.com/archives/497.html>`__
+
+Next post: `“Most people prefer restrictions and regulations to absolute
+freedom of choice, although they would probably deny such a
+preference.” </web/20130909082054/http://wordpress.lixiaolai.com/archives/499.html>`__
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   <div id="sidebars">
+
+.. raw:: html
+
+   <div id="multimedia_box" class="image_box">
+
+.. raw:: html
+
+   <div id="image_box">
+
+|TOEFL-essential-vocabulary-21.jpg|
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   <div id="sidebar_1" class="sidebar">
+
+-  
+
+   .. raw:: html
+
+      <div id="archives-2">
+
+   .. raw:: html
+
+      </div>
+
+   Archives
+   ~~~~~~~~
+
+   Select Month September 2012 August 2012 July 2012 June 2012 May 2012
+   April 2012 March 2012 February 2012 January 2012 December 2011
+   November 2011 October 2011 September 2011 August 2011 July 2011 June
+   2011 May 2011 April 2011 March 2011 February 2011 January 2011
+   December 2010 November 2010 October 2010 September 2010 August 2010
+   July 2010 June 2010 May 2010 April 2010 March 2010 February 2010
+   January 2010 December 2009 November 2009 October 2009 September 2009
+   August 2009 July 2009 June 2009 May 2009 April 2009 March 2009
+   February 2009 January 2009 December 2008 November 2008 October 2008
+   September 2008 August 2008 July 2008 June 2008 May 2008 April 2008
+   March 2008 February 2008 January 2008 December 2007 November 2007
+   October 2007 September 2007 August 2007 July 2007 June 2007 May 2007
+   April 2007 March 2007 February 2007 January 2007 December 2006
+   November 2006 October 2006 June 2006 May 2006 January 2000
+
+-  
+
+   .. raw:: html
+
+      <div id="collapscat-3">
+
+   .. raw:: html
+
+      </div>
+
+   Categories
+   ~~~~~~~~~~
+
+   -  `applying.stackexchange.com </web/20130909082054/http://wordpress.lixiaolai.com/archives/category/applying-stackexchange-com>`__
+   -  `Daily </web/20130909082054/http://wordpress.lixiaolai.com/archives/category/daily>`__
+   -  `Don’t buy
+      bullshits </web/20130909082054/http://wordpress.lixiaolai.com/archives/category/dont-buy-bullshits>`__
+   -  `FAQ问答集 </web/20130909082054/http://wordpress.lixiaolai.com/archives/category/faq-sets>`__
+   -  `GMAT考试准备 </web/20130909082054/http://wordpress.lixiaolai.com/archives/category/gmat-prep>`__
+   -  `uncategorized </web/20130909082054/http://wordpress.lixiaolai.com/archives/category/uncategorized>`__
+   -  `Video and
+      Audio </web/20130909082054/http://wordpress.lixiaolai.com/archives/category/video-and-audio>`__
+   -  `一分钟改变生活——我是谁？ </web/20130909082054/http://wordpress.lixiaolai.com/archives/category/%e4%b8%80%e5%88%86%e9%92%9f%e6%94%b9%e5%8f%98%e7%94%9f%e6%b4%bb-%e6%88%91%e6%98%af%e8%b0%81%ef%bc%9f-in-chinese>`__
+   -  `书——不得不看 </web/20130909082054/http://wordpress.lixiaolai.com/archives/category/books-that-should-not-be-missed>`__
+   -  `人物 </web/20130909082054/http://wordpress.lixiaolai.com/archives/category/people>`__
+   -  `作文素材 </web/20130909082054/http://wordpress.lixiaolai.com/archives/category/readings-for-writing>`__
+   -  `写清楚（系列） </web/20130909082054/http://wordpress.lixiaolai.com/archives/category/clear-writing>`__
+   -  `学习学习再学习 </web/20130909082054/http://wordpress.lixiaolai.com/archives/category/learning-learning-to-learn-better>`__
+   -  `强人高手 </web/20130909082054/http://wordpress.lixiaolai.com/archives/category/versatile>`__
+   -  `思维工具 </web/20130909082054/http://wordpress.lixiaolai.com/archives/category/thinking-tools>`__
+   -  `想明白（系列） </web/20130909082054/http://wordpress.lixiaolai.com/archives/category/thinking-clearly-series>`__
+   -  `我要问笑来 </web/20130909082054/http://wordpress.lixiaolai.com/archives/category/response-to-readers>`__
+   -  `找例子玩 </web/20130909082054/http://wordpress.lixiaolai.com/archives/category/finding-examples>`__
+   -  ►\ `把时间当作朋友 </web/20130909082054/http://wordpress.lixiaolai.com/archives/category/time-as-a-friend>`__
+
+      .. raw:: html
+
+         <div id="collapsCat-17:3" style="display:none">
+
+      -  `《把时间当作朋友》第三版 </web/20130909082054/http://wordpress.lixiaolai.com/archives/category/time-as-a-friend/time-as-a-friend-3rd-edition>`__
+
+      .. raw:: html
+
+         </div>
+
+   -  `普通人的当众讲话技能 </web/20130909082054/http://wordpress.lixiaolai.com/archives/category/public-speaking-skills-for-everyone>`__
+   -  `求职前最好学会的那些事儿 </web/20130909082054/http://wordpress.lixiaolai.com/archives/category/things-better-learned-before-getting-a-job>`__
+   -  `留学问答 </web/20130909082054/http://wordpress.lixiaolai.com/archives/category/qa-for-application>`__
+   -  `看看电影 </web/20130909082054/http://wordpress.lixiaolai.com/archives/category/movie-time>`__
+   -  `神奇的大脑 </web/20130909082054/http://wordpress.lixiaolai.com/archives/category/marvelous-brain>`__
+   -  `算是流水帐 </web/20130909082054/http://wordpress.lixiaolai.com/archives/category/temp-list>`__
+   -  `糖尿病常识 </web/20130909082054/http://wordpress.lixiaolai.com/archives/category/diabetes-common-knowledge>`__
+   -  `美国大学 </web/20130909082054/http://wordpress.lixiaolai.com/archives/category/us-universities-and-colleges>`__
+   -  `美国大学本科申请DIY简明指南 </web/20130909082054/http://wordpress.lixiaolai.com/archives/category/%e7%be%8e%e5%9b%bd%e5%a4%a7%e5%ad%a6%e6%9c%ac%e7%a7%91%e7%94%b3%e8%af%b7diy%e7%ae%80%e6%98%8e%e6%8c%87%e5%8d%97>`__
+   -  ►\ `英语相关文章 </web/20130909082054/http://wordpress.lixiaolai.com/archives/category/english-learning>`__
+
+      .. raw:: html
+
+         <div id="collapsCat-3:3" style="display:none">
+
+      -  `1800小时 –
+         高中两年慢跑冲进美国名校 </web/20130909082054/http://wordpress.lixiaolai.com/archives/category/english-learning/1800-hours>`__
+      -  `AWA（GRE/GMAT写作）考试简明教程 </web/20130909082054/http://wordpress.lixiaolai.com/archives/category/english-learning/awa-basic-instruction>`__
+      -  `TOEFL iBT
+         高分作文 </web/20130909082054/http://wordpress.lixiaolai.com/archives/category/english-learning/toefl-ibt-qualified-samples-for-ets-official-185-topic-pool>`__
+      -  `TOEFL核心词汇21天突破 </web/20130909082054/http://wordpress.lixiaolai.com/archives/category/english-learning/master-toefl-essential-vocabulary-in-21-days>`__
+      -  `人人都能用英语 </web/20130909082054/http://wordpress.lixiaolai.com/archives/category/english-learning/everyone-can-use-english>`__
+      -  `如何提高阅读速度 </web/20130909082054/http://wordpress.lixiaolai.com/archives/category/english-learning/how-to-accelerate-reading-speed>`__
+      -  `托福听说训练 </web/20130909082054/http://wordpress.lixiaolai.com/archives/category/english-learning/toefl-listening-and-speaking>`__
+      -  `新托福iBT词汇分类突破 </web/20130909082054/http://wordpress.lixiaolai.com/archives/category/english-learning/toefl-ibt-topic-vocabulary>`__
+      -  `新托福词汇分类突破 </web/20130909082054/http://wordpress.lixiaolai.com/archives/category/english-learning/toefl-vocabulary-classification>`__
+      -  `留学考试准备 </web/20130909082054/http://wordpress.lixiaolai.com/archives/category/english-learning/test-preparation>`__
+      -  `跟我攒单词 </web/20130909082054/http://wordpress.lixiaolai.com/archives/category/english-learning/earn-vocabulary-with-me>`__
+
+      .. raw:: html
+
+         </div>
+
+   -  `言论与八卦 </web/20130909082054/http://wordpress.lixiaolai.com/archives/category/opinions>`__
+   -  ►\ `计算机相关 </web/20130909082054/http://wordpress.lixiaolai.com/archives/category/computer-related>`__
+
+      .. raw:: html
+
+         <div id="collapsCat-12:3" style="display:none">
+
+      -  ►\ `All about
+         Apple </web/20130909082054/http://wordpress.lixiaolai.com/archives/category/computer-related/all-about-apple>`__
+
+         .. raw:: html
+
+            <div id="collapsCat-164:3" style="display:none">
+
+         -  `iOS </web/20130909082054/http://wordpress.lixiaolai.com/archives/category/computer-related/all-about-apple/ios>`__
+         -  `iPhone </web/20130909082054/http://wordpress.lixiaolai.com/archives/category/computer-related/all-about-apple/iphone>`__
+         -  `免费软件 </web/20130909082054/http://wordpress.lixiaolai.com/archives/category/computer-related/all-about-apple/freeware>`__
+         -  `入门 </web/20130909082054/http://wordpress.lixiaolai.com/archives/category/computer-related/all-about-apple/basics>`__
+         -  `共享软件 </web/20130909082054/http://wordpress.lixiaolai.com/archives/category/computer-related/all-about-apple/shareware>`__
+         -  `小技巧 </web/20130909082054/http://wordpress.lixiaolai.com/archives/category/computer-related/all-about-apple/tips>`__
+
+         .. raw:: html
+
+            </div>
+
+      -  `Auto-It </web/20130909082054/http://wordpress.lixiaolai.com/archives/category/computer-related/auto-it>`__
+      -  `Firefox </web/20130909082054/http://wordpress.lixiaolai.com/archives/category/computer-related/firefox>`__
+      -  `Google </web/20130909082054/http://wordpress.lixiaolai.com/archives/category/computer-related/google>`__
+      -  `rails
+         notes </web/20130909082054/http://wordpress.lixiaolai.com/archives/category/computer-related/rails-notes>`__
+      -  `Ubuntu </web/20130909082054/http://wordpress.lixiaolai.com/archives/category/computer-related/ubuntu>`__
+      -  `WordPress </web/20130909082054/http://wordpress.lixiaolai.com/archives/category/computer-related/wordpress-computer-related>`__
+      -  `博客经验谈 </web/20130909082054/http://wordpress.lixiaolai.com/archives/category/computer-related/blogging-experience>`__
+      -  `网络常识菜鸟笔记 </web/20130909082054/http://wordpress.lixiaolai.com/archives/category/computer-related/computer-and-internet-common-sense-for-dummies>`__
+
+      .. raw:: html
+
+         </div>
+
+   -  `讲座行程 </web/20130909082054/http://wordpress.lixiaolai.com/archives/category/lecture-schedule>`__
+   -  `资源推荐 </web/20130909082054/http://wordpress.lixiaolai.com/archives/category/resouces-recommended>`__
+   -  `问题与争论 </web/20130909082054/http://wordpress.lixiaolai.com/archives/category/isssue-and-argumentation>`__
+   -  `随便想想 </web/20130909082054/http://wordpress.lixiaolai.com/archives/category/scratches>`__
+   -  `随便想想 </web/20130909082054/http://wordpress.lixiaolai.com/archives/category/%e9%9a%8f%e4%be%bf%e6%83%b3%e6%83%b3>`__
+   -  
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   <div id="footer">
+
+© 2011 lixiaolai.com – All rights reserved. – Tell whom you should tell.
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   <div id="afterfooter">
+
+.. raw:: html
+
+   </div>
+
+.. |Wayback Machine| image:: /static/images/toolbar/wayback-toolbar-logo.png
+   :target: /web/
+.. |Previous capture| image:: /static/images/toolbar/wm_tb_prv_off.png
+.. |Next capture| image:: /static/images/toolbar/wm_tb_nxt_on.png
+   :target: /web/20131011094734/http://wordpress.lixiaolai.com/archives/498.html
+.. |sparklines| image:: /web/jsp/graph.jsp?graphdata=475_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000000000000_2003:-1:000000000000_2004:-1:000000000000_2005:-1:000000000000_2006:-1:000000000000_2007:-1:000000000000_2008:-1:000000000000_2009:-1:000000000000_2010:-1:000000000000_2011:-1:000000000000_2012:-1:000000000000_2013:8:000000001100_2014:-1:000000000000
+.. |@xiaolai| image:: /web/20130909082054im_/http://wordpress.lixiaolai.com/wp-content/themes/thesis_182/custom/images/twitter.png
+   :target: /web/20130909082054/https://twitter.com/xiaolai
+.. |lixiaolai@gmail.com| image:: /web/20130909082054im_/http://wordpress.lixiaolai.com/wp-content/themes/thesis_182/custom/images/gmail.png
+   :target: mailto:lixiaolai@gmail.com
+.. |RSS| image:: /web/20130909082054im_/http://wordpress.lixiaolai.com/wp-content/themes/thesis_182/custom/images/rss.png
+   :target: /web/20130909082054/http://wordpress.lixiaolai.com/feed
+.. |TOEFL-essential-vocabulary-21.jpg| image:: /web/20130909082054im_/http://wordpress.lixiaolai.com/wp-content/themes/thesis_182/custom/rotator/TOEFL-essential-vocabulary-21.jpg
+   :target: /web/20130909082054/http://product.dangdang.com/product.aspx?product_id=22741869
